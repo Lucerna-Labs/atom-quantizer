@@ -1,0 +1,28 @@
+[package]
+name = "atom-quantizer"
+version = "0.2.3"
+edition = "2021"
+description = "Under-development atom-composed adaptive Q2/Q4/Q8 GGUF weight quantization research codec."
+
+[lib]
+name = "atom_quantizer"
+path = "src/lib.rs"
+
+[[bin]]
+name = "atom-quantizer"
+path = "src/main.rs"
+
+[features]
+default = []
+cuda = ["dep:cudarc"]
+
+[dependencies]
+cudarc = { version = "0.17", default-features = false, features = ["cuda-12060", "cublas", "dynamic-loading"], optional = true }
+
+[profile.release]
+opt-level = 3
+lto = "thin"
+
+[workspace]
+members = [".", "crates/atom-quantizer-q2"]
+resolver = "2"

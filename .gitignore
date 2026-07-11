@@ -1,0 +1,7 @@
+/target/
+*.oq
+*.gguf
+.env
+.env.*
+!.env.example
+.DS_Store

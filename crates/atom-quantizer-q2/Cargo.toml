@@ -1,0 +1,12 @@
+[package]
+name = "atom-quantizer-q2"
+version = "0.2.3"
+edition = "2021"
+description = "Under-development Q2 composer research companion for Atom Quantizer."
+
+[[bin]]
+name = "atom-quantizer-q2"
+path = "src/main.rs"
+
+[dependencies]
+atom-quantizer = { path = "../.." }
