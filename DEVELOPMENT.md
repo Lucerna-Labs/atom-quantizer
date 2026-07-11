@@ -6,6 +6,7 @@ Atom Quantizer is **under active development**. It should not be presented as a 
 
 - The source builds as two focused Rust crates and has unit coverage for codec, metric, container, and composer primitives.
 - The latest checked-in pipeline is v0.2.3: rowH8, adaptive Q2/Q4/Q8, blind repair, row-norm preservation, dual KL/cosine gates, and integrity verification.
+- Cross-domain atoms are labeled by execution status: the v0.2.3 live path is distinct from DCT, wavelet, companding, error-feedback, codebook, outlier, refract, and superpose research candidates.
 - The `OQ02` container is a research format. Compatibility is not promised yet.
 - The most aggressive historic result was invalidated by real inference. Only the dual-gate baseline should be cited, and even that must be labeled as a recorded R&D snapshot.
 

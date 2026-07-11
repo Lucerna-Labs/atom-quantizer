@@ -5,6 +5,21 @@
 
 Atom Quantizer is an atom-composed adaptive Q2/Q4/Q8 weight codec for GGUF language models. It evaluates each tensor, walks from the most aggressive candidate toward safer bit widths, and accepts a result only when both its KL ceiling and cosine floor pass.
 
+## The unusual idea: cross-domain atoms
+
+The compelling part is not simply that Atom Quantizer can choose Q2, Q4, or Q8. It is that the codec is assembled from **small mechanisms borrowed across domains that rarely meet inside one weight format**:
+
+- Walsh–Hadamard transforms from fast signal transforms redistribute outliers before quantization.
+- A finite receptive-field low-pass repair borrows from digital signal processing.
+- Row-norm restoration borrows a geometric invariant from linear algebra.
+- Bidirectional KL divergence contributes an information-theory gate.
+- Cosine similarity contributes an independent vector-geometry gate.
+- A `mix_u32` avalanche tag contributes deterministic corruption detection without pretending to be cryptography.
+
+The discovery kit deliberately reaches further: μ-law companding from telephony and audio, sigma-delta-style residual carry, DCT and Haar/wavelet transforms, Lloyd–Max scalar codebooks, sparse outlier sidecars, and an optics-inspired `refract` split that routes bulk and tail weights through different quantizers.
+
+The method is: **borrow one useful invariant or error behavior, make it a bounded atom, compose it with atoms from other fields, then measure the resulting stack without granting any domain automatic authority.** See [CROSS_DOMAIN_ATOMS.md](CROSS_DOMAIN_ATOMS.md) for the source-backed map and the live-versus-research boundary.
+
 The current v0.2.3 path composes:
 
 ```text
@@ -12,7 +27,7 @@ rowH8 pre-transform → Q2/Q4/Q8 block quantization → blind RF repair
 → row-norm preservation → KL + cosine dual gate → integrity verification
 ```
 
-This is an Atom-lineage project: small, measurable transformation primitives are composed into a codec, then rejected or promoted by explicit fidelity gates.
+This is an Atom-lineage project: small, measurable primitives cross domain boundaries, compose into a codec, then get rejected or promoted by explicit fidelity gates.
 
 ## Current status
 
