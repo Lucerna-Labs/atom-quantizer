@@ -110,7 +110,11 @@ fn report(output: &Output, code: i32) -> String {
 #[test]
 fn identity_assessment_and_json_escaping_cover_every_tensor() {
     let dir = directory();
-    let source = dir.join("source\".gguf");
+    let source = dir.join(if cfg!(windows) {
+        "source λ.gguf"
+    } else {
+        "source\".gguf"
+    });
     let cal = dir.join("fit.acal");
     let name = "probe\"\\\n\u{1}λ.weight";
     gguf(
@@ -122,6 +126,8 @@ fn identity_assessment_and_json_escaping_cover_every_tensor() {
     );
     calibration_file(&cal, &source, &[Samples::Linear(name, vec![vec![1.0; 32]])]);
     let text = report(&run(&source, &source, &cal, &[]), 0);
+    let parsed: serde_json::Value = serde_json::from_str(&text).unwrap();
+    assert_eq!(parsed["source"].as_str(), source.to_str());
     assert!(text.contains("\"tensor_count\":2,\"passed_count\":2,\"failed_count\":0"));
     assert!(text.contains("\"name\":\"probe\\\"\\\\\\n\\u0001λ.weight\""));
     assert!(

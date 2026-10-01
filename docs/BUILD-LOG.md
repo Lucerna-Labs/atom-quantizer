@@ -343,3 +343,9 @@ the installed K1 binary and frozen research snapshots remain preserved.
 
 The user's priority is compression quality and stored size; speed is not an
 optimization requirement. Prior latency failures remain part of the evidence.
+
+The first Windows CI run exposed an invalid quoted filename in the assessor's
+JSON-escaping fixture. The fixture now uses a valid Unicode/space filename on
+Windows and retains the quoted filename elsewhere. Tensor-name escaping still
+covers quotes, backslashes, newlines and a control character on every platform;
+the parsed report must also round-trip the actual source path exactly.
