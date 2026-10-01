@@ -1,0 +1,8 @@
+{
+  "destination": "/tmp/r1-cli-89neo1xm/decoded.gguf",
+  "bytes": 1184,
+  "sha256": "aa5a1c13612a6829a1b2c51296b1a1f5affd83af0275c9a3e450e48f7591d6ad",
+  "format": "A22-2",
+  "decoded_verified_tensors": 2,
+  "source_and_both_calibrations_deleted": true
+}

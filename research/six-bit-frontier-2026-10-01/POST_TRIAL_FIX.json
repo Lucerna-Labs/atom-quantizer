@@ -1,0 +1,12 @@
+{
+  "scope": "Reject explicit empty/invalid geometry instead of treating it as an omitted default; valid recipes and numerical behavior unchanged.",
+  "changes": [
+    {
+      "path": "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/experiments/full22/precision.py",
+      "before": "722fc0d7725c9885583da9b3628acbcb88ebbf0231f321ce6653e8d5ed57127f",
+      "after": "a197b55a3f8a39efb7bedc8e2fe254eb57063535d4ea248f07dc446753a99c8f"
+    }
+  ],
+  "tests": 61,
+  "trial_outputs_changed": false
+}

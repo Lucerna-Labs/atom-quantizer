@@ -1,0 +1,19 @@
+{
+  "git_commit": "74a7c897f049c17e7080423aa2111776eff6ebbf",
+  "checked_after_trial": true,
+  "tracked_converter_files_clean": true,
+  "sha256": {
+    "third_party/llama.cpp/convert_hf_to_gguf.py": "e38975e1c68d98ac1664dfd530616eb35c72294382a4dd873d4746b23f27779f",
+    "third_party/llama.cpp/conversion/mamba.py": "8e11ee0c94754f0471762a6770d953c988bbf3744b6734e669a325460492059d",
+    "third_party/llama.cpp/conversion/base.py": "07c575bc1774f008d49a61bcda22aa0435cd41162e0084de8a0a1e6faeda6163"
+  },
+  "command": [
+    ".venv/bin/python",
+    "third_party/llama.cpp/convert_hf_to_gguf.py",
+    "models/mamba-130m-hf",
+    "--outtype",
+    "f32",
+    "--outfile",
+    "artifacts/mamba-temporal-2026-10-01/preflight/source.gguf"
+  ]
+}

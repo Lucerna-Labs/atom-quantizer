@@ -1,0 +1,19 @@
+{
+  "status": "PASSED",
+  "archive_identical_to_D05": true,
+  "tensor_bytes_compared": 272,
+  "parent_native_decisions": 544,
+  "native_checked_before_publication": true,
+  "source_backend_executable_identities_unchanged": true,
+  "normal_release_verified": true,
+  "changed_existing_files": [
+    "src/a22.rs",
+    "src/main.rs",
+    "src/a22/record.rs",
+    "target/release/atom-quantizer"
+  ],
+  "new_rust_file": "src/build_functional.rs",
+  "fitting_backend": "python",
+  "native_consumption": true,
+  "new_inference_runs": 0
+}

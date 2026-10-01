@@ -1,0 +1,43 @@
+{
+  "status": "PASSED",
+  "cases": [
+    {
+      "name": "default",
+      "oq_identical": true,
+      "gguf_identical": true,
+      "scores_identical": true
+    },
+    {
+      "name": "calibrated",
+      "oq_identical": true,
+      "gguf_identical": true,
+      "scores_identical": true
+    },
+    {
+      "name": "maxabs",
+      "oq_identical": true,
+      "gguf_identical": true,
+      "scores_identical": true
+    },
+    {
+      "name": "asym",
+      "oq_identical": true,
+      "gguf_identical": true,
+      "scores_identical": true
+    },
+    {
+      "name": "exact",
+      "oq_identical": true,
+      "gguf_identical": true,
+      "scores_identical": true
+    },
+    {
+      "name": "budget",
+      "oq_identical": true,
+      "gguf_identical": true,
+      "scores_identical": true
+    }
+  ],
+  "new_binary_sha256": "628c4d10a9513379c6a37b14d617469bffd5333de81da8fffe642cf4324417bd",
+  "incumbent_unchanged": true
+}

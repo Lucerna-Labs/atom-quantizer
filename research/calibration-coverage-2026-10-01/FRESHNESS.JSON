@@ -1,0 +1,10 @@
+{
+  "cut_character": 219523,
+  "excluded_common_prefix_tokens": 50449,
+  "fresh_sha256": "42ad320614e02063e1a484efb02fcf2c58f81552aef71ef0468cbd4cb7f68bbd",
+  "fresh_tokens": 101799,
+  "full_ids_sha256": "68f62d1673350a1db724fd7670af886f0c0ea2b46986a1e38b2313bd367c5e62",
+  "prior_input_upper_bound": 32768,
+  "source_sha256": "bb1565131bd1745b974fa5b2d8517945ae9c9c9d003fdaccfff9ac54f5db3250",
+  "tokenizer_sha256": "9a6c224000dff60f7c789c33e0afd2bf3cfd60f6d8b762c0b03ec52ad36e313a"
+}

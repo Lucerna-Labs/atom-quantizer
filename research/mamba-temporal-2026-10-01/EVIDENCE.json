@@ -1,0 +1,32 @@
+{
+  "status": "SAVED",
+  "sha256": {
+    "artifacts/mamba-temporal-2026-10-01/captures/implementation.tar.gz": "046aee92faf1f8cfab12316191bb87ee3ba0d9522d7feb0bc1824ee155d64cd1",
+    "artifacts/mamba-temporal-2026-10-01/implementation-build.tar.gz": "398f652c9ae243e5edb828bfdcaa7cdc8040fe04017c58a0b90e8edfe2929df5",
+    "artifacts/mamba-temporal-2026-10-01/implementation-evaluation.tar.gz": "d4b3902c2756f353ee32a9471dae032384b1bc7cd042f524f67244a0a81df032",
+    "artifacts/mamba-temporal-2026-10-01/implementation-final.tar.gz": "138125862c764c49ed1efa1cddb603f746637f0b0d4addc1cd1dd947b6e27594",
+    "artifacts/mamba-temporal-2026-10-01/evidence.tar.gz": "0810262cb2de95baae5d3ab8ab772ae3ff02f7cd698329efe120626dba7cb739",
+    "artifacts/mamba-temporal-2026-10-01/audit.json": "f4e9cb35f982743be40829fd7700fc330c245fdeaddfde04362ee72826a6b6c7",
+    "artifacts/mamba-temporal-2026-10-01/benefit-gates.json": "71bd0e405e3ae64f0dbcbde8d4f28b93886a55e155c7f42aa1f31a6db604d1d4",
+    "artifacts/mamba-temporal-2026-10-01/POST_TRIAL_FIX.json": "268c91a6a073858b4d3b4173f8a4af32b44837f4f2498a86cd3cb4384fa2d683",
+    "artifacts/mamba-temporal-2026-10-01/output-guard-before.json": "7ab0df49d569157912e9b131965c5930a95ae5176aac57057ff948a1d1f1d86f",
+    "artifacts/mamba-temporal-2026-10-01/output-guard-after.json": "1ab96a592498b12219d92337b9b6a33472eea68f5c5c74ba44be6ebd74275585",
+    "artifacts/mamba-temporal-2026-10-01/sequences.json": "dfb5b53b06a0fc8bca959818d2b8c8a2ada6bc914d3f211c373f58e17fb9f9a3",
+    "research/mamba-temporal-2026-10-01/OUTCOME.md": "8868f2312d5764d7c0eeb791ea11839ba29e474d5ca9db83a851826cbe29b64f",
+    "research/mamba-temporal-2026-10-01/PROTOCOL.md": "16adfc077e51051114a789b45c8c76fc8cc705ebe1603ce63e4243ac01f60d0e",
+    "research/mamba-temporal-2026-10-01/OUTPUT_GUARD.md": "19647c2b30b1cabf1a00ce54a0f907be6943f0c380a94c9b694a463f2976adac",
+    "research/mamba-temporal-2026-10-01/SOURCE_CONSISTENCY.json": "429ad515b5945753e02c7b3f2118d53cad6c17b6cd662555120deab8b18d3375",
+    "research/mamba-temporal-2026-10-01/CONVERTER.json": "14a60dd026127d41245cb21d122dadd213bed51b6044d99a25e83fbcb41d1891",
+    "research/mamba-temporal-2026-10-01/GATES.json": "71bd0e405e3ae64f0dbcbde8d4f28b93886a55e155c7f42aa1f31a6db604d1d4",
+    "research/mamba-temporal-2026-10-01/POST_TRIAL_FIX.json": "268c91a6a073858b4d3b4173f8a4af32b44837f4f2498a86cd3cb4384fa2d683",
+    "research/mamba-temporal-2026-10-01/SOURCE.json": "bbc7f5e49d9de8375a40c3f918a5d802b6dc59ddbf792cedd0f3a134e76cca13",
+    "research/mamba-temporal-2026-10-01/CAPTURES.json": "144826ccfd5bb7067379bebf18d473732dadf9903c19c1937e3e0a81e2b14786",
+    "research/mamba-temporal-2026-10-01/AUDIT.json": "f4e9cb35f982743be40829fd7700fc330c245fdeaddfde04362ee72826a6b6c7",
+    "research/mamba-temporal-2026-10-01/SUMMARY.JSON": "f3adc2d19d9fb7cef54cf20b1616829702b9110fd3e5b1e0a9c932c166dbf14f",
+    "research/mamba-temporal-2026-10-01/MANIFEST.JSON": "db1c4a29900e3d124bfe74175a91bc4986e2a67101556bddfdec0c7da4062f50"
+  },
+  "main_executable_sha256": "d45eaa37c05ae4d08001e7b08ab3d90a0cfe9c970e03c0f06351558d6c9a400b",
+  "audited_before_output_guard_fix": true,
+  "fresh_final_used": false,
+  "all_experiment_processes_terminal": true
+}

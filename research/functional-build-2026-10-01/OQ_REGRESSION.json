@@ -1,0 +1,41 @@
+{
+  "status": "PASSED",
+  "cases": [
+    {
+      "name": "default",
+      "oq_identical": true,
+      "gguf_identical": true,
+      "scores_identical": true
+    },
+    {
+      "name": "calibrated",
+      "oq_identical": true,
+      "gguf_identical": true,
+      "scores_identical": true
+    },
+    {
+      "name": "maxabs",
+      "oq_identical": true,
+      "gguf_identical": true,
+      "scores_identical": true
+    },
+    {
+      "name": "asym",
+      "oq_identical": true,
+      "gguf_identical": true,
+      "scores_identical": true
+    },
+    {
+      "name": "exact",
+      "oq_identical": true,
+      "gguf_identical": true,
+      "scores_identical": true
+    },
+    {
+      "name": "budget",
+      "oq_identical": true,
+      "gguf_identical": true,
+      "scores_identical": true
+    }
+  ]
+}

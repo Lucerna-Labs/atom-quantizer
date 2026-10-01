@@ -1,0 +1,10 @@
+{
+  "status": "PASSED",
+  "only_one_execve": true,
+  "no_python_source_calibration_or_dense_gguf_access": true,
+  "binary_sha256": "e4c7b6f39ccc3d7509fd457d7b78dae247afe8b95bfebbace72cd3bef416b1cb",
+  "archive_sha256": "27d36037a432c5cefeeb0c1f62505377f469365027e00372d30b1840c4608a83",
+  "input_sha256": "d6babc2104a969d63b7db3d8be5675b53e8ece4f8fd3bcc8be0eda121c1189b2",
+  "output_sha256": "68e8efdda72b7b008e2e1bba75c23121d05361f762d7f8cea4bc2aec10314ed5",
+  "trace_sha256": "5ddde6eb96054c64d0e567e53321f914d60166165f3177731a55d5cac0c12e65"
+}

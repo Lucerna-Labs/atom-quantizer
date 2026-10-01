@@ -1,0 +1,12 @@
+{
+  "expected_and_checked_records": 1472,
+  "unique_conditions": 1472,
+  "artifact_hashes_passed": 1472,
+  "actual_raw_and_compressed_sizes_passed": 1472,
+  "finite_saved_decodes": 1472,
+  "stored_native_matrices_checked": 1440,
+  "max_native_orthogonality_error": 3.885780586188048e-15,
+  "max_unquantized_nmse": 1.641032794134312e-14,
+  "manifest_sha256": "be026bbf5fe80f2072d5cc54081a467122d58e8008876f860f034b18e4f8bea7",
+  "summary_sha256": "d9c3a0ca907020ad5cc0422b94bf9a319254adfaba1bbf912dd03986fcab9802"
+}

@@ -1,0 +1,70 @@
+{
+  "G2": "FAILED",
+  "G3": "FAILED",
+  "artifacts": {
+    "decoded_tensors": 1210,
+    "exact_selector_records": 48,
+    "identical_nonselector_records": 194
+  },
+  "auditor_sha256": "9d2c4fbca9be0029f28de78b96850409c324581ebf9456aede93aed13d5efab4",
+  "captures": [
+    {
+      "name": "endpoints-fit",
+      "operators": 98,
+      "samples": 256,
+      "verified_source_tensors": 242
+    },
+    {
+      "name": "stratified-fit",
+      "operators": 98,
+      "samples": 256,
+      "verified_source_tensors": 242
+    },
+    {
+      "name": "endpoints-selection",
+      "operators": 98,
+      "samples": 64,
+      "verified_source_tensors": 242
+    },
+    {
+      "name": "stratified-selection",
+      "operators": 98,
+      "samples": 64,
+      "verified_source_tensors": 242
+    }
+  ],
+  "native_inference_runs": 5,
+  "status": "PASSED",
+  "trajectories": [
+    {
+      "independent_replayed_steps": 64,
+      "name": "q4-scalar",
+      "observed_steps": 4096,
+      "raw_checkpoints": 12
+    },
+    {
+      "independent_replayed_steps": 64,
+      "name": "q6-functional",
+      "observed_steps": 4096,
+      "raw_checkpoints": 12
+    },
+    {
+      "independent_replayed_steps": 64,
+      "name": "q6-functional-selectors-exact",
+      "observed_steps": 4096,
+      "raw_checkpoints": 12
+    },
+    {
+      "independent_replayed_steps": 64,
+      "name": "q6-scalar",
+      "observed_steps": 4096,
+      "raw_checkpoints": 12
+    },
+    {
+      "independent_replayed_steps": 64,
+      "name": "source-reset",
+      "observed_steps": 4096,
+      "raw_checkpoints": 12
+    }
+  ]
+}

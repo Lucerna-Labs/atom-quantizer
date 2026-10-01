@@ -1,0 +1,14 @@
+{
+  "before-source.tar.gz": {
+    "bytes": 629979,
+    "sha256": "82e49bc09edc808ae26385fc457ab9759d9956a6768035ebd4725d2f2d301ff6"
+  },
+  "implementation.tar.gz": {
+    "bytes": 748099,
+    "sha256": "703de4b60378c1363613f472e487b6fe8874866cef9a124920067d610e34feba"
+  },
+  "evidence.tar.gz": {
+    "bytes": 49994,
+    "sha256": "f22f1fd997adc14223c0f809b5674528c0084735bde8aad31011949f9729e7f2"
+  }
+}

@@ -1,0 +1,4930 @@
+[
+  {
+    "archive_bytes": 78361,
+    "artifact_sha256": "5ca347807f47a349795eebe1261bb9be0f46bd673aa2c327dfdf0959c3a22624",
+    "bits": 4,
+    "config": {
+      "bits": 4,
+      "rank": 1,
+      "rank_geometry": "diagonal"
+    },
+    "effective_rank": 1,
+    "fit": {
+      "cosine": 0.9940488541008063,
+      "max_error": 0.17466652393341064,
+      "output_nmse": 0.0038644311416934627,
+      "weight_nmse": 0.01186885185534772
+    },
+    "geometry": "diagonal",
+    "rank": 1,
+    "raw_bits_per_weight": 4.625054253472222,
+    "raw_bytes": 85249,
+    "seconds": 0.08052393999969354,
+    "selection": {
+      "cosine": 0.9940488541008063,
+      "max_error": 0.17466652393341064,
+      "output_nmse": 0.0040013553375180195,
+      "weight_nmse": 0.01186885185534772
+    },
+    "status": "MEASURED",
+    "tensor": "blk.0.attn_output.weight",
+    "receipt": "7c0412340c789459e2d992a72ef26a25d253404efa1e82fd3e6a5660d4633c16.json"
+  },
+  {
+    "archive_bytes": 47035,
+    "artifact_sha256": "ffd3b980ec459e6e47835ed589300cf93447bcfe0c89d3d3774fcb200e65da81",
+    "bits": 3,
+    "config": {
+      "bits": 3
+    },
+    "effective_rank": 0,
+    "fit": {
+      "cosine": 0.973692510234549,
+      "max_error": 1.09228515625,
+      "output_nmse": 0.002399696150959776,
+      "weight_nmse": 0.052087016427142425
+    },
+    "geometry": "scalar",
+    "rank": 0,
+    "raw_bits_per_weight": 3.531177662037037,
+    "raw_bytes": 48815,
+    "seconds": 0.04680635000113398,
+    "selection": {
+      "cosine": 0.973692510234549,
+      "max_error": 1.09228515625,
+      "output_nmse": 0.0024390249578649056,
+      "weight_nmse": 0.052087016427142425
+    },
+    "status": "MEASURED",
+    "tensor": "blk.0.attn_k.weight",
+    "receipt": "aa2fa2013cd5ba277e8eaa5c40da601bc4b89742043d4704a6969f78d66bf116.json"
+  },
+  {
+    "archive_bytes": 61526,
+    "artifact_sha256": "c0bb6c8b79505dd2a29833bce33f6effd420af6111221e9323654e6dfd47bfb2",
+    "bits": 3,
+    "config": {
+      "bits": 3
+    },
+    "effective_rank": 0,
+    "fit": {
+      "cosine": 0.9702128107252359,
+      "max_error": 0.3365478515625,
+      "output_nmse": 0.011522365715250622,
+      "weight_nmse": 0.06016664145732891
+    },
+    "geometry": "scalar",
+    "rank": 0,
+    "raw_bits_per_weight": 3.5233832465277777,
+    "raw_bytes": 64943,
+    "seconds": 0.0706468330026837,
+    "selection": {
+      "cosine": 0.9702128107252359,
+      "max_error": 0.3365478515625,
+      "output_nmse": 0.011986026585137007,
+      "weight_nmse": 0.06016664145732891
+    },
+    "status": "MEASURED",
+    "tensor": "token_embd.weight",
+    "receipt": "ab5c065d34b56a27fa4b37bed4739f7bc0195958240fc6d3ca3276e886f46853.json"
+  },
+  {
+    "archive_bytes": 220615,
+    "artifact_sha256": "f8b511867dbf8d0af8dcba57a551e13fe9416e7cd8804533638b1b9288cc9faa",
+    "bits": 4,
+    "config": {
+      "bits": 4,
+      "rank": 2,
+      "rank_geometry": "diagonal"
+    },
+    "effective_rank": 2,
+    "fit": {
+      "cosine": 0.9787642655770238,
+      "max_error": 0.7456693053245544,
+      "output_nmse": 0.00016449002097891586,
+      "weight_nmse": 0.04706563957639321
+    },
+    "geometry": "diagonal",
+    "rank": 2,
+    "raw_bits_per_weight": 4.659098307291667,
+    "raw_bytes": 229004,
+    "seconds": 0.21007705100055318,
+    "selection": {
+      "cosine": 0.9787642655770238,
+      "max_error": 0.7456693053245544,
+      "output_nmse": 0.000164048526133539,
+      "weight_nmse": 0.04706563957639321
+    },
+    "status": "MEASURED",
+    "tensor": "blk.29.ffn_down.weight",
+    "receipt": "94c9d08af8528191f2d97f29e405f622a91d606849c0c3e466cc46c3fc15f66a.json"
+  },
+  {
+    "archive_bytes": 80012,
+    "artifact_sha256": "51f267e53a80b6eafdafeb84a070e62d1e4aee0d56b75b44443e1eda50ba6cbf",
+    "bits": 4,
+    "config": {
+      "bits": 4,
+      "rank": 2,
+      "rank_geometry": "activation-shuffled"
+    },
+    "effective_rank": 2,
+    "fit": {
+      "cosine": 0.9941174381086608,
+      "max_error": 0.15676891803741455,
+      "output_nmse": 0.004630906606141254,
+      "weight_nmse": 0.011732734024978464
+    },
+    "geometry": "activation-shuffled",
+    "rank": 2,
+    "raw_bits_per_weight": 4.717447916666667,
+    "raw_bytes": 86952,
+    "seconds": 0.08698116600135108,
+    "selection": {
+      "cosine": 0.9941174381086608,
+      "max_error": 0.15676891803741455,
+      "output_nmse": 0.0047753199891014605,
+      "weight_nmse": 0.011732734024978464
+    },
+    "status": "MEASURED",
+    "tensor": "blk.0.attn_output.weight",
+    "receipt": "2b76bbcee78af10acdde542a039d073a3a98feba174b09a1c9b88ef150e51b6e.json"
+  },
+  {
+    "archive_bytes": 48713,
+    "artifact_sha256": "99bd961f2c410dce0e5bccacc29c640005a953a343a42d2021eb5558a555b0b0",
+    "bits": 3,
+    "config": {
+      "bits": 3,
+      "rank": 1,
+      "rank_geometry": "activation-shuffled"
+    },
+    "effective_rank": 1,
+    "fit": {
+      "cosine": 0.9740804585351733,
+      "max_error": 1.0801950097084045,
+      "output_nmse": 0.0023903032138895327,
+      "weight_nmse": 0.051322088014420716
+    },
+    "geometry": "activation-shuffled",
+    "rank": 1,
+    "raw_bits_per_weight": 3.6589988425925926,
+    "raw_bytes": 50582,
+    "seconds": 0.05425600500166183,
+    "selection": {
+      "cosine": 0.9740804585351733,
+      "max_error": 1.0801950097084045,
+      "output_nmse": 0.0024292623417858377,
+      "weight_nmse": 0.051322088014420716
+    },
+    "status": "MEASURED",
+    "tensor": "blk.0.attn_k.weight",
+    "receipt": "f535ee2ec67bd2faf42ffef10a849e5bebe57fa691c9b519cae7bd63786d47cd.json"
+  },
+  {
+    "archive_bytes": 57919,
+    "artifact_sha256": "800723ce85d91d50ab934ed12360e7b1c8adaf052a4a9d6fb4656e4cb824edd5",
+    "bits": 4,
+    "config": {
+      "bits": 4,
+      "rank": 1,
+      "rank_geometry": "diagonal"
+    },
+    "effective_rank": 1,
+    "fit": {
+      "cosine": 0.9936850020987349,
+      "max_error": 0.940316915512085,
+      "output_nmse": 0.0004530616129089112,
+      "weight_nmse": 0.01260602065793953
+    },
+    "geometry": "diagonal",
+    "rank": 1,
+    "raw_bits_per_weight": 4.65747974537037,
+    "raw_bytes": 64385,
+    "seconds": 0.060159463006129954,
+    "selection": {
+      "cosine": 0.9936850020987349,
+      "max_error": 0.940316915512085,
+      "output_nmse": 0.0004606926150053909,
+      "weight_nmse": 0.01260602065793953
+    },
+    "status": "MEASURED",
+    "tensor": "blk.0.attn_k.weight",
+    "receipt": "9f09b3a202c01fad0ab881c9d171fea66ffc4362a9ac1b920af031ec1883bb1c.json"
+  },
+  {
+    "archive_bytes": 80552,
+    "artifact_sha256": "63b0ffc84e66588515eb3fe0a4fe65c9865268f31a39fc0b50ab7c7c3d373a3f",
+    "bits": 4,
+    "config": {
+      "bits": 4,
+      "rank": 1,
+      "rank_geometry": "activation-shuffled"
+    },
+    "effective_rank": 1,
+    "fit": {
+      "cosine": 0.9948227161147505,
+      "max_error": 0.5241009593009949,
+      "output_nmse": 0.003283499379094329,
+      "weight_nmse": 0.01042651433776333
+    },
+    "geometry": "activation-shuffled",
+    "rank": 1,
+    "raw_bits_per_weight": 4.627115885416667,
+    "raw_bytes": 85287,
+    "seconds": 0.08663207599602174,
+    "selection": {
+      "cosine": 0.9948227161147505,
+      "max_error": 0.5241009593009949,
+      "output_nmse": 0.003316751449805072,
+      "weight_nmse": 0.01042651433776333
+    },
+    "status": "MEASURED",
+    "tensor": "blk.9.ffn_gate.weight",
+    "receipt": "55714aecd0f223b0778238c552da00bb72a136117635ff7967676a2f4423cfc4.json"
+  },
+  {
+    "archive_bytes": 78676,
+    "artifact_sha256": "a06b56cacfa5254d70f699f93ab6adeb216b2ad21e068e012a231f26b4e87a1b",
+    "bits": 4,
+    "config": {
+      "bits": 4
+    },
+    "effective_rank": 0,
+    "fit": {
+      "cosine": 0.9947905396183354,
+      "max_error": 0.525146484375,
+      "output_nmse": 0.0032912196026127693,
+      "weight_nmse": 0.010491387443331264
+    },
+    "geometry": "scalar",
+    "rank": 0,
+    "raw_bits_per_weight": 4.524305555555555,
+    "raw_bytes": 83392,
+    "seconds": 0.07691586899454705,
+    "selection": {
+      "cosine": 0.9947905396183354,
+      "max_error": 0.525146484375,
+      "output_nmse": 0.003323260208249412,
+      "weight_nmse": 0.010491387443331264
+    },
+    "status": "MEASURED",
+    "tensor": "blk.9.ffn_gate.weight",
+    "receipt": "ebaa93f8758c572b684f16ecdad54bd00d007b7fcb65b39727f5a87a198489ad.json"
+  },
+  {
+    "archive_bytes": 170701,
+    "artifact_sha256": "1aef8a311a5d7a2b04b5696ad5afd799a3c2568dccd0e6b417ca6b8de6382166",
+    "bits": 3,
+    "config": {
+      "bits": 3,
+      "rank": 1,
+      "rank_geometry": "diagonal"
+    },
+    "effective_rank": 1,
+    "fit": {
+      "cosine": 0.9779457244083385,
+      "max_error": 0.6035808324813843,
+      "output_nmse": 0.01992814534881418,
+      "weight_nmse": 0.044314609815818126
+    },
+    "geometry": "diagonal",
+    "rank": 1,
+    "raw_bits_per_weight": 3.5858154296875,
+    "raw_bytes": 176250,
+    "seconds": 0.1738069569983054,
+    "selection": {
+      "cosine": 0.9779457244083385,
+      "max_error": 0.6035808324813843,
+      "output_nmse": 0.019752512676721953,
+      "weight_nmse": 0.044314609815818126
+    },
+    "status": "MEASURED",
+    "tensor": "blk.17.ffn_down.weight",
+    "receipt": "d776f1d2ee6abc84aa640bb3f182c1a9c95e3c3638626e1ca068ac78474f82a5.json"
+  },
+  {
+    "archive_bytes": 82147,
+    "artifact_sha256": "0d0acdb99bafaa9bc16a8b36e805388371ecc7952835adca89ff30636528190c",
+    "bits": 4,
+    "config": {
+      "bits": 4,
+      "rank": 2,
+      "rank_geometry": "activation-shuffled"
+    },
+    "effective_rank": 2,
+    "fit": {
+      "cosine": 0.9948532288238242,
+      "max_error": 0.5235287547111511,
+      "output_nmse": 0.003206426349009722,
+      "weight_nmse": 0.0103647814986901
+    },
+    "geometry": "activation-shuffled",
+    "rank": 2,
+    "raw_bits_per_weight": 4.717447916666667,
+    "raw_bytes": 86952,
+    "seconds": 0.08844410500023514,
+    "selection": {
+      "cosine": 0.9948532288238242,
+      "max_error": 0.5235287547111511,
+      "output_nmse": 0.003238928029963243,
+      "weight_nmse": 0.0103647814986901
+    },
+    "status": "MEASURED",
+    "tensor": "blk.9.ffn_gate.weight",
+    "receipt": "1e33f1d3329cdf6455122f21b3581a2832446a88a763babfeb39b901f5ac4c5e.json"
+  },
+  {
+    "archive_bytes": 217044,
+    "artifact_sha256": "ac1572f83addce88ccc59bf4458b65b4018f87a7ee6b9ac68e1fd7d1103ad8f4",
+    "bits": 4,
+    "config": {
+      "bits": 4,
+      "rank": 1,
+      "rank_geometry": "activation"
+    },
+    "effective_rank": 1,
+    "fit": {
+      "cosine": 0.9786649196456975,
+      "max_error": 0.7416204214096069,
+      "output_nmse": 8.861962249630008e-06,
+      "weight_nmse": 0.04728280082670483
+    },
+    "geometry": "activation",
+    "rank": 1,
+    "raw_bits_per_weight": 4.586751302083333,
+    "raw_bytes": 225448,
+    "seconds": 0.21847890700155403,
+    "selection": {
+      "cosine": 0.9786649196456975,
+      "max_error": 0.7416204214096069,
+      "output_nmse": 8.96273857093646e-06,
+      "weight_nmse": 0.04728280082670483
+    },
+    "status": "MEASURED",
+    "tensor": "blk.29.ffn_down.weight",
+    "receipt": "6c9ed85d308b68dd89fa67b30c7c3bc88f633f0981759ee9ba555cd565d36f5a.json"
+  },
+  {
+    "archive_bytes": 64180,
+    "artifact_sha256": "112a45557166be942bcc83b09fc3c09af653617909ed75d63d2bf16c03312862",
+    "bits": 3,
+    "config": {
+      "bits": 3,
+      "rank": 1,
+      "rank_geometry": "diagonal"
+    },
+    "effective_rank": 1,
+    "fit": {
+      "cosine": 0.9743575117946747,
+      "max_error": 0.909052848815918,
+      "output_nmse": 0.0018808971650246772,
+      "weight_nmse": 0.05086200773777073
+    },
+    "geometry": "diagonal",
+    "rank": 1,
+    "raw_bits_per_weight": 3.6241319444444446,
+    "raw_bytes": 66800,
+    "seconds": 0.06409395600348944,
+    "selection": {
+      "cosine": 0.9743575117946747,
+      "max_error": 0.909052848815918,
+      "output_nmse": 0.001867754402626784,
+      "weight_nmse": 0.05086200773777073
+    },
+    "status": "MEASURED",
+    "tensor": "blk.0.attn_q.weight",
+    "receipt": "65276d0e161f0d096f8057038adf865bcd97a912d48b253dbce8a02c2c7b5cc0.json"
+  },
+  {
+    "archive_bytes": 63364,
+    "artifact_sha256": "b64773fd76ffb86a5cb90c5132dac9e4675f74132fd9a8be525c1692894fce86",
+    "bits": 3,
+    "config": {
+      "bits": 3,
+      "rank": 1,
+      "rank_geometry": "activation"
+    },
+    "effective_rank": 1,
+    "fit": {
+      "cosine": 0.9706269846307103,
+      "max_error": 0.33654527366161346,
+      "output_nmse": 0.003664362735697295,
+      "weight_nmse": 0.059413698709929054
+    },
+    "geometry": "activation",
+    "rank": 1,
+    "raw_bits_per_weight": 3.625705295138889,
+    "raw_bytes": 66829,
+    "seconds": 0.06917922299908241,
+    "selection": {
+      "cosine": 0.9706269846307103,
+      "max_error": 0.33654527366161346,
+      "output_nmse": 0.0035142545733359847,
+      "weight_nmse": 0.059413698709929054
+    },
+    "status": "MEASURED",
+    "tensor": "token_embd.weight",
+    "receipt": "e40d90b90c6b0112a154b2ad6ac7ac07de22bd82305efc04f0b541285fedbe1c.json"
+  },
+  {
+    "archive_bytes": 64831,
+    "artifact_sha256": "62db474efff4fc627eba12ab1842ed1eeacf98f6ac7fb6b2ca6e33297d38a253",
+    "bits": 3,
+    "config": {
+      "bits": 3,
+      "rank": 1,
+      "rank_geometry": "diagonal"
+    },
+    "effective_rank": 1,
+    "fit": {
+      "cosine": 0.9802171455210925,
+      "max_error": 0.9999765753746033,
+      "output_nmse": 0.010578146883600698,
+      "weight_nmse": 0.03937315649395756
+    },
+    "geometry": "diagonal",
+    "rank": 1,
+    "raw_bits_per_weight": 3.6241319444444446,
+    "raw_bytes": 66800,
+    "seconds": 0.06573978799860924,
+    "selection": {
+      "cosine": 0.9802171455210925,
+      "max_error": 0.9999765753746033,
+      "output_nmse": 0.010477817788640759,
+      "weight_nmse": 0.03937315649395756
+    },
+    "status": "MEASURED",
+    "tensor": "blk.9.ffn_gate.weight",
+    "receipt": "7c1b3dbcc3d89ea7a0fa59a94a4a486b70818b4dfe7c768c3b56e2b93fd9cf5e.json"
+  },
+  {
+    "archive_bytes": 65941,
+    "artifact_sha256": "ab0b1995f5c936fdc940dc3db4397959eb03af6201a11dd5971bce4c28bc16ab",
+    "bits": 3,
+    "config": {
+      "bits": 3,
+      "rank": 2,
+      "rank_geometry": "activation-shuffled"
+    },
+    "effective_rank": 2,
+    "fit": {
+      "cosine": 0.9757243431357511,
+      "max_error": 0.24375224113464355,
+      "output_nmse": 0.01758551563344472,
+      "weight_nmse": 0.04816145110583252
+    },
+    "geometry": "activation-shuffled",
+    "rank": 2,
+    "raw_bits_per_weight": 3.716525607638889,
+    "raw_bytes": 68503,
+    "seconds": 0.07159152399981394,
+    "selection": {
+      "cosine": 0.9757243431357511,
+      "max_error": 0.24375224113464355,
+      "output_nmse": 0.018206099540863722,
+      "weight_nmse": 0.04816145110583252
+    },
+    "status": "MEASURED",
+    "tensor": "blk.0.attn_output.weight",
+    "receipt": "33a337b19b73e8ffc60e006340d2873f2f938d3ff764b85b1bb414df4d8ad5f4.json"
+  },
+  {
+    "archive_bytes": 69018,
+    "artifact_sha256": "8cbacfb5d9058dcbee081d70e7c42c4a5c929cc123fe67c052cfb511bd7323ca",
+    "bits": 3,
+    "config": {
+      "bits": 3,
+      "rank": 4,
+      "rank_geometry": "activation"
+    },
+    "effective_rank": 4,
+    "fit": {
+      "cosine": 0.9742621863915032,
+      "max_error": 0.7748955488204956,
+      "output_nmse": 0.0004211942012359241,
+      "weight_nmse": 0.05113724384943514
+    },
+    "geometry": "activation",
+    "rank": 4,
+    "raw_bits_per_weight": 3.8965928819444446,
+    "raw_bytes": 71822,
+    "seconds": 0.06813418199453736,
+    "selection": {
+      "cosine": 0.9742621863915032,
+      "max_error": 0.7748955488204956,
+      "output_nmse": 0.0004709276258423481,
+      "weight_nmse": 0.05113724384943514
+    },
+    "status": "MEASURED",
+    "tensor": "blk.0.attn_q.weight",
+    "receipt": "9c6613fb8a40d74587c8e873020bac50bbb3b2fa633b72f8454e7adfe0c90cf6.json"
+  },
+  {
+    "archive_bytes": 66545,
+    "artifact_sha256": "38d28e10e1f4ba44d370a288b08a10b80865ac5c0e3ecd0f6ffe5bf5198dbac5",
+    "bits": 3,
+    "config": {
+      "bits": 3,
+      "rank": 2,
+      "rank_geometry": "activation-shuffled"
+    },
+    "effective_rank": 2,
+    "fit": {
+      "cosine": 0.9810143337252404,
+      "max_error": 1.0885381698608398,
+      "output_nmse": 0.023183720217679334,
+      "weight_nmse": 0.037815737548420644
+    },
+    "geometry": "activation-shuffled",
+    "rank": 2,
+    "raw_bits_per_weight": 3.716525607638889,
+    "raw_bytes": 68503,
+    "seconds": 0.07381647500005784,
+    "selection": {
+      "cosine": 0.9810143337252404,
+      "max_error": 1.0885381698608398,
+      "output_nmse": 0.02298694933707818,
+      "weight_nmse": 0.037815737548420644
+    },
+    "status": "MEASURED",
+    "tensor": "blk.3.ffn_up.weight",
+    "receipt": "0a716455507b099e5095842db70f40da07dbb4775258d1c926418e71f159e366.json"
+  },
+  {
+    "archive_bytes": 81588,
+    "artifact_sha256": "7aa01da1391214940e728d2a6275b749803d253b0b239ad040783633d38941cd",
+    "bits": 4,
+    "config": {
+      "bits": 4,
+      "rank": 4,
+      "rank_geometry": "activation-shuffled"
+    },
+    "effective_rank": 4,
+    "fit": {
+      "cosine": 0.9938935077791744,
+      "max_error": 0.5488623380661011,
+      "output_nmse": 0.0004474278885155506,
+      "weight_nmse": 0.012182823655887494
+    },
+    "geometry": "activation-shuffled",
+    "rank": 4,
+    "raw_bits_per_weight": 4.898003472222222,
+    "raw_bytes": 90280,
+    "seconds": 0.08503209699847503,
+    "selection": {
+      "cosine": 0.9938935077791744,
+      "max_error": 0.5488623380661011,
+      "output_nmse": 0.00044314952129163426,
+      "weight_nmse": 0.012182823655887494
+    },
+    "status": "MEASURED",
+    "tensor": "blk.0.attn_q.weight",
+    "receipt": "74045945a3dac051d9ffd97d06a1fe0606cb52186ba749e447adbbcedabf8b47.json"
+  },
+  {
+    "archive_bytes": 69599,
+    "artifact_sha256": "40499cf19a204ea3de324958a308bc90e5ae3b7b996d264ac613a0084b544e51",
+    "bits": 3,
+    "config": {
+      "bits": 3,
+      "rank": 4,
+      "rank_geometry": "activation-shuffled"
+    },
+    "effective_rank": 4,
+    "fit": {
+      "cosine": 0.9804963470050398,
+      "max_error": 1.0545672178268433,
+      "output_nmse": 0.010995692703992432,
+      "weight_nmse": 0.038820920719252854
+    },
+    "geometry": "activation-shuffled",
+    "rank": 4,
+    "raw_bits_per_weight": 3.8970811631944446,
+    "raw_bytes": 71831,
+    "seconds": 0.07246849600051064,
+    "selection": {
+      "cosine": 0.9804963470050398,
+      "max_error": 1.0545672178268433,
+      "output_nmse": 0.010896885277827272,
+      "weight_nmse": 0.038820920719252854
+    },
+    "status": "MEASURED",
+    "tensor": "blk.9.ffn_gate.weight",
+    "receipt": "02e8d8fc5fae5a3648ba532f4e37b477e1112706215fb11ed9aac10e7974e59d.json"
+  },
+  {
+    "archive_bytes": 78734,
+    "artifact_sha256": "85e45866ff4ab70bfecd8d0e03eb5a88dd68638c60b3e05f6b032c0e7fb9de2f",
+    "bits": 4,
+    "config": {
+      "bits": 4,
+      "rank": 2,
+      "rank_geometry": "activation-shuffled"
+    },
+    "effective_rank": 2,
+    "fit": {
+      "cosine": 0.9931246438379684,
+      "max_error": 0.16739308834075928,
+      "output_nmse": 0.0027080846748385842,
+      "weight_nmse": 0.013729314838188499
+    },
+    "geometry": "activation-shuffled",
+    "rank": 2,
+    "raw_bits_per_weight": 4.717447916666667,
+    "raw_bytes": 86952,
+    "seconds": 0.08645894700021017,
+    "selection": {
+      "cosine": 0.9931246438379684,
+      "max_error": 0.16739308834075928,
+      "output_nmse": 0.0027636615510150363,
+      "weight_nmse": 0.013729314838188499
+    },
+    "status": "MEASURED",
+    "tensor": "token_embd.weight",
+    "receipt": "0dbea45c87c2e13aba486bade456fd4ff9f1c9f08da0b3e9d471eac2c3bedfaf.json"
+  },
+  {
+    "archive_bytes": 66529,
+    "artifact_sha256": "9a8d966e86938e263db6108e067a55013dd7230dd4eb90ff709708ddb4399414",
+    "bits": 3,
+    "config": {
+      "bits": 3,
+      "rank": 2,
+      "rank_geometry": "diagonal"
+    },
+    "effective_rank": 2,
+    "fit": {
+      "cosine": 0.9804032553659229,
+      "max_error": 0.9589645862579346,
+      "output_nmse": 0.01012485583749414,
+      "weight_nmse": 0.03900485308789066
+    },
+    "geometry": "diagonal",
+    "rank": 2,
+    "raw_bits_per_weight": 3.7144639756944446,
+    "raw_bytes": 68465,
+    "seconds": 0.06540493299689842,
+    "selection": {
+      "cosine": 0.9804032553659229,
+      "max_error": 0.9589645862579346,
+      "output_nmse": 0.010037420975020458,
+      "weight_nmse": 0.03900485308789066
+    },
+    "status": "MEASURED",
+    "tensor": "blk.9.ffn_gate.weight",
+    "receipt": "59a80e1c7eef679b083a55ca5f4d72b839b1eb73484ff10dcf0d6faf01179890.json"
+  },
+  {
+    "archive_bytes": 220559,
+    "artifact_sha256": "8e6008d3781812337a6dcbdc8224bc7903cd1eb0070f928bd0eb8bacca22cb15",
+    "bits": 4,
+    "config": {
+      "bits": 4,
+      "rank": 2,
+      "rank_geometry": "activation"
+    },
+    "effective_rank": 2,
+    "fit": {
+      "cosine": 0.9787471156357258,
+      "max_error": 0.7254767417907715,
+      "output_nmse": 1.8279515680544534e-06,
+      "weight_nmse": 0.047071701726961214
+    },
+    "geometry": "activation",
+    "rank": 2,
+    "raw_bits_per_weight": 4.659688313802083,
+    "raw_bytes": 229033,
+    "seconds": 0.2153617320000194,
+    "selection": {
+      "cosine": 0.9787471156357258,
+      "max_error": 0.7254767417907715,
+      "output_nmse": 1.794940843510331e-06,
+      "weight_nmse": 0.047071701726961214
+    },
+    "status": "MEASURED",
+    "tensor": "blk.29.ffn_down.weight",
+    "receipt": "8f9f4cdc58c5b4810ba967a0d6d667062ddfd5e99753731eec6acd8cf14d3c19.json"
+  },
+  {
+    "archive_bytes": 215069,
+    "artifact_sha256": "cca658ad92df995f86820b9f6470f71d30dbc2b51fe6c00e868ef2a81425dcb8",
+    "bits": 4,
+    "config": {
+      "bits": 4,
+      "rank": 2,
+      "rank_geometry": "activation-shuffled"
+    },
+    "effective_rank": 2,
+    "fit": {
+      "cosine": 0.9933123461379283,
+      "max_error": 1.0387871265411377,
+      "output_nmse": 0.005466211532026353,
+      "weight_nmse": 0.013654818231277824
+    },
+    "geometry": "activation-shuffled",
+    "rank": 2,
+    "raw_bits_per_weight": 4.659871419270833,
+    "raw_bytes": 229042,
+    "seconds": 0.21990365300007397,
+    "selection": {
+      "cosine": 0.9933123461379283,
+      "max_error": 1.0387871265411377,
+      "output_nmse": 0.00566412339715427,
+      "weight_nmse": 0.013654818231277824
+    },
+    "status": "MEASURED",
+    "tensor": "blk.17.ffn_down.weight",
+    "receipt": "d3789113ecf74a0b9932d2c9f2e3d8dc6dc8274b42f9e3c86acf0e2f672846b5.json"
+  },
+  {
+    "archive_bytes": 81770,
+    "artifact_sha256": "b7fbb93a0bec619c7e7ce912da5c76fa3a715597da50176094b3530f54ff1236",
+    "bits": 4,
+    "config": {
+      "bits": 4,
+      "rank": 4,
+      "rank_geometry": "activation"
+    },
+    "effective_rank": 4,
+    "fit": {
+      "cosine": 0.9932684328021232,
+      "max_error": 0.16872656345367432,
+      "output_nmse": 0.00013823975142955157,
+      "weight_nmse": 0.013449506710542491
+    },
+    "geometry": "activation",
+    "rank": 4,
+    "raw_bits_per_weight": 4.897515190972222,
+    "raw_bytes": 90271,
+    "seconds": 0.08549613999639405,
+    "selection": {
+      "cosine": 0.9932684328021232,
+      "max_error": 0.16872656345367432,
+      "output_nmse": 0.00012170330405565863,
+      "weight_nmse": 0.013449506710542491
+    },
+    "status": "MEASURED",
+    "tensor": "token_embd.weight",
+    "receipt": "ebfdb1593c8f8135c607aab4b571684044a113213528bc714c34f09471b0eeb0.json"
+  },
+  {
+    "archive_bytes": 81759,
+    "artifact_sha256": "fbb2e8c6fc24db60380683f96029d9802cc3516c77745ec7e69ace276b322502",
+    "bits": 4,
+    "config": {
+      "bits": 4,
+      "rank": 4,
+      "rank_geometry": "diagonal"
+    },
+    "effective_rank": 4,
+    "fit": {
+      "cosine": 0.9933222452373093,
+      "max_error": 0.16582301259040833,
+      "output_nmse": 0.0012120087397939003,
+      "weight_nmse": 0.013374928414159737
+    },
+    "geometry": "diagonal",
+    "rank": 4,
+    "raw_bits_per_weight": 4.895941840277778,
+    "raw_bytes": 90242,
+    "seconds": 0.08023421399411745,
+    "selection": {
+      "cosine": 0.9933222452373093,
+      "max_error": 0.16582301259040833,
+      "output_nmse": 0.0012225817203387163,
+      "weight_nmse": 0.013374928414159737
+    },
+    "status": "MEASURED",
+    "tensor": "token_embd.weight",
+    "receipt": "92121bbaeb1e95b83ea6e0c6dd3c9c5ebeb49f377768f9870ddef7c992a64b57.json"
+  },
+  {
+    "archive_bytes": 62436,
+    "artifact_sha256": "5ea1ea90053bcd7e27aad87bb935d7a6027574f72a4427ac1d073815887af150",
+    "bits": 3,
+    "config": {
+      "bits": 3
+    },
+    "effective_rank": 0,
+    "fit": {
+      "cosine": 0.9748711417874748,
+      "max_error": 0.35498046875,
+      "output_nmse": 0.018041857325445748,
+      "weight_nmse": 0.049855542297261024
+    },
+    "geometry": "scalar",
+    "rank": 0,
+    "raw_bits_per_weight": 3.5233832465277777,
+    "raw_bytes": 64943,
+    "seconds": 0.0613873690017499,
+    "selection": {
+      "cosine": 0.9748711417874748,
+      "max_error": 0.35498046875,
+      "output_nmse": 0.018694051142350423,
+      "weight_nmse": 0.049855542297261024
+    },
+    "status": "MEASURED",
+    "tensor": "blk.0.attn_output.weight",
+    "receipt": "eabff4a109401dd349630416a550cb3b2668e66e98b077d227f0d1c947c4dccd.json"
+  },
+  {
+    "archive_bytes": 167011,
+    "artifact_sha256": "79bf0ea194b7d84f4940edce1603e937b90bb5cee1eda830aefd0667b7a7ff7f",
+    "bits": 3,
+    "config": {
+      "bits": 3
+    },
+    "effective_rank": 0,
+    "fit": {
+      "cosine": 0.9771139911576985,
+      "max_error": 1.3173828125,
+      "output_nmse": 0.022875953656159225,
+      "weight_nmse": 0.045961930111444255
+    },
+    "geometry": "scalar",
+    "rank": 0,
+    "raw_bits_per_weight": 3.5089111328125,
+    "raw_bytes": 172470,
+    "seconds": 0.1641642579998006,
+    "selection": {
+      "cosine": 0.9771139911576985,
+      "max_error": 1.3173828125,
+      "output_nmse": 0.022795546025342613,
+      "weight_nmse": 0.045961930111444255
+    },
+    "status": "MEASURED",
+    "tensor": "blk.17.ffn_down.weight",
+    "receipt": "66041af2756eb87b2d316dfc32fccc0502a23f4ee43ea96a6affe2ab2bcc3046.json"
+  },
+  {
+    "archive_bytes": 64884,
+    "artifact_sha256": "b4e7d3db97357c65e3cec4ca07bf4038a68cb6e81ac0be93ebd3f11c82073d2f",
+    "bits": 3,
+    "config": {
+      "bits": 3,
+      "rank": 1,
+      "rank_geometry": "activation-shuffled"
+    },
+    "effective_rank": 1,
+    "fit": {
+      "cosine": 0.9800895835997367,
+      "max_error": 1.0605846047401428,
+      "output_nmse": 0.011114347692953549,
+      "weight_nmse": 0.039627952176614654
+    },
+    "geometry": "activation-shuffled",
+    "rank": 1,
+    "raw_bits_per_weight": 3.626193576388889,
+    "raw_bytes": 66838,
+    "seconds": 0.07445127199753188,
+    "selection": {
+      "cosine": 0.9800895835997367,
+      "max_error": 1.0605846047401428,
+      "output_nmse": 0.011011894681506148,
+      "weight_nmse": 0.039627952176614654
+    },
+    "status": "MEASURED",
+    "tensor": "blk.9.ffn_gate.weight",
+    "receipt": "3455fe21a62df44f26ed2f9b501c9817fee2a4c04e0a3cca2afa4f0dc20a12c1.json"
+  },
+  {
+    "archive_bytes": 66579,
+    "artifact_sha256": "690760f63c1ab58bdc471031b9fe31d31a00ce5fb7098470cd38c4b2559e8e36",
+    "bits": 3,
+    "config": {
+      "bits": 3,
+      "rank": 2,
+      "rank_geometry": "activation"
+    },
+    "effective_rank": 2,
+    "fit": {
+      "cosine": 0.9801612363620867,
+      "max_error": 1.1083579063415527,
+      "output_nmse": 0.0015347125784624562,
+      "weight_nmse": 0.03948533434323467
+    },
+    "geometry": "activation",
+    "rank": 2,
+    "raw_bits_per_weight": 3.716037326388889,
+    "raw_bytes": 68494,
+    "seconds": 0.07223967199388426,
+    "selection": {
+      "cosine": 0.9801612363620867,
+      "max_error": 1.1083579063415527,
+      "output_nmse": 0.0015838132383807165,
+      "weight_nmse": 0.03948533434323467
+    },
+    "status": "MEASURED",
+    "tensor": "blk.9.ffn_gate.weight",
+    "receipt": "dc1ee75be13024345717021675a363b3e831971b4658907ba58970cde3174c5c.json"
+  },
+  {
+    "archive_bytes": 50232,
+    "artifact_sha256": "57f32727839139ee00820be67824976492f12b154a03549c8617e367af7bae32",
+    "bits": 3,
+    "config": {
+      "bits": 3,
+      "rank": 2,
+      "rank_geometry": "activation-shuffled"
+    },
+    "effective_rank": 2,
+    "fit": {
+      "cosine": 0.9743844020313116,
+      "max_error": 1.0767319202423096,
+      "output_nmse": 0.0023549658745189873,
+      "weight_nmse": 0.0507264488335496
+    },
+    "geometry": "activation-shuffled",
+    "rank": 2,
+    "raw_bits_per_weight": 3.7701099537037037,
+    "raw_bytes": 52118,
+    "seconds": 0.05256677699799184,
+    "selection": {
+      "cosine": 0.9743844020313116,
+      "max_error": 1.0767319202423096,
+      "output_nmse": 0.0023920935086367413,
+      "weight_nmse": 0.0507264488335496
+    },
+    "status": "MEASURED",
+    "tensor": "blk.0.attn_k.weight",
+    "receipt": "ce0533a32c295d58b8f6f3a975771bb3c7edd2f7afda3314e916bf17401ad78e.json"
+  },
+  {
+    "archive_bytes": 65973,
+    "artifact_sha256": "fa21bd748ba3df54d4f62fce1ada56782ad3a086d1f8a626805bbe81c110439e",
+    "bits": 3,
+    "config": {
+      "bits": 3,
+      "rank": 2,
+      "rank_geometry": "activation-shuffled"
+    },
+    "effective_rank": 2,
+    "fit": {
+      "cosine": 0.9735621672913979,
+      "max_error": 0.8645066618919373,
+      "output_nmse": 0.0020361586330257062,
+      "weight_nmse": 0.052472748828273415
+    },
+    "geometry": "activation-shuffled",
+    "rank": 2,
+    "raw_bits_per_weight": 3.716525607638889,
+    "raw_bytes": 68503,
+    "seconds": 0.06963321100192843,
+    "selection": {
+      "cosine": 0.9735621672913979,
+      "max_error": 0.8645066618919373,
+      "output_nmse": 0.002017539678120539,
+      "weight_nmse": 0.052472748828273415
+    },
+    "status": "MEASURED",
+    "tensor": "blk.0.attn_q.weight",
+    "receipt": "a1610c647d47f5d7c2b4c4bacbea9d3bc40e55d5ad849b76c764c4f1ca477259.json"
+  },
+  {
+    "archive_bytes": 77016,
+    "artifact_sha256": "5f4bc7f52cdf8c5094b916212ef7e5ae9dca00eb6d33e039d5d01122b385406d",
+    "bits": 4,
+    "config": {
+      "bits": 4,
+      "rank": 1,
+      "rank_geometry": "activation"
+    },
+    "effective_rank": 1,
+    "fit": {
+      "cosine": 0.9930849466816012,
+      "max_error": 0.16876572370529175,
+      "output_nmse": 0.0009787461962996017,
+      "weight_nmse": 0.013812391851337697
+    },
+    "geometry": "activation",
+    "rank": 1,
+    "raw_bits_per_weight": 4.626627604166667,
+    "raw_bytes": 85278,
+    "seconds": 0.08444667900039349,
+    "selection": {
+      "cosine": 0.9930849466816012,
+      "max_error": 0.16876572370529175,
+      "output_nmse": 0.0009534217397035025,
+      "weight_nmse": 0.013812391851337697
+    },
+    "status": "MEASURED",
+    "tensor": "token_embd.weight",
+    "receipt": "4d8a271b05289ec848101f13eeb4910ba53417b4bfeda6f0aec038d1cb9e5a2f.json"
+  },
+  {
+    "archive_bytes": 211510,
+    "artifact_sha256": "eeb19d1684d5ddd3b1fc1cee3ef9feb24fb73a3d52ff8b34f71665037cd14e4e",
+    "bits": 4,
+    "config": {
+      "bits": 4,
+      "rank": 1,
+      "rank_geometry": "activation"
+    },
+    "effective_rank": 1,
+    "fit": {
+      "cosine": 0.9932501078417438,
+      "max_error": 1.1659437417984009,
+      "output_nmse": 0.0013900273504697433,
+      "weight_nmse": 0.013784282690000699
+    },
+    "geometry": "activation",
+    "rank": 1,
+    "raw_bits_per_weight": 4.586751302083333,
+    "raw_bytes": 225448,
+    "seconds": 0.21914267000101972,
+    "selection": {
+      "cosine": 0.9932501078417438,
+      "max_error": 1.1659437417984009,
+      "output_nmse": 0.001530427290166517,
+      "weight_nmse": 0.013784282690000699
+    },
+    "status": "MEASURED",
+    "tensor": "blk.17.ffn_down.weight",
+    "receipt": "c9b9d5271d60d01bea460b1a0becaf572274f6d49f8faa34dcbbc83788a9fc92.json"
+  },
+  {
+    "archive_bytes": 214885,
+    "artifact_sha256": "6280da8694401cf1a4a9bf75abb5fd8a0fbc3710bee1a1e63af1d8ad34777bbc",
+    "bits": 4,
+    "config": {
+      "bits": 4,
+      "rank": 2,
+      "rank_geometry": "diagonal"
+    },
+    "effective_rank": 2,
+    "fit": {
+      "cosine": 0.9934840835575254,
+      "max_error": 0.54095059633255,
+      "output_nmse": 0.005094131090932114,
+      "weight_nmse": 0.013302490252088385
+    },
+    "geometry": "diagonal",
+    "rank": 2,
+    "raw_bits_per_weight": 4.659098307291667,
+    "raw_bytes": 229004,
+    "seconds": 0.21167918599530822,
+    "selection": {
+      "cosine": 0.9934840835575254,
+      "max_error": 0.54095059633255,
+      "output_nmse": 0.005217593525646734,
+      "weight_nmse": 0.013302490252088385
+    },
+    "status": "MEASURED",
+    "tensor": "blk.17.ffn_down.weight",
+    "receipt": "e4981deebef8d738f53276dbd96f13b4c55f6074a1f003cb965c8bc3e22cb98e.json"
+  },
+  {
+    "archive_bytes": 80014,
+    "artifact_sha256": "cd4a0321aa2300a530e8395c58e9a457b94d8b55e44c429e55a6e777627b5db3",
+    "bits": 4,
+    "config": {
+      "bits": 4,
+      "rank": 2,
+      "rank_geometry": "activation"
+    },
+    "effective_rank": 2,
+    "fit": {
+      "cosine": 0.9941647870886297,
+      "max_error": 0.12406861782073975,
+      "output_nmse": 0.002276104568701658,
+      "weight_nmse": 0.011638510733809782
+    },
+    "geometry": "activation",
+    "rank": 2,
+    "raw_bits_per_weight": 4.716959635416667,
+    "raw_bytes": 86943,
+    "seconds": 0.08701099699828774,
+    "selection": {
+      "cosine": 0.9941647870886297,
+      "max_error": 0.12406861782073975,
+      "output_nmse": 0.002413330000901674,
+      "weight_nmse": 0.011638510733809782
+    },
+    "status": "MEASURED",
+    "tensor": "blk.0.attn_output.weight",
+    "receipt": "a3ac7a15102f0cd5ab9f663deff208756bd9b15324b14d525a9e9a005b69daf2.json"
+  },
+  {
+    "archive_bytes": 65952,
+    "artifact_sha256": "37606f8b4b08b3696191ac437bd477f726e7991f5c11c7907b0839eff5a9fa70",
+    "bits": 3,
+    "config": {
+      "bits": 3,
+      "rank": 2,
+      "rank_geometry": "activation"
+    },
+    "effective_rank": 2,
+    "fit": {
+      "cosine": 0.9737910425718334,
+      "max_error": 0.8831416964530945,
+      "output_nmse": 0.0006312655497830313,
+      "weight_nmse": 0.052044979660629924
+    },
+    "geometry": "activation",
+    "rank": 2,
+    "raw_bits_per_weight": 3.716037326388889,
+    "raw_bytes": 68494,
+    "seconds": 0.0698334850021638,
+    "selection": {
+      "cosine": 0.9737910425718334,
+      "max_error": 0.8831416964530945,
+      "output_nmse": 0.0006559576028719273,
+      "weight_nmse": 0.052044979660629924
+    },
+    "status": "MEASURED",
+    "tensor": "blk.0.attn_q.weight",
+    "receipt": "423fdd2fab258f956bc431433234c02f7b9f6b48cdbb94f92a5ceb4d4e8dcc63.json"
+  },
+  {
+    "archive_bytes": 78594,
+    "artifact_sha256": "69c8371524d92c380d2216b0ac3af6b163c0006c7ad4ed1c2e585b350140e35d",
+    "bits": 4,
+    "config": {
+      "bits": 4,
+      "rank": 2,
+      "rank_geometry": "activation-shuffled"
+    },
+    "effective_rank": 2,
+    "fit": {
+      "cosine": 0.9936316373835617,
+      "max_error": 0.5523641109466553,
+      "output_nmse": 0.00046442055763552993,
+      "weight_nmse": 0.012701734707010316
+    },
+    "geometry": "activation-shuffled",
+    "rank": 2,
+    "raw_bits_per_weight": 4.717447916666667,
+    "raw_bytes": 86952,
+    "seconds": 0.08542461099568754,
+    "selection": {
+      "cosine": 0.9936316373835617,
+      "max_error": 0.5523641109466553,
+      "output_nmse": 0.00045785684916674677,
+      "weight_nmse": 0.012701734707010316
+    },
+    "status": "MEASURED",
+    "tensor": "blk.0.attn_q.weight",
+    "receipt": "0ed624e7a54c48a7fa816abe2f404534479575e111f11a2f1544e9642f92b8f4.json"
+  },
+  {
+    "archive_bytes": 76951,
+    "artifact_sha256": "8936ae8975de04f4be602e95654181d7c3f89d0e2785e371921ac5e5241fe09d",
+    "bits": 4,
+    "config": {
+      "bits": 4,
+      "rank": 1,
+      "rank_geometry": "activation"
+    },
+    "effective_rank": 1,
+    "fit": {
+      "cosine": 0.9935898595809635,
+      "max_error": 0.5694013833999634,
+      "output_nmse": 0.00023129019757932398,
+      "weight_nmse": 0.012785028506891002
+    },
+    "geometry": "activation",
+    "rank": 1,
+    "raw_bits_per_weight": 4.626627604166667,
+    "raw_bytes": 85278,
+    "seconds": 0.08623340600024676,
+    "selection": {
+      "cosine": 0.9935898595809635,
+      "max_error": 0.5694013833999634,
+      "output_nmse": 0.00022406465809267777,
+      "weight_nmse": 0.012785028506891002
+    },
+    "status": "MEASURED",
+    "tensor": "blk.0.attn_q.weight",
+    "receipt": "59db18696d3b00aeeee69092717dda40dee761d6d5d582bbb0ba31c57c889a7d.json"
+  },
+  {
+    "archive_bytes": 211344,
+    "artifact_sha256": "7b3809f6a3163dbab385134e7cf936a80c25632acbef40d0b77b9bfe55ae37e3",
+    "bits": 4,
+    "config": {
+      "bits": 4,
+      "rank": 1,
+      "rank_geometry": "diagonal"
+    },
+    "effective_rank": 1,
+    "fit": {
+      "cosine": 0.9934548492329501,
+      "max_error": 0.5435650944709778,
+      "output_nmse": 0.005116822492890207,
+      "weight_nmse": 0.013363288753601637
+    },
+    "geometry": "diagonal",
+    "rank": 1,
+    "raw_bits_per_weight": 4.586161295572917,
+    "raw_bytes": 225419,
+    "seconds": 0.210124736004218,
+    "selection": {
+      "cosine": 0.9934548492329501,
+      "max_error": 0.5435650944709778,
+      "output_nmse": 0.00525109206579873,
+      "weight_nmse": 0.013363288753601637
+    },
+    "status": "MEASURED",
+    "tensor": "blk.17.ffn_down.weight",
+    "receipt": "fb8d8f872150bfa08b69046b9d42c8237bb8e29476f283f5186d57f0f4f0e8ca.json"
+  },
+  {
+    "archive_bytes": 168201,
+    "artifact_sha256": "4f8d10270a9cd3accbe58f0364ef62f0a16a08beceea27c35fec9899a053d92f",
+    "bits": 3,
+    "config": {
+      "bits": 3
+    },
+    "effective_rank": 0,
+    "fit": {
+      "cosine": 0.9522608425402974,
+      "max_error": 1.392578125,
+      "output_nmse": 0.0007592660924940058,
+      "weight_nmse": 0.10243872690068646
+    },
+    "geometry": "scalar",
+    "rank": 0,
+    "raw_bits_per_weight": 3.5089111328125,
+    "raw_bytes": 172470,
+    "seconds": 0.16898041099921102,
+    "selection": {
+      "cosine": 0.9522608425402974,
+      "max_error": 1.392578125,
+      "output_nmse": 0.0007522827498194559,
+      "weight_nmse": 0.10243872690068646
+    },
+    "status": "MEASURED",
+    "tensor": "blk.29.ffn_down.weight",
+    "receipt": "ef02cd972079104b68e3313daa7c20c4ddd01e4e270cfc2f9d70545da6bb77ac.json"
+  },
+  {
+    "archive_bytes": 172035,
+    "artifact_sha256": "ddb23c552aa6a170c30ce87252d03e3bb092136c45693c3a8ed9b9a43ee353c3",
+    "bits": 3,
+    "config": {
+      "bits": 3,
+      "rank": 1,
+      "rank_geometry": "activation"
+    },
+    "effective_rank": 1,
+    "fit": {
+      "cosine": 0.9525543932030922,
+      "max_error": 1.3742706775665283,
+      "output_nmse": 4.3535154480712655e-05,
+      "weight_nmse": 0.10182998695979004
+    },
+    "geometry": "activation",
+    "rank": 1,
+    "raw_bits_per_weight": 3.5864054361979165,
+    "raw_bytes": 176279,
+    "seconds": 0.17721215799974743,
+    "selection": {
+      "cosine": 0.9525543932030922,
+      "max_error": 1.3742706775665283,
+      "output_nmse": 4.223467898970512e-05,
+      "weight_nmse": 0.10182998695979004
+    },
+    "status": "MEASURED",
+    "tensor": "blk.29.ffn_down.weight",
+    "receipt": "93aaf595f971f28f240c807786ac09ae2ab9c24fab9a430a2f00e390423b58af.json"
+  },
+  {
+    "archive_bytes": 80553,
+    "artifact_sha256": "b80884a4f5585563ef719ee0eba44c28f4024b89606ad687494befd990c07acc",
+    "bits": 4,
+    "config": {
+      "bits": 4,
+      "rank": 1,
+      "rank_geometry": "activation"
+    },
+    "effective_rank": 1,
+    "fit": {
+      "cosine": 0.9948316034276868,
+      "max_error": 0.5075029134750366,
+      "output_nmse": 0.0015765711665532659,
+      "weight_nmse": 0.010416421716891756
+    },
+    "geometry": "activation",
+    "rank": 1,
+    "raw_bits_per_weight": 4.626627604166667,
+    "raw_bytes": 85278,
+    "seconds": 0.08394542799942428,
+    "selection": {
+      "cosine": 0.9948316034276868,
+      "max_error": 0.5075029134750366,
+      "output_nmse": 0.0016187959843062987,
+      "weight_nmse": 0.010416421716891756
+    },
+    "status": "MEASURED",
+    "tensor": "blk.3.ffn_up.weight",
+    "receipt": "5ab0616d18e97959e59ffee07ea60bcdbb245f95b2338ab4684caaf66c2c28e2.json"
+  },
+  {
+    "archive_bytes": 76539,
+    "artifact_sha256": "56c108f87c3631b6529b23fecd4aac1b16f61cf5b4c80f95a678603ac922a455",
+    "bits": 4,
+    "config": {
+      "bits": 4
+    },
+    "effective_rank": 0,
+    "fit": {
+      "cosine": 0.9939893551147304,
+      "max_error": 0.19091796875,
+      "output_nmse": 0.004799381341522275,
+      "weight_nmse": 0.011987201890193665
+    },
+    "geometry": "scalar",
+    "rank": 0,
+    "raw_bits_per_weight": 4.524305555555555,
+    "raw_bytes": 83392,
+    "seconds": 0.07556384299823549,
+    "selection": {
+      "cosine": 0.9939893551147304,
+      "max_error": 0.19091796875,
+      "output_nmse": 0.004930781680659647,
+      "weight_nmse": 0.011987201890193665
+    },
+    "status": "MEASURED",
+    "tensor": "blk.0.attn_output.weight",
+    "receipt": "f53e7ace5fb9c1c2df15d976dabda16f8272e56dc9a0b77a17c263de76910571.json"
+  },
+  {
+    "archive_bytes": 66582,
+    "artifact_sha256": "89c5a4e915575fd583d0be491f2a7613932e5a6897efc21443a515f0765832f7",
+    "bits": 3,
+    "config": {
+      "bits": 3,
+      "rank": 2,
+      "rank_geometry": "activation-shuffled"
+    },
+    "effective_rank": 2,
+    "fit": {
+      "cosine": 0.9802191633052958,
+      "max_error": 1.060028851032257,
+      "output_nmse": 0.011050466166731308,
+      "weight_nmse": 0.03937028022642702
+    },
+    "geometry": "activation-shuffled",
+    "rank": 2,
+    "raw_bits_per_weight": 3.716525607638889,
+    "raw_bytes": 68503,
+    "seconds": 0.07191071399574867,
+    "selection": {
+      "cosine": 0.9802191633052958,
+      "max_error": 1.060028851032257,
+      "output_nmse": 0.010950878481662957,
+      "weight_nmse": 0.03937028022642702
+    },
+    "status": "MEASURED",
+    "tensor": "blk.9.ffn_gate.weight",
+    "receipt": "e2b428e6216c469f7a6cf9cb780c629678cb02b3d626a0e8d45f40d203afb8b0.json"
+  },
+  {
+    "archive_bytes": 181924,
+    "artifact_sha256": "890eba785a4efe9d24eccab700048ba88ac350d2cb85b0ebb060ba6378e968f2",
+    "bits": 3,
+    "config": {
+      "bits": 3,
+      "rank": 4,
+      "rank_geometry": "activation"
+    },
+    "effective_rank": 4,
+    "fit": {
+      "cosine": 0.9531685012136333,
+      "max_error": 1.2232754230499268,
+      "output_nmse": 3.549851091137622e-06,
+      "weight_nmse": 0.10050262470760433
+    },
+    "geometry": "activation",
+    "rank": 4,
+    "raw_bits_per_weight": 3.8051961263020835,
+    "raw_bytes": 187033,
+    "seconds": 0.17716766300145537,
+    "selection": {
+      "cosine": 0.9531685012136333,
+      "max_error": 1.2232754230499268,
+      "output_nmse": 3.7844606431228537e-06,
+      "weight_nmse": 0.10050262470760433
+    },
+    "status": "MEASURED",
+    "tensor": "blk.29.ffn_down.weight",
+    "receipt": "2b778ec2cbd1a4d2e749e64181b65154492e9c4f36881f34d86f3479078e7636.json"
+  },
+  {
+    "archive_bytes": 227002,
+    "artifact_sha256": "57d655a8469c2d08567e1cb965e936cfa190595bcf49cffa15e60b71a43824cb",
+    "bits": 4,
+    "config": {
+      "bits": 4,
+      "rank": 4,
+      "rank_geometry": "activation"
+    },
+    "effective_rank": 4,
+    "fit": {
+      "cosine": 0.9788922984043836,
+      "max_error": 0.7277157306671143,
+      "output_nmse": 1.0558248735394556e-06,
+      "weight_nmse": 0.04670615219291946
+    },
+    "geometry": "activation",
+    "rank": 4,
+    "raw_bits_per_weight": 4.8055419921875,
+    "raw_bytes": 236202,
+    "seconds": 0.21547913899848936,
+    "selection": {
+      "cosine": 0.9788922984043836,
+      "max_error": 0.7277157306671143,
+      "output_nmse": 1.1682524170299002e-06,
+      "weight_nmse": 0.04670615219291946
+    },
+    "status": "MEASURED",
+    "tensor": "blk.29.ffn_down.weight",
+    "receipt": "50321cc2faf0805fe627c02b486f55bf3ad318a2a74432af6748f5a684146ba0.json"
+  },
+  {
+    "archive_bytes": 69577,
+    "artifact_sha256": "2a5b5277afa21b86b02bf8fdcabc3b75e4ce54de9ddb074c9dcc3d5ca6ab1f6f",
+    "bits": 3,
+    "config": {
+      "bits": 3,
+      "rank": 4,
+      "rank_geometry": "diagonal"
+    },
+    "effective_rank": 4,
+    "fit": {
+      "cosine": 0.9807299411490735,
+      "max_error": 0.9907149970531464,
+      "output_nmse": 0.009603970519898778,
+      "weight_nmse": 0.03835892933105164
+    },
+    "geometry": "diagonal",
+    "rank": 4,
+    "raw_bits_per_weight": 3.89501953125,
+    "raw_bytes": 71793,
+    "seconds": 0.06677265499456553,
+    "selection": {
+      "cosine": 0.9807299411490735,
+      "max_error": 0.9907149970531464,
+      "output_nmse": 0.009503769553528166,
+      "weight_nmse": 0.03835892933105164
+    },
+    "status": "MEASURED",
+    "tensor": "blk.9.ffn_gate.weight",
+    "receipt": "5deb513882ab0c54ba5978bf39072097cdf77c35aff7f1e031e8212bdf92665b.json"
+  },
+  {
+    "archive_bytes": 64230,
+    "artifact_sha256": "67cc6b2b11bcf9e2666842acdf4b7495946924a591e7711c938df3fb9b10f45a",
+    "bits": 3,
+    "config": {
+      "bits": 3,
+      "rank": 1,
+      "rank_geometry": "activation"
+    },
+    "effective_rank": 1,
+    "fit": {
+      "cosine": 0.9734907851091554,
+      "max_error": 0.886398196220398,
+      "output_nmse": 0.0009933322140049305,
+      "weight_nmse": 0.052618340542556645
+    },
+    "geometry": "activation",
+    "rank": 1,
+    "raw_bits_per_weight": 3.625705295138889,
+    "raw_bytes": 66829,
+    "seconds": 0.07034885200118879,
+    "selection": {
+      "cosine": 0.9734907851091554,
+      "max_error": 0.886398196220398,
+      "output_nmse": 0.0009770365391454608,
+      "weight_nmse": 0.052618340542556645
+    },
+    "status": "MEASURED",
+    "tensor": "blk.0.attn_q.weight",
+    "receipt": "3801898012da87fccd0e865993b94257cc4c19d0840c68f642fbf8dc98b20f50.json"
+  },
+  {
+    "archive_bytes": 82993,
+    "artifact_sha256": "8eca1d72b727819fea35842d009663f7ed2bfefaf931501b577847bc22bf5689",
+    "bits": 4,
+    "config": {
+      "bits": 4,
+      "rank": 4,
+      "rank_geometry": "diagonal"
+    },
+    "effective_rank": 4,
+    "fit": {
+      "cosine": 0.9944425031428876,
+      "max_error": 0.08248749375343323,
+      "output_nmse": 0.0032608578995986237,
+      "weight_nmse": 0.011085006915176382
+    },
+    "geometry": "diagonal",
+    "rank": 4,
+    "raw_bits_per_weight": 4.895941840277778,
+    "raw_bytes": 90242,
+    "seconds": 0.0809896629943978,
+    "selection": {
+      "cosine": 0.9944425031428876,
+      "max_error": 0.08248749375343323,
+      "output_nmse": 0.003421625327139513,
+      "weight_nmse": 0.011085006915176382
+    },
+    "status": "MEASURED",
+    "tensor": "blk.0.attn_output.weight",
+    "receipt": "e6a32f8ea92b3ee7cd6414435d75745c4fb8f4bd1205ebcf927a3c4484e09c60.json"
+  },
+  {
+    "archive_bytes": 85024,
+    "artifact_sha256": "f770fd5b13a4d61981cbd16585b8b45ba8fbe180ba77cf75d5170962cb5e2d56",
+    "bits": 4,
+    "config": {
+      "bits": 4,
+      "rank": 4,
+      "rank_geometry": "activation"
+    },
+    "effective_rank": 4,
+    "fit": {
+      "cosine": 0.9949523867718335,
+      "max_error": 0.495728075504303,
+      "output_nmse": 0.00030371507779945045,
+      "weight_nmse": 0.010165377692327643
+    },
+    "geometry": "activation",
+    "rank": 4,
+    "raw_bits_per_weight": 4.897515190972222,
+    "raw_bytes": 90271,
+    "seconds": 0.08695989399711834,
+    "selection": {
+      "cosine": 0.9949523867718335,
+      "max_error": 0.495728075504303,
+      "output_nmse": 0.00031956244635368634,
+      "weight_nmse": 0.010165377692327643
+    },
+    "status": "MEASURED",
+    "tensor": "blk.9.ffn_gate.weight",
+    "receipt": "dd1a1da0eec27c6c4a454527500b3611337a7afe75c144c060ae218d1fa57ce9.json"
+  },
+  {
+    "archive_bytes": 69555,
+    "artifact_sha256": "5a7f3c40b33573a2ed238f1531094eb68a68723ff636455b53ceecbe6b39d2b7",
+    "bits": 3,
+    "config": {
+      "bits": 3,
+      "rank": 4,
+      "rank_geometry": "activation-shuffled"
+    },
+    "effective_rank": 4,
+    "fit": {
+      "cosine": 0.9812570311451422,
+      "max_error": 1.0101683139801025,
+      "output_nmse": 0.02279248187525471,
+      "weight_nmse": 0.037331758979011836
+    },
+    "geometry": "activation-shuffled",
+    "rank": 4,
+    "raw_bits_per_weight": 3.8970811631944446,
+    "raw_bytes": 71831,
+    "seconds": 0.0732891430016025,
+    "selection": {
+      "cosine": 0.9812570311451422,
+      "max_error": 1.0101683139801025,
+      "output_nmse": 0.022625036615892397,
+      "weight_nmse": 0.037331758979011836
+    },
+    "status": "MEASURED",
+    "tensor": "blk.3.ffn_up.weight",
+    "receipt": "36cd4e89579b2b4b84c5164157ecd73336baec176a560bf4f0311606df7e58d3.json"
+  },
+  {
+    "archive_bytes": 64232,
+    "artifact_sha256": "804ae8bf905434fb9d876b5d0017540005c14e3c14fb427033d7994fed0f21c1",
+    "bits": 3,
+    "config": {
+      "bits": 3,
+      "rank": 1,
+      "rank_geometry": "activation-shuffled"
+    },
+    "effective_rank": 1,
+    "fit": {
+      "cosine": 0.9754326314705887,
+      "max_error": 0.26796650886535645,
+      "output_nmse": 0.017714679955253086,
+      "weight_nmse": 0.04873567765640612
+    },
+    "geometry": "activation-shuffled",
+    "rank": 1,
+    "raw_bits_per_weight": 3.626193576388889,
+    "raw_bytes": 66838,
+    "seconds": 0.07166957500157878,
+    "selection": {
+      "cosine": 0.9754326314705887,
+      "max_error": 0.26796650886535645,
+      "output_nmse": 0.018379897780689998,
+      "weight_nmse": 0.04873567765640612
+    },
+    "status": "MEASURED",
+    "tensor": "blk.0.attn_output.weight",
+    "receipt": "7cd114e8ebb27a1178b7530498b906c49d4816e407cb75bf85c048a65c058714.json"
+  },
+  {
+    "archive_bytes": 85056,
+    "artifact_sha256": "d6c7dd495461491f08139f881ad3644b1cd7f84e84707a114c818677253e94d8",
+    "bits": 4,
+    "config": {
+      "bits": 4,
+      "rank": 4,
+      "rank_geometry": "activation-shuffled"
+    },
+    "effective_rank": 4,
+    "fit": {
+      "cosine": 0.9949346105376007,
+      "max_error": 0.4979034662246704,
+      "output_nmse": 0.006636855164644163,
+      "weight_nmse": 0.010206493852678352
+    },
+    "geometry": "activation-shuffled",
+    "rank": 4,
+    "raw_bits_per_weight": 4.898003472222222,
+    "raw_bytes": 90280,
+    "seconds": 0.08624025199969765,
+    "selection": {
+      "cosine": 0.9949346105376007,
+      "max_error": 0.4979034662246704,
+      "output_nmse": 0.006632159526927501,
+      "weight_nmse": 0.010206493852678352
+    },
+    "status": "MEASURED",
+    "tensor": "blk.3.ffn_up.weight",
+    "receipt": "e5dd821c186ead9b9640e171c1af18592da1457be7ed59c85652d45ee15989a0.json"
+  },
+  {
+    "archive_bytes": 82120,
+    "artifact_sha256": "18b1655cd96d5978e9fb50ffb6ff385a5cafa3fecd06880d5ae82a9f9488a531",
+    "bits": 4,
+    "config": {
+      "bits": 4,
+      "rank": 2,
+      "rank_geometry": "diagonal"
+    },
+    "effective_rank": 2,
+    "fit": {
+      "cosine": 0.9948835529691309,
+      "max_error": 0.4845981001853943,
+      "output_nmse": 0.006155092091283805,
+      "weight_nmse": 0.01031044862440949
+    },
+    "geometry": "diagonal",
+    "rank": 2,
+    "raw_bits_per_weight": 4.715386284722222,
+    "raw_bytes": 86914,
+    "seconds": 0.08058354500099085,
+    "selection": {
+      "cosine": 0.9948835529691309,
+      "max_error": 0.4845981001853943,
+      "output_nmse": 0.006152966342521851,
+      "weight_nmse": 0.01031044862440949
+    },
+    "status": "MEASURED",
+    "tensor": "blk.3.ffn_up.weight",
+    "receipt": "ad8308c6359ecfc8c8ed782b359f10de6c30d4a6ece1079b82956b27fc77a483.json"
+  },
+  {
+    "archive_bytes": 64765,
+    "artifact_sha256": "fca91655906a47dcb999d9f3e8fd4f4177a65dc383f3c868d030f36512372a4d",
+    "bits": 3,
+    "config": {
+      "bits": 3,
+      "rank": 1,
+      "rank_geometry": "diagonal"
+    },
+    "effective_rank": 1,
+    "fit": {
+      "cosine": 0.9808462509411083,
+      "max_error": 1.1421864032745361,
+      "output_nmse": 0.02154010956154094,
+      "weight_nmse": 0.038147089892393626
+    },
+    "geometry": "diagonal",
+    "rank": 1,
+    "raw_bits_per_weight": 3.6241319444444446,
+    "raw_bytes": 66800,
+    "seconds": 0.06654485399485566,
+    "selection": {
+      "cosine": 0.9808462509411083,
+      "max_error": 1.1421864032745361,
+      "output_nmse": 0.021371504384638786,
+      "weight_nmse": 0.038147089892393626
+    },
+    "status": "MEASURED",
+    "tensor": "blk.3.ffn_up.weight",
+    "receipt": "96e3f37838f787c64d5730e8c9169ab281ead45f07393ec435589470a3f8ce39.json"
+  },
+  {
+    "archive_bytes": 75043,
+    "artifact_sha256": "8e997230a43582a5fc31ff7f2aa2f4e618cae816e546f0afa4b53ff81da83cbe",
+    "bits": 4,
+    "config": {
+      "bits": 4
+    },
+    "effective_rank": 0,
+    "fit": {
+      "cosine": 0.9935136168319548,
+      "max_error": 0.56640625,
+      "output_nmse": 0.0004693309549864778,
+      "weight_nmse": 0.012936609500557654
+    },
+    "geometry": "scalar",
+    "rank": 0,
+    "raw_bits_per_weight": 4.524305555555555,
+    "raw_bytes": 83392,
+    "seconds": 0.07723277100012638,
+    "selection": {
+      "cosine": 0.9935136168319548,
+      "max_error": 0.56640625,
+      "output_nmse": 0.00046210870687166675,
+      "weight_nmse": 0.012936609500557654
+    },
+    "status": "MEASURED",
+    "tensor": "blk.0.attn_q.weight",
+    "receipt": "c0122ec1bef55cd97dc5a995fa1a333c715a171b10cd9a83ad51a5d7c30046aa.json"
+  },
+  {
+    "archive_bytes": 57988,
+    "artifact_sha256": "2512f63795eb64fa21af7ea7bd183ff15d190c3ee1881d9436734008c2e2fa9f",
+    "bits": 4,
+    "config": {
+      "bits": 4,
+      "rank": 1,
+      "rank_geometry": "activation"
+    },
+    "effective_rank": 1,
+    "fit": {
+      "cosine": 0.9936623272925689,
+      "max_error": 0.9420706033706665,
+      "output_nmse": 0.00025355905095101553,
+      "weight_nmse": 0.012649921128581348
+    },
+    "geometry": "activation",
+    "rank": 1,
+    "raw_bits_per_weight": 4.659577546296297,
+    "raw_bytes": 64414,
+    "seconds": 0.06635208599618636,
+    "selection": {
+      "cosine": 0.9936623272925689,
+      "max_error": 0.9420706033706665,
+      "output_nmse": 0.0002611031834650777,
+      "weight_nmse": 0.012649921128581348
+    },
+    "status": "MEASURED",
+    "tensor": "blk.0.attn_k.weight",
+    "receipt": "fec16d44e77d00131c1839cd25d5777f9d7741f43cf3c75c6965a47ede33d110.json"
+  },
+  {
+    "archive_bytes": 63063,
+    "artifact_sha256": "edaeb66efc4be04326e5bda3a044ec1b95683630cc531badb03647dc6d4011fb",
+    "bits": 3,
+    "config": {
+      "bits": 3
+    },
+    "effective_rank": 0,
+    "fit": {
+      "cosine": 0.979942111896053,
+      "max_error": 1.11328125,
+      "output_nmse": 0.011143204904753479,
+      "weight_nmse": 0.03992039367783077
+    },
+    "geometry": "scalar",
+    "rank": 0,
+    "raw_bits_per_weight": 3.5233832465277777,
+    "raw_bytes": 64943,
+    "seconds": 0.062276039003336336,
+    "selection": {
+      "cosine": 0.979942111896053,
+      "max_error": 1.11328125,
+      "output_nmse": 0.011039236827172139,
+      "weight_nmse": 0.03992039367783077
+    },
+    "status": "MEASURED",
+    "tensor": "blk.9.ffn_gate.weight",
+    "receipt": "3b4363739f09f0121fddcbb6cff6e2ae9a288bcc46309eae25a06535688abc50.json"
+  },
+  {
+    "archive_bytes": 64825,
+    "artifact_sha256": "1b964705f10de1bc67e221ffb66a60db0388c2d72fcfa09ea3240dde5905da85",
+    "bits": 3,
+    "config": {
+      "bits": 3,
+      "rank": 1,
+      "rank_geometry": "activation-shuffled"
+    },
+    "effective_rank": 1,
+    "fit": {
+      "cosine": 0.9808990260925883,
+      "max_error": 1.1241464614868164,
+      "output_nmse": 0.023261611067852767,
+      "weight_nmse": 0.038044800339101764
+    },
+    "geometry": "activation-shuffled",
+    "rank": 1,
+    "raw_bits_per_weight": 3.626193576388889,
+    "raw_bytes": 66838,
+    "seconds": 0.07302528199943481,
+    "selection": {
+      "cosine": 0.9808990260925883,
+      "max_error": 1.1241464614868164,
+      "output_nmse": 0.023077848166745272,
+      "weight_nmse": 0.038044800339101764
+    },
+    "status": "MEASURED",
+    "tensor": "blk.3.ffn_up.weight",
+    "receipt": "55b4968603aa6cc019052d390b76a94b16c5b68b4e96438e557d08605c136622.json"
+  },
+  {
+    "archive_bytes": 213198,
+    "artifact_sha256": "a3c496ce3e8d338f183478175efe73cb4bd8304c068e640292b0169d4c48093b",
+    "bits": 4,
+    "config": {
+      "bits": 4
+    },
+    "effective_rank": 0,
+    "fit": {
+      "cosine": 0.9785943921749872,
+      "max_error": 0.74365234375,
+      "output_nmse": 0.00017379209848597098,
+      "weight_nmse": 0.04746975470560078
+    },
+    "geometry": "scalar",
+    "rank": 0,
+    "raw_bits_per_weight": 4.509256998697917,
+    "raw_bytes": 221639,
+    "seconds": 0.1976540460018441,
+    "selection": {
+      "cosine": 0.9785943921749872,
+      "max_error": 0.74365234375,
+      "output_nmse": 0.00017307230416580146,
+      "weight_nmse": 0.04746975470560078
+    },
+    "status": "MEASURED",
+    "tensor": "blk.29.ffn_down.weight",
+    "receipt": "178a98a552595babf6588c2a3e5a9fb6cdd5f501b9b763142886e0102be65990.json"
+  },
+  {
+    "archive_bytes": 62530,
+    "artifact_sha256": "4f31be53a6f543ce303d6aab3ccefcc2cb6fef9e8e5c5a613b7e5a48e36c64ce",
+    "bits": 4,
+    "config": {
+      "bits": 4,
+      "rank": 4,
+      "rank_geometry": "diagonal"
+    },
+    "effective_rank": 4,
+    "fit": {
+      "cosine": 0.9940720373724329,
+      "max_error": 0.8519317507743835,
+      "output_nmse": 0.0004102754221950336,
+      "weight_nmse": 0.01183697717088308
+    },
+    "geometry": "diagonal",
+    "rank": 4,
+    "raw_bits_per_weight": 4.990885416666667,
+    "raw_bytes": 68994,
+    "seconds": 0.06183644499833463,
+    "selection": {
+      "cosine": 0.9940720373724329,
+      "max_error": 0.8519317507743835,
+      "output_nmse": 0.0004099389015017334,
+      "weight_nmse": 0.01183697717088308
+    },
+    "status": "MEASURED",
+    "tensor": "blk.0.attn_k.weight",
+    "receipt": "1bddd75ff61a62be9a84d4bc2a07be1528ede60c7e5bbdac725a02edc274e91d.json"
+  },
+  {
+    "archive_bytes": 64233,
+    "artifact_sha256": "1067f4a7e935ac1ea59d1233c24146c71b20be5a205738936ffeff75ef1bd197",
+    "bits": 3,
+    "config": {
+      "bits": 3,
+      "rank": 1,
+      "rank_geometry": "diagonal"
+    },
+    "effective_rank": 1,
+    "fit": {
+      "cosine": 0.9757431833889189,
+      "max_error": 0.18739867210388184,
+      "output_nmse": 0.016146544036365933,
+      "weight_nmse": 0.048120511532094755
+    },
+    "geometry": "diagonal",
+    "rank": 1,
+    "raw_bits_per_weight": 3.6241319444444446,
+    "raw_bytes": 66800,
+    "seconds": 0.0643063230018015,
+    "selection": {
+      "cosine": 0.9757431833889189,
+      "max_error": 0.18739867210388184,
+      "output_nmse": 0.016832437457542933,
+      "weight_nmse": 0.048120511532094755
+    },
+    "status": "MEASURED",
+    "tensor": "blk.0.attn_output.weight",
+    "receipt": "80d3c5b46b6659eff89bf3512e74e290bda8b5531ff3d059d3f72b40afb523ec.json"
+  },
+  {
+    "archive_bytes": 69057,
+    "artifact_sha256": "bae32c2d491f8f34d903694100fb04b300f1f0e5aa909211afca1fcb7a37695d",
+    "bits": 3,
+    "config": {
+      "bits": 3,
+      "rank": 4,
+      "rank_geometry": "diagonal"
+    },
+    "effective_rank": 4,
+    "fit": {
+      "cosine": 0.9773429540606551,
+      "max_error": 0.16727036237716675,
+      "output_nmse": 0.013282455842722153,
+      "weight_nmse": 0.044993224823281594
+    },
+    "geometry": "diagonal",
+    "rank": 4,
+    "raw_bits_per_weight": 3.89501953125,
+    "raw_bytes": 71793,
+    "seconds": 0.06478550899919355,
+    "selection": {
+      "cosine": 0.9773429540606551,
+      "max_error": 0.16727036237716675,
+      "output_nmse": 0.01390397899441481,
+      "weight_nmse": 0.044993224823281594
+    },
+    "status": "MEASURED",
+    "tensor": "blk.0.attn_output.weight",
+    "receipt": "4e7f43e4218830d55116bfb5cebc8cdfbab45a1f281a56a08d1f332d51cef77c.json"
+  },
+  {
+    "archive_bytes": 56258,
+    "artifact_sha256": "40d9140b709017eddc4a2598a2405bc0809f6014b6cae52b74a3f4fdb54e733f",
+    "bits": 4,
+    "config": {
+      "bits": 4
+    },
+    "effective_rank": 0,
+    "fit": {
+      "cosine": 0.9935920253032094,
+      "max_error": 0.94140625,
+      "output_nmse": 0.00048879390029869,
+      "weight_nmse": 0.012790389025304228
+    },
+    "geometry": "scalar",
+    "rank": 0,
+    "raw_bits_per_weight": 4.532407407407407,
+    "raw_bytes": 62656,
+    "seconds": 0.05899743100599153,
+    "selection": {
+      "cosine": 0.9935920253032094,
+      "max_error": 0.94140625,
+      "output_nmse": 0.0004978625088651443,
+      "weight_nmse": 0.012790389025304228
+    },
+    "status": "MEASURED",
+    "tensor": "blk.0.attn_k.weight",
+    "receipt": "7183cd89be8e8b6fbd8a5c804e1f0a1b5d4caeab85178db3b114fe7546d4294c.json"
+  },
+  {
+    "archive_bytes": 174213,
+    "artifact_sha256": "3962aa838e29d27b442d49a82f07f1190bd94bf11f146f435589325fcd7c2df7",
+    "bits": 3,
+    "config": {
+      "bits": 3,
+      "rank": 2,
+      "rank_geometry": "diagonal"
+    },
+    "effective_rank": 2,
+    "fit": {
+      "cosine": 0.9780846886459972,
+      "max_error": 0.5966827869415283,
+      "output_nmse": 0.01986960294009045,
+      "weight_nmse": 0.04403661593555443
+    },
+    "geometry": "diagonal",
+    "rank": 2,
+    "raw_bits_per_weight": 3.65875244140625,
+    "raw_bytes": 179835,
+    "seconds": 0.16776452400517883,
+    "selection": {
+      "cosine": 0.9780846886459972,
+      "max_error": 0.5966827869415283,
+      "output_nmse": 0.019757485634737282,
+      "weight_nmse": 0.04403661593555443
+    },
+    "status": "MEASURED",
+    "tensor": "blk.17.ffn_down.weight",
+    "receipt": "28ca76540023ccd342bd855540f82a0f450021904a1e78b9c06bee22f4f143b4.json"
+  },
+  {
+    "archive_bytes": 65067,
+    "artifact_sha256": "cf068db9a34a58b611243e8833beb747cdc7d7cb095b905c3f118ed2ca6732b0",
+    "bits": 3,
+    "config": {
+      "bits": 3,
+      "rank": 2,
+      "rank_geometry": "activation-shuffled"
+    },
+    "effective_rank": 2,
+    "fit": {
+      "cosine": 0.9706493264421505,
+      "max_error": 0.328818142414093,
+      "output_nmse": 0.011449724303253563,
+      "weight_nmse": 0.05927826153033583
+    },
+    "geometry": "activation-shuffled",
+    "rank": 2,
+    "raw_bits_per_weight": 3.716525607638889,
+    "raw_bytes": 68503,
+    "seconds": 0.06804415200167568,
+    "selection": {
+      "cosine": 0.9706493264421505,
+      "max_error": 0.328818142414093,
+      "output_nmse": 0.011915419672357007,
+      "weight_nmse": 0.05927826153033583
+    },
+    "status": "MEASURED",
+    "tensor": "token_embd.weight",
+    "receipt": "f3857af49b7f4b5054915c0d43e7e8e38f6cc1a89834aee5441d2771c92e09a1.json"
+  },
+  {
+    "archive_bytes": 65059,
+    "artifact_sha256": "4c3e4781752758e723bf9421db7e5b9d9275215c17e775d7d7ca8cec3d87b1f8",
+    "bits": 3,
+    "config": {
+      "bits": 3,
+      "rank": 2,
+      "rank_geometry": "activation"
+    },
+    "effective_rank": 2,
+    "fit": {
+      "cosine": 0.9708676858968284,
+      "max_error": 0.33556683361530304,
+      "output_nmse": 0.0008563797055464629,
+      "weight_nmse": 0.05892160218703953
+    },
+    "geometry": "activation",
+    "rank": 2,
+    "raw_bits_per_weight": 3.716037326388889,
+    "raw_bytes": 68494,
+    "seconds": 0.06861275000119349,
+    "selection": {
+      "cosine": 0.9708676858968284,
+      "max_error": 0.33556683361530304,
+      "output_nmse": 0.0006741063810781709,
+      "weight_nmse": 0.05892160218703953
+    },
+    "status": "MEASURED",
+    "tensor": "token_embd.weight",
+    "receipt": "71069dcc655a475c04f6b78e55b66bba45da22ba19d3cc8d44fe975216935d75.json"
+  },
+  {
+    "archive_bytes": 63369,
+    "artifact_sha256": "fd81251a9f9d8d36f8207dc9b47b3ee4e8331d17ec3eabec12b2a8a72cd9f832",
+    "bits": 3,
+    "config": {
+      "bits": 3,
+      "rank": 1,
+      "rank_geometry": "activation-shuffled"
+    },
+    "effective_rank": 1,
+    "fit": {
+      "cosine": 0.9704113494117141,
+      "max_error": 0.3365750014781952,
+      "output_nmse": 0.011463247936607308,
+      "weight_nmse": 0.059750548395723996
+    },
+    "geometry": "activation-shuffled",
+    "rank": 1,
+    "raw_bits_per_weight": 3.626193576388889,
+    "raw_bytes": 66838,
+    "seconds": 0.06867162700655172,
+    "selection": {
+      "cosine": 0.9704113494117141,
+      "max_error": 0.3365750014781952,
+      "output_nmse": 0.01192688369703705,
+      "weight_nmse": 0.059750548395723996
+    },
+    "status": "MEASURED",
+    "tensor": "token_embd.weight",
+    "receipt": "ebb361bc6d864e0f69501799819a5bd87350750bec099e661782c65e44798817.json"
+  },
+  {
+    "archive_bytes": 85060,
+    "artifact_sha256": "109ef874f683c83cd4c83fb4a4e06a6f1486798df3dfbe468471dc2c409c94a2",
+    "bits": 4,
+    "config": {
+      "bits": 4,
+      "rank": 4,
+      "rank_geometry": "diagonal"
+    },
+    "effective_rank": 4,
+    "fit": {
+      "cosine": 0.9949624662676357,
+      "max_error": 0.47626182436943054,
+      "output_nmse": 0.00548753756342388,
+      "weight_nmse": 0.010151257031094797
+    },
+    "geometry": "diagonal",
+    "rank": 4,
+    "raw_bits_per_weight": 4.895941840277778,
+    "raw_bytes": 90242,
+    "seconds": 0.08039464799367124,
+    "selection": {
+      "cosine": 0.9949624662676357,
+      "max_error": 0.47626182436943054,
+      "output_nmse": 0.005489818984288458,
+      "weight_nmse": 0.010151257031094797
+    },
+    "status": "MEASURED",
+    "tensor": "blk.3.ffn_up.weight",
+    "receipt": "09013f1e7937d8e50d1a89f56fe86028a2574271f5d130512b3a0448f5a30199.json"
+  },
+  {
+    "archive_bytes": 82988,
+    "artifact_sha256": "2bb593da3c84604e57d479b9f58dbd8380ac710e175eea3fc17d41a6700090a4",
+    "bits": 4,
+    "config": {
+      "bits": 4,
+      "rank": 4,
+      "rank_geometry": "activation-shuffled"
+    },
+    "effective_rank": 4,
+    "fit": {
+      "cosine": 0.9942744448843756,
+      "max_error": 0.12530195713043213,
+      "output_nmse": 0.004454267020937677,
+      "weight_nmse": 0.011420604734082943
+    },
+    "geometry": "activation-shuffled",
+    "rank": 4,
+    "raw_bits_per_weight": 4.898003472222222,
+    "raw_bytes": 90280,
+    "seconds": 0.09133282800030429,
+    "selection": {
+      "cosine": 0.9942744448843756,
+      "max_error": 0.12530195713043213,
+      "output_nmse": 0.004600785051923015,
+      "weight_nmse": 0.011420604734082943
+    },
+    "status": "MEASURED",
+    "tensor": "blk.0.attn_output.weight",
+    "receipt": "1bbb5cac34303a63a4fce8ca55463f729b5fd2102e845c0ee9dc09276b757e4f.json"
+  },
+  {
+    "archive_bytes": 78484,
+    "artifact_sha256": "4711b81b2fa220633ed532f9a0a46be0d130fa306b4442a56b607b521c253a88",
+    "bits": 4,
+    "config": {
+      "bits": 4,
+      "rank": 2,
+      "rank_geometry": "diagonal"
+    },
+    "effective_rank": 2,
+    "fit": {
+      "cosine": 0.9938268463874815,
+      "max_error": 0.571715235710144,
+      "output_nmse": 0.0004247849868962011,
+      "weight_nmse": 0.012316671067187542
+    },
+    "geometry": "diagonal",
+    "rank": 2,
+    "raw_bits_per_weight": 4.715386284722222,
+    "raw_bytes": 86914,
+    "seconds": 0.08118796000053408,
+    "selection": {
+      "cosine": 0.9938268463874815,
+      "max_error": 0.571715235710144,
+      "output_nmse": 0.00042875047635034907,
+      "weight_nmse": 0.012316671067187542
+    },
+    "status": "MEASURED",
+    "tensor": "blk.0.attn_q.weight",
+    "receipt": "451e92e330e511efa8532f34697a950726879bcbb794de52ea5caa469d3c1cad.json"
+  },
+  {
+    "archive_bytes": 62998,
+    "artifact_sha256": "12b5d08e0451c168f8975e81475b1f7add2410650e2fa0dc31c08ce1cf5439c7",
+    "bits": 3,
+    "config": {
+      "bits": 3
+    },
+    "effective_rank": 0,
+    "fit": {
+      "cosine": 0.98075154366723,
+      "max_error": 1.1455078125,
+      "output_nmse": 0.02366719736160542,
+      "weight_nmse": 0.038333850940431353
+    },
+    "geometry": "scalar",
+    "rank": 0,
+    "raw_bits_per_weight": 3.5233832465277777,
+    "raw_bytes": 64943,
+    "seconds": 0.0616034819977358,
+    "selection": {
+      "cosine": 0.98075154366723,
+      "max_error": 1.1455078125,
+      "output_nmse": 0.023504363312335533,
+      "weight_nmse": 0.038333850940431353
+    },
+    "status": "MEASURED",
+    "tensor": "blk.3.ffn_up.weight",
+    "receipt": "731d7aabb7683bc50d670389257c6316d63735606f6ef4d573bd22c9cd3d1f94.json"
+  },
+  {
+    "archive_bytes": 64259,
+    "artifact_sha256": "7f5dd51ca4a2bcb3c1a976d4fa0d8e105c44838b71b5204378a06ccdaa16532f",
+    "bits": 3,
+    "config": {
+      "bits": 3,
+      "rank": 1,
+      "rank_geometry": "activation-shuffled"
+    },
+    "effective_rank": 1,
+    "fit": {
+      "cosine": 0.973281223594853,
+      "max_error": 0.87369304895401,
+      "output_nmse": 0.0020404811041498253,
+      "weight_nmse": 0.05303050032916966
+    },
+    "geometry": "activation-shuffled",
+    "rank": 1,
+    "raw_bits_per_weight": 3.626193576388889,
+    "raw_bytes": 66838,
+    "seconds": 0.06943794999824604,
+    "selection": {
+      "cosine": 0.973281223594853,
+      "max_error": 0.87369304895401,
+      "output_nmse": 0.0020251297148917956,
+      "weight_nmse": 0.05303050032916966
+    },
+    "status": "MEASURED",
+    "tensor": "blk.0.attn_q.weight",
+    "receipt": "5de17d1f4837727da881d65cfe724d90c938f1e8dbaece3e73e8458372d4e484.json"
+  },
+  {
+    "archive_bytes": 68256,
+    "artifact_sha256": "05d1ae1fc9d11b42d14cc9a267ec8331c93131ef03496597c90ca09f828cc1ed",
+    "bits": 3,
+    "config": {
+      "bits": 3,
+      "rank": 4,
+      "rank_geometry": "activation-shuffled"
+    },
+    "effective_rank": 4,
+    "fit": {
+      "cosine": 0.9710881294482987,
+      "max_error": 0.3259746879339218,
+      "output_nmse": 0.011347154370798682,
+      "weight_nmse": 0.05838664166649115
+    },
+    "geometry": "activation-shuffled",
+    "rank": 4,
+    "raw_bits_per_weight": 3.8970811631944446,
+    "raw_bytes": 71831,
+    "seconds": 0.07137411100120516,
+    "selection": {
+      "cosine": 0.9710881294482987,
+      "max_error": 0.3259746879339218,
+      "output_nmse": 0.011813651162380461,
+      "weight_nmse": 0.05838664166649115
+    },
+    "status": "MEASURED",
+    "tensor": "token_embd.weight",
+    "receipt": "eff99dc7788793f5be193a226bed002f20a7d7ef2a5281a9fe07627bea0f4790.json"
+  },
+  {
+    "archive_bytes": 85041,
+    "artifact_sha256": "77ac25005ee700cbb79154558c8478a2a75bdbbbfd9dbe2d07fe62e340006f39",
+    "bits": 4,
+    "config": {
+      "bits": 4,
+      "rank": 4,
+      "rank_geometry": "activation-shuffled"
+    },
+    "effective_rank": 4,
+    "fit": {
+      "cosine": 0.994924282352757,
+      "max_error": 0.5222501158714294,
+      "output_nmse": 0.0031998442168900956,
+      "weight_nmse": 0.01022115671871369
+    },
+    "geometry": "activation-shuffled",
+    "rank": 4,
+    "raw_bits_per_weight": 4.898003472222222,
+    "raw_bytes": 90280,
+    "seconds": 0.08960014300100738,
+    "selection": {
+      "cosine": 0.994924282352757,
+      "max_error": 0.5222501158714294,
+      "output_nmse": 0.003231550702541594,
+      "weight_nmse": 0.01022115671871369
+    },
+    "status": "MEASURED",
+    "tensor": "blk.9.ffn_gate.weight",
+    "receipt": "4d00810ddbf82f21e235a32e89f1773ed7e27028d647399f1edcfac526c710a0.json"
+  },
+  {
+    "archive_bytes": 227046,
+    "artifact_sha256": "1b2735ae279b6180342bf93cd87918ddca8f32c69f2e248c7bae5be0373461fe",
+    "bits": 4,
+    "config": {
+      "bits": 4,
+      "rank": 4,
+      "rank_geometry": "activation-shuffled"
+    },
+    "effective_rank": 4,
+    "fit": {
+      "cosine": 0.9789804549316536,
+      "max_error": 0.7352853417396545,
+      "output_nmse": 0.00017271691719396819,
+      "weight_nmse": 0.046481865977668596
+    },
+    "geometry": "activation-shuffled",
+    "rank": 4,
+    "raw_bits_per_weight": 4.80572509765625,
+    "raw_bytes": 236211,
+    "seconds": 0.21769526400021277,
+    "selection": {
+      "cosine": 0.9789804549316536,
+      "max_error": 0.7352853417396545,
+      "output_nmse": 0.00017200017753034538,
+      "weight_nmse": 0.046481865977668596
+    },
+    "status": "MEASURED",
+    "tensor": "blk.29.ffn_down.weight",
+    "receipt": "ad24ee9c16afd0ce89e73ee6c12c6d671f31aadfda970daa450c45476ac713bb.json"
+  },
+  {
+    "archive_bytes": 76989,
+    "artifact_sha256": "90965986e072d3a13a474abddcd203c0b4e16074b69da2066961fb1edd9f27ec",
+    "bits": 4,
+    "config": {
+      "bits": 4,
+      "rank": 1,
+      "rank_geometry": "diagonal"
+    },
+    "effective_rank": 1,
+    "fit": {
+      "cosine": 0.9931020139833469,
+      "max_error": 0.1698373258113861,
+      "output_nmse": 0.002242577708887483,
+      "weight_nmse": 0.013775532695768979
+    },
+    "geometry": "diagonal",
+    "rank": 1,
+    "raw_bits_per_weight": 4.625054253472222,
+    "raw_bytes": 85249,
+    "seconds": 0.07800840400159359,
+    "selection": {
+      "cosine": 0.9931020139833469,
+      "max_error": 0.1698373258113861,
+      "output_nmse": 0.0022961202277729993,
+      "weight_nmse": 0.013775532695768979
+    },
+    "status": "MEASURED",
+    "tensor": "token_embd.weight",
+    "receipt": "a428f6a23ca66ecb1e371e056173ce0bc139bffc6537b65a2cebb2a1597d59f6.json"
+  },
+  {
+    "archive_bytes": 59567,
+    "artifact_sha256": "d7d7568aa7f07035e70d8a0b0154b68d7c5423e7e9858f436ca592278000db19",
+    "bits": 4,
+    "config": {
+      "bits": 4,
+      "rank": 2,
+      "rank_geometry": "activation"
+    },
+    "effective_rank": 2,
+    "fit": {
+      "cosine": 0.9937153555363418,
+      "max_error": 0.9422850608825684,
+      "output_nmse": 0.0001667833541164921,
+      "weight_nmse": 0.012542105826823899
+    },
+    "geometry": "activation",
+    "rank": 2,
+    "raw_bits_per_weight": 4.770688657407407,
+    "raw_bytes": 65950,
+    "seconds": 0.06364534600288607,
+    "selection": {
+      "cosine": 0.9937153555363418,
+      "max_error": 0.9422850608825684,
+      "output_nmse": 0.00017541668298855353,
+      "weight_nmse": 0.012542105826823899
+    },
+    "status": "MEASURED",
+    "tensor": "blk.0.attn_k.weight",
+    "receipt": "98a993e226bcb6cff2939ff6e6fe9e8e3854bfc1a8c23a3b9b1400bf8f4b648b.json"
+  },
+  {
+    "archive_bytes": 50221,
+    "artifact_sha256": "a6dabe74946fc9a16b04714d3fe9f32c4c0a90c88a53e92ebabe103970f1df42",
+    "bits": 3,
+    "config": {
+      "bits": 3,
+      "rank": 2,
+      "rank_geometry": "activation"
+    },
+    "effective_rank": 2,
+    "fit": {
+      "cosine": 0.974325317308459,
+      "max_error": 1.0860370993614197,
+      "output_nmse": 0.0006432381328621307,
+      "weight_nmse": 0.050883237590004356
+    },
+    "geometry": "activation",
+    "rank": 2,
+    "raw_bits_per_weight": 3.769458912037037,
+    "raw_bytes": 52109,
+    "seconds": 0.05200265799794579,
+    "selection": {
+      "cosine": 0.974325317308459,
+      "max_error": 1.0860370993614197,
+      "output_nmse": 0.000693633820495118,
+      "weight_nmse": 0.050883237590004356
+    },
+    "status": "MEASURED",
+    "tensor": "blk.0.attn_k.weight",
+    "receipt": "d1ec8ace2948174a8d27cf21decf2180349b834bdbb8d1f11e15cca1ea95b69c.json"
+  },
+  {
+    "archive_bytes": 62631,
+    "artifact_sha256": "ac27de81642082603f93edf0bc8b23a784f9fb928e4897b292b84cc539250bad",
+    "bits": 4,
+    "config": {
+      "bits": 4,
+      "rank": 4,
+      "rank_geometry": "activation-shuffled"
+    },
+    "effective_rank": 4,
+    "fit": {
+      "cosine": 0.9938705497631807,
+      "max_error": 0.8602807521820068,
+      "output_nmse": 0.00047318882810473006,
+      "weight_nmse": 0.012235798894781318
+    },
+    "geometry": "activation-shuffled",
+    "rank": 4,
+    "raw_bits_per_weight": 4.9936342592592595,
+    "raw_bytes": 69032,
+    "seconds": 0.0645616020046873,
+    "selection": {
+      "cosine": 0.9938705497631807,
+      "max_error": 0.8602807521820068,
+      "output_nmse": 0.0004810988138326978,
+      "weight_nmse": 0.012235798894781318
+    },
+    "status": "MEASURED",
+    "tensor": "blk.0.attn_k.weight",
+    "receipt": "3f2302a202a16bc62fad192b0da6ef5ea41e231bd5f03b8ee1be67f8b90a091a.json"
+  },
+  {
+    "archive_bytes": 64245,
+    "artifact_sha256": "dc45b83e0fe3214fd89972a5d592d73285e37c80f8423d2fc51b5c1ba4e4156f",
+    "bits": 3,
+    "config": {
+      "bits": 3,
+      "rank": 1,
+      "rank_geometry": "activation"
+    },
+    "effective_rank": 1,
+    "fit": {
+      "cosine": 0.9750446872072766,
+      "max_error": 0.35200953483581543,
+      "output_nmse": 0.011875830514741897,
+      "weight_nmse": 0.049514386175889685
+    },
+    "geometry": "activation",
+    "rank": 1,
+    "raw_bits_per_weight": 3.625705295138889,
+    "raw_bytes": 66829,
+    "seconds": 0.07127336799749173,
+    "selection": {
+      "cosine": 0.9750446872072766,
+      "max_error": 0.35200953483581543,
+      "output_nmse": 0.012891087958713257,
+      "weight_nmse": 0.049514386175889685
+    },
+    "status": "MEASURED",
+    "tensor": "blk.0.attn_output.weight",
+    "receipt": "2fac27bb9e0fe418086d39de9fc6ea0176f9f3850ce3a5035b1edb8fa057641c.json"
+  },
+  {
+    "archive_bytes": 68988,
+    "artifact_sha256": "d522750fe752109c4001089156e6fe51d70ad0eaec4b95691b2c0480cfa63e3e",
+    "bits": 3,
+    "config": {
+      "bits": 3,
+      "rank": 4,
+      "rank_geometry": "activation-shuffled"
+    },
+    "effective_rank": 4,
+    "fit": {
+      "cosine": 0.9762381169357968,
+      "max_error": 0.2072514295578003,
+      "output_nmse": 0.017164857507431307,
+      "weight_nmse": 0.04715208547394085
+    },
+    "geometry": "activation-shuffled",
+    "rank": 4,
+    "raw_bits_per_weight": 3.8970811631944446,
+    "raw_bytes": 71831,
+    "seconds": 0.07170162099646404,
+    "selection": {
+      "cosine": 0.9762381169357968,
+      "max_error": 0.2072514295578003,
+      "output_nmse": 0.017793440475128652,
+      "weight_nmse": 0.04715208547394085
+    },
+    "status": "MEASURED",
+    "tensor": "blk.0.attn_output.weight",
+    "receipt": "67a6b9468a299cbeabd23dbf389d31a0b90af6076310f04bee565b06207b8003.json"
+  },
+  {
+    "archive_bytes": 82131,
+    "artifact_sha256": "94284f13116425cdd77b9500be8c6c59651c02878a791598d7415e11ea468f65",
+    "bits": 4,
+    "config": {
+      "bits": 4,
+      "rank": 2,
+      "rank_geometry": "activation"
+    },
+    "effective_rank": 2,
+    "fit": {
+      "cosine": 0.9948697386247377,
+      "max_error": 0.47591692209243774,
+      "output_nmse": 0.0004703346270155096,
+      "weight_nmse": 0.010338951287534533
+    },
+    "geometry": "activation",
+    "rank": 2,
+    "raw_bits_per_weight": 4.716959635416667,
+    "raw_bytes": 86943,
+    "seconds": 0.09016062400041847,
+    "selection": {
+      "cosine": 0.9948697386247377,
+      "max_error": 0.47591692209243774,
+      "output_nmse": 0.0005096644031708983,
+      "weight_nmse": 0.010338951287534533
+    },
+    "status": "MEASURED",
+    "tensor": "blk.3.ffn_up.weight",
+    "receipt": "4c9cb6a257dbae3ca34e23da24ffb35602b5dfa28874ed39be1ccaddc941b7db.json"
+  },
+  {
+    "archive_bytes": 52939,
+    "artifact_sha256": "1828a86f565e73bd0a00d8bffe8011d0cffd1c02fb4b756c2a41784f2a1dc402",
+    "bits": 3,
+    "config": {
+      "bits": 3,
+      "rank": 4,
+      "rank_geometry": "activation-shuffled"
+    },
+    "effective_rank": 4,
+    "fit": {
+      "cosine": 0.9752528670721178,
+      "max_error": 1.046720027923584,
+      "output_nmse": 0.0023037112711494657,
+      "weight_nmse": 0.04902488273407054
+    },
+    "geometry": "activation-shuffled",
+    "rank": 4,
+    "raw_bits_per_weight": 3.992404513888889,
+    "raw_bytes": 55191,
+    "seconds": 0.05327815000055125,
+    "selection": {
+      "cosine": 0.9752528670721178,
+      "max_error": 1.046720027923584,
+      "output_nmse": 0.002336446020621401,
+      "weight_nmse": 0.04902488273407054
+    },
+    "status": "MEASURED",
+    "tensor": "blk.0.attn_k.weight",
+    "receipt": "54d5c7e9732d0149ddb242bd2c7413aa47906359956d13883878feacde3ca2b3.json"
+  },
+  {
+    "archive_bytes": 64881,
+    "artifact_sha256": "97fbc7dff918e9fec92ec6e448a4591253f21430426d1eb89711a37e15c9bcde",
+    "bits": 3,
+    "config": {
+      "bits": 3,
+      "rank": 1,
+      "rank_geometry": "activation"
+    },
+    "effective_rank": 1,
+    "fit": {
+      "cosine": 0.9800590005147629,
+      "max_error": 1.113034188747406,
+      "output_nmse": 0.0031797709664652075,
+      "weight_nmse": 0.03968835098254581
+    },
+    "geometry": "activation",
+    "rank": 1,
+    "raw_bits_per_weight": 3.625705295138889,
+    "raw_bytes": 66829,
+    "seconds": 0.07250703800673364,
+    "selection": {
+      "cosine": 0.9800590005147629,
+      "max_error": 1.113034188747406,
+      "output_nmse": 0.003227481812692851,
+      "weight_nmse": 0.03968835098254581
+    },
+    "status": "MEASURED",
+    "tensor": "blk.9.ffn_gate.weight",
+    "receipt": "b4ea3d988f08547bda6f9464323307d107d1e4d74eb174320bee3f425ef9b15a.json"
+  },
+  {
+    "archive_bytes": 65872,
+    "artifact_sha256": "b11e1d0c86017aecb5493baed2bcd70a82c2140733c8b0df36536c56bf7518cc",
+    "bits": 3,
+    "config": {
+      "bits": 3,
+      "rank": 2,
+      "rank_geometry": "diagonal"
+    },
+    "effective_rank": 2,
+    "fit": {
+      "cosine": 0.97440421726826,
+      "max_error": 0.9139893651008606,
+      "output_nmse": 0.0018464784140466478,
+      "weight_nmse": 0.050774750440799814
+    },
+    "geometry": "diagonal",
+    "rank": 2,
+    "raw_bits_per_weight": 3.7144639756944446,
+    "raw_bytes": 68465,
+    "seconds": 0.06510202700155787,
+    "selection": {
+      "cosine": 0.97440421726826,
+      "max_error": 0.9139893651008606,
+      "output_nmse": 0.0018600509894295917,
+      "weight_nmse": 0.050774750440799814
+    },
+    "status": "MEASURED",
+    "tensor": "blk.0.attn_q.weight",
+    "receipt": "1988eb8ab23f298537c69ac5c8f4276ac3c9a12dee775908e364ec58d68897dd.json"
+  },
+  {
+    "archive_bytes": 76862,
+    "artifact_sha256": "5f138f6c3bcc4894a6aa3f7916cf3ecee16aec5dd054c8dddb895ee933f26366",
+    "bits": 4,
+    "config": {
+      "bits": 4,
+      "rank": 1,
+      "rank_geometry": "diagonal"
+    },
+    "effective_rank": 1,
+    "fit": {
+      "cosine": 0.9937316017005617,
+      "max_error": 0.5663784742355347,
+      "output_nmse": 0.0004350950734384522,
+      "weight_nmse": 0.012505131889190078
+    },
+    "geometry": "diagonal",
+    "rank": 1,
+    "raw_bits_per_weight": 4.625054253472222,
+    "raw_bytes": 85249,
+    "seconds": 0.08450278599775629,
+    "selection": {
+      "cosine": 0.9937316017005617,
+      "max_error": 0.5663784742355347,
+      "output_nmse": 0.00043977154086951507,
+      "weight_nmse": 0.012505131889190078
+    },
+    "status": "MEASURED",
+    "tensor": "blk.0.attn_q.weight",
+    "receipt": "62b29c4e71f68dc1021fc8546cf4f6170c2530c2fe232ebd740144a3c9843575.json"
+  },
+  {
+    "archive_bytes": 80560,
+    "artifact_sha256": "914c0eaefa837389d76b3ded452c9bd0bd6ba20873dadd19c782066903a7c52e",
+    "bits": 4,
+    "config": {
+      "bits": 4,
+      "rank": 1,
+      "rank_geometry": "activation-shuffled"
+    },
+    "effective_rank": 1,
+    "fit": {
+      "cosine": 0.994834240434832,
+      "max_error": 0.514713853597641,
+      "output_nmse": 0.006940005114722507,
+      "weight_nmse": 0.010410518464732657
+    },
+    "geometry": "activation-shuffled",
+    "rank": 1,
+    "raw_bits_per_weight": 4.627115885416667,
+    "raw_bytes": 85287,
+    "seconds": 0.08760875000007218,
+    "selection": {
+      "cosine": 0.994834240434832,
+      "max_error": 0.514713853597641,
+      "output_nmse": 0.006933345259596805,
+      "weight_nmse": 0.010410518464732657
+    },
+    "status": "MEASURED",
+    "tensor": "blk.3.ffn_up.weight",
+    "receipt": "483410bca243a071e350985c4e6a3087fd9f88a44e4664b5f4064489dcee551f.json"
+  },
+  {
+    "archive_bytes": 69547,
+    "artifact_sha256": "eda522420e1d3461e2369db4a8fe9f3036567bef188871615f04242579f17e3c",
+    "bits": 3,
+    "config": {
+      "bits": 3,
+      "rank": 4,
+      "rank_geometry": "activation"
+    },
+    "effective_rank": 4,
+    "fit": {
+      "cosine": 0.9812904186218396,
+      "max_error": 0.8066256046295166,
+      "output_nmse": 0.0011975679306572987,
+      "weight_nmse": 0.03726508221836767
+    },
+    "geometry": "activation",
+    "rank": 4,
+    "raw_bits_per_weight": 3.8965928819444446,
+    "raw_bytes": 71822,
+    "seconds": 0.0734049859966035,
+    "selection": {
+      "cosine": 0.9812904186218396,
+      "max_error": 0.8066256046295166,
+      "output_nmse": 0.001348157243350308,
+      "weight_nmse": 0.03726508221836767
+    },
+    "status": "MEASURED",
+    "tensor": "blk.3.ffn_up.weight",
+    "receipt": "def17df69d0a42f2282f816d6d175edab9cb2d5150c690eff1a6a7d3afa175fe.json"
+  },
+  {
+    "archive_bytes": 82091,
+    "artifact_sha256": "d0aad1320d21d7e198df5862e9e6375d0322caedc051110a5c0b3612c931dbe6",
+    "bits": 4,
+    "config": {
+      "bits": 4,
+      "rank": 2,
+      "rank_geometry": "diagonal"
+    },
+    "effective_rank": 2,
+    "fit": {
+      "cosine": 0.9949331712289045,
+      "max_error": 0.507989227771759,
+      "output_nmse": 0.0025836494157051968,
+      "weight_nmse": 0.010205350461881259
+    },
+    "geometry": "diagonal",
+    "rank": 2,
+    "raw_bits_per_weight": 4.715386284722222,
+    "raw_bytes": 86914,
+    "seconds": 0.08271854899794562,
+    "selection": {
+      "cosine": 0.9949331712289045,
+      "max_error": 0.507989227771759,
+      "output_nmse": 0.002578501086019629,
+      "weight_nmse": 0.010205350461881259
+    },
+    "status": "MEASURED",
+    "tensor": "blk.9.ffn_gate.weight",
+    "receipt": "f303b86362989cd808af3548272aebc937c772972a3a6de3f79926510a0fd2f1.json"
+  },
+  {
+    "archive_bytes": 78683,
+    "artifact_sha256": "aa8a67d4ebbf4ab97391fd0f566ad8c455ca4c9306dd251a34ef109156653661",
+    "bits": 4,
+    "config": {
+      "bits": 4
+    },
+    "effective_rank": 0,
+    "fit": {
+      "cosine": 0.9948021467425794,
+      "max_error": 0.51513671875,
+      "output_nmse": 0.006947310792362739,
+      "weight_nmse": 0.010475727582968419
+    },
+    "geometry": "scalar",
+    "rank": 0,
+    "raw_bits_per_weight": 4.524305555555555,
+    "raw_bytes": 83392,
+    "seconds": 0.07533721800427884,
+    "selection": {
+      "cosine": 0.9948021467425794,
+      "max_error": 0.51513671875,
+      "output_nmse": 0.006941768345337376,
+      "weight_nmse": 0.010475727582968419
+    },
+    "status": "MEASURED",
+    "tensor": "blk.3.ffn_up.weight",
+    "receipt": "13ab9d45a81b7e9a9fa550ca0a98365234aa7a2aae50b280555e014bb025d6b1.json"
+  },
+  {
+    "archive_bytes": 62425,
+    "artifact_sha256": "faf55fe566525425d152d2d8458dbe3a35d8d302e8e9eaa6a006d4b078fbcaf8",
+    "bits": 3,
+    "config": {
+      "bits": 3
+    },
+    "effective_rank": 0,
+    "fit": {
+      "cosine": 0.9730980257231807,
+      "max_error": 0.896484375,
+      "output_nmse": 0.0020503860846997823,
+      "weight_nmse": 0.053394828745750106
+    },
+    "geometry": "scalar",
+    "rank": 0,
+    "raw_bits_per_weight": 3.5233832465277777,
+    "raw_bytes": 64943,
+    "seconds": 0.059563030998106115,
+    "selection": {
+      "cosine": 0.9730980257231807,
+      "max_error": 0.896484375,
+      "output_nmse": 0.0020342125327556843,
+      "weight_nmse": 0.053394828745750106
+    },
+    "status": "MEASURED",
+    "tensor": "blk.0.attn_q.weight",
+    "receipt": "54bbbd1b3a160397fdc52762a19f56c719232c30977b8c6f95f891d0065c6bba.json"
+  },
+  {
+    "archive_bytes": 50171,
+    "artifact_sha256": "a07334d5a628ce1fdd1962c060a8d33ebd69b2dd4068ab269c2b3c9c4e96b74e",
+    "bits": 3,
+    "config": {
+      "bits": 3,
+      "rank": 2,
+      "rank_geometry": "diagonal"
+    },
+    "effective_rank": 2,
+    "fit": {
+      "cosine": 0.9745818680125387,
+      "max_error": 1.0915361642837524,
+      "output_nmse": 0.0019103333382023476,
+      "weight_nmse": 0.05032609243035773
+    },
+    "geometry": "diagonal",
+    "rank": 2,
+    "raw_bits_per_weight": 3.767361111111111,
+    "raw_bytes": 52080,
+    "seconds": 0.04968923600245034,
+    "selection": {
+      "cosine": 0.9745818680125387,
+      "max_error": 1.0915361642837524,
+      "output_nmse": 0.0019227030452365166,
+      "weight_nmse": 0.05032609243035773
+    },
+    "status": "MEASURED",
+    "tensor": "blk.0.attn_k.weight",
+    "receipt": "0c0e4eb29e55c20c1e2e22c69c9bcd51be86cc4220f044b8baa69e99c472b7f6.json"
+  },
+  {
+    "archive_bytes": 221478,
+    "artifact_sha256": "a40a9f7da3ce077c2fd07c668c7dbd3492ca1573d38cb78aabca91f915803165",
+    "bits": 4,
+    "config": {
+      "bits": 4,
+      "rank": 4,
+      "rank_geometry": "diagonal"
+    },
+    "effective_rank": 4,
+    "fit": {
+      "cosine": 0.9935510457602071,
+      "max_error": 0.542045533657074,
+      "output_nmse": 0.004925610284236228,
+      "weight_nmse": 0.013163638823939644
+    },
+    "geometry": "diagonal",
+    "rank": 4,
+    "raw_bits_per_weight": 4.804951985677083,
+    "raw_bytes": 236173,
+    "seconds": 0.20792836799955694,
+    "selection": {
+      "cosine": 0.9935510457602071,
+      "max_error": 0.542045533657074,
+      "output_nmse": 0.005043856565786395,
+      "weight_nmse": 0.013163638823939644
+    },
+    "status": "MEASURED",
+    "tensor": "blk.17.ffn_down.weight",
+    "receipt": "09dea7fd22d645f4c5b11e12bc691420f358187e4a1cc89fd19582c0990b2d1d.json"
+  },
+  {
+    "archive_bytes": 182193,
+    "artifact_sha256": "3e55468495cfc2b271f1c4b189da98c7b2448b1e573d3f431e6acb8d19b4e6a2",
+    "bits": 3,
+    "config": {
+      "bits": 3,
+      "rank": 4,
+      "rank_geometry": "diagonal"
+    },
+    "effective_rank": 4,
+    "fit": {
+      "cosine": 0.9532348765625622,
+      "max_error": 1.390863060951233,
+      "output_nmse": 0.0005547293969948588,
+      "weight_nmse": 0.10044211203902992
+    },
+    "geometry": "diagonal",
+    "rank": 4,
+    "raw_bits_per_weight": 3.8046061197916665,
+    "raw_bytes": 187004,
+    "seconds": 0.16339542900095694,
+    "selection": {
+      "cosine": 0.9532348765625622,
+      "max_error": 1.390863060951233,
+      "output_nmse": 0.0005524107140345831,
+      "weight_nmse": 0.10044211203902992
+    },
+    "status": "MEASURED",
+    "tensor": "blk.29.ffn_down.weight",
+    "receipt": "5ded9191b947e4d5cd7dff10af4b8cc9e01f8dd7e66400ee08af3cae21d195da.json"
+  },
+  {
+    "archive_bytes": 78721,
+    "artifact_sha256": "7b41fc582d6c6022091d9d8872a708d248d500c4bd337d050dc567c47b8c8a6c",
+    "bits": 4,
+    "config": {
+      "bits": 4,
+      "rank": 2,
+      "rank_geometry": "activation"
+    },
+    "effective_rank": 2,
+    "fit": {
+      "cosine": 0.9931443288213442,
+      "max_error": 0.16800639033317566,
+      "output_nmse": 0.00020650351655928298,
+      "weight_nmse": 0.013696980246575303
+    },
+    "geometry": "activation",
+    "rank": 2,
+    "raw_bits_per_weight": 4.716959635416667,
+    "raw_bytes": 86943,
+    "seconds": 0.08594867500505643,
+    "selection": {
+      "cosine": 0.9931443288213442,
+      "max_error": 0.16800639033317566,
+      "output_nmse": 0.0001675611857751492,
+      "weight_nmse": 0.013696980246575303
+    },
+    "status": "MEASURED",
+    "tensor": "token_embd.weight",
+    "receipt": "1270b86b4087088c544cd82b31264c4724655171da851460c8c218320c6678a0.json"
+  },
+  {
+    "archive_bytes": 76946,
+    "artifact_sha256": "9313b721743f3c6e4e9adbb94e195590d0aae64ae7302c6122936b69c96daeb1",
+    "bits": 4,
+    "config": {
+      "bits": 4,
+      "rank": 1,
+      "rank_geometry": "activation-shuffled"
+    },
+    "effective_rank": 1,
+    "fit": {
+      "cosine": 0.993559555452032,
+      "max_error": 0.565035343170166,
+      "output_nmse": 0.0004675285162652879,
+      "weight_nmse": 0.012845133234868716
+    },
+    "geometry": "activation-shuffled",
+    "rank": 1,
+    "raw_bits_per_weight": 4.627115885416667,
+    "raw_bytes": 85287,
+    "seconds": 0.08833906200015917,
+    "selection": {
+      "cosine": 0.993559555452032,
+      "max_error": 0.565035343170166,
+      "output_nmse": 0.000460442765469347,
+      "weight_nmse": 0.012845133234868716
+    },
+    "status": "MEASURED",
+    "tensor": "blk.0.attn_q.weight",
+    "receipt": "7c1e4df00d7cf2abeebe357151712c3467291dd55ae0b3bbbdad92451db965b0.json"
+  },
+  {
+    "archive_bytes": 172041,
+    "artifact_sha256": "282d4e58430e2ab96c234eaca115c37b39ca89373f9815f2b455840863ab556b",
+    "bits": 3,
+    "config": {
+      "bits": 3,
+      "rank": 1,
+      "rank_geometry": "activation-shuffled"
+    },
+    "effective_rank": 1,
+    "fit": {
+      "cosine": 0.9524811749187608,
+      "max_error": 1.3925353288650513,
+      "output_nmse": 0.0007567890334872991,
+      "weight_nmse": 0.10190267541190415
+    },
+    "geometry": "activation-shuffled",
+    "rank": 1,
+    "raw_bits_per_weight": 3.5865885416666665,
+    "raw_bytes": 176288,
+    "seconds": 0.18143149199750042,
+    "selection": {
+      "cosine": 0.9524811749187608,
+      "max_error": 1.3925353288650513,
+      "output_nmse": 0.0007498044041501134,
+      "weight_nmse": 0.10190267541190415
+    },
+    "status": "MEASURED",
+    "tensor": "blk.29.ffn_down.weight",
+    "receipt": "6f05bde9a435d2768d3226c3722af5a22798da5d29366377b02b7cdeff8b7533.json"
+  },
+  {
+    "archive_bytes": 68270,
+    "artifact_sha256": "62b8b37fbca2e0abfe9218951752db6c9cbea52c78283eaf71a605e1f04414ad",
+    "bits": 3,
+    "config": {
+      "bits": 3,
+      "rank": 4,
+      "rank_geometry": "diagonal"
+    },
+    "effective_rank": 4,
+    "fit": {
+      "cosine": 0.9719350313111917,
+      "max_error": 0.33213263750076294,
+      "output_nmse": 0.005686036393201582,
+      "weight_nmse": 0.05716040817115454
+    },
+    "geometry": "diagonal",
+    "rank": 4,
+    "raw_bits_per_weight": 3.89501953125,
+    "raw_bytes": 71793,
+    "seconds": 0.06639969099342125,
+    "selection": {
+      "cosine": 0.9719350313111917,
+      "max_error": 0.33213263750076294,
+      "output_nmse": 0.005700215645727989,
+      "weight_nmse": 0.05716040817115454
+    },
+    "status": "MEASURED",
+    "tensor": "token_embd.weight",
+    "receipt": "3a33488870ca86793d36ca8cbb356b56607f30f400686e542ebe03ee800d2e83.json"
+  },
+  {
+    "archive_bytes": 174378,
+    "artifact_sha256": "d7bdad5a704fc933b3407569675a0dda9f51fa9dbdbfd7c661a1d4e4ed99cece",
+    "bits": 3,
+    "config": {
+      "bits": 3,
+      "rank": 2,
+      "rank_geometry": "activation"
+    },
+    "effective_rank": 2,
+    "fit": {
+      "cosine": 0.9775381037056314,
+      "max_error": 1.0014383792877197,
+      "output_nmse": 0.004694867926103764,
+      "weight_nmse": 0.04511643280033152
+    },
+    "geometry": "activation",
+    "rank": 2,
+    "raw_bits_per_weight": 3.6593424479166665,
+    "raw_bytes": 179864,
+    "seconds": 0.17774271799862618,
+    "selection": {
+      "cosine": 0.9775381037056314,
+      "max_error": 1.0014383792877197,
+      "output_nmse": 0.005351503891246228,
+      "weight_nmse": 0.04511643280033152
+    },
+    "status": "MEASURED",
+    "tensor": "blk.17.ffn_down.weight",
+    "receipt": "39f18663999c7a310a36842fb1db7704abc5af41752e27873cbc80e5290fc043.json"
+  },
+  {
+    "archive_bytes": 82128,
+    "artifact_sha256": "399e221cf62652eda45f07c30a73877e5a6bfd3df34584ad3859306869144664",
+    "bits": 4,
+    "config": {
+      "bits": 4,
+      "rank": 2,
+      "rank_geometry": "activation"
+    },
+    "effective_rank": 2,
+    "fit": {
+      "cosine": 0.9948755688706155,
+      "max_error": 0.5101969242095947,
+      "output_nmse": 0.0003971761895517183,
+      "weight_nmse": 0.010320738966074529
+    },
+    "geometry": "activation",
+    "rank": 2,
+    "raw_bits_per_weight": 4.716959635416667,
+    "raw_bytes": 86943,
+    "seconds": 0.08707436000258895,
+    "selection": {
+      "cosine": 0.9948755688706155,
+      "max_error": 0.5101969242095947,
+      "output_nmse": 0.00040816002206358503,
+      "weight_nmse": 0.010320738966074529
+    },
+    "status": "MEASURED",
+    "tensor": "blk.9.ffn_gate.weight",
+    "receipt": "fbdc2db32e47dc19fd9b6f056bc6f80facd708fadeda3a2632f1bd60473848c2.json"
+  },
+  {
+    "archive_bytes": 78692,
+    "artifact_sha256": "7ab41d7ec9def5e29fdbfb9e779d6c75c49cb5ef1a01bc851f65fbe16199a8fb",
+    "bits": 4,
+    "config": {
+      "bits": 4,
+      "rank": 2,
+      "rank_geometry": "diagonal"
+    },
+    "effective_rank": 2,
+    "fit": {
+      "cosine": 0.9931689268267248,
+      "max_error": 0.16934475302696228,
+      "output_nmse": 0.0015973886027566735,
+      "weight_nmse": 0.013643774200534286
+    },
+    "geometry": "diagonal",
+    "rank": 2,
+    "raw_bits_per_weight": 4.715386284722222,
+    "raw_bytes": 86914,
+    "seconds": 0.07900048000010429,
+    "selection": {
+      "cosine": 0.9931689268267248,
+      "max_error": 0.16934475302696228,
+      "output_nmse": 0.0016163489576381594,
+      "weight_nmse": 0.013643774200534286
+    },
+    "status": "MEASURED",
+    "tensor": "token_embd.weight",
+    "receipt": "5de88c5571393245455656d158c2b6775eaf973a4ca7b7045a662c6d81bf84e9.json"
+  },
+  {
+    "archive_bytes": 175520,
+    "artifact_sha256": "30f256ba6abcfccdc18faaac388f8e9f32fc5f52413cf9bead4f56b2e76f6fe8",
+    "bits": 3,
+    "config": {
+      "bits": 3,
+      "rank": 2,
+      "rank_geometry": "activation"
+    },
+    "effective_rank": 2,
+    "fit": {
+      "cosine": 0.952741622646068,
+      "max_error": 1.3700969219207764,
+      "output_nmse": 7.137691647875859e-06,
+      "weight_nmse": 0.10139507995079883
+    },
+    "geometry": "activation",
+    "rank": 2,
+    "raw_bits_per_weight": 3.6593424479166665,
+    "raw_bytes": 179864,
+    "seconds": 0.18021264099661494,
+    "selection": {
+      "cosine": 0.952741622646068,
+      "max_error": 1.3700969219207764,
+      "output_nmse": 6.5948922494828845e-06,
+      "weight_nmse": 0.10139507995079883
+    },
+    "status": "MEASURED",
+    "tensor": "blk.29.ffn_down.weight",
+    "receipt": "4593840d13dc21e96a7bab7e86efce5350865d1fa8696f9720a9382ba1c29cd1.json"
+  },
+  {
+    "archive_bytes": 211526,
+    "artifact_sha256": "81aebe3cbf06f5e533e30dc6cb84a9aadc1f9581fa1e19c18b9e3eb3260c1382",
+    "bits": 4,
+    "config": {
+      "bits": 4,
+      "rank": 1,
+      "rank_geometry": "activation-shuffled"
+    },
+    "effective_rank": 1,
+    "fit": {
+      "cosine": 0.9932464054007963,
+      "max_error": 1.2115631103515625,
+      "output_nmse": 0.005479444247823251,
+      "weight_nmse": 0.013791879905566047
+    },
+    "geometry": "activation-shuffled",
+    "rank": 1,
+    "raw_bits_per_weight": 4.586934407552083,
+    "raw_bytes": 225457,
+    "seconds": 0.2081737600019551,
+    "selection": {
+      "cosine": 0.9932464054007963,
+      "max_error": 1.2115631103515625,
+      "output_nmse": 0.005680159649430042,
+      "weight_nmse": 0.013791879905566047
+    },
+    "status": "MEASURED",
+    "tensor": "blk.17.ffn_down.weight",
+    "receipt": "45d6dd128da2ffb03aca6f422100a05cdf82d586cdc30d2122fee24e662623c5.json"
+  },
+  {
+    "archive_bytes": 69587,
+    "artifact_sha256": "2d954cf14338fd8b9d6aa91413e7c7247d1ebfbcf84bab0573f752bfc6c719b8",
+    "bits": 3,
+    "config": {
+      "bits": 3,
+      "rank": 4,
+      "rank_geometry": "activation"
+    },
+    "effective_rank": 4,
+    "fit": {
+      "cosine": 0.9804209335797645,
+      "max_error": 1.0938539505004883,
+      "output_nmse": 0.0011587347792411326,
+      "weight_nmse": 0.03897218353418054
+    },
+    "geometry": "activation",
+    "rank": 4,
+    "raw_bits_per_weight": 3.8965928819444446,
+    "raw_bytes": 71822,
+    "seconds": 0.07354144899727544,
+    "selection": {
+      "cosine": 0.9804209335797645,
+      "max_error": 1.0938539505004883,
+      "output_nmse": 0.0012302125927861742,
+      "weight_nmse": 0.03897218353418054
+    },
+    "status": "MEASURED",
+    "tensor": "blk.9.ffn_gate.weight",
+    "receipt": "fe1649f5328020c2a345f818c82586698d4ea8b0e33cfdef8f671e0d55b7424e.json"
+  },
+  {
+    "archive_bytes": 66538,
+    "artifact_sha256": "cb90a07185cf0360305cdcc5f6a19a2cf12bfd8e346f99e70b96df8d8fc26fac",
+    "bits": 3,
+    "config": {
+      "bits": 3,
+      "rank": 2,
+      "rank_geometry": "activation"
+    },
+    "effective_rank": 2,
+    "fit": {
+      "cosine": 0.981013766698867,
+      "max_error": 0.9404349327087402,
+      "output_nmse": 0.001854876208031268,
+      "weight_nmse": 0.03781263355358946
+    },
+    "geometry": "activation",
+    "rank": 2,
+    "raw_bits_per_weight": 3.716037326388889,
+    "raw_bytes": 68494,
+    "seconds": 0.07183776100282557,
+    "selection": {
+      "cosine": 0.981013766698867,
+      "max_error": 0.9404349327087402,
+      "output_nmse": 0.0019428061910642608,
+      "weight_nmse": 0.03781263355358946
+    },
+    "status": "MEASURED",
+    "tensor": "blk.3.ffn_up.weight",
+    "receipt": "ff04b8ad9ceaf70e92be098c676783400766a7cfb6e264117cc08bf0e28c7ce0.json"
+  },
+  {
+    "archive_bytes": 65962,
+    "artifact_sha256": "3534ba5127a743a4e698f77397666c050d4f794b4b45946f35f78c7047449c7a",
+    "bits": 3,
+    "config": {
+      "bits": 3,
+      "rank": 2,
+      "rank_geometry": "diagonal"
+    },
+    "effective_rank": 2,
+    "fit": {
+      "cosine": 0.9767522217609924,
+      "max_error": 0.16005712747573853,
+      "output_nmse": 0.014879851379952014,
+      "weight_nmse": 0.04611748035433627
+    },
+    "geometry": "diagonal",
+    "rank": 2,
+    "raw_bits_per_weight": 3.7144639756944446,
+    "raw_bytes": 68465,
+    "seconds": 0.06447836499864934,
+    "selection": {
+      "cosine": 0.9767522217609924,
+      "max_error": 0.16005712747573853,
+      "output_nmse": 0.015493932677681788,
+      "weight_nmse": 0.04611748035433627
+    },
+    "status": "MEASURED",
+    "tensor": "blk.0.attn_output.weight",
+    "receipt": "013310f6dc3b76f96ea90c938d2e6bee62fadf8395ab836f823414d60cbe63ea.json"
+  },
+  {
+    "archive_bytes": 227201,
+    "artifact_sha256": "a16f6b6d530fb1129a1eec8127e2e38ebccbb16210dc168f906972027aa5a1cc",
+    "bits": 4,
+    "config": {
+      "bits": 4,
+      "rank": 4,
+      "rank_geometry": "diagonal"
+    },
+    "effective_rank": 4,
+    "fit": {
+      "cosine": 0.978926195220589,
+      "max_error": 0.736112117767334,
+      "output_nmse": 0.00016367020439498798,
+      "weight_nmse": 0.046680143721530794
+    },
+    "geometry": "diagonal",
+    "rank": 4,
+    "raw_bits_per_weight": 4.804951985677083,
+    "raw_bytes": 236173,
+    "seconds": 0.2060731899982784,
+    "selection": {
+      "cosine": 0.978926195220589,
+      "max_error": 0.736112117767334,
+      "output_nmse": 0.00016324622620383098,
+      "weight_nmse": 0.046680143721530794
+    },
+    "status": "MEASURED",
+    "tensor": "blk.29.ffn_down.weight",
+    "receipt": "469b115b43875ea0be2acbf03472c1ce7269a0a4b4fc8fc488be551dfc3e4f09.json"
+  },
+  {
+    "archive_bytes": 48665,
+    "artifact_sha256": "3d90e7a5c54c999e279a4b14c9289dd7a1c8f8c16e2059d7f03341c77b17e398",
+    "bits": 3,
+    "config": {
+      "bits": 3,
+      "rank": 1,
+      "rank_geometry": "diagonal"
+    },
+    "effective_rank": 1,
+    "fit": {
+      "cosine": 0.9738645239800657,
+      "max_error": 1.0919511914253235,
+      "output_nmse": 0.0020560422942397876,
+      "weight_nmse": 0.051747538219077634
+    },
+    "geometry": "diagonal",
+    "rank": 1,
+    "raw_bits_per_weight": 3.65625,
+    "raw_bytes": 50544,
+    "seconds": 0.04964311000367161,
+    "selection": {
+      "cosine": 0.9738645239800657,
+      "max_error": 1.0919511914253235,
+      "output_nmse": 0.0020666308220728606,
+      "weight_nmse": 0.051747538219077634
+    },
+    "status": "MEASURED",
+    "tensor": "blk.0.attn_k.weight",
+    "receipt": "9df9fbe2d76f06ed5976d1ae5f7071b4a44ee925f7e192230716c5a0d9c25ddc.json"
+  },
+  {
+    "archive_bytes": 48707,
+    "artifact_sha256": "a8175f591c0db1084684b2dae4f1e40493293c0c3e03171d1a988915f0d8d76c",
+    "bits": 3,
+    "config": {
+      "bits": 3,
+      "rank": 1,
+      "rank_geometry": "activation"
+    },
+    "effective_rank": 1,
+    "fit": {
+      "cosine": 0.9739778218681425,
+      "max_error": 1.1088149547576904,
+      "output_nmse": 0.0010451206756737117,
+      "weight_nmse": 0.05152873174853827
+    },
+    "geometry": "activation",
+    "rank": 1,
+    "raw_bits_per_weight": 3.658347800925926,
+    "raw_bytes": 50573,
+    "seconds": 0.053873193995968904,
+    "selection": {
+      "cosine": 0.9739778218681425,
+      "max_error": 1.1088149547576904,
+      "output_nmse": 0.001077427298245752,
+      "weight_nmse": 0.05152873174853827
+    },
+    "status": "MEASURED",
+    "tensor": "blk.0.attn_k.weight",
+    "receipt": "5abf5203cf08871e2a0a3fcfe0db47440c6bc95dac69a3d95ecb5c9fc97b445f.json"
+  },
+  {
+    "archive_bytes": 68975,
+    "artifact_sha256": "26ba153855094407c0b9f9d78699d6fbae3afea8a9e0319e611ac21c76cdda91",
+    "bits": 3,
+    "config": {
+      "bits": 3,
+      "rank": 4,
+      "rank_geometry": "activation"
+    },
+    "effective_rank": 4,
+    "fit": {
+      "cosine": 0.9764617884887165,
+      "max_error": 0.1632683277130127,
+      "output_nmse": 0.0062492561445244114,
+      "weight_nmse": 0.046691574065079545
+    },
+    "geometry": "activation",
+    "rank": 4,
+    "raw_bits_per_weight": 3.8965928819444446,
+    "raw_bytes": 71822,
+    "seconds": 0.07170441700145602,
+    "selection": {
+      "cosine": 0.9764617884887165,
+      "max_error": 0.1632683277130127,
+      "output_nmse": 0.007641053641175716,
+      "weight_nmse": 0.046691574065079545
+    },
+    "status": "MEASURED",
+    "tensor": "blk.0.attn_output.weight",
+    "receipt": "b600a24ae712b67cfbbd2f2a8d78d7158363ce69439967a76922751c2520974b.json"
+  },
+  {
+    "archive_bytes": 68253,
+    "artifact_sha256": "39b1e51cbb74264b30af75daa2cc394eb6cbd00b306037418ecaf998105d4d08",
+    "bits": 3,
+    "config": {
+      "bits": 3,
+      "rank": 4,
+      "rank_geometry": "activation"
+    },
+    "effective_rank": 4,
+    "fit": {
+      "cosine": 0.9715602084350279,
+      "max_error": 0.3370107114315033,
+      "output_nmse": 0.0005816693635417865,
+      "weight_nmse": 0.05761595324333768
+    },
+    "geometry": "activation",
+    "rank": 4,
+    "raw_bits_per_weight": 3.8965928819444446,
+    "raw_bytes": 71822,
+    "seconds": 0.07055470300110755,
+    "selection": {
+      "cosine": 0.9715602084350279,
+      "max_error": 0.3370107114315033,
+      "output_nmse": 0.0005233889485009353,
+      "weight_nmse": 0.05761595324333768
+    },
+    "status": "MEASURED",
+    "tensor": "token_embd.weight",
+    "receipt": "ae80836883000aaa5c6e09af38f38862fbbe5e473c5a9f8afe66fc97da78e028.json"
+  },
+  {
+    "archive_bytes": 64818,
+    "artifact_sha256": "b69a8a7b5ce5c0b083aa05e8a05cbf6fde721c0871933f7602cec3a6248fe1b9",
+    "bits": 3,
+    "config": {
+      "bits": 3,
+      "rank": 1,
+      "rank_geometry": "activation"
+    },
+    "effective_rank": 1,
+    "fit": {
+      "cosine": 0.980851317669365,
+      "max_error": 1.1454780101776123,
+      "output_nmse": 0.005711090305365616,
+      "weight_nmse": 0.03813556006290765
+    },
+    "geometry": "activation",
+    "rank": 1,
+    "raw_bits_per_weight": 3.625705295138889,
+    "raw_bytes": 66829,
+    "seconds": 0.07423997599835275,
+    "selection": {
+      "cosine": 0.980851317669365,
+      "max_error": 1.1454780101776123,
+      "output_nmse": 0.005820725502385698,
+      "weight_nmse": 0.03813556006290765
+    },
+    "status": "MEASURED",
+    "tensor": "blk.3.ffn_up.weight",
+    "receipt": "f919bc874c555cb9017c5bc508655e34c9771462f785aaaeffa1bbc13d2217e6.json"
+  },
+  {
+    "archive_bytes": 181939,
+    "artifact_sha256": "a9b5107c9fabcb64ee7d1dbd71fdd722f408b3bd52a8031c8ebce215a70d1f14",
+    "bits": 3,
+    "config": {
+      "bits": 3,
+      "rank": 4,
+      "rank_geometry": "activation-shuffled"
+    },
+    "effective_rank": 4,
+    "fit": {
+      "cosine": 0.953091502109828,
+      "max_error": 1.3777440786361694,
+      "output_nmse": 0.0007478844624001338,
+      "weight_nmse": 0.1004277767753044
+    },
+    "geometry": "activation-shuffled",
+    "rank": 4,
+    "raw_bits_per_weight": 3.8053792317708335,
+    "raw_bytes": 187042,
+    "seconds": 0.17823395000596065,
+    "selection": {
+      "cosine": 0.953091502109828,
+      "max_error": 1.3777440786361694,
+      "output_nmse": 0.000741181805634891,
+      "weight_nmse": 0.1004277767753044
+    },
+    "status": "MEASURED",
+    "tensor": "blk.29.ffn_down.weight",
+    "receipt": "d2d253bf67aa9a74ce7b12b1509cf8fe5e35de034854367c345839290c531c0f.json"
+  },
+  {
+    "archive_bytes": 217064,
+    "artifact_sha256": "a939075f2836ebbe9baa50e877ecd04eab1d138ab60c89c2c6597d6f180c9abb",
+    "bits": 4,
+    "config": {
+      "bits": 4,
+      "rank": 1,
+      "rank_geometry": "activation-shuffled"
+    },
+    "effective_rank": 1,
+    "fit": {
+      "cosine": 0.9786921607498997,
+      "max_error": 0.7379336953163147,
+      "output_nmse": 0.0001735552168168101,
+      "weight_nmse": 0.047217580980470214
+    },
+    "geometry": "activation-shuffled",
+    "rank": 1,
+    "raw_bits_per_weight": 4.586934407552083,
+    "raw_bytes": 225457,
+    "seconds": 0.22043985500204144,
+    "selection": {
+      "cosine": 0.9786921607498997,
+      "max_error": 0.7379336953163147,
+      "output_nmse": 0.00017282610904528853,
+      "weight_nmse": 0.047217580980470214
+    },
+    "status": "MEASURED",
+    "tensor": "blk.29.ffn_down.weight",
+    "receipt": "b933bcead3f57d5a12aa61660bfdfce148de053a62cd1f1cedfe037903746d61.json"
+  },
+  {
+    "archive_bytes": 77031,
+    "artifact_sha256": "30d4c06cb7c1b01b198a35a72f4d63ac48d4ce43b591f854ae8c04d8354ddb7e",
+    "bits": 4,
+    "config": {
+      "bits": 4,
+      "rank": 1,
+      "rank_geometry": "activation-shuffled"
+    },
+    "effective_rank": 1,
+    "fit": {
+      "cosine": 0.9930750208838679,
+      "max_error": 0.1671450436115265,
+      "output_nmse": 0.002711226410459918,
+      "weight_nmse": 0.013828606325419657
+    },
+    "geometry": "activation-shuffled",
+    "rank": 1,
+    "raw_bits_per_weight": 4.627115885416667,
+    "raw_bytes": 85287,
+    "seconds": 0.08480726800189586,
+    "selection": {
+      "cosine": 0.9930750208838679,
+      "max_error": 0.1671450436115265,
+      "output_nmse": 0.0027676398708977763,
+      "weight_nmse": 0.013828606325419657
+    },
+    "status": "MEASURED",
+    "tensor": "token_embd.weight",
+    "receipt": "e607257e5eb99b1c7d1284fdad4649e2da7cb264fb42d1d6e2cfa81437b14d8a.json"
+  },
+  {
+    "archive_bytes": 52930,
+    "artifact_sha256": "24ec7ac523f3364828426a03fd8503b5315998f3e56fd390815d31b57f7558ea",
+    "bits": 3,
+    "config": {
+      "bits": 3,
+      "rank": 4,
+      "rank_geometry": "activation"
+    },
+    "effective_rank": 4,
+    "fit": {
+      "cosine": 0.9749768360452212,
+      "max_error": 1.0721534490585327,
+      "output_nmse": 0.00042573611374349674,
+      "weight_nmse": 0.04961529951238031
+    },
+    "geometry": "activation",
+    "rank": 4,
+    "raw_bits_per_weight": 3.9917534722222223,
+    "raw_bytes": 55182,
+    "seconds": 0.05313126900000498,
+    "selection": {
+      "cosine": 0.9749768360452212,
+      "max_error": 1.0721534490585327,
+      "output_nmse": 0.0004946375451698542,
+      "weight_nmse": 0.04961529951238031
+    },
+    "status": "MEASURED",
+    "tensor": "blk.0.attn_k.weight",
+    "receipt": "2077eae118134d2758ba4f05b564dd718b36eafa1b5377be72c065b931de6290.json"
+  },
+  {
+    "archive_bytes": 221487,
+    "artifact_sha256": "c8f41d482bd1c47b32dbb0e0a1343b9f68d0cd72bc91ecca677b0813df9e8368",
+    "bits": 4,
+    "config": {
+      "bits": 4,
+      "rank": 4,
+      "rank_geometry": "activation"
+    },
+    "effective_rank": 4,
+    "fit": {
+      "cosine": 0.993446178604736,
+      "max_error": 0.6260726451873779,
+      "output_nmse": 0.0010150257220281843,
+      "weight_nmse": 0.013379426904701404
+    },
+    "geometry": "activation",
+    "rank": 4,
+    "raw_bits_per_weight": 4.8055419921875,
+    "raw_bytes": 236202,
+    "seconds": 0.21973935399728362,
+    "selection": {
+      "cosine": 0.993446178604736,
+      "max_error": 0.6260726451873779,
+      "output_nmse": 0.0012678098052172355,
+      "weight_nmse": 0.013379426904701404
+    },
+    "status": "MEASURED",
+    "tensor": "blk.17.ffn_down.weight",
+    "receipt": "7635082f2c457a0e73bd166773fc72cadda5285522927bd889f21dd2ee92b417.json"
+  },
+  {
+    "archive_bytes": 180758,
+    "artifact_sha256": "19f11ddcf852b44081c5cd8f2f1497392a4826afe9cdbb0164600cef560e0453",
+    "bits": 3,
+    "config": {
+      "bits": 3,
+      "rank": 4,
+      "rank_geometry": "diagonal"
+    },
+    "effective_rank": 4,
+    "fit": {
+      "cosine": 0.9783238090958286,
+      "max_error": 0.5819761753082275,
+      "output_nmse": 0.01889012831435636,
+      "weight_nmse": 0.043556597842273455
+    },
+    "geometry": "diagonal",
+    "rank": 4,
+    "raw_bits_per_weight": 3.8046061197916665,
+    "raw_bytes": 187004,
+    "seconds": 0.17211054200015496,
+    "selection": {
+      "cosine": 0.9783238090958286,
+      "max_error": 0.5819761753082275,
+      "output_nmse": 0.018789272135699017,
+      "weight_nmse": 0.043556597842273455
+    },
+    "status": "MEASURED",
+    "tensor": "blk.17.ffn_down.weight",
+    "receipt": "e153a1a2b674a2c2feb409343bdf5a5222cb47e7a0d0112ff070a06b976b31ea.json"
+  },
+  {
+    "archive_bytes": 221514,
+    "artifact_sha256": "5b6ea1f8786623b4ba0642cd65ccef2c91071fb2c41fe15818ab25dd0e2492a0",
+    "bits": 4,
+    "config": {
+      "bits": 4,
+      "rank": 4,
+      "rank_geometry": "activation-shuffled"
+    },
+    "effective_rank": 4,
+    "fit": {
+      "cosine": 0.9934149634689067,
+      "max_error": 0.844994306564331,
+      "output_nmse": 0.0054378704300546005,
+      "weight_nmse": 0.013439488411037594
+    },
+    "geometry": "activation-shuffled",
+    "rank": 4,
+    "raw_bits_per_weight": 4.80572509765625,
+    "raw_bytes": 236211,
+    "seconds": 0.21842115300387377,
+    "selection": {
+      "cosine": 0.9934149634689067,
+      "max_error": 0.844994306564331,
+      "output_nmse": 0.005638263245218976,
+      "weight_nmse": 0.013439488411037594
+    },
+    "status": "MEASURED",
+    "tensor": "blk.17.ffn_down.weight",
+    "receipt": "ebe0b3b5a036da3dc349b7624b26dd6b64eeaad6bcd834ea02a87af03003846d.json"
+  },
+  {
+    "archive_bytes": 170870,
+    "artifact_sha256": "74ef6639ab4b6a2a4bc872a86ac73132373eedb465f185a5ca8c1b7f645eb89a",
+    "bits": 3,
+    "config": {
+      "bits": 3,
+      "rank": 1,
+      "rank_geometry": "activation-shuffled"
+    },
+    "effective_rank": 1,
+    "fit": {
+      "cosine": 0.9772224639352834,
+      "max_error": 1.3051680326461792,
+      "output_nmse": 0.022826296592731485,
+      "weight_nmse": 0.04574276169189
+    },
+    "geometry": "activation-shuffled",
+    "rank": 1,
+    "raw_bits_per_weight": 3.5865885416666665,
+    "raw_bytes": 176288,
+    "seconds": 0.1831598419958027,
+    "selection": {
+      "cosine": 0.9772224639352834,
+      "max_error": 1.3051680326461792,
+      "output_nmse": 0.022757260871179016,
+      "weight_nmse": 0.04574276169189
+    },
+    "status": "MEASURED",
+    "tensor": "blk.17.ffn_down.weight",
+    "receipt": "cc72cc7cb178b1626756e74e9526d9c1b3dc7acae7edcfd9559274cb2099899b.json"
+  },
+  {
+    "archive_bytes": 217051,
+    "artifact_sha256": "4f6f55a35a5b9c82e1c56000d97434b8a73d137348d7c18bfb01c718ddaaa006",
+    "bits": 4,
+    "config": {
+      "bits": 4,
+      "rank": 1,
+      "rank_geometry": "diagonal"
+    },
+    "effective_rank": 1,
+    "fit": {
+      "cosine": 0.9787076496647307,
+      "max_error": 0.7443408966064453,
+      "output_nmse": 0.0001732623825504095,
+      "weight_nmse": 0.04720506561132609
+    },
+    "geometry": "diagonal",
+    "rank": 1,
+    "raw_bits_per_weight": 4.586161295572917,
+    "raw_bytes": 225419,
+    "seconds": 0.2094606040045619,
+    "selection": {
+      "cosine": 0.9787076496647307,
+      "max_error": 0.7443408966064453,
+      "output_nmse": 0.00017244738549532714,
+      "weight_nmse": 0.04720506561132609
+    },
+    "status": "MEASURED",
+    "tensor": "blk.29.ffn_down.weight",
+    "receipt": "4b44340ee3da19bcf831b098102c4615a8acf684be9ec8d8e5e13fe3b570bca8.json"
+  },
+  {
+    "archive_bytes": 220595,
+    "artifact_sha256": "9e6dcb5b78c05988ed72eba470c221fb088f5fa1d027c2fcd7a5853f55ff4a6a",
+    "bits": 4,
+    "config": {
+      "bits": 4,
+      "rank": 2,
+      "rank_geometry": "activation-shuffled"
+    },
+    "effective_rank": 2,
+    "fit": {
+      "cosine": 0.978783014891894,
+      "max_error": 0.7377990484237671,
+      "output_nmse": 0.00017339441569304867,
+      "weight_nmse": 0.04698639021949771
+    },
+    "geometry": "activation-shuffled",
+    "rank": 2,
+    "raw_bits_per_weight": 4.659871419270833,
+    "raw_bytes": 229042,
+    "seconds": 0.21604419300274458,
+    "selection": {
+      "cosine": 0.978783014891894,
+      "max_error": 0.7377990484237671,
+      "output_nmse": 0.00017266684107951997,
+      "weight_nmse": 0.04698639021949771
+    },
+    "status": "MEASURED",
+    "tensor": "blk.29.ffn_down.weight",
+    "receipt": "77fd7bb2ed2a9cf09fc88fd9ad40e458af537f2dc92c1eedf925e1de68cd96cf.json"
+  },
+  {
+    "archive_bytes": 75144,
+    "artifact_sha256": "177edccda3b5b9209ee1164077eee8a4fd7a4c83163be8baf827063016302984",
+    "bits": 4,
+    "config": {
+      "bits": 4
+    },
+    "effective_rank": 0,
+    "fit": {
+      "cosine": 0.9930258217986613,
+      "max_error": 0.16943359375,
+      "output_nmse": 0.0027203738919859884,
+      "weight_nmse": 0.013927110653207321
+    },
+    "geometry": "scalar",
+    "rank": 0,
+    "raw_bits_per_weight": 4.524305555555555,
+    "raw_bytes": 83392,
+    "seconds": 0.07501457599573769,
+    "selection": {
+      "cosine": 0.9930258217986613,
+      "max_error": 0.16943359375,
+      "output_nmse": 0.002776216805601976,
+      "weight_nmse": 0.013927110653207321
+    },
+    "status": "MEASURED",
+    "tensor": "token_embd.weight",
+    "receipt": "b24c4265e15a155395766f35709d3cde285c4e84bcee47de918da5e6016fee0c.json"
+  },
+  {
+    "archive_bytes": 78587,
+    "artifact_sha256": "815db90978fb8bf66ec95dd0946c505cd06df612d4404acb72cace2b2676036f",
+    "bits": 4,
+    "config": {
+      "bits": 4,
+      "rank": 2,
+      "rank_geometry": "activation"
+    },
+    "effective_rank": 2,
+    "fit": {
+      "cosine": 0.9936743838677482,
+      "max_error": 0.5732952356338501,
+      "output_nmse": 0.00014984202051653134,
+      "weight_nmse": 0.0126169515679206
+    },
+    "geometry": "activation",
+    "rank": 2,
+    "raw_bits_per_weight": 4.716959635416667,
+    "raw_bytes": 86943,
+    "seconds": 0.08806707299663685,
+    "selection": {
+      "cosine": 0.9936743838677482,
+      "max_error": 0.5732952356338501,
+      "output_nmse": 0.00015417514680830718,
+      "weight_nmse": 0.0126169515679206
+    },
+    "status": "MEASURED",
+    "tensor": "blk.0.attn_q.weight",
+    "receipt": "833a3f9687929bd6b645a40673875abcd6392fbac027f33aa9cf04e5730d1ab4.json"
+  },
+  {
+    "archive_bytes": 180754,
+    "artifact_sha256": "2143cda834f03788334f990249a2175699de8a02a3177202f91f82f954a6de3c",
+    "bits": 3,
+    "config": {
+      "bits": 3,
+      "rank": 4,
+      "rank_geometry": "activation-shuffled"
+    },
+    "effective_rank": 4,
+    "fit": {
+      "cosine": 0.9778092715102229,
+      "max_error": 0.8660628795623779,
+      "output_nmse": 0.021574666797157353,
+      "weight_nmse": 0.04456603501309761
+    },
+    "geometry": "activation-shuffled",
+    "rank": 4,
+    "raw_bits_per_weight": 3.8053792317708335,
+    "raw_bytes": 187042,
+    "seconds": 0.1823059359958279,
+    "selection": {
+      "cosine": 0.9778092715102229,
+      "max_error": 0.8660628795623779,
+      "output_nmse": 0.02146837179796864,
+      "weight_nmse": 0.04456603501309761
+    },
+    "status": "MEASURED",
+    "tensor": "blk.17.ffn_down.weight",
+    "receipt": "9d39ba15f1a980050c4ce61da1692fe4e84c674a4219c484086923e333c49acc.json"
+  },
+  {
+    "archive_bytes": 52920,
+    "artifact_sha256": "4a051367efef8af7945873c6f29b13bf4164c7a780d7950d240012fa7340f5c4",
+    "bits": 3,
+    "config": {
+      "bits": 3,
+      "rank": 4,
+      "rank_geometry": "diagonal"
+    },
+    "effective_rank": 4,
+    "fit": {
+      "cosine": 0.9757995260089802,
+      "max_error": 1.0878565907478333,
+      "output_nmse": 0.0017177323983749721,
+      "weight_nmse": 0.04792825648030763
+    },
+    "geometry": "diagonal",
+    "rank": 4,
+    "raw_bits_per_weight": 3.9896556712962963,
+    "raw_bytes": 55153,
+    "seconds": 0.04981550100637833,
+    "selection": {
+      "cosine": 0.9757995260089802,
+      "max_error": 1.0878565907478333,
+      "output_nmse": 0.001725905296967609,
+      "weight_nmse": 0.04792825648030763
+    },
+    "status": "MEASURED",
+    "tensor": "blk.0.attn_k.weight",
+    "receipt": "a9e65be6c672cd4769e62bb604b2487795a58c1abe91e783c10dcdd12fd178b6.json"
+  },
+  {
+    "archive_bytes": 58006,
+    "artifact_sha256": "0f3b818aff074fab1b595261460f1a8326469635f817008b7f6aeed92666e780",
+    "bits": 4,
+    "config": {
+      "bits": 4,
+      "rank": 1,
+      "rank_geometry": "activation-shuffled"
+    },
+    "effective_rank": 1,
+    "fit": {
+      "cosine": 0.9936702811930338,
+      "max_error": 0.8874849081039429,
+      "output_nmse": 0.00048566390018242323,
+      "weight_nmse": 0.012633605867504505
+    },
+    "geometry": "activation-shuffled",
+    "rank": 1,
+    "raw_bits_per_weight": 4.660228587962963,
+    "raw_bytes": 64423,
+    "seconds": 0.06415878500411054,
+    "selection": {
+      "cosine": 0.9936702811930338,
+      "max_error": 0.8874849081039429,
+      "output_nmse": 0.0004938128451700236,
+      "weight_nmse": 0.012633605867504505
+    },
+    "status": "MEASURED",
+    "tensor": "blk.0.attn_k.weight",
+    "receipt": "f082741b07b728e9d8a86387d96bc7a803f744c6a6eada633827046aacd16af2.json"
+  },
+  {
+    "archive_bytes": 81770,
+    "artifact_sha256": "c6749ef34550c7407f089c996385d76483bdbbd8db2ea01b8b2db6a7bfb59a92",
+    "bits": 4,
+    "config": {
+      "bits": 4,
+      "rank": 4,
+      "rank_geometry": "activation-shuffled"
+    },
+    "effective_rank": 4,
+    "fit": {
+      "cosine": 0.9932346657501611,
+      "max_error": 0.16737931966781616,
+      "output_nmse": 0.0026860173553386333,
+      "weight_nmse": 0.013508781367610467
+    },
+    "geometry": "activation-shuffled",
+    "rank": 4,
+    "raw_bits_per_weight": 4.898003472222222,
+    "raw_bytes": 90280,
+    "seconds": 0.08620076100487495,
+    "selection": {
+      "cosine": 0.9932346657501611,
+      "max_error": 0.16737931966781616,
+      "output_nmse": 0.0027387984133226914,
+      "weight_nmse": 0.013508781367610467
+    },
+    "status": "MEASURED",
+    "tensor": "token_embd.weight",
+    "receipt": "e6d66b4408954dbd18f23d181e61b256410c1d76e10e56b18a487c08aefec378.json"
+  },
+  {
+    "archive_bytes": 62600,
+    "artifact_sha256": "bd3dab450784e0adcbaabf97bb0bcfb27c53e261a602a2914a5f9ac9688b4bae",
+    "bits": 4,
+    "config": {
+      "bits": 4,
+      "rank": 4,
+      "rank_geometry": "activation"
+    },
+    "effective_rank": 4,
+    "fit": {
+      "cosine": 0.9938883069349647,
+      "max_error": 0.8459218740463257,
+      "output_nmse": 0.00010607194321671213,
+      "weight_nmse": 0.01219824332312721
+    },
+    "geometry": "activation",
+    "rank": 4,
+    "raw_bits_per_weight": 4.992983217592593,
+    "raw_bytes": 69023,
+    "seconds": 0.06518280199816218,
+    "selection": {
+      "cosine": 0.9938883069349647,
+      "max_error": 0.8459218740463257,
+      "output_nmse": 0.00011887825039065906,
+      "weight_nmse": 0.01219824332312721
+    },
+    "status": "MEASURED",
+    "tensor": "blk.0.attn_k.weight",
+    "receipt": "2f35dca4803548883504147d9a4cfe321fc9b5d2fe3218f875172c6bd7414a4a.json"
+  },
+  {
+    "archive_bytes": 59478,
+    "artifact_sha256": "b074aa190fb8728aff41263c1dc728f4f71eb5460085e1356606f9dfe8533e1e",
+    "bits": 4,
+    "config": {
+      "bits": 4,
+      "rank": 2,
+      "rank_geometry": "diagonal"
+    },
+    "effective_rank": 2,
+    "fit": {
+      "cosine": 0.9937464236467345,
+      "max_error": 0.9113306999206543,
+      "output_nmse": 0.0004424613496601784,
+      "weight_nmse": 0.012484091995607802
+    },
+    "geometry": "diagonal",
+    "rank": 2,
+    "raw_bits_per_weight": 4.768590856481482,
+    "raw_bytes": 65921,
+    "seconds": 0.05999127700488316,
+    "selection": {
+      "cosine": 0.9937464236467345,
+      "max_error": 0.9113306999206543,
+      "output_nmse": 0.0004467240960808623,
+      "weight_nmse": 0.012484091995607802
+    },
+    "status": "MEASURED",
+    "tensor": "blk.0.attn_k.weight",
+    "receipt": "8812f4b31f3194e0726c1176f176b78a409384a8f7648c96f11f9b6cb9329c5f.json"
+  },
+  {
+    "archive_bytes": 65024,
+    "artifact_sha256": "316bf27e8e9253023b5f144ac73f8e6670c1d952df37c744f11dad3610cf69f1",
+    "bits": 3,
+    "config": {
+      "bits": 3,
+      "rank": 2,
+      "rank_geometry": "diagonal"
+    },
+    "effective_rank": 2,
+    "fit": {
+      "cosine": 0.9710952841664128,
+      "max_error": 0.3359021991491318,
+      "output_nmse": 0.0066695605535530165,
+      "weight_nmse": 0.05852643089568087
+    },
+    "geometry": "diagonal",
+    "rank": 2,
+    "raw_bits_per_weight": 3.7144639756944446,
+    "raw_bytes": 68465,
+    "seconds": 0.06282685400219634,
+    "selection": {
+      "cosine": 0.9710952841664128,
+      "max_error": 0.3359021991491318,
+      "output_nmse": 0.0067476248266765,
+      "weight_nmse": 0.05852643089568087
+    },
+    "status": "MEASURED",
+    "tensor": "token_embd.weight",
+    "receipt": "0adf85854c8d92a2d151ac9df142280c9c6a0453c9a6f199c3480fc62959fa10.json"
+  },
+  {
+    "archive_bytes": 174400,
+    "artifact_sha256": "c67bc2508f21e22373124da6b9a32d3f2033ab717652079694c6dc8f66c2dede",
+    "bits": 3,
+    "config": {
+      "bits": 3,
+      "rank": 2,
+      "rank_geometry": "activation-shuffled"
+    },
+    "effective_rank": 2,
+    "fit": {
+      "cosine": 0.9774086017779736,
+      "max_error": 1.1961148977279663,
+      "output_nmse": 0.022605077491863294,
+      "weight_nmse": 0.04537209237528549
+    },
+    "geometry": "activation-shuffled",
+    "rank": 2,
+    "raw_bits_per_weight": 3.6595255533854165,
+    "raw_bytes": 179873,
+    "seconds": 0.18172943499666872,
+    "selection": {
+      "cosine": 0.9774086017779736,
+      "max_error": 1.1961148977279663,
+      "output_nmse": 0.022549496056799897,
+      "weight_nmse": 0.04537209237528549
+    },
+    "status": "MEASURED",
+    "tensor": "blk.17.ffn_down.weight",
+    "receipt": "6d4fcf9fe050cad00f0f40c7ff71d363c9f55338163b89464e241492f2b2f58f.json"
+  },
+  {
+    "archive_bytes": 63326,
+    "artifact_sha256": "4868ec54a43328dad90ee6af4817b89edd70dfca3a212ca9f7da4c2563b21269",
+    "bits": 3,
+    "config": {
+      "bits": 3,
+      "rank": 1,
+      "rank_geometry": "diagonal"
+    },
+    "effective_rank": 1,
+    "fit": {
+      "cosine": 0.9708013725486597,
+      "max_error": 0.33674655854701996,
+      "output_nmse": 0.008409730685562843,
+      "weight_nmse": 0.059144770265439385
+    },
+    "geometry": "diagonal",
+    "rank": 1,
+    "raw_bits_per_weight": 3.6241319444444446,
+    "raw_bytes": 66800,
+    "seconds": 0.0624276149974321,
+    "selection": {
+      "cosine": 0.9708013725486597,
+      "max_error": 0.33674655854701996,
+      "output_nmse": 0.008634646353691829,
+      "weight_nmse": 0.059144770265439385
+    },
+    "status": "MEASURED",
+    "tensor": "token_embd.weight",
+    "receipt": "1152c924128fc909b5d2c31c17d2977806e73778c5a6ecf3bb4a4d440c650a36.json"
+  },
+  {
+    "archive_bytes": 66492,
+    "artifact_sha256": "16c78f95c17f50217aa237f3b1ec6ef621657c851446d314bed4e0e966fda298",
+    "bits": 3,
+    "config": {
+      "bits": 3,
+      "rank": 2,
+      "rank_geometry": "diagonal"
+    },
+    "effective_rank": 2,
+    "fit": {
+      "cosine": 0.9810434136460997,
+      "max_error": 0.9501169919967651,
+      "output_nmse": 0.021199592422646723,
+      "weight_nmse": 0.03775260118978013
+    },
+    "geometry": "diagonal",
+    "rank": 2,
+    "raw_bits_per_weight": 3.7144639756944446,
+    "raw_bytes": 68465,
+    "seconds": 0.06473179900058312,
+    "selection": {
+      "cosine": 0.9810434136460997,
+      "max_error": 0.9501169919967651,
+      "output_nmse": 0.02103314382758808,
+      "weight_nmse": 0.03775260118978013
+    },
+    "status": "MEASURED",
+    "tensor": "blk.3.ffn_up.weight",
+    "receipt": "335f11bf12bd0ebfa99af58b58e823c410f176f05d95891a0d220a455460091d.json"
+  },
+  {
+    "archive_bytes": 82139,
+    "artifact_sha256": "a844e78d9f49ad6291e4bb03970a70fedd2e489d794702ca35bf7f2533731441",
+    "bits": 4,
+    "config": {
+      "bits": 4,
+      "rank": 2,
+      "rank_geometry": "activation-shuffled"
+    },
+    "effective_rank": 2,
+    "fit": {
+      "cosine": 0.9948705562050063,
+      "max_error": 0.5117271840572357,
+      "output_nmse": 0.006893196757043421,
+      "weight_nmse": 0.010336993010660553
+    },
+    "geometry": "activation-shuffled",
+    "rank": 2,
+    "raw_bits_per_weight": 4.717447916666667,
+    "raw_bytes": 86952,
+    "seconds": 0.08520467799826292,
+    "selection": {
+      "cosine": 0.9948705562050063,
+      "max_error": 0.5117271840572357,
+      "output_nmse": 0.006882808058375012,
+      "weight_nmse": 0.010336993010660553
+    },
+    "status": "MEASURED",
+    "tensor": "blk.3.ffn_up.weight",
+    "receipt": "68962f31c7efa1e73c9107ebb4c047b2f6e439ef15be7ad555d7820289cae147.json"
+  },
+  {
+    "archive_bytes": 80528,
+    "artifact_sha256": "5c3beb4b9ab6bf70d941b81851d7106f8ccf29a2f4fd23dfe56b91697e46c25b",
+    "bits": 4,
+    "config": {
+      "bits": 4,
+      "rank": 1,
+      "rank_geometry": "activation"
+    },
+    "effective_rank": 1,
+    "fit": {
+      "cosine": 0.9948366037422501,
+      "max_error": 0.5102131962776184,
+      "output_nmse": 0.0008957236198898023,
+      "weight_nmse": 0.010399048408281781
+    },
+    "geometry": "activation",
+    "rank": 1,
+    "raw_bits_per_weight": 4.626627604166667,
+    "raw_bytes": 85278,
+    "seconds": 0.08859311400010483,
+    "selection": {
+      "cosine": 0.9948366037422501,
+      "max_error": 0.5102131962776184,
+      "output_nmse": 0.000904702997606457,
+      "weight_nmse": 0.010399048408281781
+    },
+    "status": "MEASURED",
+    "tensor": "blk.9.ffn_gate.weight",
+    "receipt": "06266dc65ce0dd4b1b4735b587df6cb56b95d7efe632bde4698be50f1b9046ca.json"
+  },
+  {
+    "archive_bytes": 68975,
+    "artifact_sha256": "ccc3040aa20d68043b3402a213ff660b334e07dab1f0bc00fd469ad4c7b04b70",
+    "bits": 3,
+    "config": {
+      "bits": 3,
+      "rank": 4,
+      "rank_geometry": "diagonal"
+    },
+    "effective_rank": 4,
+    "fit": {
+      "cosine": 0.9750020370446012,
+      "max_error": 0.8889482021331787,
+      "output_nmse": 0.0017743491676531276,
+      "weight_nmse": 0.049586539792326974
+    },
+    "geometry": "diagonal",
+    "rank": 4,
+    "raw_bits_per_weight": 3.89501953125,
+    "raw_bytes": 71793,
+    "seconds": 0.06349556299392134,
+    "selection": {
+      "cosine": 0.9750020370446012,
+      "max_error": 0.8889482021331787,
+      "output_nmse": 0.0017908006213776938,
+      "weight_nmse": 0.049586539792326974
+    },
+    "status": "MEASURED",
+    "tensor": "blk.0.attn_q.weight",
+    "receipt": "d44ee327ad2c97b560953f965e46d78791b31facd10fa2d657e770db4e19d451.json"
+  },
+  {
+    "archive_bytes": 180752,
+    "artifact_sha256": "830b71adb8d95ddea3a9b49709ad0dbc074092319bba44252410ea0179f8f302",
+    "bits": 3,
+    "config": {
+      "bits": 3,
+      "rank": 4,
+      "rank_geometry": "activation"
+    },
+    "effective_rank": 4,
+    "fit": {
+      "cosine": 0.9777887969849405,
+      "max_error": 0.9583884477615356,
+      "output_nmse": 0.003860158711669047,
+      "weight_nmse": 0.04461620881284977
+    },
+    "geometry": "activation",
+    "rank": 4,
+    "raw_bits_per_weight": 3.8051961263020835,
+    "raw_bytes": 187033,
+    "seconds": 0.17957495999871753,
+    "selection": {
+      "cosine": 0.9777887969849405,
+      "max_error": 0.9583884477615356,
+      "output_nmse": 0.004752913688898886,
+      "weight_nmse": 0.04461620881284977
+    },
+    "status": "MEASURED",
+    "tensor": "blk.17.ffn_down.weight",
+    "receipt": "0f3dc661a14e48fae37bce26d7e9428cd44df3068963f2111a840f475251a1aa.json"
+  },
+  {
+    "archive_bytes": 81549,
+    "artifact_sha256": "c59b8ec66c8c8b7c9c35a1acdb8fa323063604afed9f873c214120348967e118",
+    "bits": 4,
+    "config": {
+      "bits": 4,
+      "rank": 4,
+      "rank_geometry": "diagonal"
+    },
+    "effective_rank": 4,
+    "fit": {
+      "cosine": 0.9939514948915156,
+      "max_error": 0.550969123840332,
+      "output_nmse": 0.00042003535090890374,
+      "weight_nmse": 0.012069508900443686
+    },
+    "geometry": "diagonal",
+    "rank": 4,
+    "raw_bits_per_weight": 4.895941840277778,
+    "raw_bytes": 90242,
+    "seconds": 0.07982477699988522,
+    "selection": {
+      "cosine": 0.9939514948915156,
+      "max_error": 0.550969123840332,
+      "output_nmse": 0.0004259633497377213,
+      "weight_nmse": 0.012069508900443686
+    },
+    "status": "MEASURED",
+    "tensor": "blk.0.attn_q.weight",
+    "receipt": "7fc05c5c54ff3a235be04104c2f4496334b3f52fde48748983ba564568f37f1f.json"
+  },
+  {
+    "archive_bytes": 69035,
+    "artifact_sha256": "f6889510184af96ba235db4a154d995d38c9767268930ed5f4bd7ff9f3baa896",
+    "bits": 3,
+    "config": {
+      "bits": 3,
+      "rank": 4,
+      "rank_geometry": "activation-shuffled"
+    },
+    "effective_rank": 4,
+    "fit": {
+      "cosine": 0.9741223502479421,
+      "max_error": 0.8419428467750549,
+      "output_nmse": 0.0019707517146542192,
+      "weight_nmse": 0.05137416621781231
+    },
+    "geometry": "activation-shuffled",
+    "rank": 4,
+    "raw_bits_per_weight": 3.8970811631944446,
+    "raw_bytes": 71831,
+    "seconds": 0.0730178449957748,
+    "selection": {
+      "cosine": 0.9741223502479421,
+      "max_error": 0.8419428467750549,
+      "output_nmse": 0.001952842764403476,
+      "weight_nmse": 0.05137416621781231
+    },
+    "status": "MEASURED",
+    "tensor": "blk.0.attn_q.weight",
+    "receipt": "5e58048a15bfd8e1436be036a90862593c65c9d18cac717c7f008a595ec31748.json"
+  },
+  {
+    "archive_bytes": 170845,
+    "artifact_sha256": "3c2696200b11750a1faeebc2e04b21d9d96840527777b4a8506e1c08d26f2f67",
+    "bits": 3,
+    "config": {
+      "bits": 3,
+      "rank": 1,
+      "rank_geometry": "activation"
+    },
+    "effective_rank": 1,
+    "fit": {
+      "cosine": 0.9773343261166072,
+      "max_error": 1.1284799575805664,
+      "output_nmse": 0.005247522070013688,
+      "weight_nmse": 0.04552164182882247
+    },
+    "geometry": "activation",
+    "rank": 1,
+    "raw_bits_per_weight": 3.5864054361979165,
+    "raw_bytes": 176279,
+    "seconds": 0.1804248370026471,
+    "selection": {
+      "cosine": 0.9773343261166072,
+      "max_error": 1.1284799575805664,
+      "output_nmse": 0.005690062486236346,
+      "weight_nmse": 0.04552164182882247
+    },
+    "status": "MEASURED",
+    "tensor": "blk.17.ffn_down.weight",
+    "receipt": "0ec722e19136b039137169c34d628fc93389554bb54c3352f0b6194596e7c6ca.json"
+  },
+  {
+    "archive_bytes": 85054,
+    "artifact_sha256": "549ea15fb22090a43da3e29eb2fd0b569159ee068775d848f8ae9b8051e90d58",
+    "bits": 4,
+    "config": {
+      "bits": 4,
+      "rank": 4,
+      "rank_geometry": "diagonal"
+    },
+    "effective_rank": 4,
+    "fit": {
+      "cosine": 0.994989714433228,
+      "max_error": 0.4557682275772095,
+      "output_nmse": 0.002374248843708597,
+      "weight_nmse": 0.010089946913375265
+    },
+    "geometry": "diagonal",
+    "rank": 4,
+    "raw_bits_per_weight": 4.895941840277778,
+    "raw_bytes": 90242,
+    "seconds": 0.08164982200105442,
+    "selection": {
+      "cosine": 0.994989714433228,
+      "max_error": 0.4557682275772095,
+      "output_nmse": 0.00237138236893279,
+      "weight_nmse": 0.010089946913375265
+    },
+    "status": "MEASURED",
+    "tensor": "blk.9.ffn_gate.weight",
+    "receipt": "047fdfbe8e1555b858df091e10896e4f94d031f8fe2b38aba274dd8c739a53a4.json"
+  },
+  {
+    "archive_bytes": 215054,
+    "artifact_sha256": "df7fae89dc264375b0c8afa10fb2af61f7a43c03781c1a8994a9a87b9e80d03a",
+    "bits": 4,
+    "config": {
+      "bits": 4,
+      "rank": 2,
+      "rank_geometry": "activation"
+    },
+    "effective_rank": 2,
+    "fit": {
+      "cosine": 0.9933778129536616,
+      "max_error": 0.6668969392776489,
+      "output_nmse": 0.0012295066741484027,
+      "weight_nmse": 0.013520259723947802
+    },
+    "geometry": "activation",
+    "rank": 2,
+    "raw_bits_per_weight": 4.659688313802083,
+    "raw_bytes": 229033,
+    "seconds": 0.21255814899632242,
+    "selection": {
+      "cosine": 0.9933778129536616,
+      "max_error": 0.6668969392776489,
+      "output_nmse": 0.001408170988864317,
+      "weight_nmse": 0.013520259723947802
+    },
+    "status": "MEASURED",
+    "tensor": "blk.17.ffn_down.weight",
+    "receipt": "64cdd9899306f1320641140c0e2c8dd67d7095636a1b9a269ae044976ddf0149.json"
+  },
+  {
+    "archive_bytes": 80537,
+    "artifact_sha256": "264f80d6cffa37da8731a3b070f8dfbe0dd1493a94c3122dc4da6e9fcc5985ac",
+    "bits": 4,
+    "config": {
+      "bits": 4,
+      "rank": 1,
+      "rank_geometry": "diagonal"
+    },
+    "effective_rank": 1,
+    "fit": {
+      "cosine": 0.9948292475144739,
+      "max_error": 0.4933977723121643,
+      "output_nmse": 0.0062679087744879946,
+      "weight_nmse": 0.01042067021000094
+    },
+    "geometry": "diagonal",
+    "rank": 1,
+    "raw_bits_per_weight": 4.625054253472222,
+    "raw_bytes": 85249,
+    "seconds": 0.07799337400501827,
+    "selection": {
+      "cosine": 0.9948292475144739,
+      "max_error": 0.4933977723121643,
+      "output_nmse": 0.006266130849843918,
+      "weight_nmse": 0.01042067021000094
+    },
+    "status": "MEASURED",
+    "tensor": "blk.3.ffn_up.weight",
+    "receipt": "9ee4af74e2a68f650eb6e30523744e8afb9e15e29bd00427ecbebbaadcc337f8.json"
+  },
+  {
+    "archive_bytes": 175622,
+    "artifact_sha256": "eb4a3a3f11202f31b9e3e0140168bf76f8445793377459475c10414c8a7a94a3",
+    "bits": 3,
+    "config": {
+      "bits": 3,
+      "rank": 2,
+      "rank_geometry": "diagonal"
+    },
+    "effective_rank": 2,
+    "fit": {
+      "cosine": 0.9526650079693657,
+      "max_error": 1.3900450468063354,
+      "output_nmse": 0.000625269766486585,
+      "weight_nmse": 0.10159241116577261
+    },
+    "geometry": "diagonal",
+    "rank": 2,
+    "raw_bits_per_weight": 3.65875244140625,
+    "raw_bytes": 179835,
+    "seconds": 0.17815929700009292,
+    "selection": {
+      "cosine": 0.9526650079693657,
+      "max_error": 1.3900450468063354,
+      "output_nmse": 0.0006216269526602157,
+      "weight_nmse": 0.10159241116577261
+    },
+    "status": "MEASURED",
+    "tensor": "blk.29.ffn_down.weight",
+    "receipt": "06cf40a8c6a799d95cce1c3a348939d8862fc2364ed39cc7c0321ac5ad7eb1a4.json"
+  },
+  {
+    "archive_bytes": 78407,
+    "artifact_sha256": "cb43719219ce2509932d2bf41c769acdefcbd6dafb12c3f846020276434b35e1",
+    "bits": 4,
+    "config": {
+      "bits": 4,
+      "rank": 1,
+      "rank_geometry": "activation"
+    },
+    "effective_rank": 1,
+    "fit": {
+      "cosine": 0.9940957792956882,
+      "max_error": 0.14296960830688477,
+      "output_nmse": 0.0028799742948597963,
+      "weight_nmse": 0.011775744288846252
+    },
+    "geometry": "activation",
+    "rank": 1,
+    "raw_bits_per_weight": 4.626627604166667,
+    "raw_bytes": 85278,
+    "seconds": 0.08637467800144805,
+    "selection": {
+      "cosine": 0.9940957792956882,
+      "max_error": 0.14296960830688477,
+      "output_nmse": 0.0030903195342453383,
+      "weight_nmse": 0.011775744288846252
+    },
+    "status": "MEASURED",
+    "tensor": "blk.0.attn_output.weight",
+    "receipt": "bddca7d26d3946c206099a52ea381dc359fe81f8160a1073b9d8cf988bfbfdf9.json"
+  },
+  {
+    "archive_bytes": 65939,
+    "artifact_sha256": "f473c470acde4ad755bb244ac23b1ae9ed522687372802271a876dc438a3ef21",
+    "bits": 3,
+    "config": {
+      "bits": 3,
+      "rank": 2,
+      "rank_geometry": "activation"
+    },
+    "effective_rank": 2,
+    "fit": {
+      "cosine": 0.9753631035468807,
+      "max_error": 0.3342479467391968,
+      "output_nmse": 0.008929404927233441,
+      "weight_nmse": 0.04888167605326653
+    },
+    "geometry": "activation",
+    "rank": 2,
+    "raw_bits_per_weight": 3.716037326388889,
+    "raw_bytes": 68494,
+    "seconds": 0.07094849699933548,
+    "selection": {
+      "cosine": 0.9753631035468807,
+      "max_error": 0.3342479467391968,
+      "output_nmse": 0.010100345733150372,
+      "weight_nmse": 0.04888167605326653
+    },
+    "status": "MEASURED",
+    "tensor": "blk.0.attn_output.weight",
+    "receipt": "37e9b3adb3c0e8986bf5bd704cd1508e16edbaa618c190f813569ea86d058836.json"
+  },
+  {
+    "archive_bytes": 79976,
+    "artifact_sha256": "790ba135b17ce639652e156c9ca7b4e020c542f9cdc7314ccd245716b0f6d6ae",
+    "bits": 4,
+    "config": {
+      "bits": 4,
+      "rank": 2,
+      "rank_geometry": "diagonal"
+    },
+    "effective_rank": 2,
+    "fit": {
+      "cosine": 0.9943340374866053,
+      "max_error": 0.08372929692268372,
+      "output_nmse": 0.003454911766206129,
+      "weight_nmse": 0.01130148974799738
+    },
+    "geometry": "diagonal",
+    "rank": 2,
+    "raw_bits_per_weight": 4.715386284722222,
+    "raw_bytes": 86914,
+    "seconds": 0.07974083499721019,
+    "selection": {
+      "cosine": 0.9943340374866053,
+      "max_error": 0.08372929692268372,
+      "output_nmse": 0.0036250598938110464,
+      "weight_nmse": 0.01130148974799738
+    },
+    "status": "MEASURED",
+    "tensor": "blk.0.attn_output.weight",
+    "receipt": "418b5c343f6de7ee8d99d0a7ef4accea38d5f85c939d5b41ebfa3f4b4722278c.json"
+  },
+  {
+    "archive_bytes": 78406,
+    "artifact_sha256": "877ba529bb2854797b6b52779513b8283129904ca8cc3ee83a337edb5f33dbec",
+    "bits": 4,
+    "config": {
+      "bits": 4,
+      "rank": 1,
+      "rank_geometry": "activation-shuffled"
+    },
+    "effective_rank": 1,
+    "fit": {
+      "cosine": 0.9940846437416703,
+      "max_error": 0.15652751922607422,
+      "output_nmse": 0.004674636924383625,
+      "weight_nmse": 0.011797872192603451
+    },
+    "geometry": "activation-shuffled",
+    "rank": 1,
+    "raw_bits_per_weight": 4.627115885416667,
+    "raw_bytes": 85287,
+    "seconds": 0.08632556199881947,
+    "selection": {
+      "cosine": 0.9940846437416703,
+      "max_error": 0.15652751922607422,
+      "output_nmse": 0.004822570736446104,
+      "weight_nmse": 0.011797872192603451
+    },
+    "status": "MEASURED",
+    "tensor": "blk.0.attn_output.weight",
+    "receipt": "04ff7fa7d57d8ef3647fba50726fba5b6e366d3ed7d0ad1b13627fe1fe835b63.json"
+  },
+  {
+    "archive_bytes": 59594,
+    "artifact_sha256": "c761da930c49d0dcb192e1eff0e33d510d59055956c294aa0b551e39705509a7",
+    "bits": 4,
+    "config": {
+      "bits": 4,
+      "rank": 2,
+      "rank_geometry": "activation-shuffled"
+    },
+    "effective_rank": 2,
+    "fit": {
+      "cosine": 0.9937248412617563,
+      "max_error": 0.8679513931274414,
+      "output_nmse": 0.0004817167000663275,
+      "weight_nmse": 0.012525219078056742
+    },
+    "geometry": "activation-shuffled",
+    "rank": 2,
+    "raw_bits_per_weight": 4.771339699074074,
+    "raw_bytes": 65959,
+    "seconds": 0.06432642300205771,
+    "selection": {
+      "cosine": 0.9937248412617563,
+      "max_error": 0.8679513931274414,
+      "output_nmse": 0.0004905595748926088,
+      "weight_nmse": 0.012525219078056742
+    },
+    "status": "MEASURED",
+    "tensor": "blk.0.attn_k.weight",
+    "receipt": "5e11e13bcad280d7e603752d85fcddd79f62e6d284c1cfef3b44c2e9167e49fd.json"
+  },
+  {
+    "archive_bytes": 85045,
+    "artifact_sha256": "f7f7c835a04356d638fedf651eb96ef71afd556072a013fcc2abd8a5346f0ed8",
+    "bits": 4,
+    "config": {
+      "bits": 4,
+      "rank": 4,
+      "rank_geometry": "activation"
+    },
+    "effective_rank": 4,
+    "fit": {
+      "cosine": 0.9949427486308392,
+      "max_error": 0.45678430795669556,
+      "output_nmse": 0.0003098270950401465,
+      "weight_nmse": 0.010190843095612738
+    },
+    "geometry": "activation",
+    "rank": 4,
+    "raw_bits_per_weight": 4.897515190972222,
+    "raw_bytes": 90271,
+    "seconds": 0.08655063399783103,
+    "selection": {
+      "cosine": 0.9949427486308392,
+      "max_error": 0.45678430795669556,
+      "output_nmse": 0.0003443398097390131,
+      "weight_nmse": 0.010190843095612738
+    },
+    "status": "MEASURED",
+    "tensor": "blk.3.ffn_up.weight",
+    "receipt": "009e2132979281ba94ca8c506da83fa9f0efe3eb85000a857dccad8afb650237.json"
+  },
+  {
+    "archive_bytes": 80515,
+    "artifact_sha256": "74f010593cbf83bf716ba9952963df232472a6b6602522fa7914a3ab01593b5f",
+    "bits": 4,
+    "config": {
+      "bits": 4,
+      "rank": 1,
+      "rank_geometry": "diagonal"
+    },
+    "effective_rank": 1,
+    "fit": {
+      "cosine": 0.9948647930652219,
+      "max_error": 0.5104038715362549,
+      "output_nmse": 0.002721985331870536,
+      "weight_nmse": 0.010343457583172644
+    },
+    "geometry": "diagonal",
+    "rank": 1,
+    "raw_bits_per_weight": 4.625054253472222,
+    "raw_bytes": 85249,
+    "seconds": 0.07917721300327685,
+    "selection": {
+      "cosine": 0.9948647930652219,
+      "max_error": 0.5104038715362549,
+      "output_nmse": 0.00273222788419757,
+      "weight_nmse": 0.010343457583172644
+    },
+    "status": "MEASURED",
+    "tensor": "blk.9.ffn_gate.weight",
+    "receipt": "3af9eec531a44bc0657bf95ec8d2c260408c26a7defb354191c8bec873f76adf.json"
+  },
+  {
+    "archive_bytes": 207707,
+    "artifact_sha256": "39975558e175a22a98c231c63c506f973129f10f893c07fa7de3124c9cb08def",
+    "bits": 4,
+    "config": {
+      "bits": 4
+    },
+    "effective_rank": 0,
+    "fit": {
+      "cosine": 0.9932005890878307,
+      "max_error": 1.2734375,
+      "output_nmse": 0.005554768181877542,
+      "weight_nmse": 0.013886408873116523
+    },
+    "geometry": "scalar",
+    "rank": 0,
+    "raw_bits_per_weight": 4.509256998697917,
+    "raw_bytes": 221639,
+    "seconds": 0.2024252180053736,
+    "selection": {
+      "cosine": 0.9932005890878307,
+      "max_error": 1.2734375,
+      "output_nmse": 0.005751310181892449,
+      "weight_nmse": 0.013886408873116523
+    },
+    "status": "MEASURED",
+    "tensor": "blk.17.ffn_down.weight",
+    "receipt": "333d8bbf868093ae6f015c807576871e9e2148bb5dd9a9257d0bee9fcb9e1cfd.json"
+  },
+  {
+    "archive_bytes": 175528,
+    "artifact_sha256": "f37ef9f9626415b3c123f28b0505e6d75669281e208ff861bb2d341ff32b2b32",
+    "bits": 3,
+    "config": {
+      "bits": 3,
+      "rank": 2,
+      "rank_geometry": "activation-shuffled"
+    },
+    "effective_rank": 2,
+    "fit": {
+      "cosine": 0.9526802705169586,
+      "max_error": 1.3776071071624756,
+      "output_nmse": 0.0007545192100703176,
+      "weight_nmse": 0.10142862134609182
+    },
+    "geometry": "activation-shuffled",
+    "rank": 2,
+    "raw_bits_per_weight": 3.6595255533854165,
+    "raw_bytes": 179873,
+    "seconds": 0.17986688699602382,
+    "selection": {
+      "cosine": 0.9526802705169586,
+      "max_error": 1.3776071071624756,
+      "output_nmse": 0.0007477501925794506,
+      "weight_nmse": 0.10142862134609182
+    },
+    "status": "MEASURED",
+    "tensor": "blk.29.ffn_down.weight",
+    "receipt": "8b6bd13d025c2df9c044ecbff31b33a27a54ec37a493e818c30832f66a982bcd.json"
+  },
+  {
+    "archive_bytes": 69545,
+    "artifact_sha256": "bec3a37d1a9583c2f0bfd3fd576dafc24fd98b4616dad1b11a374a0f268b6e52",
+    "bits": 3,
+    "config": {
+      "bits": 3,
+      "rank": 4,
+      "rank_geometry": "diagonal"
+    },
+    "effective_rank": 4,
+    "fit": {
+      "cosine": 0.9813973561221432,
+      "max_error": 0.6171059310436249,
+      "output_nmse": 0.02037237927848087,
+      "weight_nmse": 0.03705169272886742
+    },
+    "geometry": "diagonal",
+    "rank": 4,
+    "raw_bits_per_weight": 3.89501953125,
+    "raw_bytes": 71793,
+    "seconds": 0.06635601699963445,
+    "selection": {
+      "cosine": 0.9813973561221432,
+      "max_error": 0.6171059310436249,
+      "output_nmse": 0.020262289076783683,
+      "weight_nmse": 0.03705169272886742
+    },
+    "status": "MEASURED",
+    "tensor": "blk.3.ffn_up.weight",
+    "receipt": "5f40977ee6ccf508e64c9ba4ff87ec598a1e72815231c6669998d2274041335a.json"
+  },
+  {
+    "archive_bytes": 81585,
+    "artifact_sha256": "3ef235be2d5e5f4b78a4c80f99d5de83366b556bfc45f76577f1cdab07a88a39",
+    "bits": 4,
+    "config": {
+      "bits": 4,
+      "rank": 4,
+      "rank_geometry": "activation"
+    },
+    "effective_rank": 4,
+    "fit": {
+      "cosine": 0.9937952770512797,
+      "max_error": 0.5728257894515991,
+      "output_nmse": 9.863569949971322e-05,
+      "weight_nmse": 0.012376213299157323
+    },
+    "geometry": "activation",
+    "rank": 4,
+    "raw_bits_per_weight": 4.897515190972222,
+    "raw_bytes": 90271,
+    "seconds": 0.09319344299728982,
+    "selection": {
+      "cosine": 0.9937952770512797,
+      "max_error": 0.5728257894515991,
+      "output_nmse": 0.00011009442945042948,
+      "weight_nmse": 0.012376213299157323
+    },
+    "status": "MEASURED",
+    "tensor": "blk.0.attn_q.weight",
+    "receipt": "9ea4032768eca8a15f04bafa4b390f1c8cc15cb68b0cc1d6680c13897feb45d9.json"
+  },
+  {
+    "archive_bytes": 82983,
+    "artifact_sha256": "80c85fbe89bfe6dee0413fc4f410a5be0f84ad3bebe0d82fca5c47e805493a5c",
+    "bits": 4,
+    "config": {
+      "bits": 4,
+      "rank": 4,
+      "rank_geometry": "activation"
+    },
+    "effective_rank": 4,
+    "fit": {
+      "cosine": 0.9943152110427186,
+      "max_error": 0.08869028091430664,
+      "output_nmse": 0.0015467632276722988,
+      "weight_nmse": 0.01133961923242168
+    },
+    "geometry": "activation",
+    "rank": 4,
+    "raw_bits_per_weight": 4.897515190972222,
+    "raw_bytes": 90271,
+    "seconds": 0.08869576299912296,
+    "selection": {
+      "cosine": 0.9943152110427186,
+      "max_error": 0.08869028091430664,
+      "output_nmse": 0.001887351089275455,
+      "weight_nmse": 0.01133961923242168
+    },
+    "status": "MEASURED",
+    "tensor": "blk.0.attn_output.weight",
+    "receipt": "e884e7315c902d3705adc60164128ad60a7a4ee1c0264ff1551fb1777f30c831.json"
+  },
+  {
+    "archive_bytes": 172096,
+    "artifact_sha256": "57116b662e578c9dbdf39c67509dc4cffc1e8593874e9cd36fe7fdcc339d7666",
+    "bits": 3,
+    "config": {
+      "bits": 3,
+      "rank": 1,
+      "rank_geometry": "diagonal"
+    },
+    "effective_rank": 1,
+    "fit": {
+      "cosine": 0.9524430948960719,
+      "max_error": 1.3928629159927368,
+      "output_nmse": 0.0007584445107493602,
+      "weight_nmse": 0.10205552371490842
+    },
+    "geometry": "diagonal",
+    "rank": 1,
+    "raw_bits_per_weight": 3.5858154296875,
+    "raw_bytes": 176250,
+    "seconds": 0.17343195300054504,
+    "selection": {
+      "cosine": 0.9524430948960719,
+      "max_error": 1.3928629159927368,
+      "output_nmse": 0.0007511506336474599,
+      "weight_nmse": 0.10205552371490842
+    },
+    "status": "MEASURED",
+    "tensor": "blk.29.ffn_down.weight",
+    "receipt": "e81d54eb48d566fa6d3709bae4dddd9f166ed5ed796e0d847b9e581ca828d7cc.json"
+  }
+]

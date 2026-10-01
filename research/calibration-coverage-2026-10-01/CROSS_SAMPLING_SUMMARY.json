@@ -1,0 +1,44 @@
+[
+  {
+    "bits": 3,
+    "rank": 0,
+    "geometry": "scalar",
+    "endpoint_mean": 0.01165559301659722,
+    "interior_mean": 0.017442702777072928
+  },
+  {
+    "bits": 3,
+    "rank": 1,
+    "geometry": "diagonal",
+    "endpoint_mean": 0.01021930681494792,
+    "interior_mean": 0.016223473832631646
+  },
+  {
+    "bits": 3,
+    "rank": 1,
+    "geometry": "activation",
+    "endpoint_mean": 0.004155038856218132,
+    "interior_mean": 0.015942140308776387
+  },
+  {
+    "bits": 4,
+    "rank": 0,
+    "geometry": "scalar",
+    "endpoint_mean": 0.003107047592705434,
+    "interior_mean": 0.004690740853246699
+  },
+  {
+    "bits": 4,
+    "rank": 1,
+    "geometry": "diagonal",
+    "endpoint_mean": 0.002702479738312684,
+    "interior_mean": 0.004334297446622715
+  },
+  {
+    "bits": 4,
+    "rank": 1,
+    "geometry": "activation",
+    "endpoint_mean": 0.0010739747657696006,
+    "interior_mean": 0.004302219112787444
+  }
+]

@@ -1,0 +1,31 @@
+{
+  "fit_corpus_sha256": "0a0278b67e958102a89dfc32634fffed94c8dda264ebc55f828fc47c2f13f301",
+  "implementation": {
+    "experiments/basis_discovery.py": "702752c3d0bcce00ffa64527c2f283b2a64944e45c57b7f6defe1d6b0fbba38d",
+    "experiments/calibration_coverage.py": "a7f5d8309f86b4d5a679d42c01944c1c951673f983102ff53ef86f92af3981b3",
+    "experiments/direction_models.py": "f155ad202bce70769b0d1c85059d8d77d196349a41f4ca54bffc898ab9c76703",
+    "experiments/full22/__init__.py": "b7a7e77737e75f8a25a249ad4d1d67e302d27da3f17c68a779be363e1589037e",
+    "experiments/full22/adaptive.py": "e82760f58d8369761e5a052992495c24e864879e75a1c7eec4766b2a580156b6",
+    "experiments/full22/additive.py": "8504fb778e4828c46d139922e8e13742131aa612c9114a15bf9a868bd3a7d596",
+    "experiments/full22/archive.py": "f3f3dd09d465f57f5677ac7a6ec16e58215e30652a56291d09a2cc0dcd62c309",
+    "experiments/full22/capture.py": "3f80cc6dcb14b33615ac55331face0cedaff6252eff95219f04bc24b93742232",
+    "experiments/full22/catalog.py": "e3fcb99f8dc0eb7fc88c68997c0ed808cda00830775e4b3925089f78c44018d7",
+    "experiments/full22/codec.py": "c59e533bfccfb96de9ac7d9e597c0e1304592bc6be837a93cc1e358d2381cf8c",
+    "experiments/full22/data.py": "116e90018adf80c059c08c8e112343e83ddc7357492454f66cb34b6e2fd779af",
+    "experiments/full22/harness.py": "e353814ed2292690c41174f8007e326b7cc9c733ae059b40d35d887b35e0e983",
+    "experiments/full22/lattice.py": "1413c688f01dd5057248d5c853d816257417e97493a1fb5bf0811228f1ddaa04",
+    "experiments/full22/records.py": "3faed80388a315eb70115f9349cc60d601f306d5103b243de3e2ea278786cfd9",
+    "experiments/full22/residual.py": "89ad3cc1065ad852691496423771ddc767fb509a8157b866fd47028e5d887b68",
+    "experiments/full22/scalar.py": "51e6d3d0417f7620f218c80eb66a4110b063393a2dc24de5914875266246b7de",
+    "experiments/full22/screen_cache.py": "21ad892556726ff6ae4461f3c401da3f799072149b50c69edb56570b9007cf78",
+    "experiments/full22/transforms.py": "dedb3c78607cbfb4f804a117eb76b8d080fad3fcbbe6c1e46828d190161bf813",
+    "experiments/full22/trellis.py": "bf2abb47ae406cf828aef4b9935925a7e9d22d5d7880a3e7d1bcb0d8ab15db9d",
+    "research/calibration-coverage-2026-10-01/PROTOCOL.md": "a3b4c56c17325793f27504d7ea025d04bdc719ee809c3848a9a211b6c4ca0d82",
+    "scripts/calibration_sampling.py": "102839b473c65fa02798002682d116ead4704604c955efaddef4113ad18bb8be",
+    "scripts/capture_calibration.py": "7ad9732ae8aa7ddd36a4cc7663de1b3cdb9f02aa87b301604480aaa1b73e2c28"
+  },
+  "inference_selection_sha256": "880fc4969f0ec64980adc157dadae6f03019e793eab40f5ce536d5fab5552446",
+  "runtime_sha256": "67c7b6d124faf47727f4c5dbca65f01dbbe419d929f842c20bd586a1d99012ed",
+  "selection_corpus_sha256": "150412262730e0bb2006a569575896c7bddb1a284c9d42627cb73db5df2d6905",
+  "source_sha256": "53f86c219b099fa84cd005f1b22572f6c4e53f8ba242fb8074f600712abe9c5b"
+}

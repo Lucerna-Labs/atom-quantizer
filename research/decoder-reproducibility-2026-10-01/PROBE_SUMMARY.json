@@ -1,0 +1,158 @@
+{
+  "casts": {
+    "comparisons": 4063232,
+    "finite_values": 63488,
+    "offsets": 64,
+    "status": "PASSED"
+  },
+  "original_failure_cause": "UNDETERMINED",
+  "passes": [
+    {
+      "model": "q4-IE-r1",
+      "offset": 0,
+      "tensors": 272,
+      "threads": 1
+    },
+    {
+      "model": "q4-IE-r1",
+      "offset": 1,
+      "tensors": 272,
+      "threads": 1
+    },
+    {
+      "model": "q4-IE-r1",
+      "offset": 31,
+      "tensors": 272,
+      "threads": 1
+    },
+    {
+      "model": "q4-IE-r1",
+      "offset": 63,
+      "tensors": 272,
+      "threads": 1
+    },
+    {
+      "model": "q4-IE-r1",
+      "offset": 0,
+      "tensors": 272,
+      "threads": 4
+    },
+    {
+      "model": "q4-IE-r1",
+      "offset": 1,
+      "tensors": 272,
+      "threads": 4
+    },
+    {
+      "model": "q4-IE-r1",
+      "offset": 31,
+      "tensors": 272,
+      "threads": 4
+    },
+    {
+      "model": "q4-IE-r1",
+      "offset": 63,
+      "tensors": 272,
+      "threads": 4
+    },
+    {
+      "model": "q3-IE-r1",
+      "offset": 0,
+      "tensors": 272,
+      "threads": 1
+    },
+    {
+      "model": "q3-IE-r1",
+      "offset": 1,
+      "tensors": 272,
+      "threads": 1
+    },
+    {
+      "model": "q3-IE-r1",
+      "offset": 31,
+      "tensors": 272,
+      "threads": 1
+    },
+    {
+      "model": "q3-IE-r1",
+      "offset": 63,
+      "tensors": 272,
+      "threads": 1
+    },
+    {
+      "model": "q3-IE-r1",
+      "offset": 0,
+      "tensors": 272,
+      "threads": 4
+    },
+    {
+      "model": "q3-IE-r1",
+      "offset": 1,
+      "tensors": 272,
+      "threads": 4
+    },
+    {
+      "model": "q3-IE-r1",
+      "offset": 31,
+      "tensors": 272,
+      "threads": 4
+    },
+    {
+      "model": "q3-IE-r1",
+      "offset": 63,
+      "tensors": 272,
+      "threads": 4
+    },
+    {
+      "model": "q4-IE-r2",
+      "offset": 0,
+      "tensors": 272,
+      "threads": 1
+    },
+    {
+      "model": "q4-IE-r2",
+      "offset": 1,
+      "tensors": 272,
+      "threads": 1
+    },
+    {
+      "model": "q4-IE-r2",
+      "offset": 31,
+      "tensors": 272,
+      "threads": 1
+    },
+    {
+      "model": "q4-IE-r2",
+      "offset": 63,
+      "tensors": 272,
+      "threads": 1
+    },
+    {
+      "model": "q4-IE-r2",
+      "offset": 0,
+      "tensors": 272,
+      "threads": 4
+    },
+    {
+      "model": "q4-IE-r2",
+      "offset": 1,
+      "tensors": 272,
+      "threads": 4
+    },
+    {
+      "model": "q4-IE-r2",
+      "offset": 31,
+      "tensors": 272,
+      "threads": 4
+    },
+    {
+      "model": "q4-IE-r2",
+      "offset": 63,
+      "tensors": 272,
+      "threads": 4
+    }
+  ],
+  "rank_one_outer_comparisons": 3376,
+  "status": "PASSED",
+  "tensors": 6528
+}

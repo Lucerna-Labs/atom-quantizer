@@ -1,0 +1,12 @@
+[package]
+name = "basis-engine"
+version = "0.1.0"
+edition = "2021"
+description = "Fixed composition boundary for B01 native basis discovery"
+
+[dependencies]
+basis-primitives = { path = "../basis-primitives" }
+
+[package.metadata.atom]
+component = "basis-discovery"
+role = "orchestrator"

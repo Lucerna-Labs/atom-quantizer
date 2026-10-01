@@ -1,0 +1,17 @@
+{
+  "status": "PASSED",
+  "reference_root": "/home/jesse/Desktop/first priniples",
+  "selected_files_unchanged": 10,
+  "files": [
+    "README.md",
+    "03_Root_Atoms_and_Master_Taxonomy/ROOT_ATOMS.md",
+    "02_Doctrine_and_Theses/COMPOSITION-THESIS.md",
+    "04_Domain_Primitive_Reserves/linear-algebra-matrix/PRIMITIVES.md",
+    "04_Domain_Primitive_Reserves/information-theory-coding/PRIMITIVES.md",
+    "04_Domain_Primitive_Reserves/cognitive-primitives/PRIMITIVES.md",
+    "04_Domain_Primitive_Reserves/thermodynamics-statistical-mechanics/PRIMITIVES.md",
+    "04_Domain_Primitive_Reserves/physics-diffusion/PRIMITIVES.md",
+    "05_Cognitive_and_Quantum_Roots/QUANTUM-FIRST-PRINCIPLES.md",
+    "06_Research_and_Emergence/Quantization App Development Research - Google Docs.extracted.txt"
+  ]
+}

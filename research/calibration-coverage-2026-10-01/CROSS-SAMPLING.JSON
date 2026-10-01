@@ -1,0 +1,1286 @@
+{
+  "records": 160,
+  "results": [
+    {
+      "bits": 4,
+      "geometry": "activation",
+      "original_endpoint_nmse": 0.0003443398097390131,
+      "rank": 4,
+      "stratified_nmse": 0.009278778932110496,
+      "tensor": "blk.3.ffn_up.weight"
+    },
+    {
+      "bits": 3,
+      "geometry": "diagonal",
+      "original_endpoint_nmse": 0.015493932677681788,
+      "rank": 2,
+      "stratified_nmse": 0.0058985510531684646,
+      "tensor": "blk.0.attn_output.weight"
+    },
+    {
+      "bits": 3,
+      "geometry": "activation-shuffled",
+      "original_endpoint_nmse": 0.010896885277827272,
+      "rank": 4,
+      "stratified_nmse": 0.01887533473056798,
+      "tensor": "blk.9.ffn_gate.weight"
+    },
+    {
+      "bits": 4,
+      "geometry": "diagonal",
+      "original_endpoint_nmse": 0.00237138236893279,
+      "rank": 4,
+      "stratified_nmse": 0.004949905690543494,
+      "tensor": "blk.9.ffn_gate.weight"
+    },
+    {
+      "bits": 4,
+      "geometry": "activation-shuffled",
+      "original_endpoint_nmse": 0.004822570736446104,
+      "rank": 1,
+      "stratified_nmse": 0.0023599990413226564,
+      "tensor": "blk.0.attn_output.weight"
+    },
+    {
+      "bits": 4,
+      "geometry": "activation",
+      "original_endpoint_nmse": 0.000904702997606457,
+      "rank": 1,
+      "stratified_nmse": 0.0051558377689434175,
+      "tensor": "blk.9.ffn_gate.weight"
+    },
+    {
+      "bits": 3,
+      "geometry": "diagonal",
+      "original_endpoint_nmse": 0.0006216269526602157,
+      "rank": 2,
+      "stratified_nmse": 0.004623201754034426,
+      "tensor": "blk.29.ffn_down.weight"
+    },
+    {
+      "bits": 4,
+      "geometry": "diagonal",
+      "original_endpoint_nmse": 0.005489818984288458,
+      "rank": 4,
+      "stratified_nmse": 0.00913716989595989,
+      "tensor": "blk.3.ffn_up.weight"
+    },
+    {
+      "bits": 4,
+      "geometry": "diagonal",
+      "original_endpoint_nmse": 0.005043856565786395,
+      "rank": 4,
+      "stratified_nmse": 0.011355942012709274,
+      "tensor": "blk.17.ffn_down.weight"
+    },
+    {
+      "bits": 3,
+      "geometry": "activation-shuffled",
+      "original_endpoint_nmse": 0.02298694933707818,
+      "rank": 2,
+      "stratified_nmse": 0.03464725725243591,
+      "tensor": "blk.3.ffn_up.weight"
+    },
+    {
+      "bits": 3,
+      "geometry": "diagonal",
+      "original_endpoint_nmse": 0.0067476248266765,
+      "rank": 2,
+      "stratified_nmse": 0.014697759797397146,
+      "tensor": "token_embd.weight"
+    },
+    {
+      "bits": 3,
+      "geometry": "diagonal",
+      "original_endpoint_nmse": 0.0019227030452365166,
+      "rank": 2,
+      "stratified_nmse": 0.0031944108409752256,
+      "tensor": "blk.0.attn_k.weight"
+    },
+    {
+      "bits": 4,
+      "geometry": "activation-shuffled",
+      "original_endpoint_nmse": 0.0027636615510150363,
+      "rank": 2,
+      "stratified_nmse": 0.005239646793338272,
+      "tensor": "token_embd.weight"
+    },
+    {
+      "bits": 3,
+      "geometry": "activation",
+      "original_endpoint_nmse": 0.005690062486236346,
+      "rank": 1,
+      "stratified_nmse": 0.041858823797845904,
+      "tensor": "blk.17.ffn_down.weight"
+    },
+    {
+      "bits": 4,
+      "geometry": "activation-shuffled",
+      "original_endpoint_nmse": 0.00045785684916674677,
+      "rank": 2,
+      "stratified_nmse": 0.000488211513803951,
+      "tensor": "blk.0.attn_q.weight"
+    },
+    {
+      "bits": 3,
+      "geometry": "activation",
+      "original_endpoint_nmse": 0.004752913688898886,
+      "rank": 4,
+      "stratified_nmse": 0.04069886597451023,
+      "tensor": "blk.17.ffn_down.weight"
+    },
+    {
+      "bits": 3,
+      "geometry": "diagonal",
+      "original_endpoint_nmse": 0.008634646353691829,
+      "rank": 1,
+      "stratified_nmse": 0.017853125753363095,
+      "tensor": "token_embd.weight"
+    },
+    {
+      "bits": 4,
+      "geometry": "activation",
+      "original_endpoint_nmse": 0.0001675611857751492,
+      "rank": 2,
+      "stratified_nmse": 0.0038889453886633597,
+      "tensor": "token_embd.weight"
+    },
+    {
+      "bits": 4,
+      "geometry": "scalar",
+      "original_endpoint_nmse": 0.006941768345337376,
+      "rank": 0,
+      "stratified_nmse": 0.009625876066257108,
+      "tensor": "blk.3.ffn_up.weight"
+    },
+    {
+      "bits": 4,
+      "geometry": "scalar",
+      "original_endpoint_nmse": 0.00017307230416580146,
+      "rank": 0,
+      "stratified_nmse": 0.00161571943021378,
+      "tensor": "blk.29.ffn_down.weight"
+    },
+    {
+      "bits": 3,
+      "geometry": "diagonal",
+      "original_endpoint_nmse": 0.0018600509894295917,
+      "rank": 2,
+      "stratified_nmse": 0.002117281037786436,
+      "tensor": "blk.0.attn_q.weight"
+    },
+    {
+      "bits": 4,
+      "geometry": "activation-shuffled",
+      "original_endpoint_nmse": 0.004600785051923015,
+      "rank": 4,
+      "stratified_nmse": 0.0021964326485810815,
+      "tensor": "blk.0.attn_output.weight"
+    },
+    {
+      "bits": 4,
+      "geometry": "diagonal",
+      "original_endpoint_nmse": 0.0004099389015017334,
+      "rank": 4,
+      "stratified_nmse": 0.0006132403731441876,
+      "tensor": "blk.0.attn_k.weight"
+    },
+    {
+      "bits": 4,
+      "geometry": "activation-shuffled",
+      "original_endpoint_nmse": 0.003238928029963243,
+      "rank": 2,
+      "stratified_nmse": 0.005175879293321972,
+      "tensor": "blk.9.ffn_gate.weight"
+    },
+    {
+      "bits": 3,
+      "geometry": "activation",
+      "original_endpoint_nmse": 0.0004946375451698542,
+      "rank": 4,
+      "stratified_nmse": 0.002094740040449532,
+      "tensor": "blk.0.attn_k.weight"
+    },
+    {
+      "bits": 3,
+      "geometry": "diagonal",
+      "original_endpoint_nmse": 0.019757485634737282,
+      "rank": 2,
+      "stratified_nmse": 0.039831317452954706,
+      "tensor": "blk.17.ffn_down.weight"
+    },
+    {
+      "bits": 4,
+      "geometry": "activation-shuffled",
+      "original_endpoint_nmse": 0.0047753199891014605,
+      "rank": 2,
+      "stratified_nmse": 0.002324737619945888,
+      "tensor": "blk.0.attn_output.weight"
+    },
+    {
+      "bits": 3,
+      "geometry": "activation",
+      "original_endpoint_nmse": 3.7844606431228537e-06,
+      "rank": 4,
+      "stratified_nmse": 0.003183427954454441,
+      "tensor": "blk.29.ffn_down.weight"
+    },
+    {
+      "bits": 4,
+      "geometry": "activation",
+      "original_endpoint_nmse": 0.00011887825039065906,
+      "rank": 4,
+      "stratified_nmse": 0.0005064700897001605,
+      "tensor": "blk.0.attn_k.weight"
+    },
+    {
+      "bits": 3,
+      "geometry": "activation",
+      "original_endpoint_nmse": 0.012891087958713257,
+      "rank": 1,
+      "stratified_nmse": 0.00478397498281749,
+      "tensor": "blk.0.attn_output.weight"
+    },
+    {
+      "bits": 4,
+      "geometry": "scalar",
+      "original_endpoint_nmse": 0.005751310181892449,
+      "rank": 0,
+      "stratified_nmse": 0.012045875483393738,
+      "tensor": "blk.17.ffn_down.weight"
+    },
+    {
+      "bits": 3,
+      "geometry": "diagonal",
+      "original_endpoint_nmse": 0.02103314382758808,
+      "rank": 2,
+      "stratified_nmse": 0.03431766540041584,
+      "tensor": "blk.3.ffn_up.weight"
+    },
+    {
+      "bits": 3,
+      "geometry": "activation-shuffled",
+      "original_endpoint_nmse": 0.018206099540863722,
+      "rank": 2,
+      "stratified_nmse": 0.008211460491274466,
+      "tensor": "blk.0.attn_output.weight"
+    },
+    {
+      "bits": 3,
+      "geometry": "activation-shuffled",
+      "original_endpoint_nmse": 0.011011894681506148,
+      "rank": 1,
+      "stratified_nmse": 0.019289714728823057,
+      "tensor": "blk.9.ffn_gate.weight"
+    },
+    {
+      "bits": 3,
+      "geometry": "activation-shuffled",
+      "original_endpoint_nmse": 0.022625036615892397,
+      "rank": 4,
+      "stratified_nmse": 0.03419763773428321,
+      "tensor": "blk.3.ffn_up.weight"
+    },
+    {
+      "bits": 3,
+      "geometry": "activation",
+      "original_endpoint_nmse": 0.010100345733150372,
+      "rank": 2,
+      "stratified_nmse": 0.004361535115878166,
+      "tensor": "blk.0.attn_output.weight"
+    },
+    {
+      "bits": 3,
+      "geometry": "activation",
+      "original_endpoint_nmse": 0.0009770365391454608,
+      "rank": 1,
+      "stratified_nmse": 0.0021038520376182907,
+      "tensor": "blk.0.attn_q.weight"
+    },
+    {
+      "bits": 3,
+      "geometry": "activation",
+      "original_endpoint_nmse": 0.005351503891246228,
+      "rank": 2,
+      "stratified_nmse": 0.04140778605758374,
+      "tensor": "blk.17.ffn_down.weight"
+    },
+    {
+      "bits": 3,
+      "geometry": "diagonal",
+      "original_endpoint_nmse": 0.005700215645727989,
+      "rank": 4,
+      "stratified_nmse": 0.013886297848994604,
+      "tensor": "token_embd.weight"
+    },
+    {
+      "bits": 4,
+      "geometry": "diagonal",
+      "original_endpoint_nmse": 0.00273222788419757,
+      "rank": 1,
+      "stratified_nmse": 0.005098442627453662,
+      "tensor": "blk.9.ffn_gate.weight"
+    },
+    {
+      "bits": 3,
+      "geometry": "scalar",
+      "original_endpoint_nmse": 0.011039236827172139,
+      "rank": 0,
+      "stratified_nmse": 0.019413354659772303,
+      "tensor": "blk.9.ffn_gate.weight"
+    },
+    {
+      "bits": 4,
+      "geometry": "activation-shuffled",
+      "original_endpoint_nmse": 0.0004810988138326978,
+      "rank": 4,
+      "stratified_nmse": 0.000755801563232091,
+      "tensor": "blk.0.attn_k.weight"
+    },
+    {
+      "bits": 4,
+      "geometry": "diagonal",
+      "original_endpoint_nmse": 0.0036250598938110464,
+      "rank": 2,
+      "stratified_nmse": 0.0012984625319359872,
+      "tensor": "blk.0.attn_output.weight"
+    },
+    {
+      "bits": 3,
+      "geometry": "activation",
+      "original_endpoint_nmse": 0.0006559576028719273,
+      "rank": 2,
+      "stratified_nmse": 0.0017585121516282018,
+      "tensor": "blk.0.attn_q.weight"
+    },
+    {
+      "bits": 4,
+      "geometry": "diagonal",
+      "original_endpoint_nmse": 0.00042875047635034907,
+      "rank": 2,
+      "stratified_nmse": 0.0004586631221059895,
+      "tensor": "blk.0.attn_q.weight"
+    },
+    {
+      "bits": 3,
+      "geometry": "activation",
+      "original_endpoint_nmse": 6.5948922494828845e-06,
+      "rank": 2,
+      "stratified_nmse": 0.004506682766385784,
+      "tensor": "blk.29.ffn_down.weight"
+    },
+    {
+      "bits": 4,
+      "geometry": "activation-shuffled",
+      "original_endpoint_nmse": 0.005680159649430042,
+      "rank": 1,
+      "stratified_nmse": 0.011924886932207945,
+      "tensor": "blk.17.ffn_down.weight"
+    },
+    {
+      "bits": 4,
+      "geometry": "diagonal",
+      "original_endpoint_nmse": 0.00016324622620383098,
+      "rank": 4,
+      "stratified_nmse": 0.0013769481822905898,
+      "tensor": "blk.29.ffn_down.weight"
+    },
+    {
+      "bits": 4,
+      "geometry": "activation-shuffled",
+      "original_endpoint_nmse": 0.006933345259596805,
+      "rank": 1,
+      "stratified_nmse": 0.009547199668961634,
+      "tensor": "blk.3.ffn_up.weight"
+    },
+    {
+      "bits": 4,
+      "geometry": "diagonal",
+      "original_endpoint_nmse": 0.00017244738549532714,
+      "rank": 1,
+      "stratified_nmse": 0.001589318039641308,
+      "tensor": "blk.29.ffn_down.weight"
+    },
+    {
+      "bits": 4,
+      "geometry": "activation",
+      "original_endpoint_nmse": 0.0005096644031708983,
+      "rank": 2,
+      "stratified_nmse": 0.009435893869798298,
+      "tensor": "blk.3.ffn_up.weight"
+    },
+    {
+      "bits": 4,
+      "geometry": "activation-shuffled",
+      "original_endpoint_nmse": 0.003231550702541594,
+      "rank": 4,
+      "stratified_nmse": 0.0051001857910592426,
+      "tensor": "blk.9.ffn_gate.weight"
+    },
+    {
+      "bits": 4,
+      "geometry": "activation",
+      "original_endpoint_nmse": 0.0009534217397035025,
+      "rank": 1,
+      "stratified_nmse": 0.003986999715671226,
+      "tensor": "token_embd.weight"
+    },
+    {
+      "bits": 3,
+      "geometry": "diagonal",
+      "original_endpoint_nmse": 0.01390397899441481,
+      "rank": 4,
+      "stratified_nmse": 0.005048942103948416,
+      "tensor": "blk.0.attn_output.weight"
+    },
+    {
+      "bits": 4,
+      "geometry": "activation",
+      "original_endpoint_nmse": 1.1682524170299002e-06,
+      "rank": 4,
+      "stratified_nmse": 0.0011434156370717663,
+      "tensor": "blk.29.ffn_down.weight"
+    },
+    {
+      "bits": 3,
+      "geometry": "scalar",
+      "original_endpoint_nmse": 0.0020342125327556843,
+      "rank": 0,
+      "stratified_nmse": 0.002249108433652997,
+      "tensor": "blk.0.attn_q.weight"
+    },
+    {
+      "bits": 3,
+      "geometry": "activation-shuffled",
+      "original_endpoint_nmse": 0.002336446020621401,
+      "rank": 4,
+      "stratified_nmse": 0.003364798933444075,
+      "tensor": "blk.0.attn_k.weight"
+    },
+    {
+      "bits": 4,
+      "geometry": "activation-shuffled",
+      "original_endpoint_nmse": 0.003316751449805072,
+      "rank": 1,
+      "stratified_nmse": 0.005204346902185694,
+      "tensor": "blk.9.ffn_gate.weight"
+    },
+    {
+      "bits": 3,
+      "geometry": "activation-shuffled",
+      "original_endpoint_nmse": 0.023077848166745272,
+      "rank": 1,
+      "stratified_nmse": 0.03482508973113735,
+      "tensor": "blk.3.ffn_up.weight"
+    },
+    {
+      "bits": 3,
+      "geometry": "diagonal",
+      "original_endpoint_nmse": 0.010037420975020458,
+      "rank": 2,
+      "stratified_nmse": 0.01884602417329252,
+      "tensor": "blk.9.ffn_gate.weight"
+    },
+    {
+      "bits": 4,
+      "geometry": "activation",
+      "original_endpoint_nmse": 0.00022406465809267777,
+      "rank": 1,
+      "stratified_nmse": 0.00047199554544096665,
+      "tensor": "blk.0.attn_q.weight"
+    },
+    {
+      "bits": 4,
+      "geometry": "activation",
+      "original_endpoint_nmse": 0.0016187959843062987,
+      "rank": 1,
+      "stratified_nmse": 0.00958552885975433,
+      "tensor": "blk.3.ffn_up.weight"
+    },
+    {
+      "bits": 3,
+      "geometry": "activation",
+      "original_endpoint_nmse": 0.001077427298245752,
+      "rank": 1,
+      "stratified_nmse": 0.0032238334531393313,
+      "tensor": "blk.0.attn_k.weight"
+    },
+    {
+      "bits": 3,
+      "geometry": "activation-shuffled",
+      "original_endpoint_nmse": 0.0020251297148917956,
+      "rank": 1,
+      "stratified_nmse": 0.002237811610567926,
+      "tensor": "blk.0.attn_q.weight"
+    },
+    {
+      "bits": 4,
+      "geometry": "diagonal",
+      "original_endpoint_nmse": 0.0016163489576381594,
+      "rank": 2,
+      "stratified_nmse": 0.003507545539739879,
+      "tensor": "token_embd.weight"
+    },
+    {
+      "bits": 3,
+      "geometry": "diagonal",
+      "original_endpoint_nmse": 0.009503769553528166,
+      "rank": 4,
+      "stratified_nmse": 0.018432555227220957,
+      "tensor": "blk.9.ffn_gate.weight"
+    },
+    {
+      "bits": 3,
+      "geometry": "diagonal",
+      "original_endpoint_nmse": 0.0005524107140345831,
+      "rank": 4,
+      "stratified_nmse": 0.004325151915751175,
+      "tensor": "blk.29.ffn_down.weight"
+    },
+    {
+      "bits": 4,
+      "geometry": "activation-shuffled",
+      "original_endpoint_nmse": 0.0004905595748926088,
+      "rank": 2,
+      "stratified_nmse": 0.0007769132525253756,
+      "tensor": "blk.0.attn_k.weight"
+    },
+    {
+      "bits": 3,
+      "geometry": "activation-shuffled",
+      "original_endpoint_nmse": 0.001952842764403476,
+      "rank": 4,
+      "stratified_nmse": 0.0021512713337729873,
+      "tensor": "blk.0.attn_q.weight"
+    },
+    {
+      "bits": 3,
+      "geometry": "diagonal",
+      "original_endpoint_nmse": 0.020262289076783683,
+      "rank": 4,
+      "stratified_nmse": 0.033583402888461227,
+      "tensor": "blk.3.ffn_up.weight"
+    },
+    {
+      "bits": 4,
+      "geometry": "diagonal",
+      "original_endpoint_nmse": 0.00043977154086951507,
+      "rank": 1,
+      "stratified_nmse": 0.00047392464949521144,
+      "tensor": "blk.0.attn_q.weight"
+    },
+    {
+      "bits": 4,
+      "geometry": "activation",
+      "original_endpoint_nmse": 0.001408170988864317,
+      "rank": 2,
+      "stratified_nmse": 0.01168153130231179,
+      "tensor": "blk.17.ffn_down.weight"
+    },
+    {
+      "bits": 3,
+      "geometry": "diagonal",
+      "original_endpoint_nmse": 0.001867754402626784,
+      "rank": 1,
+      "stratified_nmse": 0.002173777676199916,
+      "tensor": "blk.0.attn_q.weight"
+    },
+    {
+      "bits": 3,
+      "geometry": "scalar",
+      "original_endpoint_nmse": 0.022795546025342613,
+      "rank": 0,
+      "stratified_nmse": 0.042553292438467775,
+      "tensor": "blk.17.ffn_down.weight"
+    },
+    {
+      "bits": 3,
+      "geometry": "activation-shuffled",
+      "original_endpoint_nmse": 0.017793440475128652,
+      "rank": 4,
+      "stratified_nmse": 0.0081285466283823,
+      "tensor": "blk.0.attn_output.weight"
+    },
+    {
+      "bits": 4,
+      "geometry": "activation-shuffled",
+      "original_endpoint_nmse": 0.006882808058375012,
+      "rank": 2,
+      "stratified_nmse": 0.009474889852240535,
+      "tensor": "blk.3.ffn_up.weight"
+    },
+    {
+      "bits": 4,
+      "geometry": "activation",
+      "original_endpoint_nmse": 8.96273857093646e-06,
+      "rank": 1,
+      "stratified_nmse": 0.0014544495172579056,
+      "tensor": "blk.29.ffn_down.weight"
+    },
+    {
+      "bits": 3,
+      "geometry": "activation-shuffled",
+      "original_endpoint_nmse": 0.022549496056799897,
+      "rank": 2,
+      "stratified_nmse": 0.0419726984882502,
+      "tensor": "blk.17.ffn_down.weight"
+    },
+    {
+      "bits": 3,
+      "geometry": "activation-shuffled",
+      "original_endpoint_nmse": 0.0007498044041501134,
+      "rank": 1,
+      "stratified_nmse": 0.005786066000486724,
+      "tensor": "blk.29.ffn_down.weight"
+    },
+    {
+      "bits": 3,
+      "geometry": "activation",
+      "original_endpoint_nmse": 0.0006741063810781709,
+      "rank": 2,
+      "stratified_nmse": 0.015869859815253292,
+      "tensor": "token_embd.weight"
+    },
+    {
+      "bits": 4,
+      "geometry": "scalar",
+      "original_endpoint_nmse": 0.0004978625088651443,
+      "rank": 0,
+      "stratified_nmse": 0.0007914738785713949,
+      "tensor": "blk.0.attn_k.weight"
+    },
+    {
+      "bits": 3,
+      "geometry": "scalar",
+      "original_endpoint_nmse": 0.023504363312335533,
+      "rank": 0,
+      "stratified_nmse": 0.035127557626443526,
+      "tensor": "blk.3.ffn_up.weight"
+    },
+    {
+      "bits": 4,
+      "geometry": "activation-shuffled",
+      "original_endpoint_nmse": 0.00044314952129163426,
+      "rank": 4,
+      "stratified_nmse": 0.00047104903580762636,
+      "tensor": "blk.0.attn_q.weight"
+    },
+    {
+      "bits": 4,
+      "geometry": "activation",
+      "original_endpoint_nmse": 0.0012678098052172355,
+      "rank": 4,
+      "stratified_nmse": 0.011542019001296352,
+      "tensor": "blk.17.ffn_down.weight"
+    },
+    {
+      "bits": 4,
+      "geometry": "activation-shuffled",
+      "original_endpoint_nmse": 0.00017266684107951997,
+      "rank": 2,
+      "stratified_nmse": 0.0015981253746813909,
+      "tensor": "blk.29.ffn_down.weight"
+    },
+    {
+      "bits": 4,
+      "geometry": "diagonal",
+      "original_endpoint_nmse": 0.0040013553375180195,
+      "rank": 1,
+      "stratified_nmse": 0.0015367563384497771,
+      "tensor": "blk.0.attn_output.weight"
+    },
+    {
+      "bits": 3,
+      "geometry": "diagonal",
+      "original_endpoint_nmse": 0.010477817788640759,
+      "rank": 1,
+      "stratified_nmse": 0.01905554691307439,
+      "tensor": "blk.9.ffn_gate.weight"
+    },
+    {
+      "bits": 4,
+      "geometry": "activation-shuffled",
+      "original_endpoint_nmse": 0.000460442765469347,
+      "rank": 1,
+      "stratified_nmse": 0.0004952836749311019,
+      "tensor": "blk.0.attn_q.weight"
+    },
+    {
+      "bits": 3,
+      "geometry": "activation-shuffled",
+      "original_endpoint_nmse": 0.018379897780689998,
+      "rank": 1,
+      "stratified_nmse": 0.008248501244765647,
+      "tensor": "blk.0.attn_output.weight"
+    },
+    {
+      "bits": 4,
+      "geometry": "diagonal",
+      "original_endpoint_nmse": 0.0004259633497377213,
+      "rank": 4,
+      "stratified_nmse": 0.0004298992982515733,
+      "tensor": "blk.0.attn_q.weight"
+    },
+    {
+      "bits": 3,
+      "geometry": "diagonal",
+      "original_endpoint_nmse": 0.016832437457542933,
+      "rank": 1,
+      "stratified_nmse": 0.007202001617709891,
+      "tensor": "blk.0.attn_output.weight"
+    },
+    {
+      "bits": 4,
+      "geometry": "activation",
+      "original_endpoint_nmse": 0.00015417514680830718,
+      "rank": 2,
+      "stratified_nmse": 0.00041794256946752595,
+      "tensor": "blk.0.attn_q.weight"
+    },
+    {
+      "bits": 4,
+      "geometry": "diagonal",
+      "original_endpoint_nmse": 0.0004467240960808623,
+      "rank": 2,
+      "stratified_nmse": 0.0007393859768031368,
+      "tensor": "blk.0.attn_k.weight"
+    },
+    {
+      "bits": 3,
+      "geometry": "activation-shuffled",
+      "original_endpoint_nmse": 0.0007477501925794506,
+      "rank": 2,
+      "stratified_nmse": 0.0057674524311993915,
+      "tensor": "blk.29.ffn_down.weight"
+    },
+    {
+      "bits": 4,
+      "geometry": "activation",
+      "original_endpoint_nmse": 1.794940843510331e-06,
+      "rank": 2,
+      "stratified_nmse": 0.0013819245934371316,
+      "tensor": "blk.29.ffn_down.weight"
+    },
+    {
+      "bits": 4,
+      "geometry": "diagonal",
+      "original_endpoint_nmse": 0.0012225817203387163,
+      "rank": 4,
+      "stratified_nmse": 0.0032294184136299415,
+      "tensor": "token_embd.weight"
+    },
+    {
+      "bits": 3,
+      "geometry": "activation",
+      "original_endpoint_nmse": 4.223467898970512e-05,
+      "rank": 1,
+      "stratified_nmse": 0.005130583618199856,
+      "tensor": "blk.29.ffn_down.weight"
+    },
+    {
+      "bits": 4,
+      "geometry": "diagonal",
+      "original_endpoint_nmse": 0.000164048526133539,
+      "rank": 2,
+      "stratified_nmse": 0.001410040286289488,
+      "tensor": "blk.29.ffn_down.weight"
+    },
+    {
+      "bits": 3,
+      "geometry": "diagonal",
+      "original_endpoint_nmse": 0.021371504384638786,
+      "rank": 1,
+      "stratified_nmse": 0.034687459350749426,
+      "tensor": "blk.3.ffn_up.weight"
+    },
+    {
+      "bits": 4,
+      "geometry": "activation",
+      "original_endpoint_nmse": 0.00017541668298855353,
+      "rank": 2,
+      "stratified_nmse": 0.0006056507990868218,
+      "tensor": "blk.0.attn_k.weight"
+    },
+    {
+      "bits": 3,
+      "geometry": "activation",
+      "original_endpoint_nmse": 0.0004709276258423481,
+      "rank": 4,
+      "stratified_nmse": 0.0015180131512385786,
+      "tensor": "blk.0.attn_q.weight"
+    },
+    {
+      "bits": 3,
+      "geometry": "activation-shuffled",
+      "original_endpoint_nmse": 0.02146837179796864,
+      "rank": 4,
+      "stratified_nmse": 0.0410492291538865,
+      "tensor": "blk.17.ffn_down.weight"
+    },
+    {
+      "bits": 3,
+      "geometry": "diagonal",
+      "original_endpoint_nmse": 0.0020666308220728606,
+      "rank": 1,
+      "stratified_nmse": 0.0033318094929854804,
+      "tensor": "blk.0.attn_k.weight"
+    },
+    {
+      "bits": 4,
+      "geometry": "activation",
+      "original_endpoint_nmse": 0.00011009442945042948,
+      "rank": 4,
+      "stratified_nmse": 0.0003362474140073576,
+      "tensor": "blk.0.attn_q.weight"
+    },
+    {
+      "bits": 4,
+      "geometry": "diagonal",
+      "original_endpoint_nmse": 0.006266130849843918,
+      "rank": 1,
+      "stratified_nmse": 0.009444536628330148,
+      "tensor": "blk.3.ffn_up.weight"
+    },
+    {
+      "bits": 4,
+      "geometry": "diagonal",
+      "original_endpoint_nmse": 0.0004606926150053909,
+      "rank": 1,
+      "stratified_nmse": 0.0007625515562154339,
+      "tensor": "blk.0.attn_k.weight"
+    },
+    {
+      "bits": 3,
+      "geometry": "activation-shuffled",
+      "original_endpoint_nmse": 0.002017539678120539,
+      "rank": 2,
+      "stratified_nmse": 0.0022164322813899877,
+      "tensor": "blk.0.attn_q.weight"
+    },
+    {
+      "bits": 4,
+      "geometry": "activation",
+      "original_endpoint_nmse": 0.002413330000901674,
+      "rank": 2,
+      "stratified_nmse": 0.001021882507342384,
+      "tensor": "blk.0.attn_output.weight"
+    },
+    {
+      "bits": 4,
+      "geometry": "diagonal",
+      "original_endpoint_nmse": 0.0022961202277729993,
+      "rank": 1,
+      "stratified_nmse": 0.004164562837832799,
+      "tensor": "token_embd.weight"
+    },
+    {
+      "bits": 3,
+      "geometry": "diagonal",
+      "original_endpoint_nmse": 0.001725905296967609,
+      "rank": 4,
+      "stratified_nmse": 0.0027856525045544442,
+      "tensor": "blk.0.attn_k.weight"
+    },
+    {
+      "bits": 3,
+      "geometry": "scalar",
+      "original_endpoint_nmse": 0.0024390249578649056,
+      "rank": 0,
+      "stratified_nmse": 0.0035779509929426863,
+      "tensor": "blk.0.attn_k.weight"
+    },
+    {
+      "bits": 3,
+      "geometry": "scalar",
+      "original_endpoint_nmse": 0.011986026585137007,
+      "rank": 0,
+      "stratified_nmse": 0.022492791235369437,
+      "tensor": "token_embd.weight"
+    },
+    {
+      "bits": 4,
+      "geometry": "activation-shuffled",
+      "original_endpoint_nmse": 0.00017200017753034538,
+      "rank": 4,
+      "stratified_nmse": 0.0015862379508714882,
+      "tensor": "blk.29.ffn_down.weight"
+    },
+    {
+      "bits": 4,
+      "geometry": "diagonal",
+      "original_endpoint_nmse": 0.006152966342521851,
+      "rank": 2,
+      "stratified_nmse": 0.009326831454013779,
+      "tensor": "blk.3.ffn_up.weight"
+    },
+    {
+      "bits": 3,
+      "geometry": "activation",
+      "original_endpoint_nmse": 0.0005233889485009353,
+      "rank": 4,
+      "stratified_nmse": 0.014026724262037658,
+      "tensor": "token_embd.weight"
+    },
+    {
+      "bits": 4,
+      "geometry": "scalar",
+      "original_endpoint_nmse": 0.002776216805601976,
+      "rank": 0,
+      "stratified_nmse": 0.00529616757404133,
+      "tensor": "token_embd.weight"
+    },
+    {
+      "bits": 3,
+      "geometry": "activation",
+      "original_endpoint_nmse": 0.003227481812692851,
+      "rank": 1,
+      "stratified_nmse": 0.019197145135482402,
+      "tensor": "blk.9.ffn_gate.weight"
+    },
+    {
+      "bits": 3,
+      "geometry": "activation",
+      "original_endpoint_nmse": 0.007641053641175716,
+      "rank": 4,
+      "stratified_nmse": 0.003306889720352225,
+      "tensor": "blk.0.attn_output.weight"
+    },
+    {
+      "bits": 4,
+      "geometry": "activation-shuffled",
+      "original_endpoint_nmse": 0.00017282610904528853,
+      "rank": 1,
+      "stratified_nmse": 0.0016089592206715814,
+      "tensor": "blk.29.ffn_down.weight"
+    },
+    {
+      "bits": 4,
+      "geometry": "activation",
+      "original_endpoint_nmse": 0.0030903195342453383,
+      "rank": 1,
+      "stratified_nmse": 0.0010697491533014757,
+      "tensor": "blk.0.attn_output.weight"
+    },
+    {
+      "bits": 4,
+      "geometry": "scalar",
+      "original_endpoint_nmse": 0.00046210870687166675,
+      "rank": 0,
+      "stratified_nmse": 0.0004979476613032628,
+      "tensor": "blk.0.attn_q.weight"
+    },
+    {
+      "bits": 4,
+      "geometry": "activation",
+      "original_endpoint_nmse": 0.001530427290166517,
+      "rank": 1,
+      "stratified_nmse": 0.011947988218030604,
+      "tensor": "blk.17.ffn_down.weight"
+    },
+    {
+      "bits": 3,
+      "geometry": "activation-shuffled",
+      "original_endpoint_nmse": 0.022757260871179016,
+      "rank": 1,
+      "stratified_nmse": 0.042406029343994914,
+      "tensor": "blk.17.ffn_down.weight"
+    },
+    {
+      "bits": 3,
+      "geometry": "activation-shuffled",
+      "original_endpoint_nmse": 0.0023920935086367413,
+      "rank": 2,
+      "stratified_nmse": 0.003504522090683962,
+      "tensor": "blk.0.attn_k.weight"
+    },
+    {
+      "bits": 3,
+      "geometry": "activation",
+      "original_endpoint_nmse": 0.000693633820495118,
+      "rank": 2,
+      "stratified_nmse": 0.0024653739112379725,
+      "tensor": "blk.0.attn_k.weight"
+    },
+    {
+      "bits": 3,
+      "geometry": "activation-shuffled",
+      "original_endpoint_nmse": 0.000741181805634891,
+      "rank": 4,
+      "stratified_nmse": 0.0057232552322125894,
+      "tensor": "blk.29.ffn_down.weight"
+    },
+    {
+      "bits": 4,
+      "geometry": "activation-shuffled",
+      "original_endpoint_nmse": 0.00566412339715427,
+      "rank": 2,
+      "stratified_nmse": 0.011818309082771459,
+      "tensor": "blk.17.ffn_down.weight"
+    },
+    {
+      "bits": 3,
+      "geometry": "diagonal",
+      "original_endpoint_nmse": 0.0017908006213776938,
+      "rank": 4,
+      "stratified_nmse": 0.001960093603788187,
+      "tensor": "blk.0.attn_q.weight"
+    },
+    {
+      "bits": 3,
+      "geometry": "diagonal",
+      "original_endpoint_nmse": 0.019752512676721953,
+      "rank": 1,
+      "stratified_nmse": 0.040030695733814306,
+      "tensor": "blk.17.ffn_down.weight"
+    },
+    {
+      "bits": 3,
+      "geometry": "activation",
+      "original_endpoint_nmse": 0.0015838132383807165,
+      "rank": 2,
+      "stratified_nmse": 0.019022378461933893,
+      "tensor": "blk.9.ffn_gate.weight"
+    },
+    {
+      "bits": 4,
+      "geometry": "activation",
+      "original_endpoint_nmse": 0.00031956244635368634,
+      "rank": 4,
+      "stratified_nmse": 0.0050024071848457086,
+      "tensor": "blk.9.ffn_gate.weight"
+    },
+    {
+      "bits": 3,
+      "geometry": "activation",
+      "original_endpoint_nmse": 0.001348157243350308,
+      "rank": 4,
+      "stratified_nmse": 0.03407112225337267,
+      "tensor": "blk.3.ffn_up.weight"
+    },
+    {
+      "bits": 3,
+      "geometry": "diagonal",
+      "original_endpoint_nmse": 0.018789272135699017,
+      "rank": 4,
+      "stratified_nmse": 0.03947212788891743,
+      "tensor": "blk.17.ffn_down.weight"
+    },
+    {
+      "bits": 3,
+      "geometry": "activation-shuffled",
+      "original_endpoint_nmse": 0.010950878481662957,
+      "rank": 2,
+      "stratified_nmse": 0.01915370786001703,
+      "tensor": "blk.9.ffn_gate.weight"
+    },
+    {
+      "bits": 3,
+      "geometry": "activation",
+      "original_endpoint_nmse": 0.0035142545733359847,
+      "rank": 1,
+      "stratified_nmse": 0.016324050730710273,
+      "tensor": "token_embd.weight"
+    },
+    {
+      "bits": 4,
+      "geometry": "diagonal",
+      "original_endpoint_nmse": 0.005217593525646734,
+      "rank": 2,
+      "stratified_nmse": 0.011526119439634039,
+      "tensor": "blk.17.ffn_down.weight"
+    },
+    {
+      "bits": 4,
+      "geometry": "activation-shuffled",
+      "original_endpoint_nmse": 0.006632159526927501,
+      "rank": 4,
+      "stratified_nmse": 0.009365661078440907,
+      "tensor": "blk.3.ffn_up.weight"
+    },
+    {
+      "bits": 4,
+      "geometry": "activation-shuffled",
+      "original_endpoint_nmse": 0.0027676398708977763,
+      "rank": 1,
+      "stratified_nmse": 0.005270169136365761,
+      "tensor": "token_embd.weight"
+    },
+    {
+      "bits": 4,
+      "geometry": "diagonal",
+      "original_endpoint_nmse": 0.003421625327139513,
+      "rank": 4,
+      "stratified_nmse": 0.0011549688788732907,
+      "tensor": "blk.0.attn_output.weight"
+    },
+    {
+      "bits": 4,
+      "geometry": "activation-shuffled",
+      "original_endpoint_nmse": 0.0027387984133226914,
+      "rank": 4,
+      "stratified_nmse": 0.005169952565125284,
+      "tensor": "token_embd.weight"
+    },
+    {
+      "bits": 3,
+      "geometry": "diagonal",
+      "original_endpoint_nmse": 0.0007511506336474599,
+      "rank": 1,
+      "stratified_nmse": 0.005453374123156674,
+      "tensor": "blk.29.ffn_down.weight"
+    },
+    {
+      "bits": 4,
+      "geometry": "activation",
+      "original_endpoint_nmse": 0.001887351089275455,
+      "rank": 4,
+      "stratified_nmse": 0.0008231553698440675,
+      "tensor": "blk.0.attn_output.weight"
+    },
+    {
+      "bits": 3,
+      "geometry": "scalar",
+      "original_endpoint_nmse": 0.018694051142350423,
+      "rank": 0,
+      "stratified_nmse": 0.008299144332660656,
+      "tensor": "blk.0.attn_output.weight"
+    },
+    {
+      "bits": 4,
+      "geometry": "scalar",
+      "original_endpoint_nmse": 0.003323260208249412,
+      "rank": 0,
+      "stratified_nmse": 0.005232361314051204,
+      "tensor": "blk.9.ffn_gate.weight"
+    },
+    {
+      "bits": 3,
+      "geometry": "activation-shuffled",
+      "original_endpoint_nmse": 0.01192688369703705,
+      "rank": 1,
+      "stratified_nmse": 0.022382171070013796,
+      "tensor": "token_embd.weight"
+    },
+    {
+      "bits": 4,
+      "geometry": "activation-shuffled",
+      "original_endpoint_nmse": 0.005638263245218976,
+      "rank": 4,
+      "stratified_nmse": 0.011664508572856712,
+      "tensor": "blk.17.ffn_down.weight"
+    },
+    {
+      "bits": 4,
+      "geometry": "activation",
+      "original_endpoint_nmse": 0.00012170330405565863,
+      "rank": 4,
+      "stratified_nmse": 0.0035737485891685302,
+      "tensor": "token_embd.weight"
+    },
+    {
+      "bits": 3,
+      "geometry": "scalar",
+      "original_endpoint_nmse": 0.0007522827498194559,
+      "rank": 0,
+      "stratified_nmse": 0.005828422497274047,
+      "tensor": "blk.29.ffn_down.weight"
+    },
+    {
+      "bits": 3,
+      "geometry": "activation-shuffled",
+      "original_endpoint_nmse": 0.011813651162380461,
+      "rank": 4,
+      "stratified_nmse": 0.022030700308039608,
+      "tensor": "token_embd.weight"
+    },
+    {
+      "bits": 4,
+      "geometry": "activation-shuffled",
+      "original_endpoint_nmse": 0.0004938128451700236,
+      "rank": 1,
+      "stratified_nmse": 0.0007851813311677579,
+      "tensor": "blk.0.attn_k.weight"
+    },
+    {
+      "bits": 4,
+      "geometry": "diagonal",
+      "original_endpoint_nmse": 0.002578501086019629,
+      "rank": 2,
+      "stratified_nmse": 0.005007263086638498,
+      "tensor": "blk.9.ffn_gate.weight"
+    },
+    {
+      "bits": 3,
+      "geometry": "activation-shuffled",
+      "original_endpoint_nmse": 0.011915419672357007,
+      "rank": 2,
+      "stratified_nmse": 0.02226896484932315,
+      "tensor": "token_embd.weight"
+    },
+    {
+      "bits": 3,
+      "geometry": "activation-shuffled",
+      "original_endpoint_nmse": 0.0024292623417858377,
+      "rank": 1,
+      "stratified_nmse": 0.003544593897312306,
+      "tensor": "blk.0.attn_k.weight"
+    },
+    {
+      "bits": 4,
+      "geometry": "scalar",
+      "original_endpoint_nmse": 0.004930781680659647,
+      "rank": 0,
+      "stratified_nmse": 0.0024205054181417707,
+      "tensor": "blk.0.attn_output.weight"
+    },
+    {
+      "bits": 3,
+      "geometry": "activation",
+      "original_endpoint_nmse": 0.005820725502385698,
+      "rank": 1,
+      "stratified_nmse": 0.03491485871439755,
+      "tensor": "blk.3.ffn_up.weight"
+    },
+    {
+      "bits": 4,
+      "geometry": "diagonal",
+      "original_endpoint_nmse": 0.00525109206579873,
+      "rank": 1,
+      "stratified_nmse": 0.011604286895563386,
+      "tensor": "blk.17.ffn_down.weight"
+    },
+    {
+      "bits": 4,
+      "geometry": "activation",
+      "original_endpoint_nmse": 0.00040816002206358503,
+      "rank": 2,
+      "stratified_nmse": 0.0050775014350208075,
+      "tensor": "blk.9.ffn_gate.weight"
+    },
+    {
+      "bits": 3,
+      "geometry": "activation",
+      "original_endpoint_nmse": 0.0012302125927861742,
+      "rank": 4,
+      "stratified_nmse": 0.018734001812573894,
+      "tensor": "blk.9.ffn_gate.weight"
+    },
+    {
+      "bits": 4,
+      "geometry": "activation",
+      "original_endpoint_nmse": 0.0002611031834650777,
+      "rank": 1,
+      "stratified_nmse": 0.0007452041238996277,
+      "tensor": "blk.0.attn_k.weight"
+    },
+    {
+      "bits": 3,
+      "geometry": "activation",
+      "original_endpoint_nmse": 0.0019428061910642608,
+      "rank": 2,
+      "stratified_nmse": 0.034477597696828906,
+      "tensor": "blk.3.ffn_up.weight"
+    }
+  ],
+  "selection_sha256": "8e357a6712d5d288aa53a2e088f574c26246868db14eb864fd2fb73c9b3e4d99"
+}

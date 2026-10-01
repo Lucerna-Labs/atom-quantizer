@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "profile": "hybrid",
+  "reason": "This checkout implements conventional GGUF codecs, prescribed numerical quantization algorithms, fidelity selection, file I/O and benchmark tools. The source review found no synthetic-emergence component or explicit Atom ownership metadata in either package. Jesse requested project-specific flexibility and correction of these codec defects on 2026-09-30. These exact package scopes record their existing conventional ownership; they do not disable global guards, reclassify a synthetic Atom implementation, or establish an emergence claim. Any future Atom component requires its own explicit ownership and applicable controls.",
+  "crates": {
+    ".": { "kind": "conventional" },
+    "crates/atom-quantizer-q2": { "kind": "conventional" }
+  }
+}

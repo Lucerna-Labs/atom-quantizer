@@ -1,0 +1,13 @@
+{
+  "changes": [
+    {
+      "path": "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/experiments/full22/precision.py",
+      "before": "eaf6789533a53df044896df8e8f210a6e5d19904a1d9786ce57f8acd4e0addad",
+      "after": "ac8d136c5c53e85dc1f96bc79b016208a5100e257488cc4ac9a3f82cf7d125c8"
+    }
+  ],
+  "scope": "Close staging descriptor when a publication source cannot be opened; no numerical change.",
+  "trial_source_snapshot": "implementation-trial.tar.gz",
+  "tests": 57,
+  "trial_outputs_changed": false
+}

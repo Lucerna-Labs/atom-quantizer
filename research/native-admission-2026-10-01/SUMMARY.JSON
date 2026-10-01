@@ -1,0 +1,187 @@
+{
+  "audit": "PASSED",
+  "experiment": "N1",
+  "incumbent_release_unchanged": true,
+  "native_reports": 16,
+  "no_models_fitted": true,
+  "no_new_inference": true,
+  "results": [
+    {
+      "failed": 0,
+      "gate_failures": {
+        "cosine": 0,
+        "kl": 0,
+        "output_mse": 0
+      },
+      "model": "source-f32",
+      "passed": 272,
+      "regime": "endpoint-fit"
+    },
+    {
+      "failed": 0,
+      "gate_failures": {
+        "cosine": 0,
+        "kl": 0,
+        "output_mse": 0
+      },
+      "model": "historical-budget120",
+      "passed": 272,
+      "regime": "endpoint-fit"
+    },
+    {
+      "failed": 211,
+      "gate_failures": {
+        "cosine": 211,
+        "kl": 0,
+        "output_mse": 36
+      },
+      "model": "q3-IE-r1",
+      "passed": 61,
+      "regime": "endpoint-fit"
+    },
+    {
+      "failed": 4,
+      "gate_failures": {
+        "cosine": 4,
+        "kl": 0,
+        "output_mse": 1
+      },
+      "model": "q4-IE-r2",
+      "passed": 268,
+      "regime": "endpoint-fit"
+    },
+    {
+      "failed": 0,
+      "gate_failures": {
+        "cosine": 0,
+        "kl": 0,
+        "output_mse": 0
+      },
+      "model": "source-f32",
+      "passed": 272,
+      "regime": "endpoint-selection"
+    },
+    {
+      "failed": 0,
+      "gate_failures": {
+        "cosine": 0,
+        "kl": 0,
+        "output_mse": 0
+      },
+      "model": "historical-budget120",
+      "passed": 272,
+      "regime": "endpoint-selection"
+    },
+    {
+      "failed": 211,
+      "gate_failures": {
+        "cosine": 211,
+        "kl": 0,
+        "output_mse": 36
+      },
+      "model": "q3-IE-r1",
+      "passed": 61,
+      "regime": "endpoint-selection"
+    },
+    {
+      "failed": 4,
+      "gate_failures": {
+        "cosine": 4,
+        "kl": 0,
+        "output_mse": 1
+      },
+      "model": "q4-IE-r2",
+      "passed": 268,
+      "regime": "endpoint-selection"
+    },
+    {
+      "failed": 0,
+      "gate_failures": {
+        "cosine": 0,
+        "kl": 0,
+        "output_mse": 0
+      },
+      "model": "source-f32",
+      "passed": 272,
+      "regime": "interior-fit"
+    },
+    {
+      "failed": 0,
+      "gate_failures": {
+        "cosine": 0,
+        "kl": 0,
+        "output_mse": 0
+      },
+      "model": "historical-budget120",
+      "passed": 272,
+      "regime": "interior-fit"
+    },
+    {
+      "failed": 211,
+      "gate_failures": {
+        "cosine": 211,
+        "kl": 0,
+        "output_mse": 112
+      },
+      "model": "q3-IE-r1",
+      "passed": 61,
+      "regime": "interior-fit"
+    },
+    {
+      "failed": 25,
+      "gate_failures": {
+        "cosine": 4,
+        "kl": 0,
+        "output_mse": 22
+      },
+      "model": "q4-IE-r2",
+      "passed": 247,
+      "regime": "interior-fit"
+    },
+    {
+      "failed": 0,
+      "gate_failures": {
+        "cosine": 0,
+        "kl": 0,
+        "output_mse": 0
+      },
+      "model": "source-f32",
+      "passed": 272,
+      "regime": "interior-selection"
+    },
+    {
+      "failed": 0,
+      "gate_failures": {
+        "cosine": 0,
+        "kl": 0,
+        "output_mse": 0
+      },
+      "model": "historical-budget120",
+      "passed": 272,
+      "regime": "interior-selection"
+    },
+    {
+      "failed": 211,
+      "gate_failures": {
+        "cosine": 211,
+        "kl": 0,
+        "output_mse": 111
+      },
+      "model": "q3-IE-r1",
+      "passed": 61,
+      "regime": "interior-selection"
+    },
+    {
+      "failed": 24,
+      "gate_failures": {
+        "cosine": 4,
+        "kl": 0,
+        "output_mse": 21
+      },
+      "model": "q4-IE-r2",
+      "passed": 248,
+      "regime": "interior-selection"
+    }
+  ],
+  "status": "MEASURED"
+}

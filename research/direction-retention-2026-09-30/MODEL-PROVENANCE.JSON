@@ -1,0 +1,17 @@
+{
+  "eligible": [
+    {
+      "bits": 3,
+      "rank": 1
+    },
+    {
+      "bits": 4,
+      "rank": 1
+    }
+  ],
+  "final_test_sha256": "bb1565131bd1745b974fa5b2d8517945ae9c9c9d003fdaccfff9ac54f5db3250",
+  "runner_sha256": "3488e51eafd208c2f2209ddc26b3e9ad637d0670d060d6042a992980370f30cd",
+  "runtime_sha256": "67c7b6d124faf47727f4c5dbca65f01dbbe419d929f842c20bd586a1d99012ed",
+  "screen_manifest_sha256": "33382e922ca753b50dafd88c4ffd6825e2bfe0a39480c3b02b9c928e6ae52a07",
+  "selection_sha256": "880fc4969f0ec64980adc157dadae6f03019e793eab40f5ce536d5fab5552446"
+}

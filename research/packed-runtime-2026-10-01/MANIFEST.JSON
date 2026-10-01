@@ -1,0 +1,41 @@
+{
+  "batches": [
+    1,
+    8,
+    32
+  ],
+  "sha256": {
+    "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/.venv/lib/python3.13/site-packages/numpy.libs/libscipy_openblas64_-61654e39.so": "6cad8d2ad994ddc43d2ccdb0fb5d9458373ff1b87ef7ff420f2f94406eb8f082",
+    "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/.venv/lib/python3.13/site-packages/scipy.libs/libscipy_openblas-5f890258.so": "2a5b4c1a6311873c59132b2ceaaf3c26258a17350b7cd27ea8782a47e3322981",
+    "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/Cargo.lock": "55e078c0883f8fdd093e88386ef5f6778dc3e77db84af6e67bc348083ee4f6e2",
+    "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/Cargo.toml": "b2a6243abfae2677828ff29aed3b6fb5d35663a30d17c202aaa49f2776f3fbe1",
+    "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/calibration-coverage-2026-10-01/captures/stratified0-selection.acal": "8e357a6712d5d288aa53a2e088f574c26246868db14eb864fd2fb73c9b3e4d99",
+    "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/six-bit-frontier-2026-10-01/activation/model.a22": "27d36037a432c5cefeeb0c1f62505377f469365027e00372d30b1840c4608a83",
+    "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/six-bit-frontier-2026-10-01/activation/model.gguf": "4c9d806f45ec68dda196a966421857a7ff6d21c96e1dfe2393b378c82a2552d8",
+    "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/examples/packed_probe.rs": "31c9270e77982382eba7b734261c59d4bae507e47a9736d2bd39ef6503c412a9",
+    "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/experiments/full22/catalog.py": "e3fcb99f8dc0eb7fc88c68997c0ed808cda00830775e4b3925089f78c44018d7",
+    "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/experiments/full22/data.py": "116e90018adf80c059c08c8e112343e83ddc7357492454f66cb34b6e2fd779af",
+    "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/experiments/full22/harness.py": "b4e8b876c6ebcdc5490c01f5d390359bbe1da706c6450382e16537a867f4ce0d",
+    "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/experiments/packed_runtime.py": "42c1f58491a8ef55170a24f4d7dfafa0adfc725b80b4a2bce463da96878a6508",
+    "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/models/SmolLM2-135M-Instruct-f32.gguf": "53f86c219b099fa84cd005f1b22572f6c4e53f8ba242fb8074f600712abe9c5b",
+    "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/research/packed-runtime-2026-10-01/PROTOCOL.md": "34c808e2090d1c237243ad60532da4bd82efb5df54be4d8ef0d0aa781f87e462",
+    "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/src/a22.rs": "873e22a1a87308d391dc9250f9fbd0fa5c97eb75250a1c3a92cab7091b9ca766",
+    "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/src/a22/header.rs": "0c988124e9999bd4f3bbf02f3de05b4b036aa83fb0ea21a1add8742768f62dc9",
+    "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/src/a22/record.rs": "45dbddff635177e5c9e1bb141ac84e1e8172a4ff9df112c50d46bdbab8cc9d47",
+    "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/src/a22/tensor.rs": "61de6e01a124861eb117546ca5e30ce8312f251239ca462a79ba52511a96f193",
+    "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/src/main.rs": "916ec05dcad1775e9c9d5322035d00a035cfc8267f64cd1593e6716723914936",
+    "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/src/packed_apply.rs": "7e9abfdc9b2b6a17ef359b61243265a8b32352f8ab22edd3f546ad64a670776b",
+    "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/target/packed-runtime-current/release/atom-quantizer": "e4c7b6f39ccc3d7509fd457d7b78dae247afe8b95bfebbace72cd3bef416b1cb",
+    "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/target/packed-runtime-current/release/examples/packed_probe": "a5a921068e9b7fe3650a7ff0fb6343a16453c59e247c38ff7a2560269a289ebd"
+  },
+  "timing_tensors": [
+    "token_embd.weight",
+    "blk.0.attn_q.weight",
+    "blk.0.attn_k.weight",
+    "blk.0.attn_output.weight",
+    "blk.3.ffn_up.weight",
+    "blk.9.ffn_gate.weight",
+    "blk.17.ffn_down.weight",
+    "blk.29.ffn_down.weight"
+  ]
+}

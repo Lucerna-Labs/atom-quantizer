@@ -1,0 +1,31 @@
+Final validation, 2026-09-05, atom-quantizer 0.2.4
+
+cargo fmt --all --check: passed
+cargo test --workspace --all-targets: 42 library tests + 6 CLI integration tests passed
+cargo clippy --workspace --all-targets --features cuda -- -D warnings: passed
+cargo build --release --workspace: passed
+Python script syntax checks: passed, Python 3.13.15
+Real calibration recapture: byte-identical AC01 payload
+Pinned dataset recipe: byte-identical calibration and held-out input files
+Final 120 MiB model encode: byte-identical to the evaluated OQ03 artifact
+Final decoder: all 272 records verified; exported GGUF byte-identical to evaluated GGUF
+
+Actual model validation used CPU. CUDA was compile-checked, not runtime-qualified.
+Source, corrected proxy, calibrated, and budgeted models were evaluated through
+llama-perplexity on the same 128 test chunks and 512-token context. Full metrics,
+source/corpus/artifact hashes, and code fingerprints are in results.json.
+
+Preserved preliminary observations:
+- The original decoder failure and its old OQ02 diagnostic remain in the sibling
+  first-principles-2026-09-05 research directory at source revision b96d235.
+- Initial source smoke evaluation used 8 chunks/context 256 and gave PPL 27.0507.
+  It is retained in artifacts/foundations-2026-09-05/source-perplexity.log and is
+  not compared with the final 128-chunk/context-512 results.
+- The first native build completed llama-perplexity, then failed to find the
+  optional llama-cli target under the selected CMake configuration. The actual
+  perplexity executable was built and used successfully; no generation CLI
+  validation is claimed.
+- Intermediate Clippy/format failures were corrected before the final checks.
+
+No Q2 tensor passed this model's retained gates. Quality still differs from the
+source. No compressed-matmul speed/memory claim or all-22 implementation claim.

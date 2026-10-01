@@ -1,0 +1,72 @@
+{
+  "profiles": 320,
+  "matched_original_f32_metrics": 320,
+  "selected_examples": [
+    {
+      "tensor": "blk.29.ffn_down.weight",
+      "experiment": "B02",
+      "arm": "scalar",
+      "readout": null,
+      "bits": 4,
+      "order": -1,
+      "cases": 1,
+      "mean_output_to_diagonal_ratio": 0.9290833376296732,
+      "mean_rank4_selection_error_fraction": 0.9932504822047449
+    },
+    {
+      "tensor": "blk.29.ffn_down.weight",
+      "experiment": "B02",
+      "arm": "full",
+      "readout": null,
+      "bits": 4,
+      "order": 1,
+      "cases": 3,
+      "mean_output_to_diagonal_ratio": 1.1268015549602135,
+      "mean_rank4_selection_error_fraction": 0.9961462334346333
+    },
+    {
+      "tensor": "blk.29.ffn_down.weight",
+      "experiment": "B03",
+      "arm": "full",
+      "readout": "resistance",
+      "bits": 4,
+      "order": 1,
+      "cases": 3,
+      "mean_output_to_diagonal_ratio": 1.2176636235142673,
+      "mean_rank4_selection_error_fraction": 0.9948874570740124
+    },
+    {
+      "tensor": "token_embd.weight",
+      "experiment": "B02",
+      "arm": "scalar",
+      "readout": null,
+      "bits": 4,
+      "order": -1,
+      "cases": 1,
+      "mean_output_to_diagonal_ratio": 0.911500306145666,
+      "mean_rank4_selection_error_fraction": 0.9561621595972951
+    },
+    {
+      "tensor": "token_embd.weight",
+      "experiment": "B02",
+      "arm": "full",
+      "readout": null,
+      "bits": 4,
+      "order": 1,
+      "cases": 3,
+      "mean_output_to_diagonal_ratio": 0.9503747333715484,
+      "mean_rank4_selection_error_fraction": 0.9592677310636636
+    },
+    {
+      "tensor": "token_embd.weight",
+      "experiment": "B03",
+      "arm": "full",
+      "readout": "resistance",
+      "bits": 4,
+      "order": 1,
+      "cases": 3,
+      "mean_output_to_diagonal_ratio": 0.9693562357922964,
+      "mean_rank4_selection_error_fraction": 0.9454771750131344
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "historical-budget120": {
+    "archive_bytes": 125809756,
+    "archive_sha256": "6d8e7d7cf6c734866751630a96be7315133a04c1852bc1fdef1b6e1686e3fde1",
+    "decoded": "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/direction-retention-2026-09-30/models/historical-budget120.gguf",
+    "decoded_sha256": "c5fb3e2c4e516823058a730d9234e267f0a4e1d94f061449828826c2ba02b7f5",
+    "name": "historical-budget120",
+    "note": "historical product reference with different calibration; not a controlled geometry ablation",
+    "status": "MEASURED"
+  },
+  "q3-activation": {
+    "archive": "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/direction-retention-2026-09-30/models/q3-activation.a22",
+    "archive_bytes": 59448909,
+    "archive_sha256": "5974b97dbb4ba37bba169cb5d655f75c9691e6d120b5f857cb8fdaf2460c4e43",
+    "config": {
+      "bits": 3,
+      "rank": 1,
+      "rank_geometry": "activation"
+    },
+    "decoded": "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/direction-retention-2026-09-30/models/q3-activation.gguf",
+    "decoded_sha256": "2c9782717b926d9308bceeaa807815d52a82e4312d7b053e0e147325b8f0bedf",
+    "name": "q3-activation",
+    "standalone_source_and_calibration_opens_denied": true,
+    "status": "MEASURED",
+    "verified_tensors": 272
+  },
+  "q3-diagonal": {
+    "archive": "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/direction-retention-2026-09-30/models/q3-diagonal.a22",
+    "archive_bytes": 59446131,
+    "archive_sha256": "09f51ef45b6da9d108fd1457b83d9549e5fec171240e9ab658c2a28f7db0a9df",
+    "config": {
+      "bits": 3,
+      "rank": 1,
+      "rank_geometry": "diagonal"
+    },
+    "decoded": "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/direction-retention-2026-09-30/models/q3-diagonal.gguf",
+    "decoded_sha256": "edbfe3671fd83c8d62a79aeb1bb899462d5b173e94e6c5b81185c4b70c5be7ab",
+    "name": "q3-diagonal",
+    "standalone_source_and_calibration_opens_denied": true,
+    "status": "MEASURED",
+    "verified_tensors": 272
+  },
+  "q3-scalar": {
+    "archive": "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/direction-retention-2026-09-30/models/q3-scalar.a22",
+    "archive_bytes": 58709408,
+    "archive_sha256": "51bd8a612f5ca4669247cda7cf632f30df5917c1c50589a026b1bc1af90191c7",
+    "config": {
+      "bits": 3
+    },
+    "decoded": "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/direction-retention-2026-09-30/models/q3-scalar.gguf",
+    "decoded_sha256": "b2e3a347df0090c38307c53b0da61cededc7e6ccdcad311f768948e8245281c5",
+    "name": "q3-scalar",
+    "standalone_source_and_calibration_opens_denied": true,
+    "status": "MEASURED",
+    "verified_tensors": 272
+  },
+  "q4-activation": {
+    "archive": "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/direction-retention-2026-09-30/models/q4-activation.a22",
+    "archive_bytes": 73065954,
+    "archive_sha256": "82d12bc4b6243d7b0937383972ed074dfc97ab208817b6f91a83c218cb3efb3c",
+    "config": {
+      "bits": 4,
+      "rank": 1,
+      "rank_geometry": "activation"
+    },
+    "decoded": "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/direction-retention-2026-09-30/models/q4-activation.gguf",
+    "decoded_sha256": "da243b816fb28375b793b1371407bb0dc72d51fde9bbe91b9b7182f7331ecee4",
+    "name": "q4-activation",
+    "standalone_source_and_calibration_opens_denied": true,
+    "status": "MEASURED",
+    "verified_tensors": 272
+  },
+  "q4-diagonal": {
+    "archive": "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/direction-retention-2026-09-30/models/q4-diagonal.a22",
+    "archive_bytes": 73065043,
+    "archive_sha256": "c98a7349dea2f4a649dbfce703dd9ef98d7079d28a7fbdbf83c8b4a95a21146f",
+    "config": {
+      "bits": 4,
+      "rank": 1,
+      "rank_geometry": "diagonal"
+    },
+    "decoded": "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/direction-retention-2026-09-30/models/q4-diagonal.gguf",
+    "decoded_sha256": "58c17961b07c8b5367021031696bd1bcdccd3221e1fb8f71874ec0e29554ba00",
+    "name": "q4-diagonal",
+    "standalone_source_and_calibration_opens_denied": true,
+    "status": "MEASURED",
+    "verified_tensors": 272
+  },
+  "q4-scalar": {
+    "archive": "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/direction-retention-2026-09-30/models/q4-scalar.a22",
+    "archive_bytes": 72316615,
+    "archive_sha256": "49dc92c9ecb78a4bbe5cf35d90ec0e92486a6e62478da4803e9cc1e7f957ba7e",
+    "config": {
+      "bits": 4
+    },
+    "decoded": "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/direction-retention-2026-09-30/models/q4-scalar.gguf",
+    "decoded_sha256": "41e7684ac9ad9f14642298a83279abc99f0da8b558ce92526c35cdeb6c731018",
+    "name": "q4-scalar",
+    "standalone_source_and_calibration_opens_denied": true,
+    "status": "MEASURED",
+    "verified_tensors": 272
+  },
+  "source-f32": {
+    "archive_bytes": 539846112,
+    "decoded": "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/models/SmolLM2-135M-Instruct-f32.gguf",
+    "decoded_sha256": "53f86c219b099fa84cd005f1b22572f6c4e53f8ba242fb8074f600712abe9c5b",
+    "name": "source-f32",
+    "status": "MEASURED"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "sha256": {
+    "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/experiments/mamba_runtime.py": "9c94f61a4a72b798c68f518b6649dc2cf127ba52abeefbd82836c96f4e00b84b",
+    "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/experiments/mamba_trajectories.py": "ecb857da839b6afea9ba60afb9ff95c4c555f481752c5f4caf9abfa47cf1fa18",
+    "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/experiments/mamba_evaluate.py": "8cb982ee446e8a6e3051a898f2da1d6989309456ca63e609cb5b769800b24e6b",
+    "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/experiments/mamba_models.py": "4857aee61ab35887da71a16ad5b68476596c754058635b53cd1b8b7ce896f70f",
+    "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/experiments/direction_models.py": "a0816957c54dab3e7c69954a05dd737617e0a53829ea38a1e78c5828e0f13710",
+    "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/research/mamba-temporal-2026-10-01/PROTOCOL.md": "16adfc077e51051114a789b45c8c76fc8cc705ebe1603ce63e4243ac01f60d0e",
+    "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/mamba-temporal-2026-10-01/sequences.json": "dfb5b53b06a0fc8bca959818d2b8c8a2ada6bc914d3f211c373f58e17fb9f9a3",
+    "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/mamba-temporal-2026-10-01/models/summary.json": "72b87546054c886694c5a912959b7d168cce7df7639ced281d871ac4cdc12791",
+    "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/full22-2026-09-06/selection.txt": "880fc4969f0ec64980adc157dadae6f03019e793eab40f5ce536d5fab5552446"
+  },
+  "torch": "2.14.0+cpu",
+  "numpy": "2.5.2",
+  "transformers": "5.16.1",
+  "limits": {
+    "full_stream_logits": 0.01,
+    "full_stream_states": 1e-08,
+    "G2_tail_ratio": 0.95,
+    "G3_tail_ratio": 0.8
+  }
+}

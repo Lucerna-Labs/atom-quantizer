@@ -1,0 +1,39 @@
+{
+  "status": "OPEN",
+  "observation": "Initial strict audit stopped at a tensor-byte comparison; original failure did not record the tensor or differing values. The model is inferred as q4-IE-r1 from iteration order and the last completed entry.",
+  "first_log_sha256": "9b0ead174bc1a14ffaeef8c6b5b2d24ac400d430db946cf444fd6d725cc1e88c",
+  "first_audit_source_sha256": "25d7ea2f30e40340b4031b8118da15b02ba9a122a7acdcbb3a7d18f1f44b1246",
+  "followups": {
+    "isolated_decode": {
+      "model": "q4-IE-r1",
+      "mismatches": []
+    },
+    "thread_stress": {
+      "model": "q4-IE-r1",
+      "attempts": [
+        {
+          "threads": 1,
+          "tensors": 272
+        },
+        {
+          "threads": 4,
+          "tensors": 272
+        },
+        {
+          "threads": 8,
+          "tensors": 272
+        },
+        {
+          "threads": 4,
+          "tensors": 272
+        }
+      ],
+      "mismatches": []
+    },
+    "instrumented_full_audit": "PASSED",
+    "original_full_audit_replay": "PASSED"
+  },
+  "cause": "UNDETERMINED",
+  "quality_receipts_apply_to_fixed_decoded_hashes": true,
+  "unconditional_bitwise_reproducibility_claim": false
+}

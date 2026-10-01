@@ -1,0 +1,96 @@
+{
+  "experiment": "D05",
+  "selection": {
+    "candidates": [
+      {
+        "checks": {
+          "native_fit_and_selection": true,
+          "perplexity": true,
+          "stored_bytes": true
+        },
+        "name": "six-scalar",
+        "status": "QUALIFIED"
+      },
+      {
+        "checks": {
+          "native_fit_and_selection": true,
+          "perplexity": true,
+          "stored_bytes": true
+        },
+        "name": "six-diagonal",
+        "status": "QUALIFIED"
+      },
+      {
+        "checks": {
+          "native_fit_and_selection": true,
+          "perplexity": true,
+          "stored_bytes": true
+        },
+        "name": "six-activation",
+        "status": "QUALIFIED"
+      }
+    ],
+    "selected": "six-activation",
+    "status": "SELECTED"
+  },
+  "final_gate": {
+    "historical_ppl": 19.0007,
+    "ppl_passed": true,
+    "selected": "six-activation",
+    "selected_bytes": 109251501,
+    "selected_ppl": 17.4507,
+    "size_passed": true,
+    "status": "QUALIFIED"
+  },
+  "new_inference_runs": 8,
+  "defaults_changed": false,
+  "main_OQ03_integration": false,
+  "models": {
+    "historical-budget120": {
+      "archive_bytes": 125809756,
+      "archive_sha256": "6d8e7d7cf6c734866751630a96be7315133a04c1852bc1fdef1b6e1686e3fde1",
+      "decoded_sha256": "c5fb3e2c4e516823058a730d9234e267f0a4e1d94f061449828826c2ba02b7f5",
+      "decoded": "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/direction-retention-2026-09-30/models/historical-budget120.gguf"
+    },
+    "six-activation": {
+      "archive_bytes": 109251501,
+      "archive_sha256": "27d36037a432c5cefeeb0c1f62505377f469365027e00372d30b1840c4608a83",
+      "decoded_sha256": "4c9d806f45ec68dda196a966421857a7ff6d21c96e1dfe2393b378c82a2552d8",
+      "archive": "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/six-bit-frontier-2026-10-01/activation/model.a22",
+      "decoded": "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/six-bit-frontier-2026-10-01/activation/model.gguf"
+    },
+    "six-diagonal": {
+      "archive_bytes": 109255265,
+      "archive_sha256": "72776c86f2dd6c2495ca65bb621eef6e53fb592d0346af76dbf336844429b6f7",
+      "decoded_sha256": "98eeec9bd9b16079ddfe0586cedc4d2d62e0128ba01ec3d277f8bc4db8bc7e4d",
+      "archive": "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/six-bit-frontier-2026-10-01/diagonal/model.a22",
+      "decoded": "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/six-bit-frontier-2026-10-01/diagonal/model.gguf"
+    },
+    "six-scalar": {
+      "archive_bytes": 109317095,
+      "archive_sha256": "c520bf3afa3a5ef4a465d3eeb35e136fc120f34c4dd2cca5dc977a1118749bb7",
+      "decoded_sha256": "1b633be0e310ec8b62df6846d2e7b04fc08dc7b7a933d2aec8e0b0bd215c9920",
+      "archive": "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/six-bit-frontier-2026-10-01/scalar/model.a22",
+      "decoded": "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/six-bit-frontier-2026-10-01/scalar/model.gguf"
+    },
+    "source-f32": {
+      "archive_bytes": 539846112,
+      "decoded_sha256": "53f86c219b099fa84cd005f1b22572f6c4e53f8ba242fb8074f600712abe9c5b",
+      "decoded": "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/models/SmolLM2-135M-Instruct-f32.gguf"
+    }
+  },
+  "selection_ppl": {
+    "historical-budget120": 30.0986,
+    "six-activation": 26.9661,
+    "six-diagonal": 26.9946,
+    "six-scalar": 27.1168,
+    "source-f32": 26.7164
+  },
+  "final_ppl": {
+    "historical-budget120": 19.0007,
+    "six-activation": 17.4507,
+    "six-diagonal": 17.4759,
+    "six-scalar": 17.6123,
+    "source-f32": 17.4036
+  }
+}

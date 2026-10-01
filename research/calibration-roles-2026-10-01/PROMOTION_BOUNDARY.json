@@ -1,0 +1,1094 @@
+{
+  "classification": "measured cosine comparison only; not a native OQ03 admission run",
+  "main_source_sha256": "a95cae2411a503a1f5cc5cd5a9f9c266fa72faea8b99a83c7490075c7c0381d5",
+  "models": [
+    {
+      "name": "q3-IE-r1",
+      "below_main_cosine_floor": 211,
+      "failures": [
+        {
+          "tensor": "token_embd.weight",
+          "cosine": 0.9714974072032669,
+          "floor": 0.995
+        },
+        {
+          "tensor": "blk.0.ffn_down.weight",
+          "cosine": 0.9811997531975506,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.0.ffn_gate.weight",
+          "cosine": 0.9835238275770021,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.0.ffn_up.weight",
+          "cosine": 0.9826458303130249,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.0.attn_k.weight",
+          "cosine": 0.9744364858027554,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.0.attn_output.weight",
+          "cosine": 0.9708516886755343,
+          "floor": 0.995
+        },
+        {
+          "tensor": "blk.0.attn_q.weight",
+          "cosine": 0.9732691789590607,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.0.attn_v.weight",
+          "cosine": 0.9687348217217303,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.1.ffn_down.weight",
+          "cosine": 0.9831943069897873,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.1.ffn_gate.weight",
+          "cosine": 0.9845003733982824,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.1.ffn_up.weight",
+          "cosine": 0.9842237678671893,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.1.attn_k.weight",
+          "cosine": 0.9811287642424383,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.1.attn_output.weight",
+          "cosine": 0.9794946520397413,
+          "floor": 0.995
+        },
+        {
+          "tensor": "blk.1.attn_q.weight",
+          "cosine": 0.9801610645503112,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.1.attn_v.weight",
+          "cosine": 0.9754095885572881,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.10.ffn_down.weight",
+          "cosine": 0.9819931415831721,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.10.ffn_gate.weight",
+          "cosine": 0.983560158550435,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.10.ffn_up.weight",
+          "cosine": 0.9828946692221462,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.10.attn_k.weight",
+          "cosine": 0.9808081408150283,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.10.attn_output.weight",
+          "cosine": 0.9842552851508478,
+          "floor": 0.995
+        },
+        {
+          "tensor": "blk.10.attn_q.weight",
+          "cosine": 0.979347157955261,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.10.attn_v.weight",
+          "cosine": 0.9729000740672898,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.11.ffn_down.weight",
+          "cosine": 0.9827593061228093,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.11.ffn_gate.weight",
+          "cosine": 0.9836198720369815,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.11.ffn_up.weight",
+          "cosine": 0.9827607131321179,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.11.attn_k.weight",
+          "cosine": 0.9812220575795965,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.11.attn_output.weight",
+          "cosine": 0.984018287379665,
+          "floor": 0.995
+        },
+        {
+          "tensor": "blk.11.attn_q.weight",
+          "cosine": 0.9785837458639822,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.11.attn_v.weight",
+          "cosine": 0.9749250274555997,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.12.ffn_down.weight",
+          "cosine": 0.9824052942267804,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.12.ffn_gate.weight",
+          "cosine": 0.9834705098544341,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.12.ffn_up.weight",
+          "cosine": 0.982741928498323,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.12.attn_k.weight",
+          "cosine": 0.9793746030890412,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.12.attn_output.weight",
+          "cosine": 0.9834218207932689,
+          "floor": 0.995
+        },
+        {
+          "tensor": "blk.12.attn_q.weight",
+          "cosine": 0.9781303293753684,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.12.attn_v.weight",
+          "cosine": 0.9714141750392783,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.13.ffn_down.weight",
+          "cosine": 0.9826403354012855,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.13.ffn_gate.weight",
+          "cosine": 0.9833514136502917,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.13.ffn_up.weight",
+          "cosine": 0.9825643952907392,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.13.attn_k.weight",
+          "cosine": 0.9802050015066363,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.13.attn_output.weight",
+          "cosine": 0.9843192096219385,
+          "floor": 0.995
+        },
+        {
+          "tensor": "blk.13.attn_q.weight",
+          "cosine": 0.97873772472393,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.13.attn_v.weight",
+          "cosine": 0.9722340934423035,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.14.ffn_down.weight",
+          "cosine": 0.9816514464042845,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.14.ffn_gate.weight",
+          "cosine": 0.9828776481399878,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.14.ffn_up.weight",
+          "cosine": 0.9824270999151312,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.14.attn_k.weight",
+          "cosine": 0.9789607344816919,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.14.attn_output.weight",
+          "cosine": 0.9836722295888825,
+          "floor": 0.995
+        },
+        {
+          "tensor": "blk.14.attn_q.weight",
+          "cosine": 0.9796603397288609,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.14.attn_v.weight",
+          "cosine": 0.9743162111156404,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.15.ffn_down.weight",
+          "cosine": 0.9810443653140272,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.15.ffn_gate.weight",
+          "cosine": 0.9821144546386213,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.15.ffn_up.weight",
+          "cosine": 0.9820860835879925,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.15.attn_k.weight",
+          "cosine": 0.9794662769022181,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.15.attn_output.weight",
+          "cosine": 0.9823475161110641,
+          "floor": 0.995
+        },
+        {
+          "tensor": "blk.15.attn_q.weight",
+          "cosine": 0.979186655636594,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.15.attn_v.weight",
+          "cosine": 0.9751555392045668,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.16.ffn_down.weight",
+          "cosine": 0.9820006880021348,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.16.ffn_gate.weight",
+          "cosine": 0.9825361575084627,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.16.ffn_up.weight",
+          "cosine": 0.9822813267199983,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.16.attn_k.weight",
+          "cosine": 0.9800239082857777,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.16.attn_output.weight",
+          "cosine": 0.9833795862470364,
+          "floor": 0.995
+        },
+        {
+          "tensor": "blk.16.attn_q.weight",
+          "cosine": 0.9792246896250706,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.16.attn_v.weight",
+          "cosine": 0.9715632306125956,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.17.ffn_down.weight",
+          "cosine": 0.9819874246508823,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.17.ffn_gate.weight",
+          "cosine": 0.9824119677780084,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.17.ffn_up.weight",
+          "cosine": 0.9821647178740176,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.17.attn_k.weight",
+          "cosine": 0.9765648086580305,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.17.attn_output.weight",
+          "cosine": 0.9837636228084231,
+          "floor": 0.995
+        },
+        {
+          "tensor": "blk.17.attn_q.weight",
+          "cosine": 0.9738143355539413,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.17.attn_v.weight",
+          "cosine": 0.9748504007669331,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.18.ffn_down.weight",
+          "cosine": 0.9808936223541399,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.18.ffn_gate.weight",
+          "cosine": 0.9820056841631053,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.18.ffn_up.weight",
+          "cosine": 0.9818792426438727,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.18.attn_k.weight",
+          "cosine": 0.9776530191347343,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.18.attn_output.weight",
+          "cosine": 0.9820365730605592,
+          "floor": 0.995
+        },
+        {
+          "tensor": "blk.18.attn_q.weight",
+          "cosine": 0.9771196954956399,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.18.attn_v.weight",
+          "cosine": 0.9704051726417082,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.19.ffn_down.weight",
+          "cosine": 0.9810685914632805,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.19.ffn_gate.weight",
+          "cosine": 0.9816202203853391,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.19.ffn_up.weight",
+          "cosine": 0.9814808098846033,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.19.attn_k.weight",
+          "cosine": 0.9783652679584245,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.19.attn_output.weight",
+          "cosine": 0.9832075173054683,
+          "floor": 0.995
+        },
+        {
+          "tensor": "blk.19.attn_q.weight",
+          "cosine": 0.9731093847737551,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.19.attn_v.weight",
+          "cosine": 0.9748578491097154,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.2.ffn_down.weight",
+          "cosine": 0.9770870088372758,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.2.ffn_gate.weight",
+          "cosine": 0.9839449740449041,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.2.ffn_up.weight",
+          "cosine": 0.9838787183739104,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.2.attn_k.weight",
+          "cosine": 0.9807489219995372,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.2.attn_output.weight",
+          "cosine": 0.9814398034988492,
+          "floor": 0.995
+        },
+        {
+          "tensor": "blk.2.attn_q.weight",
+          "cosine": 0.9798446706363141,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.2.attn_v.weight",
+          "cosine": 0.9775251494760114,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.20.ffn_down.weight",
+          "cosine": 0.9804473878627832,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.20.ffn_gate.weight",
+          "cosine": 0.981245358440355,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.20.ffn_up.weight",
+          "cosine": 0.9813663244626232,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.20.attn_k.weight",
+          "cosine": 0.9800184477933406,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.20.attn_output.weight",
+          "cosine": 0.9840592375039066,
+          "floor": 0.995
+        },
+        {
+          "tensor": "blk.20.attn_q.weight",
+          "cosine": 0.9801013814733486,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.20.attn_v.weight",
+          "cosine": 0.9712944888163757,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.21.ffn_down.weight",
+          "cosine": 0.9818983426671247,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.21.ffn_gate.weight",
+          "cosine": 0.9819445382877953,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.21.ffn_up.weight",
+          "cosine": 0.9825626982933231,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.21.attn_k.weight",
+          "cosine": 0.9806772128105465,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.21.attn_output.weight",
+          "cosine": 0.9831512323678496,
+          "floor": 0.995
+        },
+        {
+          "tensor": "blk.21.attn_q.weight",
+          "cosine": 0.9795233126191658,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.21.attn_v.weight",
+          "cosine": 0.9741565314859334,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.22.ffn_down.weight",
+          "cosine": 0.9811394745298043,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.22.ffn_gate.weight",
+          "cosine": 0.9814015333326473,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.22.ffn_up.weight",
+          "cosine": 0.9821842428684687,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.22.attn_k.weight",
+          "cosine": 0.9812810700245532,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.22.attn_output.weight",
+          "cosine": 0.9840690139088606,
+          "floor": 0.995
+        },
+        {
+          "tensor": "blk.22.attn_q.weight",
+          "cosine": 0.9798201639997427,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.22.attn_v.weight",
+          "cosine": 0.975933603517338,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.23.ffn_down.weight",
+          "cosine": 0.9818559853027861,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.23.ffn_gate.weight",
+          "cosine": 0.9829177500494098,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.23.ffn_up.weight",
+          "cosine": 0.9828055097355907,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.23.attn_k.weight",
+          "cosine": 0.9790452138632929,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.23.attn_output.weight",
+          "cosine": 0.9846656499287486,
+          "floor": 0.995
+        },
+        {
+          "tensor": "blk.23.attn_q.weight",
+          "cosine": 0.9785667914670826,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.23.attn_v.weight",
+          "cosine": 0.9739620652502967,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.24.ffn_down.weight",
+          "cosine": 0.9822276451775109,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.24.ffn_gate.weight",
+          "cosine": 0.9834654423062408,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.24.ffn_up.weight",
+          "cosine": 0.9833678138028846,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.24.attn_k.weight",
+          "cosine": 0.9798030089314039,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.24.attn_output.weight",
+          "cosine": 0.9829772239698138,
+          "floor": 0.995
+        },
+        {
+          "tensor": "blk.24.attn_q.weight",
+          "cosine": 0.97825114990505,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.24.attn_v.weight",
+          "cosine": 0.9763121637598219,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.25.ffn_down.weight",
+          "cosine": 0.9831441887527582,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.25.ffn_gate.weight",
+          "cosine": 0.9840077222793199,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.25.ffn_up.weight",
+          "cosine": 0.9841316327008739,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.25.attn_k.weight",
+          "cosine": 0.9820605172367018,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.25.attn_output.weight",
+          "cosine": 0.983690269534737,
+          "floor": 0.995
+        },
+        {
+          "tensor": "blk.25.attn_q.weight",
+          "cosine": 0.9816328724312261,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.25.attn_v.weight",
+          "cosine": 0.9801353124105416,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.26.ffn_down.weight",
+          "cosine": 0.9831006241988328,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.26.ffn_gate.weight",
+          "cosine": 0.9837028922015237,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.26.ffn_up.weight",
+          "cosine": 0.9838986797039341,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.26.attn_k.weight",
+          "cosine": 0.9813302117625663,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.26.attn_output.weight",
+          "cosine": 0.9845729172704655,
+          "floor": 0.995
+        },
+        {
+          "tensor": "blk.26.attn_q.weight",
+          "cosine": 0.9815169168562556,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.26.attn_v.weight",
+          "cosine": 0.9798468960418582,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.27.ffn_down.weight",
+          "cosine": 0.9827780381050869,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.27.ffn_gate.weight",
+          "cosine": 0.9824167011010483,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.27.ffn_up.weight",
+          "cosine": 0.9834620541721741,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.27.attn_k.weight",
+          "cosine": 0.9813242850341736,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.27.attn_output.weight",
+          "cosine": 0.9837035432156298,
+          "floor": 0.995
+        },
+        {
+          "tensor": "blk.27.attn_q.weight",
+          "cosine": 0.9814515780551005,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.27.attn_v.weight",
+          "cosine": 0.9801995671169377,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.28.ffn_down.weight",
+          "cosine": 0.9808776476104266,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.28.ffn_gate.weight",
+          "cosine": 0.9822777142665724,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.28.ffn_up.weight",
+          "cosine": 0.9825849941892768,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.28.attn_k.weight",
+          "cosine": 0.9814884429502714,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.28.attn_output.weight",
+          "cosine": 0.9842420344368064,
+          "floor": 0.995
+        },
+        {
+          "tensor": "blk.28.attn_q.weight",
+          "cosine": 0.9819230765546797,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.28.attn_v.weight",
+          "cosine": 0.9808586490678983,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.29.ffn_down.weight",
+          "cosine": 0.9676290916590818,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.29.ffn_gate.weight",
+          "cosine": 0.9797915573260988,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.29.ffn_up.weight",
+          "cosine": 0.9801483508990744,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.29.attn_k.weight",
+          "cosine": 0.9818779903971321,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.29.attn_output.weight",
+          "cosine": 0.9844875703547558,
+          "floor": 0.995
+        },
+        {
+          "tensor": "blk.29.attn_q.weight",
+          "cosine": 0.9809215211580657,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.29.attn_v.weight",
+          "cosine": 0.9788535806481498,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.3.ffn_down.weight",
+          "cosine": 0.9840241868525008,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.3.ffn_gate.weight",
+          "cosine": 0.9844902669012701,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.3.ffn_up.weight",
+          "cosine": 0.9842646322451856,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.3.attn_k.weight",
+          "cosine": 0.980847954749509,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.3.attn_output.weight",
+          "cosine": 0.9831454305543785,
+          "floor": 0.995
+        },
+        {
+          "tensor": "blk.3.attn_q.weight",
+          "cosine": 0.9798730745744263,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.3.attn_v.weight",
+          "cosine": 0.9739441967808986,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.4.ffn_down.weight",
+          "cosine": 0.9840703318563172,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.4.ffn_gate.weight",
+          "cosine": 0.9845065755753236,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.4.ffn_up.weight",
+          "cosine": 0.9843438458776248,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.4.attn_k.weight",
+          "cosine": 0.9819342938855739,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.4.attn_output.weight",
+          "cosine": 0.9840944926405988,
+          "floor": 0.995
+        },
+        {
+          "tensor": "blk.4.attn_q.weight",
+          "cosine": 0.9813373502118088,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.4.attn_v.weight",
+          "cosine": 0.9779262157631619,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.5.ffn_down.weight",
+          "cosine": 0.984101790071487,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.5.ffn_gate.weight",
+          "cosine": 0.9845026064889084,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.5.ffn_up.weight",
+          "cosine": 0.9841573863579358,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.5.attn_k.weight",
+          "cosine": 0.9793211664321442,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.5.attn_output.weight",
+          "cosine": 0.9834556739175506,
+          "floor": 0.995
+        },
+        {
+          "tensor": "blk.5.attn_q.weight",
+          "cosine": 0.9797913996726217,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.5.attn_v.weight",
+          "cosine": 0.975676221391777,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.6.ffn_down.weight",
+          "cosine": 0.9836575525181163,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.6.ffn_gate.weight",
+          "cosine": 0.9841371093411357,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.6.ffn_up.weight",
+          "cosine": 0.9836467013396206,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.6.attn_k.weight",
+          "cosine": 0.9812883333839697,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.6.attn_output.weight",
+          "cosine": 0.9837444927671307,
+          "floor": 0.995
+        },
+        {
+          "tensor": "blk.6.attn_q.weight",
+          "cosine": 0.9807730293049192,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.6.attn_v.weight",
+          "cosine": 0.9769331113964926,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.7.ffn_down.weight",
+          "cosine": 0.9834968140813476,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.7.ffn_gate.weight",
+          "cosine": 0.9841482177258815,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.7.ffn_up.weight",
+          "cosine": 0.9839204973625583,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.7.attn_k.weight",
+          "cosine": 0.9783924357299246,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.7.attn_output.weight",
+          "cosine": 0.9836666612442694,
+          "floor": 0.995
+        },
+        {
+          "tensor": "blk.7.attn_q.weight",
+          "cosine": 0.9790340847316341,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.7.attn_v.weight",
+          "cosine": 0.9760758795679273,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.8.ffn_down.weight",
+          "cosine": 0.9827611108541444,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.8.ffn_gate.weight",
+          "cosine": 0.9837790786538516,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.8.ffn_up.weight",
+          "cosine": 0.983440171304608,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.8.attn_k.weight",
+          "cosine": 0.9782638045052469,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.8.attn_output.weight",
+          "cosine": 0.9832585455164485,
+          "floor": 0.995
+        },
+        {
+          "tensor": "blk.8.attn_q.weight",
+          "cosine": 0.9781038431598321,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.8.attn_v.weight",
+          "cosine": 0.9747443939174996,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.9.ffn_down.weight",
+          "cosine": 0.9810832753260231,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.9.ffn_gate.weight",
+          "cosine": 0.9835138683193324,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.9.ffn_up.weight",
+          "cosine": 0.983209986787546,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.9.attn_k.weight",
+          "cosine": 0.9791078010101113,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.9.attn_output.weight",
+          "cosine": 0.9834164325492133,
+          "floor": 0.995
+        },
+        {
+          "tensor": "blk.9.attn_q.weight",
+          "cosine": 0.9783390086853482,
+          "floor": 0.99
+        },
+        {
+          "tensor": "blk.9.attn_v.weight",
+          "cosine": 0.9727229220897757,
+          "floor": 0.99
+        }
+      ]
+    },
+    {
+      "name": "q4-IE-r2",
+      "below_main_cosine_floor": 4,
+      "failures": [
+        {
+          "tensor": "token_embd.weight",
+          "cosine": 0.9932546212404086,
+          "floor": 0.995
+        },
+        {
+          "tensor": "blk.0.attn_output.weight",
+          "cosine": 0.9932393892389088,
+          "floor": 0.995
+        },
+        {
+          "tensor": "blk.1.attn_output.weight",
+          "cosine": 0.9947600755007866,
+          "floor": 0.995
+        },
+        {
+          "tensor": "blk.29.ffn_down.weight",
+          "cosine": 0.9899663330154284,
+          "floor": 0.99
+        }
+      ]
+    }
+  ],
+  "defaults_changed": false
+}

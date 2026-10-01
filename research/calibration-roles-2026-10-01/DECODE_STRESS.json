@@ -1,0 +1,22 @@
+{
+  "model": "q4-IE-r1",
+  "attempts": [
+    {
+      "threads": 1,
+      "tensors": 272
+    },
+    {
+      "threads": 4,
+      "tensors": 272
+    },
+    {
+      "threads": 8,
+      "tensors": 272
+    },
+    {
+      "threads": 4,
+      "tensors": 272
+    }
+  ],
+  "mismatches": []
+}

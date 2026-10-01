@@ -363,6 +363,174 @@ pub fn encode_with(data: &[f32], strategy: QuantStrategy, cfg: &WqConfig) -> Com
     encode(data, strategy, cfg)
 }
 
+/// Fit the ternary Q2 scale to weighted reconstruction error. Importance values
+/// repeat over input columns; they must describe the same basis as data. The
+/// max-abs solution remains in the search, so the pre-repair objective cannot
+/// regress. Codes and f32 scales use the existing Q2 decoder and byte layout.
+pub fn encode_q2_optimized(data: &[f32], key: u64, importance: Option<&[f32]>) -> CompressedTensor {
+    if data.is_empty() {
+        return empty_tensor(QuantStrategy::Q2, key);
+    }
+    let weight = |i: usize| {
+        importance
+            .filter(|v| !v.is_empty())
+            .map(|v| v[i % v.len()].max(0.0))
+            .unwrap_or(1.0) as f64
+    };
+    let mut scales = Vec::with_capacity(data.len().div_ceil(BLOCK));
+    let mut codes = Vec::with_capacity(data.len());
+    for (bi, block) in data.chunks(BLOCK).enumerate() {
+        let maximum = block.iter().fold(0.0f32, |m, w| m.max(w.abs()));
+        let maximum = if maximum > 0.0 { maximum } else { 1.0 };
+        let loss = |s: f32| {
+            block
+                .iter()
+                .enumerate()
+                .map(|(j, &w)| {
+                    let q = (w / s).round().clamp(-1.0, 1.0);
+                    weight(bi * BLOCK + j) * (w as f64 - (q * s) as f64).powi(2)
+                })
+                .sum::<f64>()
+        };
+        let mut best = maximum;
+        let mut best_loss = loss(best);
+        for fraction in [1.0, 0.85, 0.7, 0.55, 0.4, 0.25] {
+            let mut s = maximum * fraction;
+            for _ in 0..8 {
+                let (mut numerator, mut denominator) = (0.0, 0.0);
+                for (j, &w) in block.iter().enumerate() {
+                    let q = (w / s).round().clamp(-1.0, 1.0) as f64;
+                    let h = weight(bi * BLOCK + j);
+                    numerator += h * w as f64 * q;
+                    denominator += h * q * q;
+                }
+                if denominator <= 0.0 {
+                    break;
+                }
+                let next = (numerator / denominator) as f32;
+                if !next.is_finite() || next <= 0.0 {
+                    break;
+                }
+                s = next;
+                let value = loss(s);
+                if value < best_loss {
+                    best_loss = value;
+                    best = s;
+                }
+            }
+        }
+        scales.push(best);
+        for &w in block {
+            codes.push(((w / best).round().clamp(-1.0, 1.0) as i32 + 1) as u32);
+        }
+    }
+    let packed = pack(&codes, 2);
+    // Preserve the fitted weighted objective. Optional repair is a separate
+    // candidate and must be judged in reconstructed weight space.
+    CompressedTensor {
+        strategy: QuantStrategy::Q2,
+        len: data.len(),
+        scales,
+        mins: Vec::new(),
+        repair_strength: 0.0,
+        integrity: bytes_tag(&packed, key),
+        packed,
+        key,
+    }
+}
+
+/// Fit the affine four-level Q2 grid with alternating assignments and weighted
+/// least squares. The ordinary min/max grid is retained as a candidate.
+pub fn encode_q2_optimized_asym(
+    data: &[f32],
+    key: u64,
+    importance: Option<&[f32]>,
+) -> CompressedTensor {
+    if data.is_empty() {
+        return empty_tensor(QuantStrategy::Q2, key);
+    }
+    let weight = |i: usize| {
+        importance
+            .filter(|v| !v.is_empty())
+            .map(|v| v[i % v.len()].max(0.0))
+            .unwrap_or(1.0) as f64
+    };
+    let (mut scales, mut mins, mut codes) =
+        (Vec::new(), Vec::new(), Vec::with_capacity(data.len()));
+    for (bi, block) in data.chunks(BLOCK).enumerate() {
+        let lo = block.iter().copied().fold(f32::INFINITY, f32::min);
+        let hi = block.iter().copied().fold(f32::NEG_INFINITY, f32::max);
+        let base_scale = if hi > lo { (hi - lo) / 3.0 } else { 1.0 };
+        let loss = |a: f32, s: f32| {
+            block
+                .iter()
+                .enumerate()
+                .map(|(j, &w)| {
+                    let q = ((w - a) / s).round().clamp(0.0, 3.0);
+                    weight(bi * BLOCK + j) * (w as f64 - (a + q * s) as f64).powi(2)
+                })
+                .sum::<f64>()
+        };
+        let (mut best_a, mut best_s) = (lo, base_scale);
+        let mut best_loss = loss(best_a, best_s);
+        for fraction in [1.0, 0.85, 0.7, 0.55, 0.4] {
+            let mut a = lo + (hi - lo) * (1.0 - fraction) * 0.5;
+            let mut s = base_scale * fraction;
+            for _ in 0..8 {
+                let (mut h, mut hq, mut hw, mut hqq, mut hqw) = (0.0, 0.0, 0.0, 0.0, 0.0);
+                for (j, &w) in block.iter().enumerate() {
+                    let q = ((w - a) / s).round().clamp(0.0, 3.0) as f64;
+                    let v = weight(bi * BLOCK + j);
+                    h += v;
+                    hq += v * q;
+                    hw += v * w as f64;
+                    hqq += v * q * q;
+                    hqw += v * q * w as f64;
+                }
+                if h <= 0.0 {
+                    break;
+                }
+                let denominator = hqq - hq * hq / h;
+                if denominator <= 1e-20 {
+                    break;
+                }
+                let ns = (hqw - hq * hw / h) / denominator;
+                let na = (hw - ns * hq) / h;
+                if !ns.is_finite() || !na.is_finite() || ns <= 0.0 {
+                    break;
+                }
+                a = na as f32;
+                s = ns as f32;
+                if !s.is_finite() || s <= 0.0 || !a.is_finite() {
+                    break;
+                }
+                let value = loss(a, s);
+                if value < best_loss {
+                    best_loss = value;
+                    best_a = a;
+                    best_s = s;
+                }
+            }
+        }
+        mins.push(best_a);
+        scales.push(best_s);
+        for &w in block {
+            codes.push(((w - best_a) / best_s).round().clamp(0.0, 3.0) as u32);
+        }
+    }
+    let packed = pack(&codes, 2);
+    CompressedTensor {
+        strategy: QuantStrategy::Q2,
+        len: data.len(),
+        scales,
+        mins,
+        repair_strength: 0.0,
+        integrity: bytes_tag(&packed, key),
+        packed,
+        key,
+    }
+}
+
 /// Reference **asymmetric** 4-bit quant (affine: per-block `min` + `scale`, 16
 /// levels) — the core idea behind llama.cpp's Q4_K. Returns the in-memory
 /// reconstruction only; nothing is written to disk. Used to benchmark our
@@ -534,6 +702,49 @@ pub fn expand(c: &CompressedTensor) -> Vec<f32> {
 #[cfg(test)]
 mod tests {
     use super::*;
+
+    #[test]
+    fn optimized_q2_improves_bulk_without_extra_bytes() {
+        let mut w = vec![0.3f32; 32];
+        w[0] = 1.0;
+        let base = compress_with(&w, QuantStrategy::Q2, 17);
+        let fitted = encode_q2_optimized(&w, 17, None);
+        let loss = |c: &CompressedTensor| {
+            w.iter()
+                .zip(expand(c))
+                .map(|(&a, b)| (a as f64 - b as f64).powi(2))
+                .sum::<f64>()
+        };
+        assert!(loss(&fitted) < loss(&base));
+        assert_eq!(fitted.compressed_bytes(), base.compressed_bytes());
+        assert!(fitted.verify());
+    }
+
+    #[test]
+    fn optimized_q2_respects_feature_importance() {
+        let mut w = vec![0.3f32; 32];
+        w[0] = 1.0;
+        let mut h = vec![1.0f32; 32];
+        h[0] = 1000.0;
+        let plain = expand(&encode_q2_optimized(&w, 1, None));
+        let weighted = expand(&encode_q2_optimized(&w, 1, Some(&h)));
+        assert!((weighted[0] - 1.0).abs() < (plain[0] - 1.0).abs());
+    }
+
+    #[test]
+    fn optimized_affine_q2_keeps_size_and_does_not_regress_its_objective() {
+        let w = weight_like(1024, 19);
+        let a = compress_with_asym(&w, QuantStrategy::Q2, 1);
+        let b = encode_q2_optimized_asym(&w, 1, None);
+        let error = |c: &CompressedTensor| {
+            w.iter()
+                .zip(expand(c))
+                .map(|(&w, q)| (w as f64 - q as f64).powi(2))
+                .sum::<f64>()
+        };
+        assert!(error(&b) <= error(&a) + 1e-12);
+        assert_eq!(a.compressed_bytes(), b.compressed_bytes());
+    }
 
     /// Trained-weight-like data: near-Gaussian with a few outliers per block.
     fn weight_like(n: usize, seed: u32) -> Vec<f32> {

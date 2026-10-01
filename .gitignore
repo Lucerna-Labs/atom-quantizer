@@ -1,4 +1,10 @@
 /target/
+/.venv/
+/.cache/
+/models/
+/third_party/
+/artifacts/
+__pycache__/
 *.oq
 *.gguf
 .env

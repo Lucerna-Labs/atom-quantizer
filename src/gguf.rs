@@ -46,6 +46,7 @@ pub fn dequantizable(t: u32) -> bool {
     )
 }
 
+#[derive(Clone, Debug)]
 pub struct TensorInfo {
     pub name: String,
     pub ggml_type: u32,
@@ -54,6 +55,7 @@ pub struct TensorInfo {
     /// Innermost (row / in-feature) dim, or n_elems for 1-D tensors.
     /// GGUF stores dims in [innermost, ..., outermost] order.
     pub row_len: usize,
+    pub dims: Vec<usize>,
 }
 
 pub struct Gguf {
@@ -177,17 +179,19 @@ pub fn open(path: &str) -> Result<Gguf, String> {
     for _ in 0..tensor_count {
         let name = rd_string(&mut r)?;
         let n_dims = rd_u32(&mut r)? as usize;
-        if n_dims > 8 {
-            return Err("tensor with too many dims".into());
+        if !(1..=8).contains(&n_dims) {
+            return Err("tensor must have 1 through 8 dims".into());
         }
         let mut n_elems: usize = 1;
         let mut row_len: usize = 1;
+        let mut dims = Vec::with_capacity(n_dims);
         for k in 0..n_dims {
             let d = rd_u64(&mut r)? as usize;
             if k == 0 {
                 row_len = d; // innermost dim = row length in GGUF
             }
-            n_elems = n_elems.saturating_mul(d);
+            n_elems = n_elems.checked_mul(d).ok_or("tensor dimensions overflow")?;
+            dims.push(d);
         }
         let ggml_type = rd_u32(&mut r)?;
         let offset = rd_u64(&mut r)?;
@@ -197,12 +201,19 @@ pub fn open(path: &str) -> Result<Gguf, String> {
             offset,
             n_elems,
             row_len,
+            dims,
         });
     }
 
     // Tensor data begins after the header, padded up to `alignment`.
     let pos = r.stream_position().map_err(|e| e.to_string())?;
-    let data_start = pos.div_ceil(alignment) * alignment;
+    if alignment == 0 || !alignment.is_power_of_two() {
+        return Err("GGUF alignment must be a nonzero power of two".into());
+    }
+    let data_start = pos
+        .div_ceil(alignment)
+        .checked_mul(alignment)
+        .ok_or("GGUF header size overflow")?;
 
     Ok(Gguf {
         reader: r,
@@ -210,6 +221,20 @@ pub fn open(path: &str) -> Result<Gguf, String> {
         data_start,
         arch,
     })
+}
+
+/// Preserve model/tokenizer metadata and the source tensor table, without weights.
+pub fn model_header(g: &mut Gguf) -> Result<Vec<u8>, String> {
+    let len = usize::try_from(g.data_start).map_err(|_| "GGUF prefix too large")?;
+    if len > 256 * 1024 * 1024 {
+        return Err("GGUF prefix exceeds 256 MiB".into());
+    }
+    let mut bytes = vec![0; len];
+    g.reader
+        .seek(SeekFrom::Start(0))
+        .map_err(|e| e.to_string())?;
+    g.reader.read_exact(&mut bytes).map_err(|e| e.to_string())?;
+    Ok(bytes)
 }
 
 fn f16_to_f32(h: u16) -> f32 {
@@ -293,6 +318,9 @@ pub fn write_tensor_reconstruction(
 /// + 7 mantissa); the rounding term keeps parity with numpy / torch bf16 casts.
 fn f32_to_bf16_bits(x: f32) -> u16 {
     let bits = x.to_bits();
+    if x.is_nan() {
+        return ((bits >> 16) as u16) | 0x0040;
+    }
     let rounded = bits.wrapping_add(0x7FFF + ((bits >> 16) & 1));
     (rounded >> 16) as u16
 }
@@ -319,11 +347,26 @@ fn f32_to_f16_bits(x: f32) -> u16 {
         }
         let m = mant | 0x0080_0000;
         let shift = 14 - e;
-        let m_shifted = (m >> shift) as u16;
+        let rounding = (1u32 << (shift - 1)) - 1 + ((m >> shift) & 1);
+        let m_shifted = ((m + rounding) >> shift) as u16;
         return (sign << 15) | m_shifted;
     }
-    let m = (mant >> 13) as u16;
-    (sign << 15) | ((e as u16) << 10) | m
+    let rounded = mant + 0x0FFF + ((mant >> 13) & 1);
+    let e = e + (rounded >> 23) as i32;
+    if e >= 31 {
+        return (sign << 15) | 0x7C00;
+    }
+    (sign << 15) | ((e as u16) << 10) | ((rounded >> 13) as u16 & 0x03FF)
+}
+
+/// Round exactly as dense GGUF export does, for fidelity measurement.
+pub fn round_to_storage(value: f32, dtype: u32) -> Result<f32, String> {
+    match dtype {
+        GGML_F32 => Ok(value),
+        GGML_F16 => Ok(f16_to_f32(f32_to_f16_bits(value))),
+        GGML_BF16 => Ok(f32::from_bits((f32_to_bf16_bits(value) as u32) << 16)),
+        _ => Err("unsupported decoded storage dtype".into()),
+    }
 }
 
 /// Read + dequantize a tensor's stored data to f32.
@@ -352,25 +395,25 @@ pub(crate) fn dequant_bytes(ttype: u32, buf: &[u8], n: usize) -> Result<Vec<f32>
     let mut out = Vec::with_capacity(n);
     match ttype {
         GGML_F32 => {
-            for c in buf.chunks_exact(4) {
+            for c in buf.as_chunks::<4>().0 {
                 out.push(f32::from_le_bytes([c[0], c[1], c[2], c[3]]));
             }
         }
         GGML_F16 => {
-            for c in buf.chunks_exact(2) {
+            for c in buf.as_chunks::<2>().0 {
                 out.push(f16_to_f32(u16::from_le_bytes([c[0], c[1]])));
             }
         }
         GGML_BF16 => {
             // bf16 is the top 16 bits of f32 (sign + 8 exp + 7 mantissa).
             // Reconstruct f32 by shifting into the high half.
-            for c in buf.chunks_exact(2) {
+            for c in buf.as_chunks::<2>().0 {
                 let bits = u32::from(u16::from_le_bytes([c[0], c[1]])) << 16;
                 out.push(f32::from_bits(bits));
             }
         }
         GGML_Q8_0 => {
-            for blk in buf.chunks_exact(34) {
+            for blk in buf.as_chunks::<34>().0 {
                 let d = f16_to_f32(u16::from_le_bytes([blk[0], blk[1]]));
                 for &q in &blk[2..34] {
                     out.push(d * (q as i8) as f32);
@@ -400,7 +443,7 @@ fn get_scale_min_k4(j: usize, q: &[u8]) -> (u8, u8) {
 /// 256 weights in 144 bytes: d, dmin (f16), scales[12] (6-bit packed scales+mins),
 /// qs[128] (4-bit). Asymmetric: weight = d·scale·q − dmin·min.
 fn dequant_q4_k(buf: &[u8], out: &mut Vec<f32>) {
-    for sb in buf.chunks_exact(144) {
+    for sb in buf.as_chunks::<144>().0 {
         let d = f16_to_f32(u16::from_le_bytes([sb[0], sb[1]]));
         let dmin = f16_to_f32(u16::from_le_bytes([sb[2], sb[3]]));
         let scales = &sb[4..16];
@@ -431,7 +474,7 @@ fn dequant_q4_k(buf: &[u8], out: &mut Vec<f32>) {
 fn dequant_q6_k(buf: &[u8], out: &mut Vec<f32>) {
     let n_sb = buf.len() / 210;
     out.resize(n_sb * 256, 0.0);
-    for (sbi, sb) in buf.chunks_exact(210).enumerate() {
+    for (sbi, sb) in buf.as_chunks::<210>().0.iter().enumerate() {
         let d = f16_to_f32(u16::from_le_bytes([sb[208], sb[209]]));
         let base = sbi * 256;
         // two halves of 128 weights each
@@ -459,6 +502,21 @@ fn dequant_q6_k(buf: &[u8], out: &mut Vec<f32>) {
 #[cfg(test)]
 mod tests {
     use super::*;
+
+    #[test]
+    fn dense_storage_rounding_matches_ieee_ties_and_subnormals() {
+        assert_eq!(f32_to_f16_bits(1.0 + 2f32.powi(-11)), 0x3C00);
+        assert_eq!(f32_to_f16_bits(1.0 + 3.0 * 2f32.powi(-11)), 0x3C02);
+        assert_eq!(f32_to_f16_bits(2f32.powi(-25)), 0);
+        assert_eq!(f32_to_f16_bits(3.0 * 2f32.powi(-25)), 2);
+        assert_eq!(f32_to_f16_bits(65520.0), 0x7C00);
+        assert_eq!(f32_to_f16_bits(-0.0), 0x8000);
+        assert_eq!(f32_to_bf16_bits(1.0 + 2f32.powi(-8)), 0x3F80);
+        assert_eq!(f32_to_bf16_bits(1.0 + 3.0 * 2f32.powi(-8)), 0x3F82);
+        assert!(round_to_storage(f32::from_bits(0x7FFF_FFFF), GGML_BF16)
+            .unwrap()
+            .is_nan());
+    }
 
     /// Build a Q6_K super-block (210 bytes) from raw fields.
     fn q6k_block(ql: &[u8; 128], qh: &[u8; 64], scales: &[i8; 16], d_f16: u16) -> Vec<u8> {

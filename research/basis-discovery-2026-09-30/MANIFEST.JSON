@@ -1,0 +1,68 @@
+{
+  "arms": {
+    "base_only": 252,
+    "full": 0,
+    "identity": 255,
+    "no_base": 3,
+    "no_chaos": 192,
+    "no_chemistry": 4,
+    "no_h": 1,
+    "no_information": 16,
+    "no_memory": 8,
+    "no_physics": 32,
+    "no_population": 128,
+    "no_q": 2,
+    "no_rotor": 64
+  },
+  "bits": [
+    3,
+    4
+  ],
+  "expected_records": 1280,
+  "experiment": "B01",
+  "fit_sha256": "f5e6d79eb6b552da48cf976ea4c114d0ac387689ef42de5fa8746e257056431f",
+  "implementation": {
+    "crates/basis-engine/Cargo.toml": "c5a7dfe98f7ad39ec6570d2d7f552de5fd61830520a63d9b787ed50a58877d44",
+    "crates/basis-engine/src/engine.rs": "9e9aaa7b413bee2101973c45669c4bb24ef4792ed4dbd5419fbac677d39ea630",
+    "crates/basis-engine/src/lib.rs": "0d27d42f32e962c96ef00525f05d2a9827f8684b36e6514dbd60caaf4bd7d062",
+    "crates/basis-primitives/Cargo.toml": "abbea795e55c16fcb8a4f234a5159ca462ebc89dc84423a948a0ca2234625f13",
+    "crates/basis-primitives/src/lib.rs": "137a17f0789a2879ccfb3a99f7c2596b2020e7947ac621be2c2d754a2d7464a4",
+    "examples/discover_basis.rs": "01bcfd2e4bf0224d416d4adf3af32daed5629d6fd083e1b69dcf40d1a453087d",
+    "experiments/basis_discovery.py": "89482bce5fb5a5c8f02c77ae4776bc449ee3f6183ee1e03c850b322617c81d20",
+    "experiments/full22/__init__.py": "b7a7e77737e75f8a25a249ad4d1d67e302d27da3f17c68a779be363e1589037e",
+    "experiments/full22/adaptive.py": "e82760f58d8369761e5a052992495c24e864879e75a1c7eec4766b2a580156b6",
+    "experiments/full22/additive.py": "8504fb778e4828c46d139922e8e13742131aa612c9114a15bf9a868bd3a7d596",
+    "experiments/full22/archive.py": "f3f3dd09d465f57f5677ac7a6ec16e58215e30652a56291d09a2cc0dcd62c309",
+    "experiments/full22/capture.py": "81d7d4ec5fd4ede25c76f630a62a29bdab92b2a4a1d644732b99401d21d35b3b",
+    "experiments/full22/catalog.py": "e3fcb99f8dc0eb7fc88c68997c0ed808cda00830775e4b3925089f78c44018d7",
+    "experiments/full22/codec.py": "aac2e624e230417a2d3c24548702528521ff678bbdb0c279e80e11a6cfaf47ec",
+    "experiments/full22/data.py": "116e90018adf80c059c08c8e112343e83ddc7357492454f66cb34b6e2fd779af",
+    "experiments/full22/harness.py": "e353814ed2292690c41174f8007e326b7cc9c733ae059b40d35d887b35e0e983",
+    "experiments/full22/lattice.py": "1413c688f01dd5057248d5c853d816257417e97493a1fb5bf0811228f1ddaa04",
+    "experiments/full22/records.py": "3faed80388a315eb70115f9349cc60d601f306d5103b243de3e2ea278786cfd9",
+    "experiments/full22/scalar.py": "51e6d3d0417f7620f218c80eb66a4110b063393a2dc24de5914875266246b7de",
+    "experiments/full22/screen_cache.py": "21ad892556726ff6ae4461f3c401da3f799072149b50c69edb56570b9007cf78",
+    "experiments/full22/transforms.py": "bb512d449e9f934be40e9d1dd8f8d0cac2c26263e5a51ac996170c11ab0bdc24",
+    "experiments/full22/trellis.py": "bf2abb47ae406cf828aef4b9935925a7e9d22d5d7880a3e7d1bcb0d8ab15db9d",
+    "research/basis-discovery-2026-09-30/PROTOCOL.md": "981878aff4d5c4543e4b2489ddbbe52fd8906011af5eb5fb6e230baaab518c81",
+    "target/release/examples/discover_basis": "6d7b67c394e6d27f1b07e00dd0727d1fb89f87ddfde5518119143c942a2e1f89"
+  },
+  "rows": 256,
+  "seeds": [
+    1,
+    2,
+    3
+  ],
+  "selection_sha256": "d8a0411a3ac9b4033502dbec560b3a5390c5571d83c177f1a52260bd9a74a7d0",
+  "source_sha256": "53f86c219b099fa84cd005f1b22572f6c4e53f8ba242fb8074f600712abe9c5b",
+  "tensors": [
+    "token_embd.weight",
+    "blk.0.attn_q.weight",
+    "blk.0.attn_k.weight",
+    "blk.0.attn_output.weight",
+    "blk.3.ffn_up.weight",
+    "blk.9.ffn_gate.weight",
+    "blk.17.ffn_down.weight",
+    "blk.29.ffn_down.weight"
+  ]
+}

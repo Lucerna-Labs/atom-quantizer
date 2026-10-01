@@ -1,0 +1,8 @@
+{
+  "complete_archives_verified": 6,
+  "verified_tensors_per_archive": 272,
+  "saved_record_vs_export_tensor_checks": 1632,
+  "model_hashes_checked": 8,
+  "successful_64_chunk_inference_runs": 13,
+  "no_main_codec_gate_changes": true
+}

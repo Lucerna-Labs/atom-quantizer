@@ -1,0 +1,29 @@
+{
+  "status": "MEASURED",
+  "captures": {
+    "endpoints-fit": {
+      "path": "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/mamba-temporal-2026-10-01/captures/endpoints-fit.acal",
+      "sha256": "aeb48dbd362176ddae95ab59d4a7453ac545806c455f017ac3a2347e2c34f48d",
+      "operators": 98,
+      "samples": 256
+    },
+    "stratified-fit": {
+      "path": "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/mamba-temporal-2026-10-01/captures/stratified-fit.acal",
+      "sha256": "3d8c7c00855d6b09e6a10b8f10bdada947b3244edab9172e71474fda70efeb7c",
+      "operators": 98,
+      "samples": 256
+    },
+    "endpoints-selection": {
+      "path": "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/mamba-temporal-2026-10-01/captures/endpoints-selection.acal",
+      "sha256": "42c1f7e5f384865a4d28d59cb57572dec7ab7c040ac922f463612eb0fd2fffb8",
+      "operators": 98,
+      "samples": 64
+    },
+    "stratified-selection": {
+      "path": "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/mamba-temporal-2026-10-01/captures/stratified-selection.acal",
+      "sha256": "3c1000856dd89c8a09fa4fe895d242cda539c4c4edaf5d10a0cbee17d5f172ce",
+      "operators": 98,
+      "samples": 64
+    }
+  }
+}

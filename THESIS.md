@@ -1,6 +1,6 @@
 # THESIS — Atom Quantizer
 
-> **Development record, not a release specification.** This document intentionally preserves failed hypotheses and historical benchmark snapshots. Section 13 supersedes the earlier KL-only claims. The checked-in v0.2.3 source additionally wires `rowH8` and row-norm preservation; a fresh full-model v0.2.3 benchmark has not yet replaced the v0.2.2 baseline.
+> **Development record, not a release specification.** Earlier sections preserve failed hypotheses and historical snapshots. Section 13 supersedes the KL-only claims. Section 15 records the v0.2.4 decoder fix, four initial foundations, and a new SmolLM2 benchmark; see the README for current execution status.
 
 **Dual-gate adaptive Q2/Q4/Q8 weight quantization: bidirectional KL currency + cosine floor, blind RF-repair, per-block integrity for LLM GGUFs.**
 
@@ -405,3 +405,16 @@ Two reasons to fix this in the THESIS rather than treat it as informal context:
 2. **The R&D discovery already ranked the primitives.** The parent R&D project's discover sweep on Qwen3.5-0.8B ranked `rowDC/top4/refract30/-` at KL 0.622 (rank #1 of 576), versus naked sym-Q4 at KL 2.9 (rank 574). Even under the KL currency that §13 established as an imperfect proxy, the composed stacks are three-to-four-times more information-preserving than the naked stations. §14.3's composer pattern is the concrete path to exploit that ranking inside Atom Quantizer.
 
 ---
+
+
+## 15. v0.2.4 — decoder sufficiency and measured resource allocation
+
+The first-principles study found that v0.2.3 scored weights after inverse rowH8 and norm restoration but wrote an OQ02 record that could not reproduce those operations. On its preserved 128-weight diagnostic, the scored cosine was 0.9902931 while the stored representation decoded at 0.06848829 against the original. Code integrity alone did not prove the reconstructed tensor was the one that passed the gates.
+
+OQ03 now stores the tensor shape, transform, row norms, scales/codes or an exact escape, and original GGUF metadata. Record and header CRC64 cover metadata as well as payload. The picker measures serialized-then-decoded values, including dense storage rounding; GGUF export uses the same saved records without original weights. F16 round-to-nearest-even and BF16 NaN handling were corrected as part of that boundary. OQ02 is retained as an explicitly limited legacy reader.
+
+Real input capture, source SHA-256 binding, unsoftmaxed operator-output MSE, symmetric/affine Q2 scale fitting, and global byte allocation are wired into the normal CLI. Global allocation counts complete bytes and preserves the gates, using a deterministic feasible heuristic. It rejects impossible budgets rather than forcing a failing low-bit candidate. Failed lossy candidates have an exact F32 escape.
+
+The new SmolLM2-135M-Instruct run used disjoint WikiText-2 train/test inputs and llama.cpp inference on decoded artifacts. Source F32 perplexity was 19.6648. The corrected proxy baseline scored 29.1611 at 86.8 MB; calibration scored 23.6701 at 106.8 MB; a 120 MiB allocation scored 21.6583 at 125.8 MB. The minimum-budget run and a later final encode reproduced their corresponding artifacts byte-for-byte. Full settings, hashes, and counts are in [the benchmark record](docs/FOUNDATION_BENCHMARK.md).
+
+These results show a quality/storage tradeoff with remaining error, not source-equivalent quality. No Q2 tensor passed the retained gates. The broader lattice, trellis, low-rank, graph, predictive, and other proposals have not all been implemented. Norm restoration remains a magnitude operation: it cannot improve an individual row's cosine through positive scaling. Discovery reconstructions and hypothetical side-data budgets remain distinct from a measured, serialized codec.

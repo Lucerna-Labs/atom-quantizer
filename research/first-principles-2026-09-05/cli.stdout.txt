@@ -1,0 +1,32 @@
+┌─ Atom Quantizer ─────────────────────────────────────────────
+│ model      target/first-principles-2026-09-05/synthetic.gguf
+│ arch       ?
+│ tensors    1
+│ params     0.000 B
+├─ per-tensor (adaptive: most aggressive strategy that clears BOTH KL ceiling AND cosine floor)
+│ tensor                              type       elems  →     ratio     KL_fwd    KL_rev          cos
+│ KL matvec  CPU (build with --features cuda for cuBLAS)
+│ KL ceiling  normal=1 protected=0.25
+│ cos floor   normal=0.99 protected=0.995
+│ probe.weight                         F32         128  Q4     4.6x     0.0000    0.0000  cos= 0.9903
+└──────────────────────────────────────────────────────────────
+processed 1 tensors  |  strategy mix: Q2=0 Q4=1 Q8=0  (* = protected)
+dense f32 0.0 MB  →  Atom Quantizer 0.0 MB   (4.57× smaller)
+mean KL_fwd: 0.0000   mean KL_rev: 0.0000   fwd/rev asymmetry: 1.002
+currency: softmax(W·x) with k=4 Gaussian inputs for 2-D; 256-bin histogram for 1-D
+worst-tensor max(KL_fwd, KL_rev): 0.0000  (probe.weight)
+integrity: all codes verified ✓
+├─ .oq writeback ──────────────────────────────────────────────
+│ wrote 1 tensors → target/first-principles-2026-09-05/synthetic.oq
+│ source GGUF on disk :      0.0 MB
+│ Atom Quantizer .oq         :      0.0 MB   (3.97× smaller than the GGUF file on disk)
+│ re-read verify      : all integrity tags OK ✓ (1 tensors)
+│ decoded off disk    : probe.weight (F32, 128 weights)
+└──────────────────────────────────────────────────────────────
+├─ GGUF passthrough ───────────────────────────────────────────
+│ wrote → target/first-principles-2026-09-05/synthetic-passthrough.gguf
+│ source size :      0.0 MB    passthrough size :      0.0 MB
+│ tensors overwritten with Atom Quantizer reconstruction: 1 (F32/F16/BF16 in-place cast)
+│ verification path: load in LM Studio, chat with the model —
+│ if output is coherent, Atom Quantizer's KL-driven picker + blind repair preserved inference.
+└──────────────────────────────────────────────────────────────

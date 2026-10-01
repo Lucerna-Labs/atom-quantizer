@@ -1,0 +1,12 @@
+{
+  "max_logit_difference": 0.00045013427734375,
+  "model_sha256": "3a4b925d3e7e6bde08b6f63fbc9fca48e632f7746847653d795c34cfc099f793",
+  "relative_state_mse": {
+    "conv_states": 4.4162288485236004e-13,
+    "recurrent_states": 8.572439108712234e-14
+  },
+  "seconds_including_observation": 22.33095693400537,
+  "status": "MEASURED",
+  "tokens": 1024,
+  "verified_tensors": 242
+}

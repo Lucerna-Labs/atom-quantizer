@@ -1,0 +1,140 @@
+{
+  "experiment": "S1",
+  "status": "COMPLETED_REJECTED",
+  "precommit": "f68d67e",
+  "metadata_correction": "77e0546",
+  "loader_hardening_precommit": "331dc0f",
+  "models": {
+    "historical-budget120": {
+      "archive": "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/foundations-2026-09-05/budget120.oq",
+      "archive_bytes": 125809756,
+      "archive_sha256": "6d8e7d7cf6c734866751630a96be7315133a04c1852bc1fdef1b6e1686e3fde1",
+      "decoded": "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/direction-retention-2026-09-30/models/historical-budget120.gguf",
+      "decoded_sha256": "c5fb3e2c4e516823058a730d9234e267f0a4e1d94f061449828826c2ba02b7f5",
+      "selection_perplexity": 30.0986
+    },
+    "sequential-activation": {
+      "archive": "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/sequential-functional-2026-10-01/run-corrected/sequential-activation/model.a22",
+      "archive_bytes": 110271260,
+      "archive_sha256": "1c6b5c2bf27cd388fbb91527582456a7cceb32bfa1085c94a0bda05ecd0f6341",
+      "decoded": "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/sequential-functional-2026-10-01/run-corrected/sequential-activation-native.gguf",
+      "decoded_sha256": "8b71d2d40a21e26916792a305b20e3dfb1aff313537b47bb0960afb7efbb8f50",
+      "selection_perplexity": 30.5199,
+      "levels": {
+        "1": 211,
+        "3": 61
+      }
+    },
+    "sequential-scalar": {
+      "archive": "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/sequential-functional-2026-10-01/run-corrected/sequential-scalar/model.a22",
+      "archive_bytes": 112135705,
+      "archive_sha256": "6d04811bf8aa513e7546513d6180cd6ec82560702f2d3003e30814cc04001af2",
+      "decoded": "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/sequential-functional-2026-10-01/run-corrected/sequential-scalar-native.gguf",
+      "decoded_sha256": "4a67895c4019d3584fdc8234aa9a12bfe1c10de4f33b4416fbce1dfee00bf72c",
+      "selection_perplexity": 30.605,
+      "levels": {
+        "1": 208,
+        "3": 63,
+        "2": 1
+      }
+    },
+    "six-activation": {
+      "archive": "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/six-bit-frontier-2026-10-01/activation/model.a22",
+      "archive_bytes": 109251501,
+      "archive_sha256": "27d36037a432c5cefeeb0c1f62505377f469365027e00372d30b1840c4608a83",
+      "decoded": "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/six-bit-frontier-2026-10-01/activation/model.gguf",
+      "decoded_sha256": "4c9d806f45ec68dda196a966421857a7ff6d21c96e1dfe2393b378c82a2552d8",
+      "selection_perplexity": 26.9661
+    },
+    "six-scalar": {
+      "archive": "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/six-bit-frontier-2026-10-01/scalar/model.a22",
+      "archive_bytes": 109317095,
+      "archive_sha256": "c520bf3afa3a5ef4a465d3eeb35e136fc120f34c4dd2cca5dc977a1118749bb7",
+      "decoded": "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/six-bit-frontier-2026-10-01/scalar/model.gguf",
+      "decoded_sha256": "1b633be0e310ec8b62df6846d2e7b04fc08dc7b7a933d2aec8e0b0bd215c9920",
+      "selection_perplexity": 27.1168
+    },
+    "source-f32": {
+      "archive_bytes": 539846112,
+      "decoded": "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/models/SmolLM2-135M-Instruct-f32.gguf",
+      "decoded_sha256": "53f86c219b099fa84cd005f1b22572f6c4e53f8ba242fb8074f600712abe9c5b",
+      "selection_perplexity": 26.7164
+    }
+  },
+  "native_failed_counts": {
+    "sequential-activation": {
+      "W-fit-0": 1,
+      "W-fit-1": 2,
+      "W-selection-0": 1,
+      "W-selection-1": 2,
+      "W1-fit-0": 0,
+      "W1-fit-1": 0,
+      "W1-selection-0": 0,
+      "W1-selection-1": 0
+    },
+    "sequential-scalar": {
+      "W-fit-0": 1,
+      "W-fit-1": 2,
+      "W-selection-0": 1,
+      "W-selection-1": 2,
+      "W1-fit-0": 0,
+      "W1-fit-1": 0,
+      "W1-selection-0": 0,
+      "W1-selection-1": 0
+    }
+  },
+  "selection_gate": {
+    "G3": {
+      "checks": {
+        "W1_bytes": true,
+        "W1_ppl": false,
+        "all_W_and_W1_native_views": false,
+        "scalar_bytes": true,
+        "scalar_ppl": true
+      },
+      "status": "FAILED"
+    },
+    "G4": {
+      "checks": {
+        "direct_bytes": false,
+        "direct_ppl": false
+      },
+      "status": "FAILED"
+    },
+    "status": "FAILED"
+  },
+  "final_gate": {
+    "reason": "selection did not qualify",
+    "status": "UNRUN"
+  },
+  "new_inference_runs": 2,
+  "reused_inference_runs": 4,
+  "python_tests_passed": 91,
+  "audited_stage_tensors": 1088,
+  "audited_native_decisions": 6528,
+  "native_reports": 24,
+  "source_endpoint_replay_identical": true,
+  "W1_post_hardening_capture_identical": true,
+  "capture_changes": {
+    "fit-endpoints": {
+      "changed_linear_inputs": 211,
+      "identical_embedding_indices": true
+    },
+    "fit-stratified": {
+      "changed_linear_inputs": 211,
+      "identical_embedding_indices": true
+    },
+    "selection-endpoints": {
+      "changed_linear_inputs": 211,
+      "identical_embedding_indices": true
+    },
+    "selection-stratified": {
+      "changed_linear_inputs": 211,
+      "identical_embedding_indices": true
+    }
+  },
+  "fitting": "conventional Python, actual W1 inputs",
+  "consumption_and_admission": "native Rust",
+  "main_release_changed": false,
+  "fresh_final_consumed": false
+}

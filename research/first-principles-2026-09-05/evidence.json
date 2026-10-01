@@ -1,0 +1,22 @@
+{
+  "evidence_type": "synthetic diagnostics using unchanged production modules and CLI",
+  "model_quality_benchmark": false,
+  "elements": 128,
+  "cli_strategy": "Q4",
+  "passthrough_cosine_vs_original": 0.9902931,
+  "oq_decode_cosine_vs_original": 0.06848829,
+  "oq_decode_relative_l2_vs_scored": 1.3840945927310508,
+  "missing_operations_reconstructed_max_abs_diff": 0,
+  "original_oq_verified": true,
+  "altered_scale_oq_verified": true,
+  "altered_scale_changes_decode": true,
+  "softmax_shift_kl_fwd": 0,
+  "softmax_shift_kl_rev": 0,
+  "softmax_shift_raw_output_mse": 16.0,
+  "row_cosine_before_norm_restore": 0.91381156,
+  "row_cosine_after_norm_restore": 0.91381156,
+  "rowdc_outlier_preserve_original_norm": 99.15644,
+  "rowdc_outlier_preserve_final_norm": 125.13581,
+  "superpose_distinct_values_in_one_block": 22,
+  "superpose_reported_bits_per_weight": 7
+}

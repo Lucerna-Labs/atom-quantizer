@@ -1,0 +1,31 @@
+{
+  "status": "PASSED",
+  "path": "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/target/release/atom-quantizer",
+  "binary_sha256": "d45eaa37c05ae4d08001e7b08ab3d90a0cfe9c970e03c0f06351558d6c9a400b",
+  "binary_bytes": 1540744,
+  "matches_tested_binary": true,
+  "smoke": {
+    "command": [
+      "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/target/release/atom-quantizer",
+      "build-functional",
+      "/tmp/i2-release-rnvp3h3y/source.gguf",
+      "--base-calibration",
+      "/tmp/i2-release-rnvp3h3y/fit.acal",
+      "--residual-calibration",
+      "/tmp/i2-release-rnvp3h3y/selection.acal",
+      "--out",
+      "/tmp/i2-release-rnvp3h3y/new.a22",
+      "--work-dir",
+      "/tmp/i2-release-rnvp3h3y/work"
+    ],
+    "artifact_sha256": "7390bbcfc9383cf98b58d0b23c3840ffdd21e53e49bfe7d3dfd5eb06f0cc70b2",
+    "decoded_sha256": "2e308cdd20c4685eb5f7e39f5f1c51a4d5aaca309056b8a01e6e897dcba18d5a",
+    "native_views": 2,
+    "returncode": 0
+  },
+  "backup": {
+    "path": "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/functional-build-2026-10-01/atom-quantizer-before-release",
+    "sha256": "22ac0988e9b5e9d32e260ef04b301408f8664416d2a0f96e9abd3cb69c7d577a",
+    "bytes": 1268976
+  }
+}

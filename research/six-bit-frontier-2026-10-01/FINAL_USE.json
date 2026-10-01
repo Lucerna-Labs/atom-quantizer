@@ -1,0 +1,12 @@
+{
+  "corpus_sha256": "d757b51672161dc9f32eef6a01a54a84839893869842153ade19fb13ab4ed6e3",
+  "models": [
+    "historical-budget120",
+    "six-activation",
+    "six-diagonal",
+    "six-scalar",
+    "source-f32"
+  ],
+  "selected": "six-activation",
+  "status": "COMPLETED"
+}

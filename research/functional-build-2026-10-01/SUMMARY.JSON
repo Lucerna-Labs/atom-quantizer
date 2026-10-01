@@ -1,0 +1,67 @@
+{
+  "archive_identical_to_D05": true,
+  "backend_stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "backend_stdout_sha256": "9bc4d9df3143200f095497f53e1b1004aa612acf4581644a2ed86382d4fcf92d",
+  "command": [
+    "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/target/functional-build-current/release/atom-quantizer",
+    "build-functional",
+    "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/models/SmolLM2-135M-Instruct-f32.gguf",
+    "--base-calibration",
+    "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/calibration-coverage-2026-10-01/captures/stratified0-fit.acal",
+    "--residual-calibration",
+    "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/full22-2026-09-06/fit.acal",
+    "--out",
+    "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/functional-build-2026-10-01/functional.a22",
+    "--work-dir",
+    "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/functional-build-2026-10-01/fit-work"
+  ],
+  "native_export_identical_to_D05": true,
+  "native_reports": [
+    {
+      "calibration_sha256": "29d09e1701dc329cee26fd636dd1d492c3e29b1e1c3d17d28e2c777a52e9a2c4",
+      "passed": 272,
+      "path": "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/functional-build-2026-10-01/fit-work/native-fit-0.json"
+    },
+    {
+      "calibration_sha256": "f5e6d79eb6b552da48cf976ea4c114d0ac387689ef42de5fa8746e257056431f",
+      "passed": 272,
+      "path": "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/functional-build-2026-10-01/fit-work/native-fit-1.json"
+    }
+  ],
+  "new_inference_runs": 0,
+  "receipt": {
+    "archive": "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/functional-build-2026-10-01/functional.a22",
+    "archive_bytes": 109251501,
+    "archive_sha256": "27d36037a432c5cefeeb0c1f62505377f469365027e00372d30b1840c4608a83",
+    "base_calibration_sha256": "29d09e1701dc329cee26fd636dd1d492c3e29b1e1c3d17d28e2c777a52e9a2c4",
+    "decoded": "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/functional-build-2026-10-01/fit-work/native.gguf",
+    "decoded_sha256": "4c9d806f45ec68dda196a966421857a7ff6d21c96e1dfe2393b378c82a2552d8",
+    "fitting_backend": "python",
+    "format": "functional-build-1",
+    "native_consumer": true,
+    "native_executable": "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/target/functional-build-current/release/atom-quantizer",
+    "native_reports": [
+      {
+        "all_passed": true,
+        "path": "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/functional-build-2026-10-01/fit-work/native-fit-0.json",
+        "sha256": "e2f89dab02017f92a211059a85f8cd115fe3f5841d20f0526fbc76e9096ebe2a"
+      },
+      {
+        "all_passed": true,
+        "path": "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/functional-build-2026-10-01/fit-work/native-fit-1.json",
+        "sha256": "39af2e2a6afd9c7667d0b81dc8dd191f1aeb87fad6b9ba687736e1976b530b03"
+      }
+    ],
+    "profile": "functional-six-v1",
+    "python": "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/.venv/bin/python",
+    "residual_calibration_sha256": "f5e6d79eb6b552da48cf976ea4c114d0ac387689ef42de5fa8746e257056431f",
+    "source_sha256": "53f86c219b099fa84cd005f1b22572f6c4e53f8ba242fb8074f600712abe9c5b",
+    "status": "PUBLISHED",
+    "verified_tensors": 272,
+    "work_directory": "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/functional-build-2026-10-01/fit-work"
+  },
+  "returncode": 0,
+  "seconds": 225.2832128930022,
+  "status": "PASSED",
+  "tensor_bytes_compared": 272
+}

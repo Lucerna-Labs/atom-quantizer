@@ -1,0 +1,22 @@
+{
+  "status": "SAVED",
+  "sha256": {
+    "artifacts/sequential-functional-2026-10-01/before-source.tar.gz": "73752db818d6786c4f23f4a10d660ad21f6b703c1b4334cf842a7a443f98c07f",
+    "artifacts/sequential-functional-2026-10-01/implementation-trial.tar.gz": "adf944844599e5af5c5d3b9f164fac47767a2741f145068aaf61e47d6a6e5bcc",
+    "artifacts/sequential-functional-2026-10-01/implementation-corrected.tar.gz": "c80edba43304e0f51ce1c6bf82d9237cf6d9d0e5122679ae7af4ec5e14d78bef",
+    "artifacts/sequential-functional-2026-10-01/implementation-final.tar.gz": "d9f9235476f7de17d98766751c167d2cf66d457ce3b173af11fe030914bf4bbf",
+    "artifacts/sequential-functional-2026-10-01/evidence.tar.gz": "beffd1d51e6a957e1f5ce291dab4a532f6c6f05adb939fd6cdd9dcf857de5e63",
+    "artifacts/sequential-functional-2026-10-01/implementation.patch": "3c36ec1a24993cefe1bc38283dafeba64fcbfc511ad76cf0f6c203829f6bdb45",
+    "artifacts/sequential-functional-2026-10-01/POST_TRIAL_FIX.json": "9f3203dbeb66e5ecc5faa472c494a8686c2f06a7ba7fa9d502905ab28762a294",
+    "artifacts/sequential-functional-2026-10-01/actual-boundary-config.json": "a50f37cb7598d649db9df6eba7e5341aa307c346f4ebda657f7177ae03d4291a",
+    "research/sequential-functional-2026-10-01/OUTCOME.md": "89e88ffad5f44f7f61caf6d60dcb36b3481988a0d0f06a456854500c6746f5d4",
+    "research/sequential-functional-2026-10-01/SUMMARY.JSON": "ceec62f9d4af95c9f191e5abb3a34798f3af071226eecd88052730d246881b82",
+    "research/sequential-functional-2026-10-01/AUDIT.json": "d6a8cadc01f48f98b8dc6d424f4cf33d1bdce6db984103d765ce481034fe81d6",
+    "research/sequential-functional-2026-10-01/MANIFEST.JSON": "82d11d476539f0013e5d0bceb6a4c789678731c85ffb3e70136a2b74abab3b15",
+    "research/sequential-functional-2026-10-01/ARCHITECTURE.json": "a50f37cb7598d649db9df6eba7e5341aa307c346f4ebda657f7177ae03d4291a",
+    "research/sequential-functional-2026-10-01/POST_TRIAL_FIX.json": "9f3203dbeb66e5ecc5faa472c494a8686c2f06a7ba7fa9d502905ab28762a294"
+  },
+  "main_executable_sha256": "d45eaa37c05ae4d08001e7b08ab3d90a0cfe9c970e03c0f06351558d6c9a400b",
+  "frozen_trial_audited_before_validation_hardening": true,
+  "all_processes_terminal": true
+}

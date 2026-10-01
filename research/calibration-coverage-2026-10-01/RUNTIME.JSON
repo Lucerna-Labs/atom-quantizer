@@ -1,0 +1,12 @@
+{
+  "executable": "5d909e4d9b86fd9b110f362784c797a498c9bcbe7fbc1ca63b5d14a668052840",
+  "libraries": {
+    "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/third_party/llama.cpp/build/bin/libggml-base.so.0.23.0": "e707d951ca5504d1c09ecea6489567edca254eb1c9eaa36a4f4b8ff98222f88d",
+    "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/third_party/llama.cpp/build/bin/libggml-cpu.so.0.23.0": "0366f198c34f8d28fb32866b4de7fb3d17e76b03387306895d35b567e661fb28",
+    "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/third_party/llama.cpp/build/bin/libggml.so.0.23.0": "7ff82a576ea7a962352be551e900506b1c6ed87f3995be0cd4ac28af229b3d16",
+    "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/third_party/llama.cpp/build/bin/libllama-common.so.0.4.0": "73882a150cf757038edd595c575053ee207459f39bac94d9388cb8a289859b60",
+    "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/third_party/llama.cpp/build/bin/libllama-perplexity-impl.so": "7f7b1540531607139e6f5118f466b14111f5c5a33cf24aa2dc27aacde43b711b",
+    "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/third_party/llama.cpp/build/bin/libllama.so.0.4.0": "2e576d97e6a2e7ff5dbe8d14cf5590ffd125112cdbf7d8f3a3364e9141d24b1d"
+  },
+  "version": "version: 0.4.0-dev (build 1, commit 74a7c89)\nbuilt with GNU 13.3.0 for Linux x86_64\n"
+}

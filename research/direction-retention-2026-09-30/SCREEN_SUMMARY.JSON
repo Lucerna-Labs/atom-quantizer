@@ -1,0 +1,186 @@
+{
+  "candidates": [
+    {
+      "bits": 3,
+      "gates": {
+        "S1_stored_records": true,
+        "S2_benefit": true,
+        "S3_complete": true
+      },
+      "mean_selection_output_nmse": {
+        "activation": 0.004155038856218132,
+        "activation-shuffled": 0.011544747707248153,
+        "diagonal": 0.01021930681494792,
+        "scalar": 0.01165559301659722
+      },
+      "minimum_weight_cosine": 0.9525543932030922,
+      "per_tensor_output_ratios": {
+        "blk.0.attn_k.weight": 0.4417450894758041,
+        "blk.0.attn_output.weight": 0.6895823628891842,
+        "blk.0.attn_q.weight": 0.4803020940107472,
+        "blk.17.ffn_down.weight": 0.249612905955861,
+        "blk.29.ffn_down.weight": 0.05614202771476713,
+        "blk.3.ffn_up.weight": 0.2476444660524317,
+        "blk.9.ffn_gate.weight": 0.2923645776625319,
+        "token_embd.weight": 0.29319596017697425
+      },
+      "rank": 1,
+      "raw_bytes_ratio": 1.0261750664606735,
+      "status": "MEASURED"
+    },
+    {
+      "bits": 3,
+      "gates": {
+        "S1_stored_records": true,
+        "S2_benefit": true,
+        "S3_complete": true
+      },
+      "mean_selection_output_nmse": {
+        "activation": 0.0026260952188170345,
+        "activation-shuffled": 0.01147077830851231,
+        "diagonal": 0.009684248616128804,
+        "scalar": 0.01165559301659722
+      },
+      "minimum_weight_cosine": 0.952741622646068,
+      "per_tensor_output_ratios": {
+        "blk.0.attn_k.weight": 0.28438980021849264,
+        "blk.0.attn_output.weight": 0.5402973200532523,
+        "blk.0.attn_q.weight": 0.3224626691210687,
+        "blk.17.ffn_down.weight": 0.2347609434446875,
+        "blk.29.ffn_down.weight": 0.008766507341907847,
+        "blk.3.ffn_up.weight": 0.08265725666538858,
+        "blk.9.ffn_gate.weight": 0.14347126193382276,
+        "token_embd.weight": 0.05624102168387319
+      },
+      "rank": 2,
+      "raw_bytes_ratio": 1.0498796052723147,
+      "status": "MEASURED"
+    },
+    {
+      "bits": 3,
+      "gates": {
+        "S1_stored_records": true,
+        "S2_benefit": true,
+        "S3_complete": true
+      },
+      "mean_selection_output_nmse": {
+        "activation": 0.002058134468295918,
+        "activation-shuffled": 0.01120348198998215,
+        "diagonal": 0.009028580254816693,
+        "scalar": 0.01165559301659722
+      },
+      "minimum_weight_cosine": 0.9531685012136333,
+      "per_tensor_output_ratios": {
+        "blk.0.attn_k.weight": 0.20280134632277572,
+        "blk.0.attn_output.weight": 0.4087425236504942,
+        "blk.0.attn_q.weight": 0.23150364981991195,
+        "blk.17.ffn_down.weight": 0.20850185749509592,
+        "blk.29.ffn_down.weight": 0.005030635946432515,
+        "blk.3.ffn_up.weight": 0.0573577435574598,
+        "blk.9.ffn_gate.weight": 0.1114400036928378,
+        "token_embd.weight": 0.0436665933270957
+      },
+      "rank": 4,
+      "raw_bytes_ratio": 1.0972733725834065,
+      "status": "MEASURED"
+    },
+    {
+      "bits": 4,
+      "gates": {
+        "S1_stored_records": true,
+        "S2_benefit": true,
+        "S3_complete": true
+      },
+      "mean_selection_output_nmse": {
+        "activation": 0.0010739747657696006,
+        "activation-shuffled": 0.003080943585732557,
+        "diagonal": 0.002702479738312684,
+        "scalar": 0.003107047592705434
+      },
+      "minimum_weight_cosine": 0.9786649196456975,
+      "per_tensor_output_ratios": {
+        "blk.0.attn_k.weight": 0.5244483744322321,
+        "blk.0.attn_output.weight": 0.6267402887389472,
+        "blk.0.attn_q.weight": 0.48487434830978693,
+        "blk.17.ffn_down.weight": 0.2661006347710036,
+        "blk.29.ffn_down.weight": 0.051786093760849514,
+        "blk.3.ffn_up.weight": 0.23319648593482759,
+        "blk.9.ffn_gate.weight": 0.27223357212916705,
+        "token_embd.weight": 0.3434248138616714
+      },
+      "rank": 1,
+      "raw_bytes_ratio": 1.0203772047494077,
+      "status": "MEASURED"
+    },
+    {
+      "bits": 4,
+      "gates": {
+        "S1_stored_records": true,
+        "S2_benefit": true,
+        "S3_complete": true
+      },
+      "mean_selection_output_nmse": {
+        "activation": 0.0006547841714269994,
+        "activation-shuffled": 0.0030557405363434873,
+        "diagonal": 0.0025287491130252713,
+        "scalar": 0.003107047592705434
+      },
+      "minimum_weight_cosine": 0.9787471156357258,
+      "per_tensor_output_ratios": {
+        "blk.0.attn_k.weight": 0.3523396115694836,
+        "blk.0.attn_output.weight": 0.48944166608869516,
+        "blk.0.attn_q.weight": 0.3336339361619592,
+        "blk.17.ffn_down.weight": 0.24484351292646908,
+        "blk.29.ffn_down.weight": 0.010371046090602668,
+        "blk.3.ffn_up.weight": 0.0734199670481986,
+        "blk.9.ffn_gate.weight": 0.12281915844278435,
+        "token_embd.weight": 0.06035594390072009
+      },
+      "rank": 2,
+      "raw_bytes_ratio": 1.0388311116986348,
+      "status": "MEASURED"
+    },
+    {
+      "bits": 4,
+      "gates": {
+        "S1_stored_records": true,
+        "S2_benefit": true,
+        "S3_complete": true
+      },
+      "mean_selection_output_nmse": {
+        "activation": 0.0005213634233623959,
+        "activation-shuffled": 0.0029922256815735565,
+        "diagonal": 0.0023185516804911446,
+        "scalar": 0.003107047592705434
+      },
+      "minimum_weight_cosine": 0.9788922984043836,
+      "per_tensor_output_ratios": {
+        "blk.0.attn_k.weight": 0.23877726937430338,
+        "blk.0.attn_output.weight": 0.38276914524087435,
+        "blk.0.attn_q.weight": 0.23824357302361768,
+        "blk.17.ffn_down.weight": 0.22043843317803233,
+        "blk.29.ffn_down.weight": 0.006750082993699134,
+        "blk.3.ffn_up.weight": 0.049604047932584515,
+        "blk.9.ffn_gate.weight": 0.09615932136774258,
+        "token_embd.weight": 0.04383782412457132
+      },
+      "rank": 4,
+      "raw_bytes_ratio": 1.0757270065684683,
+      "status": "MEASURED"
+    }
+  ],
+  "eligible_for_model_trials": [
+    {
+      "bits": 3,
+      "rank": 1
+    },
+    {
+      "bits": 4,
+      "rank": 1
+    }
+  ],
+  "experiment": "D01-screen",
+  "measured": 160,
+  "promoted_to_main_codec": [],
+  "records": 160
+}

@@ -1,0 +1,16 @@
+{
+  "expected_and_checked_records": 3120,
+  "unique_conditions": 3120,
+  "artifact_hashes_passed": 3120,
+  "actual_raw_and_compressed_sizes_passed": 3120,
+  "finite_saved_decodes": 3120,
+  "stored_scales_and_native_readouts_checked": 3072,
+  "native_batches_checked": 768,
+  "native_blocks_checked": 19584,
+  "max_native_orthogonality_error": 4.440892098500626e-15,
+  "min_resource": 0.5542675214424545,
+  "max_resource": 1.0,
+  "max_unquantized_nmse": 4.872551187923958e-16,
+  "manifest_sha256": "f7a9d6e2d75b14d7cbe3fcc3f4bc70bb1d22294e657183f40dd92dcd8621cc4a",
+  "summary_sha256": "61d15bcad5a9186cff1ce9c0b8c624df579dc8048df3925a9afaec32e2ff5715"
+}

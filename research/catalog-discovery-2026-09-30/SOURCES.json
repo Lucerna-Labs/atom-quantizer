@@ -1,0 +1,47 @@
+{
+  "reference_root": "/home/jesse/Desktop/first priniples",
+  "access": "read-only; selected sections reviewed, not an exhaustive audit",
+  "material_files_excluding_zip": 96,
+  "sources": [
+    {
+      "path": "README.md",
+      "sha256": "203584b2068086dd0acb3656d792c29b74b6dbcb47a187a75f79222e561ae348"
+    },
+    {
+      "path": "03_Root_Atoms_and_Master_Taxonomy/ROOT_ATOMS.md",
+      "sha256": "a233cbe66fcd91c0a9a6a2ded83ed9a914a4ab2025be8e30bcb10546a8318e5f"
+    },
+    {
+      "path": "02_Doctrine_and_Theses/COMPOSITION-THESIS.md",
+      "sha256": "e80800e8f716354aa6a54027dd86d8737fcb9e240d0b4b6f5351c721ede63895"
+    },
+    {
+      "path": "04_Domain_Primitive_Reserves/linear-algebra-matrix/PRIMITIVES.md",
+      "sha256": "2e0dab085fed3195348d934d789d9a2b34a8ceb65e01bf602b8012af97ebed6b"
+    },
+    {
+      "path": "04_Domain_Primitive_Reserves/information-theory-coding/PRIMITIVES.md",
+      "sha256": "7f1f2938fe0a4380be1fea937d3e1f4cea43fe1d898d13e964e19056e6f9bb86"
+    },
+    {
+      "path": "04_Domain_Primitive_Reserves/cognitive-primitives/PRIMITIVES.md",
+      "sha256": "5fbb92939557cb57fc5396ab3b342d087cbbf17a0c3a6f267889dc953c6d9a40"
+    },
+    {
+      "path": "04_Domain_Primitive_Reserves/thermodynamics-statistical-mechanics/PRIMITIVES.md",
+      "sha256": "e3012bc3751d082e93057b35a7c5323bf2d4c50a917a0e1ec942f092eb49bb1f"
+    },
+    {
+      "path": "04_Domain_Primitive_Reserves/physics-diffusion/PRIMITIVES.md",
+      "sha256": "16ac0b520eff1197a767c0ad3ac8a141c7a7df28fce59b3468c2f20eb20a6de6"
+    },
+    {
+      "path": "05_Cognitive_and_Quantum_Roots/QUANTUM-FIRST-PRINCIPLES.md",
+      "sha256": "6614ddb9bfbf3b8137c80809f51b8b3a1d01fd0c995f086f3c44219c5d0cd3a4"
+    },
+    {
+      "path": "06_Research_and_Emergence/Quantization App Development Research - Google Docs.extracted.txt",
+      "sha256": "9d320327e60b4f58f525384155c0f5c0decf475b3345bd886b49c37de525e58b"
+    }
+  ]
+}

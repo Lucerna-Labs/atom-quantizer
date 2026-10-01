@@ -1,0 +1,182 @@
+{
+  "date": "2026-09-05",
+  "codec": "atom-quantizer 0.2.4",
+  "model": "HuggingFaceTB/SmolLM2-135M-Instruct",
+  "model_revision": "12fd25f77366fa6b3b4b768ec3050bf629380bac",
+  "source_parameters": 134515008,
+  "source_tensors": 272,
+  "llama_cpp_commit": "74a7c897f049c17e7080423aa2111776eff6ebbf",
+  "dataset": {
+    "name": "Salesforce/wikitext",
+    "config": "wikitext-2-raw-v1",
+    "revision": "b08601e04326c79dfdd32d625aee71d232d685c3",
+    "calibration_split": "train",
+    "evaluation_split": "test",
+    "calibration_sha256": "bcb73fb22cf3faad3020cbaff43facea43b27c3725efccc27c1e7cc92f11cb3a",
+    "heldout_sha256": "aca2f46735043bcfd0a44eca981d04627b9cdf74c4c9a04bf0856d04066f58fc"
+  },
+  "calibration": {
+    "operator_batches": 211,
+    "samples_per_operator": 32,
+    "prompts": 16,
+    "context": 128,
+    "tokens": 1973,
+    "source_tensors_verified_against_checkpoint": 272,
+    "device": "cpu",
+    "dtype": "float32",
+    "file_sha256": "758a51aafe1a575ab4dddb29f5e07e186787bdf2b1fdb857fd640b13c91c24c0"
+  },
+  "evaluation": {
+    "engine": "llama-perplexity",
+    "chunks": 128,
+    "context": 512,
+    "batch": 512,
+    "microbatch": 512,
+    "threads": 8,
+    "scored_next_tokens": 32640,
+    "models_loaded_from_serialized_then_decoded_artifacts": true,
+    "compressed_inference_kernel": false
+  },
+  "results": [
+    {
+      "name": "source_f32",
+      "artifact": "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/models/SmolLM2-135M-Instruct-f32.gguf",
+      "bytes": 539846112,
+      "sha256": "53f86c219b099fa84cd005f1b22572f6c4e53f8ba242fb8074f600712abe9c5b",
+      "perplexity": 19.6648,
+      "reported_standard_error": 0.32508
+    },
+    {
+      "name": "proxy-baseline",
+      "artifact": "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/foundations-2026-09-05/proxy-baseline.oq",
+      "bytes": 86816410,
+      "sha256": "fe5e71bf3ec31472402d8705c66583b8ccb93659904e71558d82b681c036d57e",
+      "bits_per_parameter_including_metadata": 5.163225206811124,
+      "strategy_mix": {
+        "Q2": {
+          "tensors": 0,
+          "parameters": 0
+        },
+        "Q4": {
+          "tensors": 211,
+          "parameters": 134479872
+        },
+        "Q8": {
+          "tensors": 6,
+          "parameters": 3456
+        },
+        "F32": {
+          "tensors": 55,
+          "parameters": 31680
+        }
+      },
+      "perplexity": 29.1611,
+      "reported_standard_error": 0.49084
+    },
+    {
+      "name": "calibrated",
+      "artifact": "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/foundations-2026-09-05/calibrated.oq",
+      "bytes": 106833562,
+      "sha256": "8b418229483d51242f71902346df5e5f4c5a08007f423332506d29811d02268b",
+      "bits_per_parameter_including_metadata": 6.353703640265925,
+      "strategy_mix": {
+        "Q2": {
+          "tensors": 0,
+          "parameters": 0
+        },
+        "Q4": {
+          "tensors": 159,
+          "parameters": 94445568
+        },
+        "Q8": {
+          "tensors": 58,
+          "parameters": 40037760
+        },
+        "F32": {
+          "tensors": 55,
+          "parameters": 31680
+        }
+      },
+      "perplexity": 23.6701,
+      "reported_standard_error": 0.39473
+    },
+    {
+      "name": "budget120",
+      "artifact": "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/foundations-2026-09-05/budget120.oq",
+      "bytes": 125809756,
+      "sha256": "6d8e7d7cf6c734866751630a96be7315133a04c1852bc1fdef1b6e1686e3fde1",
+      "bits_per_parameter_including_metadata": 7.482273264259108,
+      "strategy_mix": {
+        "Q2": {
+          "tensors": 0,
+          "parameters": 0
+        },
+        "Q4": {
+          "tensors": 67,
+          "parameters": 56512512
+        },
+        "Q8": {
+          "tensors": 144,
+          "parameters": 77967360
+        },
+        "F32": {
+          "tensors": 61,
+          "parameters": 35136
+        }
+      },
+      "perplexity": 21.6583,
+      "reported_standard_error": 0.36236
+    }
+  ],
+  "allocation": {
+    "minimum_feasible_total_bytes": 106833562,
+    "minimum_budget_artifact_identical_to_calibrated": true,
+    "larger_budget_bytes": 125829120,
+    "larger_artifact_bytes": 125809756,
+    "unspent_bytes": 19364,
+    "minimum_surrogate_distortion": 1.156729,
+    "larger_budget_surrogate_distortion": 0.433231,
+    "final_build_reproduction_identical": true
+  },
+  "validation": {
+    "unit_tests": 42,
+    "cli_integration_tests": 6,
+    "failed": 0,
+    "cuda_compile_check": true,
+    "cuda_runtime_test": false,
+    "calibration_recapture_identical": true,
+    "dataset_recipe_identical": true,
+    "final_decoder_matches_evaluated_gguf": true,
+    "format_check": true,
+    "clippy_with_cuda": true,
+    "release_workspace_build": true
+  },
+  "limitations": [
+    "One small Llama-family model and one held-out text subset.",
+    "Source GGUF is F32; reported compression is against its actual file size.",
+    "Perplexity remains worse than the source.",
+    "No Q2 tensor passed the retained gates.",
+    "The richer 22-principle research families have not all been implemented.",
+    "Perplexity runs were partly concurrent; no timing speedup claim is made."
+  ],
+  "source_parent_commit": "b96d235629e39a3eda27d340557946c080ee01a2",
+  "source_state": "uncommitted working-tree implementation",
+  "source_file_sha256": {
+    "Cargo.toml": "c901780f397a783c7767af9e0003a7c643fab7ccc526422505e89071caa98941",
+    "Cargo.lock": "e2444e997d049401189d4001188722834c29e55a838b8dab00794a4aeaf54ce2",
+    "src/allocation.rs": "7c14537d6e9d550bbdd20adcba7c7d5c715b39eae83406b13ed924b6bad0f231",
+    "src/calibration.rs": "09d6670187e3dd1bc63670116daa3936a21826667ea3668d7eea55bbdf72c5f6",
+    "src/cuda_backend.rs": "447add90fea27f1c2dff0f712806c7d0facdbabe9194039f16288234328cbde4",
+    "src/encoded.rs": "8312ff32112c70d7eef07f5a86f80894017d190a451987a9bcc1a59944033132",
+    "src/gguf.rs": "c195376c9adebed729d6640b59416c4371569c0fa11bdc83c572dcc56bd30dd7",
+    "src/lib.rs": "49d5e4517518b8219e48b48c0082df48f8ef59e8b39817cde17e67d74066c1f3",
+    "src/main.rs": "a82b6aa245fbf68b66c0f5d00e1041c716b3dd3d1d13b3c9c334192d01924fd2",
+    "src/metrics.rs": "840602c24b3c7ee83c040c4601c36702e39f6b60e6c6935079cbc7456e62bf91",
+    "src/oq.rs": "b177b5a974d6cd921fa42cfe7bebda3c9738939fe6925cd40712b4dedb6fb3c8",
+    "src/stacks.rs": "ef94d0aacba22b364efae46e67391e9fbbe499c042dc92380ec301fe048b0bbc",
+    "src/wq.rs": "4471158c161a72acf65201d2cd13b334cbbfbdd86877df8941f436f19fd709f3",
+    "scripts/capture_calibration.py": "473c038d17f55cb1df84f4a6f2ce7359be9f7639d77c9b69a3b1e0aa547de0dc",
+    "scripts/prepare_benchmark.py": "480a3c28a243aaa9972976c3b4b3cbaf4ee71f911dc951cb7512ea0973443b45",
+    "tests/cli_foundations.rs": "a4b373f211e48a0331af7a4dda22ec8e54752f63716cf820993ae9156e70f209"
+  }
+}

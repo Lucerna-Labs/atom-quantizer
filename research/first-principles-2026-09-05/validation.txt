@@ -1,0 +1,30 @@
+Study: 2026-09-05
+Source revision: b96d235629e39a3eda27d340557946c080ee01a2
+Production implementation changes: none
+
+1. cargo test --offline --workspace --all-targets
+   Failed: no matching package named cudarc in local crates.io index.
+   This happened during dependency resolution, before tests ran.
+
+2. cargo test --workspace --all-targets
+   Exit 0. Updated crates.io index.
+   Library: 27 passed, 0 failed.
+   Main binary: 0 tests.
+   Companion Q2 binary: 0 tests.
+
+3. cargo build --offline -p atom-quantizer
+   Exit 0.
+
+4. rustc --edition=2021 -O research/first-principles-2026-09-05/probe.rs -o target/first-principles-probe
+   Exit 0.
+
+5. target/first-principles-probe target/debug/atom-quantizer target/first-principles-2026-09-05
+   Exit 0. JSON output saved as evidence.json.
+   Real CLI operated on one synthetic 4x32 F32 tensor.
+   Production wq::expand reconstructed the parsed OQ02 record.
+   Production oq::verify_file checked original and altered-scale records.
+   Production GGUF reader read the CLI's F32 passthrough.
+   No external model or calibration data were used.
+
+Not performed: real-model accuracy/perplexity/task benchmark, CUDA validation,
+compressed inference integration, or implementation of the proposed atoms.

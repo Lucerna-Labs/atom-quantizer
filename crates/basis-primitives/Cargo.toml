@@ -1,0 +1,9 @@
+[package]
+name = "basis-primitives"
+version = "0.1.0"
+edition = "2021"
+description = "Intrinsic conservative and driven mechanics for B01 discovery"
+
+[package.metadata.atom]
+component = "basis-discovery"
+role = "primitives"

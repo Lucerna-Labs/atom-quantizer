@@ -1,0 +1,20 @@
+{
+  "status": "PASSED",
+  "real_models": 5,
+  "tensor_byte_comparisons": 1360,
+  "native_export_hashes_match": true,
+  "isolation_traces_verified": 2,
+  "source_calibration_python_access_observed": false,
+  "legacy_regression_cases": 6,
+  "normal_release_verified": true,
+  "changed_existing_files": [
+    "src/lib.rs",
+    "src/main.rs",
+    "src/allocation.rs",
+    "Cargo.toml",
+    "Cargo.lock",
+    "target/release/atom-quantizer"
+  ],
+  "new_inference_runs": 0,
+  "selected_decoded_sha256": "4c9d806f45ec68dda196a966421857a7ff6d21c96e1dfe2393b378c82a2552d8"
+}

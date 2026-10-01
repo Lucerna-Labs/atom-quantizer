@@ -1,0 +1,82 @@
+{
+  "experiment": "D04",
+  "selection_gate": {
+    "checks": {
+      "history_bytes": true,
+      "history_ppl": true,
+      "native_fit_and_selection": true,
+      "scalar_bytes": true,
+      "scalar_ppl": false
+    },
+    "historical_bytes": 125809756,
+    "historical_ppl": 30.0986,
+    "principal_bytes": 83573330,
+    "principal_ppl": 29.3378,
+    "scalar_bytes": 84983143,
+    "scalar_ppl": 29.2825,
+    "status": "FAILED"
+  },
+  "final_gate": {
+    "status": "UNRUN"
+  },
+  "new_inference_runs": 3,
+  "defaults_changed": false,
+  "main_OQ03_integration": false,
+  "models": {
+    "adaptive-activation": {
+      "archive_bytes": 83573330,
+      "decoded_sha256": "9130a2b4e5550778d453e5f078a078fae8f416b965fcc339bcb62ef65eed02d5",
+      "decoded": "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/adaptive-fidelity-2026-10-01/adaptive-activation/model.gguf"
+    },
+    "adaptive-scalar": {
+      "archive_bytes": 84983143,
+      "decoded_sha256": "588c6cd69466edc93cddcf0282933f9f77fc3bfdd51e075d3c64d8219e402b17",
+      "decoded": "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/adaptive-fidelity-2026-10-01/adaptive-scalar/model.gguf"
+    },
+    "fixed4-activation": {
+      "archive_bytes": 73291645,
+      "decoded_sha256": "7208fd04dab974cd6997a3ce62c99ea600afea87ef12543dc28ccc505b4fa89b",
+      "decoded": "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/decoder-reproducibility-2026-10-01/models-check/models/q4-IE-r2.gguf"
+    },
+    "historical-budget120": {
+      "archive_bytes": 125809756,
+      "decoded_sha256": "c5fb3e2c4e516823058a730d9234e267f0a4e1d94f061449828826c2ba02b7f5",
+      "decoded": "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/direction-retention-2026-09-30/models/historical-budget120.gguf"
+    },
+    "source-f32": {
+      "archive_bytes": 539846112,
+      "decoded_sha256": "53f86c219b099fa84cd005f1b22572f6c4e53f8ba242fb8074f600712abe9c5b",
+      "decoded": "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/models/SmolLM2-135M-Instruct-f32.gguf"
+    },
+    "uniform6-activation": {
+      "archive_bytes": 109251501,
+      "decoded_sha256": "4c9d806f45ec68dda196a966421857a7ff6d21c96e1dfe2393b378c82a2552d8",
+      "decoded": "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/adaptive-fidelity-2026-10-01/uniform6/model.gguf"
+    }
+  },
+  "selection_ppl": {
+    "adaptive-activation": 29.3378,
+    "adaptive-scalar": 29.2825,
+    "fixed4-activation": 31.2429,
+    "historical-budget120": 30.0986,
+    "source-f32": 26.7164,
+    "uniform6-activation": 26.9661
+  },
+  "native_failures": {
+    "adaptive-activation": {
+      "selection-0": 0,
+      "selection-1": 0
+    },
+    "adaptive-scalar": {
+      "selection-0": 0,
+      "selection-1": 0
+    },
+    "uniform6-activation": {
+      "fit-0": 0,
+      "fit-1": 0,
+      "selection-0": 0,
+      "selection-1": 0
+    }
+  },
+  "full_summary": "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/adaptive-fidelity-2026-10-01/summary.json"
+}

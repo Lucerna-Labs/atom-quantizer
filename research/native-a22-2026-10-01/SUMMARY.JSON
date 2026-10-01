@@ -1,0 +1,249 @@
+{
+  "isolation": {
+    "decoded_sha256": "4c9d806f45ec68dda196a966421857a7ff6d21c96e1dfe2393b378c82a2552d8",
+    "directory": "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/native-a22-2026-10-01/isolated",
+    "only_supplied_inputs": [
+      "atom-quantizer",
+      "model.a22"
+    ],
+    "python_unavailable_on_path": true,
+    "status": "PASSED",
+    "traces": [
+      {
+        "execve_count": 1,
+        "operation": "verify",
+        "trace_sha256": "2a3fac902c613f82ea20c942b922d555d7a20e7fd6cf8ce4c36a259681dc9162"
+      },
+      {
+        "execve_count": 1,
+        "operation": "decode",
+        "trace_sha256": "1cb0b1ee7b8cd5ac21d57113e6d2ff4ed322ef6a57db91a9aad3ebda8a95931f"
+      }
+    ]
+  },
+  "late_failure": {
+    "archive_sha256": "f9a73fc30511204594e99f54ee5921cae294e5c65b904295e8eb7949d5121ec1",
+    "destination_absent": true,
+    "injected_fault": true,
+    "returncode": 1,
+    "staging_absent": true,
+    "status": "PASSED",
+    "tensor": "output_norm.weight"
+  },
+  "models": [
+    {
+      "archive": "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/six-bit-frontier-2026-10-01/activation/stage-0/model.a22",
+      "archive_bytes": 109251501,
+      "archive_sha256": "27d36037a432c5cefeeb0c1f62505377f469365027e00372d30b1840c4608a83",
+      "decoded": "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/native-a22-2026-10-01/exports/activation-0.gguf",
+      "decoded_sha256": "4c9d806f45ec68dda196a966421857a7ff6d21c96e1dfe2393b378c82a2552d8",
+      "name": "activation-0",
+      "runs": [
+        {
+          "command": [
+            "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/target/native-a22-current/release/atom-quantizer",
+            "verify",
+            "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/six-bit-frontier-2026-10-01/activation/stage-0/model.a22"
+          ],
+          "log_sha256": "297ec5306124bfb44053e21ef1af5904c116935e5b603beb5fc39ce50f2a92f6",
+          "returncode": 0,
+          "seconds": 1.107942937000189
+        },
+        {
+          "command": [
+            "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/target/native-a22-current/release/atom-quantizer",
+            "decode",
+            "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/six-bit-frontier-2026-10-01/activation/stage-0/model.a22",
+            "--out",
+            "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/native-a22-2026-10-01/exports/activation-0.gguf"
+          ],
+          "log_sha256": "84e0e58f4ff9995ecb01a508cd5a3aa28227e330783e8d3a20f6340ca5ec52e7",
+          "returncode": 0,
+          "seconds": 1.2378194370103301
+        }
+      ],
+      "status": "PASSED",
+      "verified_tensors": 272
+    },
+    {
+      "archive": "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/six-bit-frontier-2026-10-01/diagonal/stage-0/model.a22",
+      "archive_bytes": 109255265,
+      "archive_sha256": "72776c86f2dd6c2495ca65bb621eef6e53fb592d0346af76dbf336844429b6f7",
+      "decoded": "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/native-a22-2026-10-01/exports/diagonal-0.gguf",
+      "decoded_sha256": "98eeec9bd9b16079ddfe0586cedc4d2d62e0128ba01ec3d277f8bc4db8bc7e4d",
+      "name": "diagonal-0",
+      "runs": [
+        {
+          "command": [
+            "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/target/native-a22-current/release/atom-quantizer",
+            "verify",
+            "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/six-bit-frontier-2026-10-01/diagonal/stage-0/model.a22"
+          ],
+          "log_sha256": "be764c687dde0d1e302852bcf13c3f95b8242216d5e7df90e61b498664af1617",
+          "returncode": 0,
+          "seconds": 1.104713103006361
+        },
+        {
+          "command": [
+            "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/target/native-a22-current/release/atom-quantizer",
+            "decode",
+            "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/six-bit-frontier-2026-10-01/diagonal/stage-0/model.a22",
+            "--out",
+            "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/native-a22-2026-10-01/exports/diagonal-0.gguf"
+          ],
+          "log_sha256": "2d5b2291e8130c95cb86ddb6e3a41146293bbad3a08e0d3ad5326af375339009",
+          "returncode": 0,
+          "seconds": 1.2484170560055645
+        }
+      ],
+      "status": "PASSED",
+      "verified_tensors": 272
+    },
+    {
+      "archive": "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/six-bit-frontier-2026-10-01/scalar/stage-1/model.a22",
+      "archive_bytes": 108294980,
+      "archive_sha256": "66629c76b52b5a5d3d245005de4fe3020ee1f73d1cd189731a2a9ffb48133f60",
+      "decoded": "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/native-a22-2026-10-01/exports/scalar-1.gguf",
+      "decoded_sha256": "0a43da4c604217d2c03e9b2943d2bbc35297f5098dbc22ce32c45cc940ecdae4",
+      "name": "scalar-1",
+      "runs": [
+        {
+          "command": [
+            "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/target/native-a22-current/release/atom-quantizer",
+            "verify",
+            "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/six-bit-frontier-2026-10-01/scalar/stage-1/model.a22"
+          ],
+          "log_sha256": "875015a472d1b1d8d739b915e0108da5321439c45b7c3e4e226ae93986ec1c06",
+          "returncode": 0,
+          "seconds": 0.9762835009896662
+        },
+        {
+          "command": [
+            "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/target/native-a22-current/release/atom-quantizer",
+            "decode",
+            "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/six-bit-frontier-2026-10-01/scalar/stage-1/model.a22",
+            "--out",
+            "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/native-a22-2026-10-01/exports/scalar-1.gguf"
+          ],
+          "log_sha256": "5e0fd2d4b4c2b09064256cd423063fec4a24174f610262df8fbe796bc96f4a4b",
+          "returncode": 0,
+          "seconds": 3.0036750519939233
+        }
+      ],
+      "status": "PASSED",
+      "verified_tensors": 272
+    },
+    {
+      "archive": "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/six-bit-frontier-2026-10-01/scalar/stage-0/model.a22",
+      "archive_bytes": 107906765,
+      "archive_sha256": "b38adf01b3f3169647f2680825a44e6c48efbd55d30b00eb4054ed61594dc94d",
+      "decoded": "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/native-a22-2026-10-01/exports/scalar-0.gguf",
+      "decoded_sha256": "266eb30578965b7368f3363e447c1fcc3734e998cc66e56d6625f818c501d6dd",
+      "name": "scalar-0",
+      "runs": [
+        {
+          "command": [
+            "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/target/native-a22-current/release/atom-quantizer",
+            "verify",
+            "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/six-bit-frontier-2026-10-01/scalar/stage-0/model.a22"
+          ],
+          "log_sha256": "3eb4134f2b0e43d46e53649ca8d27956537381047ec916ee91337addcb26df1c",
+          "returncode": 0,
+          "seconds": 0.9722305560135283
+        },
+        {
+          "command": [
+            "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/target/native-a22-current/release/atom-quantizer",
+            "decode",
+            "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/six-bit-frontier-2026-10-01/scalar/stage-0/model.a22",
+            "--out",
+            "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/native-a22-2026-10-01/exports/scalar-0.gguf"
+          ],
+          "log_sha256": "258684587819934bfd3bba3cfec06f8c0cdb8b9052a0ab4e202b2efa4d2c1e42",
+          "returncode": 0,
+          "seconds": 3.1954689260019222
+        }
+      ],
+      "status": "PASSED",
+      "verified_tensors": 272
+    },
+    {
+      "archive": "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/six-bit-frontier-2026-10-01/scalar/stage-2/model.a22",
+      "archive_bytes": 109317095,
+      "archive_sha256": "c520bf3afa3a5ef4a465d3eeb35e136fc120f34c4dd2cca5dc977a1118749bb7",
+      "decoded": "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/native-a22-2026-10-01/exports/scalar-2.gguf",
+      "decoded_sha256": "1b633be0e310ec8b62df6846d2e7b04fc08dc7b7a933d2aec8e0b0bd215c9920",
+      "name": "scalar-2",
+      "runs": [
+        {
+          "command": [
+            "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/target/native-a22-current/release/atom-quantizer",
+            "verify",
+            "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/six-bit-frontier-2026-10-01/scalar/stage-2/model.a22"
+          ],
+          "log_sha256": "7600b27a1fb05585dae99bc2a0e1cfda2eb38156d1e971514376bae2207be45d",
+          "returncode": 0,
+          "seconds": 0.9787055829947349
+        },
+        {
+          "command": [
+            "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/target/native-a22-current/release/atom-quantizer",
+            "decode",
+            "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/six-bit-frontier-2026-10-01/scalar/stage-2/model.a22",
+            "--out",
+            "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/native-a22-2026-10-01/exports/scalar-2.gguf"
+          ],
+          "log_sha256": "47531bb6df1b78d26a5ec2c68940a0b93106ba12914626a51b9cbdad4a5e4358",
+          "returncode": 0,
+          "seconds": 1.1094394429965178
+        }
+      ],
+      "status": "PASSED",
+      "verified_tensors": 272
+    }
+  ],
+  "native_decode_without_python": true,
+  "native_tensors_verified": 1360,
+  "new_inference_runs": 0,
+  "oq_regression": [
+    {
+      "gguf_identical": true,
+      "name": "default",
+      "oq_identical": true,
+      "scores_identical": true
+    },
+    {
+      "gguf_identical": true,
+      "name": "calibrated",
+      "oq_identical": true,
+      "scores_identical": true
+    },
+    {
+      "gguf_identical": true,
+      "name": "maxabs",
+      "oq_identical": true,
+      "scores_identical": true
+    },
+    {
+      "gguf_identical": true,
+      "name": "asym",
+      "oq_identical": true,
+      "scores_identical": true
+    },
+    {
+      "gguf_identical": true,
+      "name": "exact",
+      "oq_identical": true,
+      "scores_identical": true
+    },
+    {
+      "gguf_identical": true,
+      "name": "budget",
+      "oq_identical": true,
+      "scores_identical": true
+    }
+  ],
+  "selected_decoded_sha256": "4c9d806f45ec68dda196a966421857a7ff6d21c96e1dfe2393b378c82a2552d8",
+  "source_fitting_unchanged": true,
+  "status": "PASSED"
+}

@@ -1,0 +1,166 @@
+{
+  "binary_version": "atom-quantizer 0.2.4",
+  "commands": [
+    [
+      "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/target/native-admission-current/release/atom-quantizer",
+      "assess",
+      "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/models/SmolLM2-135M-Instruct-f32.gguf",
+      "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/models/SmolLM2-135M-Instruct-f32.gguf",
+      "--calibration",
+      "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/full22-2026-09-06/fit.acal"
+    ],
+    [
+      "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/target/native-admission-current/release/atom-quantizer",
+      "assess",
+      "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/models/SmolLM2-135M-Instruct-f32.gguf",
+      "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/direction-retention-2026-09-30/models/historical-budget120.gguf",
+      "--calibration",
+      "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/full22-2026-09-06/fit.acal"
+    ],
+    [
+      "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/target/native-admission-current/release/atom-quantizer",
+      "assess",
+      "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/models/SmolLM2-135M-Instruct-f32.gguf",
+      "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/decoder-reproducibility-2026-10-01/models-check/models/q3-IE-r1.gguf",
+      "--calibration",
+      "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/full22-2026-09-06/fit.acal"
+    ],
+    [
+      "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/target/native-admission-current/release/atom-quantizer",
+      "assess",
+      "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/models/SmolLM2-135M-Instruct-f32.gguf",
+      "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/decoder-reproducibility-2026-10-01/models-check/models/q4-IE-r2.gguf",
+      "--calibration",
+      "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/full22-2026-09-06/fit.acal"
+    ],
+    [
+      "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/target/native-admission-current/release/atom-quantizer",
+      "assess",
+      "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/models/SmolLM2-135M-Instruct-f32.gguf",
+      "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/models/SmolLM2-135M-Instruct-f32.gguf",
+      "--calibration",
+      "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/full22-2026-09-06/selection.acal"
+    ],
+    [
+      "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/target/native-admission-current/release/atom-quantizer",
+      "assess",
+      "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/models/SmolLM2-135M-Instruct-f32.gguf",
+      "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/direction-retention-2026-09-30/models/historical-budget120.gguf",
+      "--calibration",
+      "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/full22-2026-09-06/selection.acal"
+    ],
+    [
+      "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/target/native-admission-current/release/atom-quantizer",
+      "assess",
+      "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/models/SmolLM2-135M-Instruct-f32.gguf",
+      "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/decoder-reproducibility-2026-10-01/models-check/models/q3-IE-r1.gguf",
+      "--calibration",
+      "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/full22-2026-09-06/selection.acal"
+    ],
+    [
+      "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/target/native-admission-current/release/atom-quantizer",
+      "assess",
+      "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/models/SmolLM2-135M-Instruct-f32.gguf",
+      "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/decoder-reproducibility-2026-10-01/models-check/models/q4-IE-r2.gguf",
+      "--calibration",
+      "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/full22-2026-09-06/selection.acal"
+    ],
+    [
+      "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/target/native-admission-current/release/atom-quantizer",
+      "assess",
+      "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/models/SmolLM2-135M-Instruct-f32.gguf",
+      "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/models/SmolLM2-135M-Instruct-f32.gguf",
+      "--calibration",
+      "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/calibration-coverage-2026-10-01/captures/stratified0-fit.acal"
+    ],
+    [
+      "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/target/native-admission-current/release/atom-quantizer",
+      "assess",
+      "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/models/SmolLM2-135M-Instruct-f32.gguf",
+      "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/direction-retention-2026-09-30/models/historical-budget120.gguf",
+      "--calibration",
+      "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/calibration-coverage-2026-10-01/captures/stratified0-fit.acal"
+    ],
+    [
+      "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/target/native-admission-current/release/atom-quantizer",
+      "assess",
+      "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/models/SmolLM2-135M-Instruct-f32.gguf",
+      "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/decoder-reproducibility-2026-10-01/models-check/models/q3-IE-r1.gguf",
+      "--calibration",
+      "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/calibration-coverage-2026-10-01/captures/stratified0-fit.acal"
+    ],
+    [
+      "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/target/native-admission-current/release/atom-quantizer",
+      "assess",
+      "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/models/SmolLM2-135M-Instruct-f32.gguf",
+      "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/decoder-reproducibility-2026-10-01/models-check/models/q4-IE-r2.gguf",
+      "--calibration",
+      "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/calibration-coverage-2026-10-01/captures/stratified0-fit.acal"
+    ],
+    [
+      "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/target/native-admission-current/release/atom-quantizer",
+      "assess",
+      "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/models/SmolLM2-135M-Instruct-f32.gguf",
+      "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/models/SmolLM2-135M-Instruct-f32.gguf",
+      "--calibration",
+      "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/calibration-coverage-2026-10-01/captures/stratified0-selection.acal"
+    ],
+    [
+      "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/target/native-admission-current/release/atom-quantizer",
+      "assess",
+      "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/models/SmolLM2-135M-Instruct-f32.gguf",
+      "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/direction-retention-2026-09-30/models/historical-budget120.gguf",
+      "--calibration",
+      "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/calibration-coverage-2026-10-01/captures/stratified0-selection.acal"
+    ],
+    [
+      "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/target/native-admission-current/release/atom-quantizer",
+      "assess",
+      "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/models/SmolLM2-135M-Instruct-f32.gguf",
+      "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/decoder-reproducibility-2026-10-01/models-check/models/q3-IE-r1.gguf",
+      "--calibration",
+      "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/calibration-coverage-2026-10-01/captures/stratified0-selection.acal"
+    ],
+    [
+      "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/target/native-admission-current/release/atom-quantizer",
+      "assess",
+      "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/models/SmolLM2-135M-Instruct-f32.gguf",
+      "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/decoder-reproducibility-2026-10-01/models-check/models/q4-IE-r2.gguf",
+      "--calibration",
+      "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/calibration-coverage-2026-10-01/captures/stratified0-selection.acal"
+    ]
+  ],
+  "compiler": "rustc 1.98.1 (48a229cea 2026-09-01)",
+  "max_workers": 2,
+  "sha256": {
+    "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/Cargo.lock": "58d0c4ffe0ad0c44538940622234a506ad33729ff6508ee68b5330e591304ebf",
+    "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/Cargo.toml": "0afa8ab593af1223745bf03a5cedfd3ffeb5332724fbd990f7d5f74aad0a1dcf",
+    "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/calibration-coverage-2026-10-01/captures/stratified0-fit.acal": "29d09e1701dc329cee26fd636dd1d492c3e29b1e1c3d17d28e2c777a52e9a2c4",
+    "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/calibration-coverage-2026-10-01/captures/stratified0-selection.acal": "8e357a6712d5d288aa53a2e088f574c26246868db14eb864fd2fb73c9b3e4d99",
+    "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/decoder-reproducibility-2026-10-01/models-check/models/q3-IE-r1.gguf": "c124c0d1f48219e0b28a2dbfe5bcb42bd4a14ca9b32b32be5f36c23bcd4016ad",
+    "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/decoder-reproducibility-2026-10-01/models-check/models/q4-IE-r2.gguf": "7208fd04dab974cd6997a3ce62c99ea600afea87ef12543dc28ccc505b4fa89b",
+    "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/direction-retention-2026-09-30/models/historical-budget120.gguf": "c5fb3e2c4e516823058a730d9234e267f0a4e1d94f061449828826c2ba02b7f5",
+    "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/full22-2026-09-06/fit.acal": "f5e6d79eb6b552da48cf976ea4c114d0ac387689ef42de5fa8746e257056431f",
+    "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/full22-2026-09-06/selection.acal": "d8a0411a3ac9b4033502dbec560b3a5390c5571d83c177f1a52260bd9a74a7d0",
+    "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/experiments/basis_discovery.py": "702752c3d0bcce00ffa64527c2f283b2a64944e45c57b7f6defe1d6b0fbba38d",
+    "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/experiments/full22/data.py": "116e90018adf80c059c08c8e112343e83ddc7357492454f66cb34b6e2fd779af",
+    "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/experiments/native_admission.py": "95a6b76b2eeacaad0687db73e99f56fb168997917c065d4c1c158b65f339e58a",
+    "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/models/SmolLM2-135M-Instruct-f32.gguf": "53f86c219b099fa84cd005f1b22572f6c4e53f8ba242fb8074f600712abe9c5b",
+    "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/research/native-admission-2026-10-01/PROTOCOL.md": "9ab07da6363d699e17463cde1ecca2e44a428daeb3fe1a52430fc5d05a57ffb5",
+    "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/src/allocation.rs": "7c14537d6e9d550bbdd20adcba7c7d5c715b39eae83406b13ed924b6bad0f231",
+    "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/src/assess.rs": "16d135c372cf85ee65e4079a79fcefa3c86ba51e828ef3f3fd7ef6e26d14aadf",
+    "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/src/calibration.rs": "09d6670187e3dd1bc63670116daa3936a21826667ea3668d7eea55bbdf72c5f6",
+    "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/src/cuda_backend.rs": "447add90fea27f1c2dff0f712806c7d0facdbabe9194039f16288234328cbde4",
+    "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/src/encoded.rs": "8312ff32112c70d7eef07f5a86f80894017d190a451987a9bcc1a59944033132",
+    "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/src/gguf.rs": "c195376c9adebed729d6640b59416c4371569c0fa11bdc83c572dcc56bd30dd7",
+    "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/src/lib.rs": "49d5e4517518b8219e48b48c0082df48f8ef59e8b39817cde17e67d74066c1f3",
+    "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/src/main.rs": "97709f89d71652e1a1d1416842bf0524a2784def01a5cdeb26d2f2fa4c120c03",
+    "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/src/metrics.rs": "840602c24b3c7ee83c040c4601c36702e39f6b60e6c6935079cbc7456e62bf91",
+    "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/src/oq.rs": "b177b5a974d6cd921fa42cfe7bebda3c9738939fe6925cd40712b4dedb6fb3c8",
+    "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/src/stacks.rs": "82a0945b65a224cccb059ca43758292a729f202ebab7623ea3abd32530ad2a18",
+    "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/src/wq.rs": "4471158c161a72acf65201d2cd13b334cbbfbdd86877df8941f436f19fd709f3",
+    "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/target/native-admission-current/release/atom-quantizer": "628c4d10a9513379c6a37b14d617469bffd5333de81da8fffe642cf4324417bd",
+    "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/target/release/atom-quantizer": "69b4d49770cd532069aa2d70bb7e6a894d76997ac842c6aac48b1cecdfd4e08f",
+    "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/tests/cli_assess.rs": "7ad8d9c51fc389a0d4010153ad6475f7d1a6330923f5b309ed8b8a3b9f9243d3"
+  }
+}

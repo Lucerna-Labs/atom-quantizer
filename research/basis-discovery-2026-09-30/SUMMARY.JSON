@@ -1,0 +1,271 @@
+{
+  "candidates": [
+    {
+      "bits": 3,
+      "complete_raw_bytes_ratio": 1.0481314459893942,
+      "contributions": {
+        "no_base": true,
+        "no_chemistry": true,
+        "no_h": true,
+        "no_information": true,
+        "no_memory": true,
+        "no_physics": true,
+        "no_q": true
+      },
+      "full_to_control_ratios": {
+        "base_only": 0.9567187367910124,
+        "identity": 1.298499571225203,
+        "no_base": 1.1889740726344598,
+        "no_chaos": 1.0265994881895453,
+        "no_chemistry": 0.9997347237442291,
+        "no_h": 1.2153160878444613,
+        "no_information": 0.9989804165342038,
+        "no_memory": 0.9900891094620937,
+        "no_physics": 1.0105985062295182,
+        "no_population": 0.9867459503690336,
+        "no_q": 0.9919340819697912,
+        "no_rotor": 0.9887523440279297,
+        "scalar": 1.298499571225203,
+        "signed_h32": 0.9642038022479316
+      },
+      "gates": {
+        "G1_native": true,
+        "G2_storage": true,
+        "G3_benefit": false,
+        "G4_contributions": true,
+        "G5_complete": true
+      },
+      "mean_selection_output_nmse": {
+        "base_only": 0.01581946914219684,
+        "full": 0.01513478253442696,
+        "identity": 0.01165559301659722,
+        "no_base": 0.012729278865511498,
+        "no_chaos": 0.014742635963239992,
+        "no_chemistry": 0.015138798498209436,
+        "no_h": 0.01245337133755111,
+        "no_information": 0.01515022945788524,
+        "no_memory": 0.015286283214093274,
+        "no_physics": 0.014976058683179652,
+        "no_population": 0.015338074130191967,
+        "no_q": 0.015257851110803834,
+        "no_rotor": 0.015306949840211395,
+        "scalar": 0.01165559301659722,
+        "signed_h32": 0.015696663401598226
+      },
+      "order": 0,
+      "status": "FAILED",
+      "tensor_to_h32_ratios": {
+        "blk.0.attn_k.weight": 1.0831078708730646,
+        "blk.0.attn_output.weight": 0.9670377415264353,
+        "blk.0.attn_q.weight": 0.9468303017135394,
+        "blk.17.ffn_down.weight": 1.0338995965915814,
+        "blk.29.ffn_down.weight": 0.9962203444448567,
+        "blk.3.ffn_up.weight": 0.9784387391451453,
+        "blk.9.ffn_gate.weight": 0.847478856535352,
+        "token_embd.weight": 1.0382177677852285
+      }
+    },
+    {
+      "bits": 4,
+      "complete_raw_bytes_ratio": 1.0374701753397464,
+      "contributions": {
+        "no_base": true,
+        "no_chemistry": true,
+        "no_h": true,
+        "no_information": true,
+        "no_memory": true,
+        "no_physics": true,
+        "no_q": true
+      },
+      "full_to_control_ratios": {
+        "base_only": 1.0108122954476186,
+        "identity": 1.2510894876791743,
+        "no_base": 1.1856397833079786,
+        "no_chaos": 1.001797191726348,
+        "no_chemistry": 0.9773658378816273,
+        "no_h": 1.204182973733203,
+        "no_information": 1.023589161370229,
+        "no_memory": 0.9837141708768415,
+        "no_physics": 1.0066467225497042,
+        "no_population": 0.9895916714064681,
+        "no_q": 0.9978286704067724,
+        "no_rotor": 0.9943858122399994,
+        "scalar": 1.251089487679174,
+        "signed_h32": 0.9298150080073349
+      },
+      "gates": {
+        "G1_native": true,
+        "G2_storage": true,
+        "G3_benefit": false,
+        "G4_contributions": true,
+        "G5_complete": true
+      },
+      "mean_selection_output_nmse": {
+        "base_only": 0.0038456146590809762,
+        "full": 0.003887194580952653,
+        "identity": 0.0031070475927054337,
+        "no_base": 0.0032785628786065504,
+        "no_chaos": 0.0038802210797317578,
+        "no_chemistry": 0.0039772155218540045,
+        "no_h": 0.003228076351969658,
+        "no_information": 0.00379761209638939,
+        "no_memory": 0.00395154882996935,
+        "no_physics": 0.00386152807521878,
+        "no_population": 0.0039280793212698875,
+        "no_q": 0.0038956533283093665,
+        "no_rotor": 0.003909141233819677,
+        "scalar": 0.003107047592705434,
+        "signed_h32": 0.004180610710170413
+      },
+      "order": 0,
+      "status": "FAILED",
+      "tensor_to_h32_ratios": {
+        "blk.0.attn_k.weight": 0.9464246402646704,
+        "blk.0.attn_output.weight": 0.9798559119966711,
+        "blk.0.attn_q.weight": 0.7879281896759457,
+        "blk.17.ffn_down.weight": 0.9643206917509626,
+        "blk.29.ffn_down.weight": 0.912738841769946,
+        "blk.3.ffn_up.weight": 0.8613654635104016,
+        "blk.9.ffn_gate.weight": 0.9353734429761541,
+        "token_embd.weight": 1.045496094784284
+      }
+    },
+    {
+      "bits": 3,
+      "complete_raw_bytes_ratio": 1.0481314459893942,
+      "contributions": {
+        "no_base": true,
+        "no_chemistry": true,
+        "no_h": true,
+        "no_information": true,
+        "no_memory": true,
+        "no_physics": true,
+        "no_q": true
+      },
+      "full_to_control_ratios": {
+        "base_only": 0.9566854047305162,
+        "identity": 1.2984543315276849,
+        "no_base": 1.236039371127258,
+        "no_chaos": 1.0265637214851528,
+        "no_chemistry": 1.0175697409403872,
+        "no_h": 1.212690301171828,
+        "no_information": 0.9913884123527615,
+        "no_memory": 0.9909159746795113,
+        "no_physics": 1.0234955490745832,
+        "no_population": 0.9935507842014883,
+        "no_q": 0.9726744072494667,
+        "no_rotor": 0.990220694024755,
+        "scalar": 1.2984543315276849,
+        "signed_h32": 0.9641702094079136
+      },
+      "gates": {
+        "G1_native": true,
+        "G2_storage": true,
+        "G3_benefit": false,
+        "G4_contributions": true,
+        "G5_complete": true
+      },
+      "mean_selection_output_nmse": {
+        "base_only": 0.01581946914219684,
+        "full": 0.015134255238924496,
+        "identity": 0.01165559301659722,
+        "no_base": 0.012244153052440537,
+        "no_chaos": 0.014742635963239992,
+        "no_chemistry": 0.014872941509579648,
+        "no_h": 0.012479901277597585,
+        "no_information": 0.015265717301464019,
+        "no_memory": 0.015272995516919907,
+        "no_physics": 0.014786830536398989,
+        "no_population": 0.015232492872609244,
+        "no_q": 0.015559425770974291,
+        "no_rotor": 0.015283719407449737,
+        "scalar": 0.01165559301659722,
+        "signed_h32": 0.015696663401598226
+      },
+      "order": 1,
+      "status": "FAILED",
+      "tensor_to_h32_ratios": {
+        "blk.0.attn_k.weight": 1.216128871968422,
+        "blk.0.attn_output.weight": 0.9751355109462334,
+        "blk.0.attn_q.weight": 0.8803845119033142,
+        "blk.17.ffn_down.weight": 1.0242177685739937,
+        "blk.29.ffn_down.weight": 1.005030260514249,
+        "blk.3.ffn_up.weight": 0.9622007379883836,
+        "blk.9.ffn_gate.weight": 0.8686103803834562,
+        "token_embd.weight": 1.0169599158649223
+      }
+    },
+    {
+      "bits": 4,
+      "complete_raw_bytes_ratio": 1.0374701753397464,
+      "contributions": {
+        "no_base": true,
+        "no_chemistry": true,
+        "no_h": true,
+        "no_information": true,
+        "no_memory": true,
+        "no_physics": true,
+        "no_q": true
+      },
+      "full_to_control_ratios": {
+        "base_only": 1.039665411122377,
+        "identity": 1.2868011918897928,
+        "no_base": 1.2457665543757082,
+        "no_chaos": 1.030392975914676,
+        "no_chemistry": 1.0198772559347336,
+        "no_h": 1.2703651283377677,
+        "no_information": 1.0489028540011838,
+        "no_memory": 1.0209748269632963,
+        "no_physics": 1.0234735734963396,
+        "no_population": 1.0407773929837885,
+        "no_q": 1.0206567938013256,
+        "no_rotor": 1.0508096601629693,
+        "scalar": 1.2868011918897926,
+        "signed_h32": 0.9563560978842461
+      },
+      "gates": {
+        "G1_native": true,
+        "G2_storage": true,
+        "G3_benefit": false,
+        "G4_contributions": true,
+        "G5_complete": true
+      },
+      "mean_selection_output_nmse": {
+        "base_only": 0.0038456146590809762,
+        "full": 0.003998152545551663,
+        "identity": 0.0031070475927054337,
+        "no_base": 0.0032093914638407195,
+        "no_chaos": 0.0038802210797317578,
+        "no_chemistry": 0.003920229147464705,
+        "no_h": 0.0031472467689530477,
+        "no_information": 0.0038117472274006715,
+        "no_memory": 0.003916014812474309,
+        "no_physics": 0.003906454107938882,
+        "no_population": 0.0038415059478659717,
+        "no_q": 0.003917235029280487,
+        "no_rotor": 0.003804830405662233,
+        "scalar": 0.003107047592705434,
+        "signed_h32": 0.004180610710170413
+      },
+      "order": 1,
+      "status": "FAILED",
+      "tensor_to_h32_ratios": {
+        "blk.0.attn_k.weight": 0.96934971507264,
+        "blk.0.attn_output.weight": 0.9606971537175494,
+        "blk.0.attn_q.weight": 0.825574148010684,
+        "blk.17.ffn_down.weight": 0.9833348043124392,
+        "blk.29.ffn_down.weight": 0.8868793920522949,
+        "blk.3.ffn_up.weight": 0.951148146006601,
+        "blk.9.ffn_gate.weight": 0.9588107102317721,
+        "token_embd.weight": 0.9689352794154299
+      }
+    }
+  ],
+  "eligible_for_model_trials": [],
+  "experiment": "B01",
+  "failed_records": 0,
+  "measured": 1280,
+  "promoted": [],
+  "records": 1280,
+  "scope": "real-tensor screen, not full-model inference"
+}

@@ -1,0 +1,108 @@
+{
+  "final_gate": {
+    "status": "UNRUN"
+  },
+  "inference": [
+    {
+      "model": "adaptive-activation",
+      "ppl": 29.3378,
+      "reused": false,
+      "split": "selection"
+    },
+    {
+      "model": "adaptive-scalar",
+      "ppl": 29.2825,
+      "reused": false,
+      "split": "selection"
+    },
+    {
+      "model": "fixed4-activation",
+      "ppl": 31.2429,
+      "reused": true,
+      "split": "selection"
+    },
+    {
+      "model": "historical-budget120",
+      "ppl": 30.0986,
+      "reused": true,
+      "split": "selection"
+    },
+    {
+      "model": "source-f32",
+      "ppl": 26.7164,
+      "reused": true,
+      "split": "selection"
+    },
+    {
+      "model": "uniform6-activation",
+      "ppl": 26.9661,
+      "reused": false,
+      "split": "selection"
+    }
+  ],
+  "native_reports": 20,
+  "selection_gate": {
+    "checks": {
+      "history_bytes": true,
+      "history_ppl": true,
+      "native_fit_and_selection": true,
+      "scalar_bytes": true,
+      "scalar_ppl": false
+    },
+    "historical_bytes": 125809756,
+    "historical_ppl": 30.0986,
+    "principal_bytes": 83573330,
+    "principal_ppl": 29.3378,
+    "scalar_bytes": 84983143,
+    "scalar_ppl": 29.2825,
+    "status": "FAILED"
+  },
+  "source_sha256": "1311e9bd19e629ae5465c5739adb75fc3bb9144c624c70d3cdde32388c32d551",
+  "stages": [
+    {
+      "bytes": 73289998,
+      "failed_tensors": 25,
+      "model": "adaptive-activation",
+      "stage": 0,
+      "unchanged_records": 0
+    },
+    {
+      "bytes": 83573330,
+      "failed_tensors": 0,
+      "model": "adaptive-activation",
+      "stage": 1,
+      "unchanged_records": 247
+    },
+    {
+      "bytes": 71840979,
+      "failed_tensors": 50,
+      "model": "adaptive-scalar",
+      "stage": 0,
+      "unchanged_records": 0
+    },
+    {
+      "bytes": 83576761,
+      "failed_tensors": 2,
+      "model": "adaptive-scalar",
+      "stage": 1,
+      "unchanged_records": 222
+    },
+    {
+      "bytes": 83961027,
+      "failed_tensors": 2,
+      "model": "adaptive-scalar",
+      "stage": 2,
+      "unchanged_records": 270
+    },
+    {
+      "bytes": 84983143,
+      "failed_tensors": 0,
+      "model": "adaptive-scalar",
+      "stage": 3,
+      "unchanged_records": 270
+    }
+  ],
+  "status": "PASSED",
+  "summary_sha256": "43e55d66a7d61b26f4e240fc3416ae16a28b83fdc4a9e7be5fa1b5df2ab8dfa8",
+  "verified_tensors": 1904
+}

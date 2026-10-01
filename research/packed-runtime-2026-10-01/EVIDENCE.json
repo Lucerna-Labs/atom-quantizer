@@ -1,0 +1,32 @@
+{
+  "status": "SAVED",
+  "sha256": {
+    "research/packed-runtime-2026-10-01/OUTCOME.md": "46667b50638da63f4d763b4bba9fdaf9e451087b2a7245f282303a9cdf75fa14",
+    "research/packed-runtime-2026-10-01/PROTOCOL.md": "34c808e2090d1c237243ad60532da4bd82efb5df54be4d8ef0d0aa781f87e462",
+    "research/packed-runtime-2026-10-01/ISOLATION.json": "d2a2505c767468cea67d7e5dcf20f2f5d51710ae15637af413e846462fec9e91",
+    "research/packed-runtime-2026-10-01/OQ_REGRESSION.json": "c56adffac8843ec2b23a7cd22f50bf8dfb116afca7f137c9c1059d4d16c718d6",
+    "research/packed-runtime-2026-10-01/RELEASE.json": "cff8b0ff94bfc4f31a7bdbe27e641df189417295bcec8022759d3caa4703c2af",
+    "research/packed-runtime-2026-10-01/BACKUP.json": "9c57568b73b3e9b08829e7df69bfdc79ce1e4b2ac05da6bfc0ea25177737569a",
+    "research/packed-runtime-2026-10-01/AUDIT.json": "e6d5d9210cb9e5bea252096fe3e649a78f8e8b388d04688cc48d8f9287e2fa96",
+    "research/packed-runtime-2026-10-01/SUMMARY.JSON": "69962a1408c35398cd01c02628a97b8dffcc09689dbe6f17125b79637dcc1b60",
+    "research/packed-runtime-2026-10-01/MANIFEST.JSON": "a01810365a31a2e27cd2214f08bcc3c287263a897424da7a9007f02c89ff1de9",
+    "research/packed-runtime-2026-10-01/RUNTIME.JSON": "eaf38aed01b80c77b05f4ca2ae45c4611099709b21d17dec6ae6b3603b4a7334",
+    "artifacts/packed-runtime-2026-10-01/before-source.tar.gz": "8d0a50cd387a76d3097445dcdead4c42cfe4076c504d81ac96981c737fa348a4",
+    "artifacts/packed-runtime-2026-10-01/implementation-trial.tar.gz": "bfbed1f115eb588090c750fec8205f2dfa4111af146b86c629facd0ed1bb2ac0",
+    "artifacts/packed-runtime-2026-10-01/implementation-final.tar.gz": "ad8eacbb6807101d164fe9cc770122b7536e5271f2020af3dcb65b336dac96a5",
+    "artifacts/packed-runtime-2026-10-01/evidence.tar.gz": "a99b3655fb703f73b35f325df6e0cbd7829117d5634c6cbae88646f434b0bb88",
+    "artifacts/packed-runtime-2026-10-01/implementation.patch": "5ab9ad788eefd46e739108b6f59d314829c90a5d498a4ba1b46cd6b5028140b1",
+    "artifacts/packed-runtime-2026-10-01/tested-atom-quantizer": "e4c7b6f39ccc3d7509fd457d7b78dae247afe8b95bfebbace72cd3bef416b1cb",
+    "artifacts/packed-runtime-2026-10-01/tested-packed-probe": "a5a921068e9b7fe3650a7ff0fb6343a16453c59e247c38ff7a2560269a289ebd",
+    "artifacts/packed-runtime-2026-10-01/atom-quantizer-before-release": "d45eaa37c05ae4d08001e7b08ab3d90a0cfe9c970e03c0f06351558d6c9a400b",
+    "docs/PACKED_OPERATORS.md": "00f3c7254ff59c4ab60d8d87f9e4cb7b0e6db4c8e2fd722fda3868833ec200bf",
+    "artifacts/packed-runtime-2026-10-01/final-review.patch": "d4fb4ed7ab1b20a9af304987bc72990b214054c0e6eee3263b92189241fcdc0a"
+  },
+  "normal_binary_sha256": "e4c7b6f39ccc3d7509fd457d7b78dae247afe8b95bfebbace72cd3bef416b1cb",
+  "python_tests": 109,
+  "rust_tests": 72,
+  "actual_cpu_execution": true,
+  "cuda_compile_only": true,
+  "no_new_final_data": true,
+  "final_code_review_patch": "artifacts/packed-runtime-2026-10-01/final-review.patch"
+}

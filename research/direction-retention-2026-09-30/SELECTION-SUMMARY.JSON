@@ -1,0 +1,23 @@
+{
+  "comparisons": [
+    {
+      "activation_ppl": 79.6965,
+      "archive_bytes_ratio": 1.0125959539568172,
+      "bits": 3,
+      "diagonal_ppl": 79.8858,
+      "scalar_ppl": 90.0866,
+      "status": "MEASURED"
+    },
+    {
+      "activation_ppl": 34.0391,
+      "archive_bytes_ratio": 1.0103619202862302,
+      "bits": 4,
+      "diagonal_ppl": 33.8939,
+      "scalar_ppl": 35.2827,
+      "status": "FAILED"
+    }
+  ],
+  "eligible_for_final": [
+    3
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "adaptive-activation": {
+    "same_decoded_model": true,
+    "sha256": "7208fd04dab974cd6997a3ce62c99ea600afea87ef12543dc28ccc505b4fa89b"
+  },
+  "adaptive-scalar": {
+    "same_decoded_model": true,
+    "sha256": "3177529bb90e249d05b5cff8d929aab2df7aa48aad4ad6b925e1a1cdc08fd3a3"
+  }
+}

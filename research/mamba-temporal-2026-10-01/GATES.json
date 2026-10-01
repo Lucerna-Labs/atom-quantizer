@@ -1,0 +1,23 @@
+{
+  "status": "MEASURED",
+  "G2": {
+    "status": "FAILED",
+    "checks": {
+      "complete_bytes": true,
+      "native_ppl": true,
+      "teacher_kl": true,
+      "tail_state_nmse": false,
+      "finite": true
+    }
+  },
+  "G3": {
+    "status": "FAILED",
+    "checks": {
+      "complete_bytes": true,
+      "native_ppl": true,
+      "teacher_kl": true,
+      "tail_state_nmse": false,
+      "finite": true
+    }
+  }
+}

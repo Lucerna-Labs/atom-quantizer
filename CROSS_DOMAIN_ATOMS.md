@@ -2,9 +2,9 @@
 
 Atom Quantizer is interesting because its architecture does not treat quantization as one isolated numerical trick. It turns mechanisms from other disciplines into bounded atoms, composes them, and judges the composed result against explicit fidelity gates.
 
-> **Status boundary:** “Current path” means the atom is wired into the v0.2.3 adaptive codec path. “Discovery kit” means real source exists and can be exercised by stack search or the companion composer, but it is not part of every normal encode.
+> **Status boundary:** “Current path” means the atom is wired into the v0.2.4 main codec. Real calibration and global allocation require their CLI inputs. “Discovery kit” means source can be exercised by stack search or the companion composer; it does not imply a serialized codec or current-model validation.
 
-## Current v0.2.3 path
+## Current v0.2.4 path
 
 | Source domain | Atom | Borrowed invariant or behavior | Role in Atom Quantizer | Source surface |
 |---|---|---|---|---|
@@ -13,7 +13,11 @@ Atom Quantizer is interesting because its architecture does not treat quantizati
 | Linear algebra / vector geometry | Preserve row norm | L2 norm is restored independently for each eligible row | Repairs magnitude after inverse transform and decode | `src/main.rs`, `src/stacks.rs` |
 | Information theory | Bidirectional KL gate | Compare reference and reconstructed output distributions in both directions | Rejects a candidate when sampled distribution drift exceeds the ceiling | `src/main.rs`, `src/metrics.rs` |
 | Vector geometry | Cosine floor | Angular similarity catches structured weight drift that the Gaussian-input KL proxy missed | Mandatory second acceptance gate after the KL-only failure | `src/main.rs`, `src/wq.rs` |
-| Hashing / data integrity | `mix_u32` avalanche tag | Deterministic bit diffusion makes packed-code corruption detectable | Verifies every compressed tensor and every streamed `OQ02` record | `src/wq.rs`, `src/oq.rs` |
+| Hashing / data integrity | Full-record CRC64 and legacy `mix_u32` tag | Bind metadata and payload to their encoded byte representation | OQ03 verification covers transforms, norms, scales, types, shapes, names, and codes | `src/oq.rs`, `src/encoded.rs` |
+| System identification / geometry | Real operator output MSE | Measure errors on observed linear inputs and embedding lookups, including scale/common-mode changes | Additional calibrated acceptance gate, bound to source SHA-256 | `src/calibration.rs`, `src/metrics.rs`, `src/main.rs` |
+| Least squares / scalar coding | Q2 scale and affine-grid fitting | Allocate reconstruction levels to reduce weighted error | Packed symmetric and affine Q2 candidates with no extra metadata | `src/wq.rs` |
+| Rate–distortion / operations research | Global byte allocator | Spend a shared resource budget across accepted candidates | Complete byte accounting with deterministic Lagrangian selection and marginal filling | `src/allocation.rs`, `src/main.rs` |
+| Information representation / decoder contracts | Complete stored recipe | Every accepted reconstruction must be reproducible from stored state | Serialize before scoring; exact escape and final storage rounding | `src/encoded.rs`, `src/oq.rs` |
 
 The current composition is:
 
@@ -22,7 +26,7 @@ FAST TRANSFORMS        QUANTIZATION       DSP REPAIR        GEOMETRY
 rowH8              →   Q2 / Q4 / Q8   →   blind RF      →   preserve L2
                                                                   ↓
 DATA INTEGRITY      ←                INFORMATION THEORY + VECTOR GEOMETRY
-mix_u32 verify                         KL ceiling + cosine floor
+CRC64 + decode verify                  KL + cosine + optional real-output MSE
 ```
 
 ## Discovery and composer atoms
@@ -38,7 +42,9 @@ mix_u32 verify                         KL ceiling + cosine floor
 | Optics-inspired routing metaphor | `refract` bulk/tail split | Route the dense bulk and sparse tail through different quantizers, then stitch original positions back together | Stack-search and Composer 2 candidate |
 | Ensemble error cancellation | `superpose` | Blend symmetric and asymmetric reconstructions so partially independent errors can cancel | Discovery quantizer in `src/stacks.rs` |
 
-“Optics-inspired” describes the routing abstraction; the implementation is a measurable bulk/tail partition, not a claim that it simulates physical optics. Similarly, the integrity tag is an avalanche check, not a cryptographic authentication primitive.
+"Optics-inspired" describes the routing abstraction; the implementation is a measurable bulk/tail partition, not a claim that it simulates physical optics. The record CRC and legacy avalanche tag detect accidental corruption; they do not authenticate a publisher. SHA-256 binds calibration to a source file and corpus.
+
+The [22-principle study](research/first-principles-2026-09-05/REPORT.md) supplies additional hypotheses. The initial foundations have a [real-model benchmark](docs/FOUNDATION_BENCHMARK.md); lattice, trellis, low-rank, graph, predictive, and other proposed extensions remain separate research work.
 
 ## The architectural rule
 

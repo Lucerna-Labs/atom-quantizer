@@ -292,6 +292,34 @@ pub fn softmax_batch(ys: &[Vec<f32>]) -> Vec<Vec<f32>> {
     ys.iter().map(|y| softmax(y)).collect()
 }
 
+/// Unsoftmaxed output MSE divided by reference output energy. This observes
+/// scale and common-mode shifts that cosine or softmax can hide.
+pub fn relative_output_mse(reference: &[Vec<f32>], candidate: &[Vec<f32>]) -> Result<f64, String> {
+    if reference.is_empty() || reference.len() != candidate.len() {
+        return Err("output batches must be nonempty and have matching sizes".into());
+    }
+    let (mut error, mut energy) = (0.0f64, 0.0f64);
+    for (a, b) in reference.iter().zip(candidate) {
+        if a.is_empty() || a.len() != b.len() {
+            return Err("output shape mismatch".into());
+        }
+        for (&x, &y) in a.iter().zip(b) {
+            if !x.is_finite() || !y.is_finite() {
+                return Err("nonfinite operator output".into());
+            }
+            error += (x as f64 - y as f64).powi(2);
+            energy += (x as f64).powi(2);
+        }
+    }
+    Ok(if energy > 0.0 {
+        error / energy
+    } else if error == 0.0 {
+        0.0
+    } else {
+        f64::INFINITY
+    })
+}
+
 /// Bidirectional KL when the reference softmax is already cached.
 pub fn bidirectional_kl_cached(ps_orig: &[Vec<f32>], ys_quant: &[Vec<f32>]) -> (f64, f64) {
     let k = ps_orig.len().min(ys_quant.len()).max(1);
@@ -345,6 +373,14 @@ pub fn kl_histogram_bidirectional(orig: &[f32], quant: &[f32], bins: usize) -> (
 #[cfg(test)]
 mod tests {
     use super::*;
+
+    #[test]
+    fn output_mse_observes_softmax_common_mode_blind_spot() {
+        let a = vec![vec![0.25, 0.5, -0.25, -0.5]];
+        let b = vec![vec![4.25, 4.5, 3.75, 3.5]];
+        assert_eq!(bidirectional_kl_from_ys(&a, &b), (0.0, 0.0));
+        assert!(relative_output_mse(&a, &b).unwrap() > 1.0);
+    }
 
     #[test]
     fn kl_identical_distributions_is_zero() {

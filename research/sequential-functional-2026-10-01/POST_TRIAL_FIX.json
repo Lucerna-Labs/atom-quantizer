@@ -1,0 +1,26 @@
+{
+  "status": "PASSED",
+  "W1_selection_capture_identical": true,
+  "capture_sha256": "d52abd319ccf0f2e5cff4ecf80e77670e7d8a403a52c72733bd29dc479312e34",
+  "original_checkpoint_install_identical": true,
+  "original_verified_tensors": 272,
+  "architecture_fields_checked": 12,
+  "python_tests_passed": 91,
+  "source_files": {
+    "experiments/full22/gguf_weights.py": "071fcd391f89388543ea10f24abec648387fe705784b9600c95cf060db969ac2",
+    "experiments/full22/capture.py": "264f14d5e750ca74caac671815d3571d4c8c70a4609a4ad9aba2139b2d1fb167",
+    "tests/test_sequential_functional.py": "db12c796aa9f253eeb19659d7ccab909613fa92299f60bb40efbe607b699b720"
+  },
+  "trial_snapshot": "implementation-corrected.tar.gz",
+  "current_source_differs_only_by_post_trial_loading_validation": true,
+  "verified_changed_trial_files": {
+    "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/experiments/full22/capture.py": {
+      "trial": "7769828ff256217278ece5bcb8bdca8206d4673a4e4ae852bd7d5e8c9ccda994",
+      "current": "264f14d5e750ca74caac671815d3571d4c8c70a4609a4ad9aba2139b2d1fb167"
+    },
+    "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/experiments/full22/gguf_weights.py": {
+      "trial": "e6ff0cd4e1b4ca402a5c7112674fe0701db7b8c03bc943e9539aa84eeb615a49",
+      "current": "071fcd391f89388543ea10f24abec648387fe705784b9600c95cf060db969ac2"
+    }
+  }
+}

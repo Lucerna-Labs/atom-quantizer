@@ -1,0 +1,149 @@
+{
+  "G2": {
+    "dense_loaded_rss_kib": 540688,
+    "packed_loaded_rss_kib": 134648,
+    "ratio": 0.2490308643801971,
+    "status": "MEASURED"
+  },
+  "G3": {
+    "1": {
+      "fused": {
+        "blas": {
+          "geometric_mean_latency_ratio": 46.280740422096294,
+          "status": "FAILED"
+        },
+        "native": {
+          "geometric_mean_latency_ratio": 5.53145839065804,
+          "status": "FAILED"
+        }
+      },
+      "row": {
+        "blas": {
+          "geometric_mean_latency_ratio": 51.9715338180486,
+          "status": "FAILED"
+        },
+        "native": {
+          "geometric_mean_latency_ratio": 6.211620086267227,
+          "status": "FAILED"
+        }
+      }
+    },
+    "32": {
+      "fused": {
+        "blas": {
+          "geometric_mean_latency_ratio": 10.195115724481962,
+          "status": "FAILED"
+        },
+        "native": {
+          "geometric_mean_latency_ratio": 1.5402849435637174,
+          "status": "FAILED"
+        }
+      },
+      "row": {
+        "blas": {
+          "geometric_mean_latency_ratio": 9.530955560839212,
+          "status": "FAILED"
+        },
+        "native": {
+          "geometric_mean_latency_ratio": 1.4399431791522375,
+          "status": "FAILED"
+        }
+      }
+    },
+    "8": {
+      "fused": {
+        "blas": {
+          "geometric_mean_latency_ratio": 11.10946765444574,
+          "status": "FAILED"
+        },
+        "native": {
+          "geometric_mean_latency_ratio": 2.167967145410449,
+          "status": "FAILED"
+        }
+      },
+      "row": {
+        "blas": {
+          "geometric_mean_latency_ratio": 11.186621020485084,
+          "status": "FAILED"
+        },
+        "native": {
+          "geometric_mean_latency_ratio": 2.1830233090299704,
+          "status": "FAILED"
+        }
+      }
+    }
+  },
+  "auditor_sha256": "6546c4100b3c4af29ced9537663f58cbaac1a6914021e16163fc2c13915217db",
+  "external_memory": {
+    "dense": {
+      "os_max_rss_kib": 540520,
+      "result": {
+        "batch": 1,
+        "before": {
+          "VmHWM": 2252,
+          "VmRSS": 2252
+        },
+        "input_sha256": "d6babc2104a969d63b7db3d8be5675b53e8ece4f8fd3bcc8be0eda121c1189b2",
+        "measurements": {
+          "after_operation": {
+            "VmHWM": 540636,
+            "VmRSS": 540636
+          },
+          "archive_sha256": "27d36037a432c5cefeeb0c1f62505377f469365027e00372d30b1840c4608a83",
+          "decoded_weight_bytes": 538060032,
+          "load_seconds": 1.311289248,
+          "loaded": {
+            "VmHWM": 540636,
+            "VmRSS": 540636
+          },
+          "output_bytes": 196608,
+          "output_sha256": "68e8efdda72b7b008e2e1bba75c23121d05361f762d7f8cea4bc2aec10314ed5",
+          "owned_tensor_bytes": 538076952,
+          "prefix_bytes": 1786080,
+          "tensors": 272
+        },
+        "mode": "dense",
+        "status": "MEASURED",
+        "tensor": "token_embd.weight"
+      },
+      "time_log_sha256": "e3ae5bba00341c6efee1886e9bde3d63ee0859bbc10e76e268014b119c78b5a5"
+    },
+    "packed": {
+      "os_max_rss_kib": 134512,
+      "result": {
+        "batch": 1,
+        "before": {
+          "VmHWM": 2204,
+          "VmRSS": 2204
+        },
+        "input_sha256": "d6babc2104a969d63b7db3d8be5675b53e8ece4f8fd3bcc8be0eda121c1189b2",
+        "measurements": {
+          "after_operation": {
+            "VmHWM": 134584,
+            "VmRSS": 134584
+          },
+          "archive_sha256": "27d36037a432c5cefeeb0c1f62505377f469365027e00372d30b1840c4608a83",
+          "decoded_weight_bytes": 538060032,
+          "load_seconds": 0.975126118,
+          "loaded": {
+            "VmHWM": 134584,
+            "VmRSS": 134584
+          },
+          "output_bytes": 196608,
+          "output_sha256": "68e8efdda72b7b008e2e1bba75c23121d05361f762d7f8cea4bc2aec10314ed5",
+          "owned_tensor_bytes": 130850892,
+          "prefix_bytes": 1786080,
+          "tensors": 272
+        },
+        "mode": "packed",
+        "status": "MEASURED",
+        "tensor": "token_embd.weight"
+      },
+      "time_log_sha256": "4821c0518be023d1d4149e8fdb666855875ac3614a46ac78bc92a2c6a070edfc"
+    }
+  },
+  "independent_real_output_cases": 633,
+  "retained_timing_samples": 1320,
+  "status": "PASSED",
+  "timing_cases": 24
+}

@@ -1,0 +1,128 @@
+{
+  "source_sha256": "3a4b925d3e7e6bde08b6f63fbc9fca48e632f7746847653d795c34cfc099f793",
+  "source_bytes": 518323392,
+  "tensors": 242,
+  "parameters": 129135360,
+  "transition_inversion": [
+    {
+      "tensor": "blk.0.ssm_a",
+      "log_roundtrip_mismatch": 110,
+      "unrecovered": 0
+    },
+    {
+      "tensor": "blk.1.ssm_a",
+      "log_roundtrip_mismatch": 76,
+      "unrecovered": 0
+    },
+    {
+      "tensor": "blk.10.ssm_a",
+      "log_roundtrip_mismatch": 147,
+      "unrecovered": 0
+    },
+    {
+      "tensor": "blk.11.ssm_a",
+      "log_roundtrip_mismatch": 139,
+      "unrecovered": 0
+    },
+    {
+      "tensor": "blk.12.ssm_a",
+      "log_roundtrip_mismatch": 104,
+      "unrecovered": 0
+    },
+    {
+      "tensor": "blk.13.ssm_a",
+      "log_roundtrip_mismatch": 110,
+      "unrecovered": 0
+    },
+    {
+      "tensor": "blk.14.ssm_a",
+      "log_roundtrip_mismatch": 116,
+      "unrecovered": 0
+    },
+    {
+      "tensor": "blk.15.ssm_a",
+      "log_roundtrip_mismatch": 82,
+      "unrecovered": 0
+    },
+    {
+      "tensor": "blk.16.ssm_a",
+      "log_roundtrip_mismatch": 97,
+      "unrecovered": 0
+    },
+    {
+      "tensor": "blk.17.ssm_a",
+      "log_roundtrip_mismatch": 111,
+      "unrecovered": 0
+    },
+    {
+      "tensor": "blk.18.ssm_a",
+      "log_roundtrip_mismatch": 99,
+      "unrecovered": 0
+    },
+    {
+      "tensor": "blk.19.ssm_a",
+      "log_roundtrip_mismatch": 41,
+      "unrecovered": 0
+    },
+    {
+      "tensor": "blk.2.ssm_a",
+      "log_roundtrip_mismatch": 47,
+      "unrecovered": 0
+    },
+    {
+      "tensor": "blk.20.ssm_a",
+      "log_roundtrip_mismatch": 36,
+      "unrecovered": 0
+    },
+    {
+      "tensor": "blk.21.ssm_a",
+      "log_roundtrip_mismatch": 103,
+      "unrecovered": 0
+    },
+    {
+      "tensor": "blk.22.ssm_a",
+      "log_roundtrip_mismatch": 110,
+      "unrecovered": 0
+    },
+    {
+      "tensor": "blk.23.ssm_a",
+      "log_roundtrip_mismatch": 96,
+      "unrecovered": 0
+    },
+    {
+      "tensor": "blk.3.ssm_a",
+      "log_roundtrip_mismatch": 70,
+      "unrecovered": 0
+    },
+    {
+      "tensor": "blk.4.ssm_a",
+      "log_roundtrip_mismatch": 102,
+      "unrecovered": 0
+    },
+    {
+      "tensor": "blk.5.ssm_a",
+      "log_roundtrip_mismatch": 109,
+      "unrecovered": 0
+    },
+    {
+      "tensor": "blk.6.ssm_a",
+      "log_roundtrip_mismatch": 105,
+      "unrecovered": 0
+    },
+    {
+      "tensor": "blk.7.ssm_a",
+      "log_roundtrip_mismatch": 121,
+      "unrecovered": 0
+    },
+    {
+      "tensor": "blk.8.ssm_a",
+      "log_roundtrip_mismatch": 123,
+      "unrecovered": 0
+    },
+    {
+      "tensor": "blk.9.ssm_a",
+      "log_roundtrip_mismatch": 120,
+      "unrecovered": 0
+    }
+  ]
+}

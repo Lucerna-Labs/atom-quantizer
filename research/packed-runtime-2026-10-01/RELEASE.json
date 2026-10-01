@@ -1,0 +1,30 @@
+{
+  "status": "PASSED",
+  "binary": "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/target/release/atom-quantizer",
+  "binary_sha256": "e4c7b6f39ccc3d7509fd457d7b78dae247afe8b95bfebbace72cd3bef416b1cb",
+  "matches_benchmarked_binary": true,
+  "actual_normal_path_apply": {
+    "archive_sha256": "27d36037a432c5cefeeb0c1f62505377f469365027e00372d30b1840c4608a83",
+    "backend": "native_cpu_packed",
+    "batch": 1,
+    "columns": 576,
+    "input_layout": "batch_by_columns_f32_le",
+    "input_sha256": "d6babc2104a969d63b7db3d8be5675b53e8ece4f8fd3bcc8be0eda121c1189b2",
+    "kernel": "fused",
+    "output": "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/packed-runtime-2026-10-01/normal-output.f32",
+    "output_bytes": 196608,
+    "output_layout": "batch_by_rows_f32_le",
+    "output_sha256": "68e8efdda72b7b008e2e1bba75c23121d05361f762d7f8cea4bc2aec10314ed5",
+    "owned_tensor_bytes": 27140870,
+    "rows": 49152,
+    "scope": "selected_tensor",
+    "status": "PUBLISHED",
+    "tensor": "token_embd.weight"
+  },
+  "decoded_sha256": "4c9d806f45ec68dda196a966421857a7ff6d21c96e1dfe2393b378c82a2552d8",
+  "complete_tensors": 272,
+  "backup": {
+    "path": "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/packed-runtime-2026-10-01/atom-quantizer-before-release",
+    "sha256": "d45eaa37c05ae4d08001e7b08ab3d90a0cfe9c970e03c0f06351558d6c9a400b"
+  }
+}

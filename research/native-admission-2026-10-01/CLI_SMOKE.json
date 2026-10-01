@@ -1,0 +1,88 @@
+{
+  "format": "native-fidelity-1",
+  "version": "0.2.4",
+  "backend": "cpu",
+  "scope": "decoded_tensor_fidelity",
+  "dimension_order": "gguf_innermost_first",
+  "source": "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/native-admission-2026-10-01/regression/source.gguf",
+  "candidate": "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/native-admission-2026-10-01/regression/source.gguf",
+  "calibration": "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/native-admission-2026-10-01/regression/fit.acal",
+  "source_sha256": "5204cd97532f10299ab2bb55858502c2a30caf7632490e8b0d6d76379d3ca010",
+  "candidate_sha256": "5204cd97532f10299ab2bb55858502c2a30caf7632490e8b0d6d76379d3ca010",
+  "calibration_sha256": "203b90431285a6ceb8e8aeee1ec367e481157b63adacced61d4e2fe14f98fb0b",
+  "source_header_sha256": "127e67feb630854f578731fe48f7e489511a239fa219e0e8ccae72f64625ada0",
+  "candidate_header_sha256": "127e67feb630854f578731fe48f7e489511a239fa219e0e8ccae72f64625ada0",
+  "headers_identical": true,
+  "max_output_mse": 0.02,
+  "tensor_count": 2,
+  "passed_count": 2,
+  "failed_count": 0,
+  "gate_failures": {
+    "kl": 0,
+    "cosine": 0,
+    "output_mse": 0
+  },
+  "unused_calibration_entries": [],
+  "all_passed": true,
+  "tensors": [
+    {
+      "name": "blk.0.attn_q.weight",
+      "dimensions": [
+        32,
+        4
+      ],
+      "source_type": 0,
+      "candidate_type": 0,
+      "protected": false,
+      "observation": "linear",
+      "samples": 8,
+      "output_gate_required": true,
+      "kl_forward": 0,
+      "kl_reverse": 0,
+      "cosine": 1,
+      "output_mse": 0,
+      "output_mse_state": "finite",
+      "limits": {
+        "kl": 1,
+        "cosine": 0.9900000095367432,
+        "output_mse": 0.02
+      },
+      "gates": {
+        "kl": true,
+        "cosine": true,
+        "output_mse": true
+      },
+      "passed": true
+    },
+    {
+      "name": "blk.1.attn_q.weight",
+      "dimensions": [
+        32,
+        4
+      ],
+      "source_type": 0,
+      "candidate_type": 0,
+      "protected": false,
+      "observation": "linear",
+      "samples": 8,
+      "output_gate_required": true,
+      "kl_forward": 0,
+      "kl_reverse": 0,
+      "cosine": 1,
+      "output_mse": 0,
+      "output_mse_state": "finite",
+      "limits": {
+        "kl": 1,
+        "cosine": 0.9900000095367432,
+        "output_mse": 0.02
+      },
+      "gates": {
+        "kl": true,
+        "cosine": true,
+        "output_mse": true
+      },
+      "passed": true
+    }
+  ],
+  "command_scope": "small read-only identity CLI smoke"
+}

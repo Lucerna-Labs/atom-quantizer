@@ -339,24 +339,78 @@ fn refract_q2_recon(data: &[f32]) -> Vec<f32> {
     out
 }
 
-pub fn q2_bits_per_w(
-    n_elems: usize,
-    out_len: usize,
-    _in_len: usize,
-    k_extract: usize,
-    use_row_dc: bool,
-    add_asym_scale: bool,
-) -> f64 {
-    let codes_bits = 2.0f64 * n_elems as f64;
-    let n_blocks = n_elems.div_ceil(BLOCK) as f64;
-    let scale_bits = if add_asym_scale { 64.0 } else { 32.0 } * n_blocks;
-    let outlier_bits = 8.0 * 8.0 * k_extract as f64 * n_blocks;
-    let rowdc_bits = if use_row_dc {
-        16.0 * out_len as f64
+/// Estimated packed payload, excluding an as-yet undefined record/container header.
+/// Side data uses the f32 precision actually used by the reconstruction.
+pub fn estimated_bits_per_weight(n: usize, rows: usize, cols: usize, stack: &Q2Stack) -> f64 {
+    let blocks = n.div_ceil(BLOCK);
+    let streams = if stack.quant == Q2Quant::Superpose {
+        2
     } else {
-        0.0
+        1
     };
-    (codes_bits + scale_bits + outlier_bits + rowdc_bits) / n_elems.max(1) as f64
+    let code_bytes = n.div_ceil(4) * streams;
+    let scale_bytes = blocks
+        * match stack.quant {
+            Q2Quant::Sym => 4,
+            Q2Quant::Asym => 8,
+            Q2Quant::Superpose | Q2Quant::Refract => 12,
+        };
+    let mask_bytes = if stack.quant == Q2Quant::Refract {
+        n.div_ceil(8)
+    } else {
+        0
+    };
+    let k = stack.k_extract.min(BLOCK);
+    let exceptions = n / BLOCK * k + (n % BLOCK).min(k);
+    let row_fields = if rows > 1 && cols > 1 {
+        usize::from(stack.pre == Q2Pre::RowDc) + usize::from(stack.post == Q2Post::Preserve)
+    } else {
+        0
+    };
+    let bytes = code_bytes + scale_bytes + mask_bytes + exceptions * 8 + row_fields * rows * 4;
+    8.0 * bytes as f64 / n.max(1) as f64
+}
+
+#[cfg(test)]
+mod storage_tests {
+    use super::*;
+
+    #[test]
+    fn estimates_charge_all_streams_masks_row_state_and_partial_blocks() {
+        let base = Q2Stack {
+            name: "test",
+            pre: Q2Pre::Null,
+            k_extract: 0,
+            quant: Q2Quant::Sym,
+            post: Q2Post::Null,
+        };
+        assert_eq!(estimated_bits_per_weight(32, 1, 32, &base), 3.0);
+        let superposed = Q2Stack {
+            quant: Q2Quant::Superpose,
+            ..base
+        };
+        assert_eq!(estimated_bits_per_weight(32, 1, 32, &superposed), 7.0);
+        let refracted = Q2Stack {
+            quant: Q2Quant::Refract,
+            ..base
+        };
+        assert_eq!(estimated_bits_per_weight(32, 1, 32, &refracted), 6.0);
+        let rows = Q2Stack {
+            pre: Q2Pre::RowDc,
+            post: Q2Post::Preserve,
+            k_extract: 4,
+            ..base
+        };
+        assert_eq!(estimated_bits_per_weight(64, 2, 32, &rows), 13.0);
+        let partial = Q2Stack {
+            k_extract: 4,
+            ..base
+        };
+        assert_eq!(
+            estimated_bits_per_weight(33, 1, 33, &partial) * 33.0 / 8.0,
+            57.0
+        );
+    }
 }
 
 // ─────────────────────── Composer 2 candidate stacks ───────────────────────
@@ -560,7 +614,7 @@ pub fn apply_q2_composer(w1: &[f32], stack: &Q2Stack, out_len: usize, in_len: us
     recon
 }
 
-// ─────────────────────── Composer 1 emulation ───────────────────────
+// ─────────────────────── Legacy cosine-only Composer 1 approximation ───────
 
 pub fn apply_composer1(w: &[f32], out_len: usize, in_len: usize) -> (Vec<f32>, wq::QuantStrategy) {
     use wq::{cosine, encode_with, expand, WqConfig, CANDIDATES};

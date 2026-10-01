@@ -1,0 +1,24 @@
+{
+  "corpus_sha256": "42ad320614e02063e1a484efb02fcf2c58f81552aef71ef0468cbd4cb7f68bbd",
+  "models": [
+    "historical-budget120",
+    "q3-EE-r1",
+    "q3-EI-r1",
+    "q3-IE-r1",
+    "q3-II-r1",
+    "q3-diagonal-r1",
+    "q3-scalar-E",
+    "q3-scalar-I",
+    "q4-EE-r1",
+    "q4-EE-r2",
+    "q4-EI-r2",
+    "q4-IE-r2",
+    "q4-II-r2",
+    "q4-diagonal-r1",
+    "q4-diagonal-r2",
+    "q4-scalar-E",
+    "q4-scalar-I",
+    "source-f32"
+  ],
+  "status": "COMPLETED"
+}

@@ -1,0 +1,273 @@
+{
+  "auditor_sha256": "c57de1bb2c2a23c8d650b3508404d9df043a961af09f1a1e6a3950ccabf3f723",
+  "capture_changes": {
+    "fit-endpoints": {
+      "changed_linear_inputs": 211,
+      "identical_embedding_indices": true
+    },
+    "fit-stratified": {
+      "changed_linear_inputs": 211,
+      "identical_embedding_indices": true
+    },
+    "selection-endpoints": {
+      "changed_linear_inputs": 211,
+      "identical_embedding_indices": true
+    },
+    "selection-stratified": {
+      "changed_linear_inputs": 211,
+      "identical_embedding_indices": true
+    }
+  },
+  "checked_tensors": 1088,
+  "final_gate": {
+    "reason": "selection did not qualify",
+    "status": "UNRUN"
+  },
+  "inference": [
+    {
+      "name": "historical-budget120",
+      "ppl": 30.0986,
+      "reused": true,
+      "split": "selection_scores"
+    },
+    {
+      "name": "sequential-activation",
+      "ppl": 30.5199,
+      "reused": false,
+      "split": "selection_scores"
+    },
+    {
+      "name": "sequential-scalar",
+      "ppl": 30.605,
+      "reused": false,
+      "split": "selection_scores"
+    },
+    {
+      "name": "six-activation",
+      "ppl": 26.9661,
+      "reused": true,
+      "split": "selection_scores"
+    },
+    {
+      "name": "six-scalar",
+      "ppl": 27.1168,
+      "reused": true,
+      "split": "selection_scores"
+    },
+    {
+      "name": "source-f32",
+      "ppl": 26.7164,
+      "reused": true,
+      "split": "selection_scores"
+    }
+  ],
+  "native_comparisons": {
+    "sequential-activation": {
+      "W-fit-0": {
+        "failed_tensors": [
+          "blk.0.attn_output.weight"
+        ],
+        "gate_failures": {
+          "cosine": 1,
+          "kl": 0,
+          "output_mse": 0
+        }
+      },
+      "W-fit-1": {
+        "failed_tensors": [
+          "blk.0.attn_output.weight",
+          "blk.28.attn_output.weight"
+        ],
+        "gate_failures": {
+          "cosine": 1,
+          "kl": 0,
+          "output_mse": 1
+        }
+      },
+      "W-selection-0": {
+        "failed_tensors": [
+          "blk.0.attn_output.weight"
+        ],
+        "gate_failures": {
+          "cosine": 1,
+          "kl": 0,
+          "output_mse": 0
+        }
+      },
+      "W-selection-1": {
+        "failed_tensors": [
+          "blk.0.attn_output.weight",
+          "blk.28.attn_output.weight"
+        ],
+        "gate_failures": {
+          "cosine": 1,
+          "kl": 0,
+          "output_mse": 1
+        }
+      },
+      "W1-fit-0": {
+        "failed_tensors": [],
+        "gate_failures": {
+          "cosine": 0,
+          "kl": 0,
+          "output_mse": 0
+        }
+      },
+      "W1-fit-1": {
+        "failed_tensors": [],
+        "gate_failures": {
+          "cosine": 0,
+          "kl": 0,
+          "output_mse": 0
+        }
+      },
+      "W1-selection-0": {
+        "failed_tensors": [],
+        "gate_failures": {
+          "cosine": 0,
+          "kl": 0,
+          "output_mse": 0
+        }
+      },
+      "W1-selection-1": {
+        "failed_tensors": [],
+        "gate_failures": {
+          "cosine": 0,
+          "kl": 0,
+          "output_mse": 0
+        }
+      }
+    },
+    "sequential-scalar": {
+      "W-fit-0": {
+        "failed_tensors": [
+          "blk.0.attn_output.weight"
+        ],
+        "gate_failures": {
+          "cosine": 1,
+          "kl": 0,
+          "output_mse": 0
+        }
+      },
+      "W-fit-1": {
+        "failed_tensors": [
+          "blk.0.attn_output.weight",
+          "blk.28.attn_output.weight"
+        ],
+        "gate_failures": {
+          "cosine": 1,
+          "kl": 0,
+          "output_mse": 1
+        }
+      },
+      "W-selection-0": {
+        "failed_tensors": [
+          "blk.0.attn_output.weight"
+        ],
+        "gate_failures": {
+          "cosine": 1,
+          "kl": 0,
+          "output_mse": 0
+        }
+      },
+      "W-selection-1": {
+        "failed_tensors": [
+          "blk.0.attn_output.weight",
+          "blk.28.attn_output.weight"
+        ],
+        "gate_failures": {
+          "cosine": 1,
+          "kl": 0,
+          "output_mse": 1
+        }
+      },
+      "W1-fit-0": {
+        "failed_tensors": [],
+        "gate_failures": {
+          "cosine": 0,
+          "kl": 0,
+          "output_mse": 0
+        }
+      },
+      "W1-fit-1": {
+        "failed_tensors": [],
+        "gate_failures": {
+          "cosine": 0,
+          "kl": 0,
+          "output_mse": 0
+        }
+      },
+      "W1-selection-0": {
+        "failed_tensors": [],
+        "gate_failures": {
+          "cosine": 0,
+          "kl": 0,
+          "output_mse": 0
+        }
+      },
+      "W1-selection-1": {
+        "failed_tensors": [],
+        "gate_failures": {
+          "cosine": 0,
+          "kl": 0,
+          "output_mse": 0
+        }
+      }
+    }
+  },
+  "native_reports": 24,
+  "native_tensor_decisions": 6528,
+  "selection_gate": {
+    "G3": {
+      "checks": {
+        "W1_bytes": true,
+        "W1_ppl": false,
+        "all_W_and_W1_native_views": false,
+        "scalar_bytes": true,
+        "scalar_ppl": true
+      },
+      "status": "FAILED"
+    },
+    "G4": {
+      "checks": {
+        "direct_bytes": false,
+        "direct_ppl": false
+      },
+      "status": "FAILED"
+    },
+    "status": "FAILED"
+  },
+  "stages": [
+    {
+      "archive_bytes": 108877811,
+      "failures": 3,
+      "name": "sequential-scalar",
+      "retained_records": 0,
+      "stage": 0
+    },
+    {
+      "archive_bytes": 109323553,
+      "failures": 2,
+      "name": "sequential-scalar",
+      "retained_records": 269,
+      "stage": 1
+    },
+    {
+      "archive_bytes": 112135705,
+      "failures": 0,
+      "name": "sequential-scalar",
+      "retained_records": 270,
+      "stage": 2
+    },
+    {
+      "archive_bytes": 110271260,
+      "failures": 0,
+      "name": "sequential-activation",
+      "retained_records": 0,
+      "stage": 0
+    }
+  ],
+  "status": "PASSED",
+  "summary_sha256": "a69f2b3f510828ebcb3dd2a31e990a94323299f920ea7e5da71b0133f70ce1a2",
+  "weight_errors_sha256": "c8a377a069fd841cfd4e6d8e2d436b3ea8843e7ff50a98c48ff056f18a40e8cb"
+}

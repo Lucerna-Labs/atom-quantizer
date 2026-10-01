@@ -1,0 +1,174 @@
+{
+  "checks": {
+    "q3-IE-r1": {
+      "added_bytes": 22848,
+      "committed_tensors": 272,
+      "decoded_sha256": "c124c0d1f48219e0b28a2dbfe5bcb42bd4a14ca9b32b32be5f36c23bcd4016ad",
+      "identical_records": 272,
+      "new_archive_bytes": 59263660,
+      "old_archive_bytes": 59240812,
+      "standalone_export": {
+        "bytes": 539846112,
+        "decoded_verified_tensors": 272,
+        "destination": "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/decoder-reproducibility-2026-10-01/models-check/models/q3-IE-r1.gguf",
+        "format": "A22-2",
+        "sha256": "c124c0d1f48219e0b28a2dbfe5bcb42bd4a14ca9b32b32be5f36c23bcd4016ad"
+      }
+    },
+    "q4-IE-r2": {
+      "added_bytes": 22848,
+      "committed_tensors": 272,
+      "decoded_sha256": "7208fd04dab974cd6997a3ce62c99ea600afea87ef12543dc28ccc505b4fa89b",
+      "identical_records": 272,
+      "new_archive_bytes": 73291645,
+      "old_archive_bytes": 73268797,
+      "standalone_export": {
+        "bytes": 539846112,
+        "decoded_verified_tensors": 272,
+        "destination": "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/decoder-reproducibility-2026-10-01/models-check/models/q4-IE-r2.gguf",
+        "format": "A22-2",
+        "sha256": "7208fd04dab974cd6997a3ce62c99ea600afea87ef12543dc28ccc505b4fa89b"
+      }
+    }
+  },
+  "default_numerics_changed": false,
+  "failure_injection": {
+    "actual_hash": "3b87f8e27335e67fc08f159cabfd2d18f205d6c5b225a6f978153552bf01d559",
+    "injected_fault": true,
+    "publication_rejected": true,
+    "staging_removed": true,
+    "status": "PASSED",
+    "tensor": "output_norm.weight",
+    "test_archive_sha256": "ab09818e70004091c4d4436efdeb80779df2bf004a41e8bf917834811b00060b"
+  },
+  "legacy_export": {
+    "bytes": 539846112,
+    "decoded_verified_tensors": 0,
+    "destination": "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/decoder-reproducibility-2026-10-01/models-check/legacy-redecode.gguf",
+    "format": "A22-1",
+    "sha256": "7208fd04dab974cd6997a3ce62c99ea600afea87ef12543dc28ccc505b4fa89b"
+  },
+  "models": {
+    "q3-IE-r1": {
+      "archive": "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/decoder-reproducibility-2026-10-01/models-check/models/q3-IE-r1.a22",
+      "archive_bytes": 59263660,
+      "archive_sha256": "bf9b7d6b6e47541f3b34ae204d95869b1e2900e1a07ead067bcc1c2eb421f978",
+      "calibration_sha256": "29d09e1701dc329cee26fd636dd1d492c3e29b1e1c3d17d28e2c777a52e9a2c4",
+      "config": {
+        "bits": 3,
+        "rank": 1,
+        "rank_geometry": "activation"
+      },
+      "decoded": "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/decoder-reproducibility-2026-10-01/models-check/models/q3-IE-r1.gguf",
+      "decoded_sha256": "c124c0d1f48219e0b28a2dbfe5bcb42bd4a14ca9b32b32be5f36c23bcd4016ad",
+      "name": "q3-IE-r1",
+      "residual_calibration_sha256": "f5e6d79eb6b552da48cf976ea4c114d0ac387689ef42de5fa8746e257056431f",
+      "standalone_source_and_calibration_opens_denied": true,
+      "status": "MEASURED",
+      "verified_tensors": 272
+    },
+    "q4-IE-r2": {
+      "archive": "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/decoder-reproducibility-2026-10-01/models-check/models/q4-IE-r2.a22",
+      "archive_bytes": 73291645,
+      "archive_sha256": "e032b22b598a7c64dc412d7bd186d340a5607f208f127363e463a70e1f35c44c",
+      "calibration_sha256": "29d09e1701dc329cee26fd636dd1d492c3e29b1e1c3d17d28e2c777a52e9a2c4",
+      "config": {
+        "bits": 4,
+        "rank": 2,
+        "rank_geometry": "activation"
+      },
+      "decoded": "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/decoder-reproducibility-2026-10-01/models-check/models/q4-IE-r2.gguf",
+      "decoded_sha256": "7208fd04dab974cd6997a3ce62c99ea600afea87ef12543dc28ccc505b4fa89b",
+      "name": "q4-IE-r2",
+      "residual_calibration_sha256": "f5e6d79eb6b552da48cf976ea4c114d0ac387689ef42de5fa8746e257056431f",
+      "standalone_source_and_calibration_opens_denied": true,
+      "status": "MEASURED",
+      "verified_tensors": 272
+    }
+  },
+  "new_inference_runs": 0,
+  "old_reader": {
+    "destination_absent": true,
+    "error": "unknown model format",
+    "old_reader_sha256": "f3f3dd09d465f57f5677ac7a6ec16e58215e30652a56291d09a2cc0dcd62c309",
+    "status": "PASSED"
+  },
+  "original_D03_failure_cause": "UNDETERMINED",
+  "reused_ppl": {
+    "q3-IE-r1": {
+      "chunks": 64,
+      "command": [
+        "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/third_party/llama.cpp/build/bin/llama-perplexity",
+        "-m",
+        "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/calibration-roles-2026-10-01/models/q3-IE-r1.gguf",
+        "-f",
+        "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/calibration-coverage-2026-10-01/fresh-final.txt",
+        "--chunks",
+        "64",
+        "-c",
+        "512",
+        "-b",
+        "512",
+        "-ub",
+        "512",
+        "-t",
+        "4",
+        "-tb",
+        "4",
+        "-ngl",
+        "0"
+      ],
+      "corpus": "fresh-final",
+      "corpus_sha256": "42ad320614e02063e1a484efb02fcf2c58f81552aef71ef0468cbd4cb7f68bbd",
+      "log_sha256": "391f5943782d1b856c0001ab91bbc268815a44494f809ce1067b5ce3444b07bf",
+      "model_sha256": "c124c0d1f48219e0b28a2dbfe5bcb42bd4a14ca9b32b32be5f36c23bcd4016ad",
+      "name": "q3-IE-r1",
+      "perplexity": 44.9737,
+      "reason": "identical decoded GGUF SHA-256; no new inference",
+      "returncode": 0,
+      "reused_from": "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/calibration-roles-2026-10-01/evaluations/fresh-final-q3-IE-r1.json",
+      "runtime_sha256": "67c7b6d124faf47727f4c5dbca65f01dbbe419d929f842c20bd586a1d99012ed",
+      "seconds": 20.906637535998016,
+      "standard_error": 1.05842,
+      "status": "MEASURED"
+    },
+    "q4-IE-r2": {
+      "chunks": 64,
+      "command": [
+        "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/third_party/llama.cpp/build/bin/llama-perplexity",
+        "-m",
+        "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/calibration-roles-2026-10-01/models/q4-IE-r2.gguf",
+        "-f",
+        "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/calibration-coverage-2026-10-01/fresh-final.txt",
+        "--chunks",
+        "64",
+        "-c",
+        "512",
+        "-b",
+        "512",
+        "-ub",
+        "512",
+        "-t",
+        "4",
+        "-tb",
+        "4",
+        "-ngl",
+        "0"
+      ],
+      "corpus": "fresh-final",
+      "corpus_sha256": "42ad320614e02063e1a484efb02fcf2c58f81552aef71ef0468cbd4cb7f68bbd",
+      "log_sha256": "c265987c82452b185865c0b8ca1b0f76e77dceda16fd67f72b546e314cd57c0b",
+      "model_sha256": "7208fd04dab974cd6997a3ce62c99ea600afea87ef12543dc28ccc505b4fa89b",
+      "name": "q4-IE-r2",
+      "perplexity": 21.663,
+      "reason": "identical decoded GGUF SHA-256; no new inference",
+      "returncode": 0,
+      "reused_from": "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/artifacts/calibration-roles-2026-10-01/evaluations/fresh-final-q4-IE-r2.json",
+      "runtime_sha256": "67c7b6d124faf47727f4c5dbca65f01dbbe419d929f842c20bd586a1d99012ed",
+      "seconds": 20.907265603993437,
+      "standard_error": 0.50451,
+      "status": "MEASURED"
+    }
+  },
+  "status": "PASSED"
+}

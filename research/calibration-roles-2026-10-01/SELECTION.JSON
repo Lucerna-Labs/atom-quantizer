@@ -1,0 +1,104 @@
+{
+  "decisions": [
+    {
+      "archive_bytes_ratio": 1.0126503664328714,
+      "best_other_role_ppl": 69.9121,
+      "best_previous_ppl": 79.6965,
+      "bits": 3,
+      "diagonal_ppl": 79.8858,
+      "gates": {
+        "bytes": true,
+        "matched_diagonal": true,
+        "previous_rank1": true,
+        "role_improvement": true
+      },
+      "perplexity": 63.5125,
+      "rank": 1,
+      "status": "QUALIFIED"
+    },
+    {
+      "archive_bytes_ratio": 1.0237959317995822,
+      "best_other_role_ppl": 67.5575,
+      "best_previous_ppl": 79.6965,
+      "bits": 3,
+      "diagonal_ppl": 75.7728,
+      "gates": {
+        "bytes": true,
+        "matched_diagonal": true,
+        "previous_rank1": true,
+        "role_improvement": true
+      },
+      "perplexity": 55.6607,
+      "rank": 2,
+      "status": "QUALIFIED"
+    },
+    {
+      "archive_bytes_ratio": 1.0462370776883636,
+      "best_other_role_ppl": 64.0238,
+      "best_previous_ppl": 79.6965,
+      "bits": 3,
+      "diagonal_ppl": 70.0476,
+      "gates": {
+        "bytes": true,
+        "matched_diagonal": true,
+        "previous_rank1": true,
+        "role_improvement": true
+      },
+      "perplexity": 54.5375,
+      "rank": 4,
+      "status": "QUALIFIED"
+    },
+    {
+      "archive_bytes_ratio": 1.0103870841436051,
+      "best_other_role_ppl": 33.3114,
+      "best_previous_ppl": 33.8939,
+      "bits": 4,
+      "diagonal_ppl": 33.8939,
+      "gates": {
+        "bytes": true,
+        "matched_diagonal": true,
+        "previous_rank1": true,
+        "role_improvement": false
+      },
+      "perplexity": 32.1262,
+      "rank": 1,
+      "status": "FAILED"
+    },
+    {
+      "archive_bytes_ratio": 1.0202086929835725,
+      "best_other_role_ppl": 33.0536,
+      "best_previous_ppl": 33.8939,
+      "bits": 4,
+      "diagonal_ppl": 33.3695,
+      "gates": {
+        "bytes": true,
+        "matched_diagonal": true,
+        "previous_rank1": true,
+        "role_improvement": true
+      },
+      "perplexity": 31.2429,
+      "rank": 2,
+      "status": "QUALIFIED"
+    },
+    {
+      "archive_bytes_ratio": 1.0380089047983596,
+      "best_other_role_ppl": 32.3063,
+      "best_previous_ppl": 33.8939,
+      "bits": 4,
+      "diagonal_ppl": 33.0654,
+      "gates": {
+        "bytes": true,
+        "matched_diagonal": true,
+        "previous_rank1": true,
+        "role_improvement": false
+      },
+      "perplexity": 31.035,
+      "rank": 4,
+      "status": "FAILED"
+    }
+  ],
+  "selected": {
+    "3": 1,
+    "4": 2
+  }
+}

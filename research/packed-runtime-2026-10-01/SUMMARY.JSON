@@ -1,0 +1,981 @@
+{
+  "G2": {
+    "dense_loaded_rss_kib": 540688,
+    "packed_loaded_rss_kib": 134648,
+    "ratio": 0.2490308643801971,
+    "status": "MEASURED"
+  },
+  "G3": {
+    "1": {
+      "fused": {
+        "blas": {
+          "geometric_mean_latency_ratio": 46.280740422096294,
+          "status": "FAILED"
+        },
+        "native": {
+          "geometric_mean_latency_ratio": 5.53145839065804,
+          "status": "FAILED"
+        }
+      },
+      "row": {
+        "blas": {
+          "geometric_mean_latency_ratio": 51.9715338180486,
+          "status": "FAILED"
+        },
+        "native": {
+          "geometric_mean_latency_ratio": 6.211620086267227,
+          "status": "FAILED"
+        }
+      }
+    },
+    "32": {
+      "fused": {
+        "blas": {
+          "geometric_mean_latency_ratio": 10.195115724481962,
+          "status": "FAILED"
+        },
+        "native": {
+          "geometric_mean_latency_ratio": 1.5402849435637174,
+          "status": "FAILED"
+        }
+      },
+      "row": {
+        "blas": {
+          "geometric_mean_latency_ratio": 9.530955560839212,
+          "status": "FAILED"
+        },
+        "native": {
+          "geometric_mean_latency_ratio": 1.4399431791522375,
+          "status": "FAILED"
+        }
+      }
+    },
+    "8": {
+      "fused": {
+        "blas": {
+          "geometric_mean_latency_ratio": 11.10946765444574,
+          "status": "FAILED"
+        },
+        "native": {
+          "geometric_mean_latency_ratio": 2.167967145410449,
+          "status": "FAILED"
+        }
+      },
+      "row": {
+        "blas": {
+          "geometric_mean_latency_ratio": 11.186621020485084,
+          "status": "FAILED"
+        },
+        "native": {
+          "geometric_mean_latency_ratio": 2.1830233090299704,
+          "status": "FAILED"
+        }
+      }
+    }
+  },
+  "correctness_cases": 633,
+  "memory": {
+    "dense": {
+      "batch": 1,
+      "before": {
+        "VmHWM": 2304,
+        "VmRSS": 2304
+      },
+      "input_sha256": "d6babc2104a969d63b7db3d8be5675b53e8ece4f8fd3bcc8be0eda121c1189b2",
+      "measurements": {
+        "after_operation": {
+          "VmHWM": 540688,
+          "VmRSS": 540688
+        },
+        "archive_sha256": "27d36037a432c5cefeeb0c1f62505377f469365027e00372d30b1840c4608a83",
+        "decoded_weight_bytes": 538060032,
+        "load_seconds": 1.314417766,
+        "loaded": {
+          "VmHWM": 540688,
+          "VmRSS": 540688
+        },
+        "output_bytes": 196608,
+        "output_sha256": "68e8efdda72b7b008e2e1bba75c23121d05361f762d7f8cea4bc2aec10314ed5",
+        "owned_tensor_bytes": 538076952,
+        "prefix_bytes": 1786080,
+        "tensors": 272
+      },
+      "mode": "dense",
+      "status": "MEASURED",
+      "tensor": "token_embd.weight"
+    },
+    "packed": {
+      "batch": 1,
+      "before": {
+        "VmHWM": 2332,
+        "VmRSS": 2332
+      },
+      "input_sha256": "d6babc2104a969d63b7db3d8be5675b53e8ece4f8fd3bcc8be0eda121c1189b2",
+      "measurements": {
+        "after_operation": {
+          "VmHWM": 134648,
+          "VmRSS": 134648
+        },
+        "archive_sha256": "27d36037a432c5cefeeb0c1f62505377f469365027e00372d30b1840c4608a83",
+        "decoded_weight_bytes": 538060032,
+        "load_seconds": 0.969948151,
+        "loaded": {
+          "VmHWM": 134648,
+          "VmRSS": 134648
+        },
+        "output_bytes": 196608,
+        "output_sha256": "68e8efdda72b7b008e2e1bba75c23121d05361f762d7f8cea4bc2aec10314ed5",
+        "owned_tensor_bytes": 130850892,
+        "prefix_bytes": 1786080,
+        "tensors": 272
+      },
+      "mode": "packed",
+      "status": "MEASURED",
+      "tensor": "token_embd.weight"
+    }
+  },
+  "operator_cases": [
+    {
+      "batch": 1,
+      "blas_minimum_maximum_seconds": [
+        5.167000000000001e-06,
+        1.0226e-05
+      ],
+      "dense_owned_bytes": 442432,
+      "medians_seconds": {
+        "blas": 5.626e-06,
+        "dense_existing": 5.1881e-05,
+        "dense_shared": 0.000166056,
+        "fused": 0.000290874,
+        "row": 0.000326574
+      },
+      "minimum_maximum_seconds": {
+        "dense_existing": [
+          5.1466e-05,
+          5.2315e-05
+        ],
+        "dense_shared": [
+          0.000165759,
+          0.000170611
+        ],
+        "fused": [
+          0.000289947,
+          0.000297327
+        ],
+        "row": [
+          0.000307803,
+          0.000335657
+        ]
+      },
+      "packed_owned_bytes": 114920,
+      "tensor": "blk.0.attn_k.weight"
+    },
+    {
+      "batch": 1,
+      "blas_minimum_maximum_seconds": [
+        1.3477000000000002e-05,
+        1.7756e-05
+      ],
+      "dense_owned_bytes": 1327168,
+      "medians_seconds": {
+        "blas": 1.5135000000000002e-05,
+        "dense_existing": 0.000155593,
+        "dense_shared": 0.000497526,
+        "fused": 0.000876814,
+        "row": 0.000980127
+      },
+      "minimum_maximum_seconds": {
+        "dense_existing": [
+          0.000155461,
+          0.00015783
+        ],
+        "dense_shared": [
+          0.000497219,
+          0.000507038
+        ],
+        "fused": [
+          0.000874846,
+          0.000897687
+        ],
+        "row": [
+          0.000930742,
+          0.001000746
+        ]
+      },
+      "packed_owned_bytes": 326896,
+      "tensor": "blk.0.attn_q.weight"
+    },
+    {
+      "batch": 32,
+      "blas_minimum_maximum_seconds": [
+        7.2611e-05,
+        7.8152e-05
+      ],
+      "dense_owned_bytes": 442432,
+      "medians_seconds": {
+        "blas": 7.276900000000001e-05,
+        "dense_existing": 0.001670153,
+        "dense_shared": 0.000491709,
+        "fused": 0.000785174,
+        "row": 0.000719452
+      },
+      "minimum_maximum_seconds": {
+        "dense_existing": [
+          0.001662573,
+          0.001696628
+        ],
+        "dense_shared": [
+          0.000475306,
+          0.000573709
+        ],
+        "fused": [
+          0.000748949,
+          0.000832173
+        ],
+        "row": [
+          0.000705483,
+          0.000753617
+        ]
+      },
+      "packed_owned_bytes": 114920,
+      "tensor": "blk.0.attn_k.weight"
+    },
+    {
+      "batch": 32,
+      "blas_minimum_maximum_seconds": [
+        0.000564523,
+        0.0005749780000000001
+      ],
+      "dense_owned_bytes": 3539008,
+      "medians_seconds": {
+        "blas": 0.000567474,
+        "dense_existing": 0.013422452,
+        "dense_shared": 0.003694572,
+        "fused": 0.005883283,
+        "row": 0.005490414
+      },
+      "minimum_maximum_seconds": {
+        "dense_existing": [
+          0.013346972,
+          0.013556494
+        ],
+        "dense_shared": [
+          0.003630698,
+          0.004044183
+        ],
+        "fused": [
+          0.005784249,
+          0.005972716
+        ],
+        "row": [
+          0.005452587,
+          0.005565779
+        ]
+      },
+      "packed_owned_bytes": 856819,
+      "tensor": "blk.3.ffn_up.weight"
+    },
+    {
+      "batch": 8,
+      "blas_minimum_maximum_seconds": [
+        0.000105073,
+        0.00011164800000000001
+      ],
+      "dense_owned_bytes": 1327168,
+      "medians_seconds": {
+        "blas": 0.00010532900000000001,
+        "dense_existing": 0.001257064,
+        "dense_shared": 0.000573135,
+        "fused": 0.001215336,
+        "row": 0.00121185
+      },
+      "minimum_maximum_seconds": {
+        "dense_existing": [
+          0.001244834,
+          0.00131107
+        ],
+        "dense_shared": [
+          0.000542662,
+          0.000578507
+        ],
+        "fused": [
+          0.001211714,
+          0.001233458
+        ],
+        "row": [
+          0.001197805,
+          0.001250452
+        ]
+      },
+      "packed_owned_bytes": 326896,
+      "tensor": "blk.0.attn_output.weight"
+    },
+    {
+      "batch": 1,
+      "blas_minimum_maximum_seconds": [
+        0.004152397,
+        0.004323803
+      ],
+      "dense_owned_bytes": 113246272,
+      "medians_seconds": {
+        "blas": 0.0042149990000000005,
+        "dense_existing": 0.014474403,
+        "dense_shared": 0.042977624,
+        "fused": 0.075289222,
+        "row": 0.085630037
+      },
+      "minimum_maximum_seconds": {
+        "dense_existing": [
+          0.014374893,
+          0.014533909
+        ],
+        "dense_shared": [
+          0.042814964,
+          0.043194999
+        ],
+        "fused": [
+          0.075175347,
+          0.07594068
+        ],
+        "row": [
+          0.085189405,
+          0.085745118
+        ]
+      },
+      "packed_owned_bytes": 27140870,
+      "tensor": "token_embd.weight"
+    },
+    {
+      "batch": 1,
+      "blas_minimum_maximum_seconds": [
+        1.2472e-05,
+        1.6645e-05
+      ],
+      "dense_owned_bytes": 1327168,
+      "medians_seconds": {
+        "blas": 1.3029e-05,
+        "dense_existing": 0.000159209,
+        "dense_shared": 0.000499171,
+        "fused": 0.000875768,
+        "row": 0.000968796
+      },
+      "minimum_maximum_seconds": {
+        "dense_existing": [
+          0.000155548,
+          0.000168133
+        ],
+        "dense_shared": [
+          0.000496922,
+          0.000503621
+        ],
+        "fused": [
+          0.000869892,
+          0.000881209
+        ],
+        "row": [
+          0.000953312,
+          0.000997324
+        ]
+      },
+      "packed_owned_bytes": 326896,
+      "tensor": "blk.0.attn_output.weight"
+    },
+    {
+      "batch": 8,
+      "blas_minimum_maximum_seconds": [
+        0.00028240000000000003,
+        0.000296171
+      ],
+      "dense_owned_bytes": 3539008,
+      "medians_seconds": {
+        "blas": 0.000283993,
+        "dense_existing": 0.003348431,
+        "dense_shared": 0.001480737,
+        "fused": 0.003236955,
+        "row": 0.003305656
+      },
+      "minimum_maximum_seconds": {
+        "dense_existing": [
+          0.003334958,
+          0.003389847
+        ],
+        "dense_shared": [
+          0.00144712,
+          0.001742396
+        ],
+        "fused": [
+          0.003228771,
+          0.003247104
+        ],
+        "row": [
+          0.003192771,
+          0.003370296
+        ]
+      },
+      "packed_owned_bytes": 856819,
+      "tensor": "blk.3.ffn_up.weight"
+    },
+    {
+      "batch": 32,
+      "blas_minimum_maximum_seconds": [
+        0.000212007,
+        0.00022005100000000002
+      ],
+      "dense_owned_bytes": 1327168,
+      "medians_seconds": {
+        "blas": 0.000212711,
+        "dense_existing": 0.00501558,
+        "dense_shared": 0.001484291,
+        "fused": 0.002202596,
+        "row": 0.002079125
+      },
+      "minimum_maximum_seconds": {
+        "dense_existing": [
+          0.005006469,
+          0.005226812
+        ],
+        "dense_shared": [
+          0.001380698,
+          0.001691055
+        ],
+        "fused": [
+          0.002162013,
+          0.002391646
+        ],
+        "row": [
+          0.002063696,
+          0.002108964
+        ]
+      },
+      "packed_owned_bytes": 326896,
+      "tensor": "blk.0.attn_output.weight"
+    },
+    {
+      "batch": 32,
+      "blas_minimum_maximum_seconds": [
+        0.000562662,
+        0.000603888
+      ],
+      "dense_owned_bytes": 3539008,
+      "medians_seconds": {
+        "blas": 0.000574443,
+        "dense_existing": 0.013198243,
+        "dense_shared": 0.003880552,
+        "fused": 0.005906063,
+        "row": 0.00551338
+      },
+      "minimum_maximum_seconds": {
+        "dense_existing": [
+          0.013167898,
+          0.013413658
+        ],
+        "dense_shared": [
+          0.003662406,
+          0.004076735
+        ],
+        "fused": [
+          0.005783714,
+          0.006069245
+        ],
+        "row": [
+          0.005459098,
+          0.005596622
+        ]
+      },
+      "packed_owned_bytes": 856819,
+      "tensor": "blk.17.ffn_down.weight"
+    },
+    {
+      "batch": 8,
+      "blas_minimum_maximum_seconds": [
+        0.000277376,
+        0.000284899
+      ],
+      "dense_owned_bytes": 3539008,
+      "medians_seconds": {
+        "blas": 0.000278412,
+        "dense_existing": 0.003298838,
+        "dense_shared": 0.001489688,
+        "fused": 0.003241065,
+        "row": 0.003283407
+      },
+      "minimum_maximum_seconds": {
+        "dense_existing": [
+          0.003289238,
+          0.003476529
+        ],
+        "dense_shared": [
+          0.001454009,
+          0.001518117
+        ],
+        "fused": [
+          0.003233355,
+          0.003249624
+        ],
+        "row": [
+          0.003230431,
+          0.003450662
+        ]
+      },
+      "packed_owned_bytes": 856819,
+      "tensor": "blk.29.ffn_down.weight"
+    },
+    {
+      "batch": 32,
+      "blas_minimum_maximum_seconds": [
+        0.0005619160000000001,
+        0.0007615440000000001
+      ],
+      "dense_owned_bytes": 3539008,
+      "medians_seconds": {
+        "blas": 0.000568851,
+        "dense_existing": 0.013194208,
+        "dense_shared": 0.003696717,
+        "fused": 0.005898292,
+        "row": 0.005499386
+      },
+      "minimum_maximum_seconds": {
+        "dense_existing": [
+          0.013153722,
+          0.01335489
+        ],
+        "dense_shared": [
+          0.003643559,
+          0.00391586
+        ],
+        "fused": [
+          0.005806501,
+          0.005949404
+        ],
+        "row": [
+          0.005441026,
+          0.005528957
+        ]
+      },
+      "packed_owned_bytes": 856819,
+      "tensor": "blk.29.ffn_down.weight"
+    },
+    {
+      "batch": 8,
+      "blas_minimum_maximum_seconds": [
+        3.6096e-05,
+        4.057e-05
+      ],
+      "dense_owned_bytes": 442432,
+      "medians_seconds": {
+        "blas": 3.6219e-05,
+        "dense_existing": 0.000416954,
+        "dense_shared": 0.00019285,
+        "fused": 0.000408861,
+        "row": 0.000408125
+      },
+      "minimum_maximum_seconds": {
+        "dense_existing": [
+          0.000414538,
+          0.000609292
+        ],
+        "dense_shared": [
+          0.00018264,
+          0.000195594
+        ],
+        "fused": [
+          0.000403605,
+          0.000412941
+        ],
+        "row": [
+          0.000403975,
+          0.00042131
+        ]
+      },
+      "packed_owned_bytes": 114920,
+      "tensor": "blk.0.attn_k.weight"
+    },
+    {
+      "batch": 1,
+      "blas_minimum_maximum_seconds": [
+        4.7083e-05,
+        5.5732e-05
+      ],
+      "dense_owned_bytes": 3539008,
+      "medians_seconds": {
+        "blas": 4.7751000000000004e-05,
+        "dense_existing": 0.000420273,
+        "dense_shared": 0.001333911,
+        "fused": 0.002333119,
+        "row": 0.0026449
+      },
+      "minimum_maximum_seconds": {
+        "dense_existing": [
+          0.000415796,
+          0.000628487
+        ],
+        "dense_shared": [
+          0.001330261,
+          0.001353074
+        ],
+        "fused": [
+          0.002325686,
+          0.002348874
+        ],
+        "row": [
+          0.002549117,
+          0.00266561
+        ]
+      },
+      "packed_owned_bytes": 856819,
+      "tensor": "blk.3.ffn_up.weight"
+    },
+    {
+      "batch": 8,
+      "blas_minimum_maximum_seconds": [
+        0.000280974,
+        0.000291134
+      ],
+      "dense_owned_bytes": 3539008,
+      "medians_seconds": {
+        "blas": 0.00028234,
+        "dense_existing": 0.003346311,
+        "dense_shared": 0.001486708,
+        "fused": 0.003241416,
+        "row": 0.003288604
+      },
+      "minimum_maximum_seconds": {
+        "dense_existing": [
+          0.003333752,
+          0.003541137
+        ],
+        "dense_shared": [
+          0.001451618,
+          0.001694091
+        ],
+        "fused": [
+          0.003227863,
+          0.003253424
+        ],
+        "row": [
+          0.003232965,
+          0.003313436
+        ]
+      },
+      "packed_owned_bytes": 856819,
+      "tensor": "blk.9.ffn_gate.weight"
+    },
+    {
+      "batch": 8,
+      "blas_minimum_maximum_seconds": [
+        0.000105081,
+        0.00011023800000000001
+      ],
+      "dense_owned_bytes": 1327168,
+      "medians_seconds": {
+        "blas": 0.00010541700000000001,
+        "dense_existing": 0.001249161,
+        "dense_shared": 0.000557935,
+        "fused": 0.001216165,
+        "row": 0.001218758
+      },
+      "minimum_maximum_seconds": {
+        "dense_existing": [
+          0.001241428,
+          0.001264173
+        ],
+        "dense_shared": [
+          0.000545695,
+          0.00057838
+        ],
+        "fused": [
+          0.001212646,
+          0.001229742
+        ],
+        "row": [
+          0.001192088,
+          0.001261012
+        ]
+      },
+      "packed_owned_bytes": 326896,
+      "tensor": "blk.0.attn_q.weight"
+    },
+    {
+      "batch": 1,
+      "blas_minimum_maximum_seconds": [
+        4.5362000000000004e-05,
+        5.4278000000000004e-05
+      ],
+      "dense_owned_bytes": 3539008,
+      "medians_seconds": {
+        "blas": 4.5742000000000004e-05,
+        "dense_existing": 0.000411458,
+        "dense_shared": 0.001341395,
+        "fused": 0.002320372,
+        "row": 0.002586853
+      },
+      "minimum_maximum_seconds": {
+        "dense_existing": [
+          0.000408783,
+          0.000426368
+        ],
+        "dense_shared": [
+          0.001338662,
+          0.001344441
+        ],
+        "fused": [
+          0.002314239,
+          0.002327661
+        ],
+        "row": [
+          0.002491888,
+          0.002653939
+        ]
+      },
+      "packed_owned_bytes": 856819,
+      "tensor": "blk.29.ffn_down.weight"
+    },
+    {
+      "batch": 32,
+      "blas_minimum_maximum_seconds": [
+        0.020785380000000003,
+        0.021265824000000003
+      ],
+      "dense_owned_bytes": 113246272,
+      "medians_seconds": {
+        "blas": 0.020961899000000003,
+        "dense_existing": 0.460439509,
+        "dense_shared": 0.121114513,
+        "fused": 0.186388412,
+        "row": 0.174697272
+      },
+      "minimum_maximum_seconds": {
+        "dense_existing": [
+          0.459844225,
+          0.462239307
+        ],
+        "dense_shared": [
+          0.119900264,
+          0.123446101
+        ],
+        "fused": [
+          0.185613674,
+          0.187224074
+        ],
+        "row": [
+          0.174111509,
+          0.175387285
+        ]
+      },
+      "packed_owned_bytes": 27140870,
+      "tensor": "token_embd.weight"
+    },
+    {
+      "batch": 32,
+      "blas_minimum_maximum_seconds": [
+        0.0005640150000000001,
+        0.000573977
+      ],
+      "dense_owned_bytes": 3539008,
+      "medians_seconds": {
+        "blas": 0.0005667910000000001,
+        "dense_existing": 0.013359606,
+        "dense_shared": 0.003822955,
+        "fused": 0.005824257,
+        "row": 0.0054936
+      },
+      "minimum_maximum_seconds": {
+        "dense_existing": [
+          0.013337282,
+          0.013413048
+        ],
+        "dense_shared": [
+          0.003619625,
+          0.004123368
+        ],
+        "fused": [
+          0.005759053,
+          0.005956519
+        ],
+        "row": [
+          0.005449759,
+          0.005598737
+        ]
+      },
+      "packed_owned_bytes": 856819,
+      "tensor": "blk.9.ffn_gate.weight"
+    },
+    {
+      "batch": 32,
+      "blas_minimum_maximum_seconds": [
+        0.00021222000000000002,
+        0.00021829500000000002
+      ],
+      "dense_owned_bytes": 1327168,
+      "medians_seconds": {
+        "blas": 0.000212544,
+        "dense_existing": 0.005007456,
+        "dense_shared": 0.001490948,
+        "fused": 0.002198686,
+        "row": 0.002065185
+      },
+      "minimum_maximum_seconds": {
+        "dense_existing": [
+          0.004996881,
+          0.005022819
+        ],
+        "dense_shared": [
+          0.001367497,
+          0.001578256
+        ],
+        "fused": [
+          0.002173748,
+          0.002286974
+        ],
+        "row": [
+          0.002039871,
+          0.00210185
+        ]
+      },
+      "packed_owned_bytes": 326896,
+      "tensor": "blk.0.attn_q.weight"
+    },
+    {
+      "batch": 8,
+      "blas_minimum_maximum_seconds": [
+        0.011788085,
+        0.012050202000000001
+      ],
+      "dense_owned_bytes": 113246272,
+      "medians_seconds": {
+        "blas": 0.011981745,
+        "dense_existing": 0.11518812,
+        "dense_shared": 0.047509932,
+        "fused": 0.104133403,
+        "row": 0.105158551
+      },
+      "minimum_maximum_seconds": {
+        "dense_existing": [
+          0.115034729,
+          0.115734658
+        ],
+        "dense_shared": [
+          0.046925007,
+          0.047981844
+        ],
+        "fused": [
+          0.103715585,
+          0.104408779
+        ],
+        "row": [
+          0.104698381,
+          0.105720024
+        ]
+      },
+      "packed_owned_bytes": 27140870,
+      "tensor": "token_embd.weight"
+    },
+    {
+      "batch": 8,
+      "blas_minimum_maximum_seconds": [
+        0.000277,
+        0.00028360500000000003
+      ],
+      "dense_owned_bytes": 3539008,
+      "medians_seconds": {
+        "blas": 0.000278047,
+        "dense_existing": 0.003303399,
+        "dense_shared": 0.00148007,
+        "fused": 0.0032429,
+        "row": 0.003241863
+      },
+      "minimum_maximum_seconds": {
+        "dense_existing": [
+          0.003289583,
+          0.003326116
+        ],
+        "dense_shared": [
+          0.001442621,
+          0.001527728
+        ],
+        "fused": [
+          0.003235987,
+          0.003257937
+        ],
+        "row": [
+          0.003190361,
+          0.003316724
+        ]
+      },
+      "packed_owned_bytes": 856819,
+      "tensor": "blk.17.ffn_down.weight"
+    },
+    {
+      "batch": 1,
+      "blas_minimum_maximum_seconds": [
+        4.5654e-05,
+        5.2183000000000005e-05
+      ],
+      "dense_owned_bytes": 3539008,
+      "medians_seconds": {
+        "blas": 4.6836000000000004e-05,
+        "dense_existing": 0.000419705,
+        "dense_shared": 0.001339657,
+        "fused": 0.002325336,
+        "row": 0.002591073
+      },
+      "minimum_maximum_seconds": {
+        "dense_existing": [
+          0.000413677,
+          0.000433196
+        ],
+        "dense_shared": [
+          0.001338088,
+          0.001366849
+        ],
+        "fused": [
+          0.0023135,
+          0.002504608
+        ],
+        "row": [
+          0.002540636,
+          0.002750146
+        ]
+      },
+      "packed_owned_bytes": 856819,
+      "tensor": "blk.17.ffn_down.weight"
+    },
+    {
+      "batch": 1,
+      "blas_minimum_maximum_seconds": [
+        4.7671000000000005e-05,
+        5.7497e-05
+      ],
+      "dense_owned_bytes": 3539008,
+      "medians_seconds": {
+        "blas": 4.9087000000000006e-05,
+        "dense_existing": 0.000417688,
+        "dense_shared": 0.001333972,
+        "fused": 0.002334654,
+        "row": 0.002655069
+      },
+      "minimum_maximum_seconds": {
+        "dense_existing": [
+          0.000414413,
+          0.00043087
+        ],
+        "dense_shared": [
+          0.001330516,
+          0.001351481
+        ],
+        "fused": [
+          0.002322839,
+          0.002363873
+        ],
+        "row": [
+          0.002589966,
+          0.00266119
+        ]
+      },
+      "packed_owned_bytes": 856819,
+      "tensor": "blk.9.ffn_gate.weight"
+    }
+  ],
+  "status": "MEASURED",
+  "whole_model_inference_benchmarked": false
+}

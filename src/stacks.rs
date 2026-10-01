@@ -823,8 +823,8 @@ fn refract_bulk_tail_30_recon(data: &[f32]) -> Vec<f32> {
 // ─────────────────────────── applying a stack ───────────────────────────
 
 /// Apply a stack to a weight tensor of the given [out_len, in_len] shape, returning
-/// (reconstruction, side_bytes) — side_bytes accounts for evicted outliers, per-row
-/// DC means, and codebook storage (per-block scale for uniform quantizers).
+/// (reconstruction, estimated_side_bytes). Estimates use f32 side data and exclude
+/// framing; this research path has no serialized decoder record.
 pub fn apply(stack: Stack, w: &[f32], out_len: usize, in_len: usize) -> (Vec<f32>, usize) {
     // Compute row L2 norms of the ORIGINAL (needed if POST=PreserveRowNorm; free
     // to compute always so control flow stays flat).
@@ -842,7 +842,7 @@ pub fn apply(stack: Stack, w: &[f32], out_len: usize, in_len: usize) -> (Vec<f32
         Pre::Null => {}
         Pre::RowDcRemove => {
             let (m, r) = row_dc_remove(&cur, out_len, in_len);
-            pre_side_bytes = m.len() * 2; // one f16 per row
+            pre_side_bytes = m.len() * 4; // the reconstruction uses f32 means
             row_means = Some(m);
             cur = r;
         }
@@ -885,34 +885,25 @@ pub fn apply(stack: Stack, w: &[f32], out_len: usize, in_len: usize) -> (Vec<f32
     let quant_side_bytes = match stack.quantize {
         Quantize::SymUniform => n_blocks * 4, // one f32 scale/block
         Quantize::AsymAffine => n_blocks * 8, // scale + min per block
-        Quantize::CodebookLloydMax16 => n_blocks * 32, // 16 f16 codebook/block
-        Quantize::SymmetricCodebook => n_blocks * 16, // 8 f16 magnitude centroids
+        Quantize::CodebookLloydMax16 => n_blocks * 64, // 16 f32 centroids/block
+        Quantize::SymmetricCodebook => n_blocks * 32, // 8 f32 magnitude centroids
         Quantize::SuperposeSymAsym => n_blocks * 12, // sym scale + asym scale+min
         // refract: sym scale (4) + asym scale+min (8) + 1 partition-mask bit/element
         // packed → ceil(BLOCK/8) bytes per block.
-        Quantize::RefractBulkTail30 => n_blocks * 12 + n_blocks * BLOCK.div_ceil(8),
+        Quantize::RefractBulkTail30 => n_blocks * 12 + cur.len().div_ceil(8),
         // compose: one f32 super-scale per 16-elem block + 2-bit sub-scale per 8-elem
         // sub-block. Two sub-scales per super = 4 bits total (0.5 bytes/super).
-        Quantize::ComposeNestedScale => cur.len().div_ceil(16) * 4 + cur.len().div_ceil(16) / 2,
+        Quantize::ComposeNestedScale => {
+            cur.len().div_ceil(16) * 4 + cur.len().div_ceil(8).div_ceil(4)
+        }
     };
 
-    // POST ---
-    match stack.post {
-        Post::Null => {}
-        Post::ErrfeedPass => {
-            recon = errfeed_q4_recon(&recon);
-        }
-        Post::WaveletLift => {
-            recon = wavelet_lifting_repair(&recon);
-        }
-        Post::PreserveRowNorm => {
-            // NB: applied in the CURRENT (transformed) space; norm-preservation
-            // in any orthonormal basis is equivalent to preservation in weight
-            // space, so this is safe under Hadamard/DCT (which are orthonormal).
-            if let Some(ref n) = orig_row_norms {
-                recon = preserve_row_norm(recon, n, out_len, in_len);
-            }
-        }
+    // Blind repairs operate on the quantizer output; norm restoration belongs
+    // after the complete weight-space reconstruction below.
+    if stack.post == Post::ErrfeedPass {
+        recon = errfeed_q4_recon(&recon);
+    } else if stack.post == Post::WaveletLift {
+        recon = wavelet_lifting_repair(&recon);
     }
 
     // Re-insert outliers *while still in transformed space* — outliers were
@@ -922,7 +913,7 @@ pub fn apply(stack: Stack, w: &[f32], out_len: usize, in_len: usize) -> (Vec<f32
     // is the fix for the two critical bugs the adversarial review found.
     recon = outlier_restore(recon, &side);
 
-    // undo PRE (last operation — the whole tensor is inverse-transformed together) ---
+    // Undo PRE on the full reconstruction, including restored outliers.
     if matches!(stack.pre, Pre::RowHadamard8) {
         row_hadamard_8_apply(&mut recon, out_len, in_len);
     }
@@ -938,21 +929,94 @@ pub fn apply(stack: Stack, w: &[f32], out_len: usize, in_len: usize) -> (Vec<f32
     if let Some(means) = row_means {
         recon = row_dc_restore(recon, &means, out_len, in_len);
     }
+    let norm_side_bytes = orig_row_norms.as_ref().map_or(0, |n| n.len() * 4);
+    if let Some(norms) = orig_row_norms {
+        recon = preserve_row_norm(recon, &norms, out_len, in_len);
+    }
 
     (
         recon,
-        pre_side_bytes + extract_side_bytes + quant_side_bytes,
+        pre_side_bytes + extract_side_bytes + quant_side_bytes + norm_side_bytes,
     )
 }
 
-/// Nominal 4-bit code storage in bytes (packed).
-pub fn nominal_code_bytes(len: usize) -> usize {
-    (len * 4).div_ceil(8)
+/// Estimated code storage. Superposition needs both independently packed streams.
+pub fn estimated_code_bytes(stack: Stack, len: usize) -> usize {
+    let streams = if stack.quantize == Quantize::SuperposeSymAsym {
+        2
+    } else {
+        1
+    };
+    len.div_ceil(2) * streams
 }
 
 #[cfg(test)]
 mod tests {
     use super::*;
+
+    #[test]
+    fn final_row_norms_survive_dc_outliers_and_inverse_transforms() {
+        let weights: Vec<f32> = (0..64).map(|i| 10.0 + (i as f32 * 0.71).sin()).collect();
+        let expected = row_l2_norms(&weights, 2, 32);
+        for pre in [
+            Pre::Null,
+            Pre::RowDcRemove,
+            Pre::RowHadamard8,
+            Pre::BlockHadamard32,
+        ] {
+            for extract in [Extract::Null, Extract::OutlierTopK4] {
+                let stack = Stack {
+                    pre,
+                    extract,
+                    quantize: Quantize::SymUniform,
+                    post: Post::PreserveRowNorm,
+                };
+                let (decoded, _) = apply(stack, &weights, 2, 32);
+                for (actual, target) in row_l2_norms(&decoded, 2, 32).iter().zip(&expected) {
+                    assert!(
+                        (actual - target).abs() < target * 2e-6,
+                        "{pre:?}/{extract:?}: {actual} != {target}"
+                    );
+                }
+            }
+        }
+    }
+
+    #[test]
+    fn research_estimates_count_both_streams_and_actual_side_precision() {
+        let weights: Vec<f32> = (0..64).map(|i| (i as f32 * 0.37).sin()).collect();
+        let base = Stack {
+            pre: Pre::Null,
+            extract: Extract::Null,
+            quantize: Quantize::SymUniform,
+            post: Post::Null,
+        };
+        let superposed = Stack {
+            quantize: Quantize::SuperposeSymAsym,
+            ..base
+        };
+        assert_eq!(estimated_code_bytes(base, 33), 17);
+        assert_eq!(estimated_code_bytes(superposed, 33), 34);
+        assert_eq!(apply(superposed, &weights, 2, 32).1, 24);
+        let side = Stack {
+            pre: Pre::RowDcRemove,
+            extract: Extract::OutlierTopK4,
+            post: Post::PreserveRowNorm,
+            ..base
+        };
+        assert_eq!(apply(side, &weights, 2, 32).1, 88);
+        let book = Stack {
+            quantize: Quantize::CodebookLloydMax16,
+            ..base
+        };
+        assert_eq!(apply(book, &weights, 2, 32).1, 128);
+        let nested = Stack {
+            quantize: Quantize::ComposeNestedScale,
+            ..base
+        };
+        assert_eq!(apply(nested, &weights[..16], 1, 16).1, 5);
+        assert_eq!(apply(nested, &weights[..33], 1, 33).1, 14);
+    }
 
     #[test]
     fn enumeration_is_bounded_and_deterministic() {

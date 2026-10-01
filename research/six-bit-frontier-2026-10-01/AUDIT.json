@@ -1,0 +1,148 @@
+{
+  "auditor_sha256": "2bd6b7a5bb0d307880e3ea9752cb2ff2cc06812f388ce42f56ebe6fc42c01d7d",
+  "final_gate": {
+    "historical_ppl": 19.0007,
+    "ppl_passed": true,
+    "selected": "six-activation",
+    "selected_bytes": 109251501,
+    "selected_ppl": 17.4507,
+    "size_passed": true,
+    "status": "QUALIFIED"
+  },
+  "inference": [
+    {
+      "name": "historical-budget120",
+      "ppl": 30.0986,
+      "reused": true,
+      "split": "selection_scores"
+    },
+    {
+      "name": "six-activation",
+      "ppl": 26.9661,
+      "reused": false,
+      "split": "selection_scores"
+    },
+    {
+      "name": "six-diagonal",
+      "ppl": 26.9946,
+      "reused": false,
+      "split": "selection_scores"
+    },
+    {
+      "name": "six-scalar",
+      "ppl": 27.1168,
+      "reused": false,
+      "split": "selection_scores"
+    },
+    {
+      "name": "source-f32",
+      "ppl": 26.7164,
+      "reused": true,
+      "split": "selection_scores"
+    },
+    {
+      "name": "historical-budget120",
+      "ppl": 19.0007,
+      "reused": false,
+      "split": "final_scores"
+    },
+    {
+      "name": "six-activation",
+      "ppl": 17.4507,
+      "reused": false,
+      "split": "final_scores"
+    },
+    {
+      "name": "six-diagonal",
+      "ppl": 17.4759,
+      "reused": false,
+      "split": "final_scores"
+    },
+    {
+      "name": "six-scalar",
+      "ppl": 17.6123,
+      "reused": false,
+      "split": "final_scores"
+    },
+    {
+      "name": "source-f32",
+      "ppl": 17.4036,
+      "reused": false,
+      "split": "final_scores"
+    }
+  ],
+  "native_reports": 16,
+  "selection": {
+    "candidates": [
+      {
+        "checks": {
+          "native_fit_and_selection": true,
+          "perplexity": true,
+          "stored_bytes": true
+        },
+        "name": "six-scalar",
+        "status": "QUALIFIED"
+      },
+      {
+        "checks": {
+          "native_fit_and_selection": true,
+          "perplexity": true,
+          "stored_bytes": true
+        },
+        "name": "six-diagonal",
+        "status": "QUALIFIED"
+      },
+      {
+        "checks": {
+          "native_fit_and_selection": true,
+          "perplexity": true,
+          "stored_bytes": true
+        },
+        "name": "six-activation",
+        "status": "QUALIFIED"
+      }
+    ],
+    "selected": "six-activation",
+    "status": "SELECTED"
+  },
+  "stages": [
+    {
+      "bytes": 107906765,
+      "failures": 2,
+      "name": "six-scalar",
+      "stage": 0,
+      "unchanged_records": 0
+    },
+    {
+      "bytes": 108294980,
+      "failures": 2,
+      "name": "six-scalar",
+      "stage": 1,
+      "unchanged_records": 270
+    },
+    {
+      "bytes": 109317095,
+      "failures": 0,
+      "name": "six-scalar",
+      "stage": 2,
+      "unchanged_records": 270
+    },
+    {
+      "bytes": 109255265,
+      "failures": 0,
+      "name": "six-diagonal",
+      "stage": 0,
+      "unchanged_records": 0
+    },
+    {
+      "bytes": 109251501,
+      "failures": 0,
+      "name": "six-activation",
+      "stage": 0,
+      "unchanged_records": 0
+    }
+  ],
+  "status": "PASSED",
+  "summary_sha256": "878361f0a89d5d68d57078eed07388461e5d4b70f21db3c353af9c062288e47d",
+  "tensors": 1360
+}

@@ -1,0 +1,27 @@
+{
+  "status": "PASSED",
+  "binary_sha256": "22ac0988e9b5e9d32e260ef04b301408f8664416d2a0f96e9abd3cb69c7d577a",
+  "cases": [
+    {
+      "case": 0,
+      "identical_report": true,
+      "tensors": 272
+    },
+    {
+      "case": 1,
+      "identical_report": true,
+      "tensors": 272
+    },
+    {
+      "case": 2,
+      "identical_report": true,
+      "tensors": 272
+    },
+    {
+      "case": 3,
+      "identical_report": true,
+      "tensors": 272
+    }
+  ],
+  "tensor_scores_identical": 1088
+}

@@ -1,0 +1,15 @@
+{
+  "rust_tests": 69,
+  "cuda_feature_compile": "PASSED; no live GPU assessment",
+  "changed_file_rustfmt": "PASSED",
+  "strict_clippy": "FAILED on six existing chunks_exact_to_as_chunks style lints in unchanged src/gguf.rs",
+  "ordinary_clippy": "completed with those same six library warnings and no new binary warnings",
+  "preexisting_sources_changed": [
+    "src/main.rs"
+  ],
+  "new_rust_sources": [
+    "src/assess.rs",
+    "tests/cli_assess.rs"
+  ],
+  "incumbent_unchanged": true
+}

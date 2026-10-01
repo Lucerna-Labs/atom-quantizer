@@ -1,0 +1,22 @@
+{
+  "status": "PASSED",
+  "numerical_build_body_ast_identical": true,
+  "changed_frozen_files": {
+    "/home/jesse/Desktop/Projects/atom-quantizer/atom-quantizer/experiments/mamba_models.py": {
+      "trial": "4857aee61ab35887da71a16ad5b68476596c754058635b53cd1b8b7ce896f70f",
+      "current": "085440103201a727f85abd86c4286fb70783cb2dacdf4430c8a8dc2424e3ceaa"
+    }
+  },
+  "audited_source_snapshot": "implementation-evaluation.tar.gz",
+  "fix": "only fresh owned destinations may receive build results or error receipts",
+  "tests_passed": 103,
+  "actual_cli_checks": {
+    "status": "PASSED",
+    "actual_cli_exit_codes": [
+      1,
+      1
+    ],
+    "existing_directory_unchanged": true,
+    "dangling_link_and_target_preserved": true
+  }
+}

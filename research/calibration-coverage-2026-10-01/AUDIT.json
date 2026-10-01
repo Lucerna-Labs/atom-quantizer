@@ -1,0 +1,104 @@
+{
+  "experiment_captures_audited": 4,
+  "legacy_fit_replay": true,
+  "legacy_selection_replay": true,
+  "full_archives_audited": 6,
+  "tensor_export_checks": 1632,
+  "new_inference_runs": 6,
+  "reused_control_runs": 8,
+  "conditional_seed_repeats": 0,
+  "fresh_final_runs": 0,
+  "generic_cli_smoke_operators": 211,
+  "coverage": [
+    {
+      "capture": "endpoint-fit",
+      "sha256": "f5e6d79eb6b552da48cf976ea4c114d0ac387689ef42de5fa8746e257056431f",
+      "bytes": 153952386,
+      "operators": 212,
+      "sample_count": 256,
+      "q0_unique": 75,
+      "q0_largest_repeat": 128,
+      "endpoint_positions": 256
+    },
+    {
+      "capture": "endpoint-selection",
+      "sha256": "d8a0411a3ac9b4033502dbec560b3a5390c5571d83c177f1a52260bd9a74a7d0",
+      "bytes": 38493570,
+      "operators": 212,
+      "sample_count": 64,
+      "q0_unique": 25,
+      "q0_largest_repeat": 32,
+      "endpoint_positions": 64
+    },
+    {
+      "capture": "stratified0-fit",
+      "sha256": "29d09e1701dc329cee26fd636dd1d492c3e29b1e1c3d17d28e2c777a52e9a2c4",
+      "bytes": 153952386,
+      "operators": 212,
+      "sample_count": 256,
+      "q0_unique": 178,
+      "q0_largest_repeat": 14,
+      "endpoint_positions": 2
+    },
+    {
+      "capture": "stratified0-selection",
+      "sha256": "8e357a6712d5d288aa53a2e088f574c26246868db14eb864fd2fb73c9b3e4d99",
+      "bytes": 38493570,
+      "operators": 212,
+      "sample_count": 64,
+      "q0_unique": 54,
+      "q0_largest_repeat": 4,
+      "endpoint_positions": 1
+    }
+  ],
+  "comparisons": [
+    {
+      "name": "strat0-q3-activation",
+      "bytes": 59240770,
+      "endpoint_ppl": 79.6965,
+      "stratified_ppl": 484.6687,
+      "ppl_ratio": 6.081430175729173,
+      "bytes_ratio": 0.9964988592137157
+    },
+    {
+      "name": "strat0-q3-diagonal",
+      "bytes": 59237141,
+      "endpoint_ppl": 79.8858,
+      "stratified_ppl": 121.312,
+      "ppl_ratio": 1.5185677554709347,
+      "bytes_ratio": 0.9964843801188676
+    },
+    {
+      "name": "strat0-q3-scalar",
+      "bytes": 58500756,
+      "endpoint_ppl": 90.0866,
+      "stratified_ppl": 485.1447,
+      "ppl_ratio": 5.385314797095239,
+      "bytes_ratio": 0.996446021053389
+    },
+    {
+      "name": "strat0-q4-activation",
+      "bytes": 72563888,
+      "endpoint_ppl": 34.0391,
+      "stratified_ppl": 53.4461,
+      "ppl_ratio": 1.570138458419876,
+      "bytes_ratio": 0.9931285917378154
+    },
+    {
+      "name": "strat0-q4-diagonal",
+      "bytes": 72562598,
+      "endpoint_ppl": 33.8939,
+      "stratified_ppl": 42.3958,
+      "ppl_ratio": 1.2508386464821104,
+      "bytes_ratio": 0.9931233189036788
+    },
+    {
+      "name": "strat0-q4-scalar",
+      "bytes": 71817460,
+      "endpoint_ppl": 35.2827,
+      "stratified_ppl": 44.3903,
+      "ppl_ratio": 1.258132172424446,
+      "bytes_ratio": 0.9930976442965423
+    }
+  ]
+}
